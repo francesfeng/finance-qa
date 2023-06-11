@@ -1,0 +1,995 @@
+project_location_id,project_id,project_name,country_code,country
+1,1,Solar PV Plant port of Sines - phase I,PRT,Portugal
+2,2,Solar PV Plant port of Sines - phase II,PRT,Portugal
+3,3,H2GO - 1st phase,NLD,Netherlands
+4,4,H2GO - 2nd phase,NLD,Netherlands
+5,5,"NortH2, phase 1",NLD,Netherlands
+6,6,Norsk e-Fuel Phase 1,NOR,Norway
+7,7,Norsk e-Fuel Phase 2,NOR,Norway
+8,8,HYBRIT pilot,SWE,Sweden
+9,9,HYBRIT demo,SWE,Sweden
+10,10,Fertiberia/Iberdrola - Puertollano I,ESP,Spain
+11,11,Power to Green H2 Mallorca - Phase 1,ESP,Spain
+12,12,Power to Green H2 Mallorca (GREEN HYSLAND) - Phase 2,ESP,Spain
+13,13,Drax Humber cluster completion,GBR,United Kingdom
+14,14,CRI project in Norway,NOR,Norway
+15,15,ARIES project,USA,United States of America
+16,16,Fukushima Hydrogen Energy Research Field,JPN,Japan
+17,17,Hydrospider - St Gallen,CHE,Switzerland
+18,18,"Apex Energy, Rostock-Laage",DEU,Germany
+19,19,Leuchtturmprojekt Power-to-Gas Baden-Württemberg,DEU,Germany
+20,20,eFarm (5 production sites in North Frisia),DEU,Germany
+21,22,Hydrogen plant - Orkney Islands - BIG HIT 2n phase,GBR,United Kingdom
+22,23,Wyhlen hydroelectric power plant,DEU,Germany
+23,24,GrInHy2.0,DEU,Germany
+24,25,Power2Met,DNK,Denmark
+25,26,REMOTE - Norway,NOR,Norway
+26,27,H2One - Toranomon Hills Business Tower,JPN,Japan
+27,28,H2One - Toyama City Environment Center,JPN,Japan
+28,29,H2One - Tsuruga City,JPN,Japan
+29,30,H2FUTURE,AUT,Austria
+30,31,Guangdong Synergy Hydrogen Power Technology Co. 1st phase,CHN,China
+31,33,"Markham Energy Storage, Ontario",CAN,Canada
+32,34,PFI - Pirmasens-Winzeln,DEU,Germany
+33,35,HRS CMB,BEL,Belgium
+34,36,MEFCO2,DEU,Germany
+35,37,"Windgas Haurup, 2nd phase",DEU,Germany
+36,38,Parnu refuelling station,EST,Estonia
+37,39,"H2Nodes, Parnu",EST,Estonia
+38,40,"H2Nodes, Riga",EST,Estonia
+39,41,SMT-AG Artois-Gohelle,FRA,France
+40,42,HyDeploy,GBR,United Kingdom
+41,43,Quebec Great Toronto Area East,CAN,Canada
+42,44,Pau bus station HRS,FRA,France
+43,46,"Solothurn, STORE&GO",CHE,Switzerland
+44,49,Sarawak Energy,MYS,Malaysia
+45,50,Vårgårda Bostäder housing complex,SWE,Sweden
+46,51,SoCalGas-NREL,USA,United States of America
+47,52,Stromlückenfüller 2nd phase,DEU,Germany
+48,54,ATCO clean energy innovation hub,AUS,Australia
+49,55,Tauron CO2-SNG,POL,Poland
+50,56,Methane Synthesis test facility in Koshijihara Plant of INPEX’s - Nagaoa,JPN,Japan
+51,58,VTT Bio economy+,FIN,Finland
+52,59,Kopernikus,DEU,Germany
+53,60,Rozenburg Power2Gas Phase 2,NLD,Netherlands
+54,61,Balance project,FIN,Finland
+55,62,H2One - SP Group,SGP,Singapore
+56,63,Falkenhagen STORE&GO,DEU,Germany
+57,64,"NEDO kofu city, Yamanashi Prefecture",JPN,Japan
+58,65,Semakau island microgrid Engie (SPORE),SGP,Singapore
+59,66,H2PLAZA - Toyota Industries Corporation’s Takahama,JPN,Japan
+60,67,Localhy,DEU,Germany
+61,68,Wind to gas Brunsbüttel,DEU,Germany
+62,69,Carbon2Chem,DEU,Germany
+63,70,SunLine Transit Agency,USA,United States of America
+64,71,HyBALANCE,DNK,Denmark
+65,72,Aberdeen Conference Center,GBR,United Kingdom
+66,73,Lam Takhong Wind Hydrogen Hybrid Project- EGAT,THA,Thailand
+67,74,H2ORIZON,DEU,Germany
+68,75,ASKO Midt-Norge,NOR,Norway
+69,76,Underground Sun Storage,AUT,Austria
+70,77,Hydrogen plant - Orkney Islands - BIG HIT 1st phase,GBR,United Kingdom
+71,80,"Windgas Haurup, 1st phase",DEU,Germany
+72,82,"Troia, STORE&GO",ITA,Italy
+73,83,GNVert H2,FRA,France
+74,85,Tongji solar hybrid hydrogen refueling station,CHN,China
+75,87,Methanation at Eichhof,DEU,Germany
+76,88,"CoSin: Synthetic Natural Gas from Sewage, Barcelona",ESP,Spain
+77,89,REFLEX,ITA,Italy
+78,90,Sendai City,JPN,Japan
+79,92,"Rostock, Exytron Demonstrationsanlage",DEU,Germany
+80,93,Tokyu Construction Institute of Technology,JPN,Japan
+81,94,Rakuten Seimei Park Miyagi,JPN,Japan
+82,95,"MicroPyros, Altenstant",DEU,Germany
+83,96,Oxelösund Forklifts,SWE,Sweden
+84,97,H21 North of England,GBR,United Kingdom
+85,98,Drax Humber cluster demonstrators,GBR,United Kingdom
+86,111,"Hynet Northwest, phase 1 (Essar Stanlow refinery)",GBR,United Kingdom
+87,113,"Baicheng, Jilin wind-solar project",CHN,China
+88,115,"Alzey, Exytron Null-E",DEU,Germany
+89,119,Energy observer,FRA,France
+90,120,Haldor Topsoe - El-Opgraderet Biogas II,DNK,Denmark
+91,121,Musashi-Mizonokuchi Station,JPN,Japan
+92,122,"H2One - Hydrogen Application Center, Fuchu Complex",JPN,Japan
+93,123,H2One - Asahi Breweries in Ibaraki,JPN,Japan
+94,124,Costa Rica Transportation Ecosystem Project,CRI,Costa Rica
+95,125,Cerro Pabellón Microgrid 450 kWh Hydrogen ESS,CHL,Chile
+96,126,"Energy in the Container, Fraunhofer IISB, Erlangen, Leistungszentren Elektroniksysteme (LZE)",DEU,Germany
+97,127,Hassfurt,DEU,Germany
+98,130,GreenHydroChem Central German Chemical Triangle,DEU,Germany
+99,134,HPEM2GAS (R&D),DEU,Germany
+100,135,Hamburg - Schnackenburgallee,DEU,Germany
+101,136,smart grid solar - arzberg,DEU,Germany
+102,137,"Naval Facilities Engineering Command, Engineering and Expeditionary Warfare Center",USA,United States of America
+103,138,Laboratory System at IFE Kjeller Pahse 2,NOR,Norway
+104,139,"H2One - Kyushu Resort Hotel, Huis Ten Bosch",JPN,Japan
+105,140,H2One - Yokohama Cargo Center,JPN,Japan
+106,142,WindGas Hamburg-Reitbrook,DEU,Germany
+107,143,"RH2 Grapzow, Mecklenburg Vorpommern",DEU,Germany
+108,146,P2G-Biocat - Continued (Ref 508),DNK,Denmark
+109,147,Raglan Nickel mine,CAN,Canada
+110,148,Don Quichote,BEL,Belgium
+111,149,Regio Energie Solothurn/Aarmat hybrid plant,CHE,Switzerland
+112,151,RWE PtG plant Ibbenbüren,DEU,Germany
+113,155,DemoSNG,SWE,Sweden
+114,163,Stromlückenfüller 1st phase,DEU,Germany
+115,164,Higashi-Ogishima-Naga-Park,JPN,Japan
+116,165,Emden II Upscaling,DEU,Germany
+117,167,SYNFUEL,DNK,Denmark
+118,169,"Hydrogen Valley South Tyrol - Bolzano, CHIC",ITA,Italy
+119,173,H2BER (Berlin airport),DEU,Germany
+120,178,"Westkuste 100 (Phase 1) - HyScale 100, Heide",DEU,Germany
+121,198,"Hanau, Wolfgang Industrial Park",DEU,Germany
+122,199,"MicroPyros, Staubing",DEU,Germany
+123,200,"ETOGAS, Solar Fuel Beta-plant AUDI, Werlte (Audi e-gas)",DEU,Germany
+124,201,H2 Logic HRS with onsite electrolysis Aalborg,DNK,Denmark
+125,202,Uniper/E-ON WindGas Falkenhagen Hydrogen Pilot Project,DEU,Germany
+126,203,P2G plant Erdgas Schwaben,DEU,Germany
+127,204,"Oslo, CHIC",NOR,Norway
+128,205,"HySynergy, phase 1",DNK,Denmark
+129,207,CO2RRECT-Niederaussem,DEU,Germany
+130,211,"Sir Samuel building Griffith Center, Brisbane, Australia",AUS,Australia
+131,213,"MicrobEnergy GmbH, Schwandorf",DEU,Germany
+132,221,"H2Move, Fraunhofer ISE",DEU,Germany
+133,222,"Hazira, Reliance, back-up hydrogen supply",IND,India
+134,223,El Tubo - ACTA EL500,ESP,Spain
+135,225,Refhyne,DEU,Germany
+136,227,H&R Ölwerke Hamburg-Neuhof,DEU,Germany
+137,235,H2Herten,DEU,Germany
+138,236,H2 research center BTU Cottbus,DEU,Germany
+139,239,Cotbus,DEU,Germany
+140,240,Eucolino Schwandorf,DEU,Germany
+141,241,Agios Efstratios,GRC,Greece
+142,246,Hydrogen mini grid system Yorkshire (Rotherham),GBR,United Kingdom
+143,249,"Fronius Energy Cell, self-sufficient house",AUT,Austria
+144,250,Hitachi Zosen - PTTEP CO2 Conversion to Methane Project R&D),THA,Thailand
+145,251,Commercial Plant Svartsengi/George Olah plant,ISL,Iceland
+146,254,"Hamburg Hafen City, CEP",DEU,Germany
+147,258,"Hybrid Power Plant Enertrag, Prenzlau",DEU,Germany
+148,259,"EnBW H2 station, Stuttgart",DEU,Germany
+149,270,Ramea Wind-Hydrogen-Diesel Project,CAN,Canada
+150,275,Hydrogen Island Bozcaada,TUR,Turkey
+151,279,DNV Kema/DNV GL,NLD,Netherlands
+152,282,"HARP System, Bella Coola",CAN,Canada
+153,286,H2KT - Hydrogen Energy Storage in Nuuk,DNK,Denmark
+154,288,ITHER,ESP,Spain
+155,295,H2SusBuild,GRC,Greece
+156,296,"Hybrid energy storage system NFCRC, California",USA,United States of America
+157,299,Nukissiorfiit Nuuk Hydrogen Plant,DNK,Denmark
+158,302,"Centre of Fuel Cell Technology, Chennai",IND,India
+159,303,"Hychico, Comodoro Rivadavia",ARG,Argentina
+160,305,Taleghan solar hydrogen energy system,IRN,Iran
+161,306,Istanbul,TUR,Turkey
+162,309,AltHytude,FRA,France
+163,312,Regenerativer Energipark Ostfalia/hybrid renewable energy park (HREP),DEU,Germany
+164,313,DRI CO2 recycling,USA,United States of America
+165,314,Neo Olvio of Xanthi,GRC,Greece
+166,315,HYLINK Totara,NZL,New Zealand
+167,333,Baglan Energy Park Wales,GBR,United Kingdom
+168,340,"Synthetic Energy, Idaho",USA,United States of America
+169,341,Hydepark,TUR,Turkey
+170,342,"Stand-alone power system, Neo Olvio of Xanthi",GRC,Greece
+171,343,"HYLINK, Totara Valley",NZL,New Zealand
+172,356,RES2H2 Gran Canaria,ESP,Spain
+173,362,"H2 from the sun, Brunate",ITA,Italy
+174,363,CEC Denizli Turkey,TUR,Turkey
+175,366,"CUTE and HyFLEET:CUTE, Barcelona",ESP,Spain
+176,387,Savli wind-hydrogen demo project,IND,India
+177,405,"Dahej, Reliance, back-up hydrogen supply",IND,India
+178,427,"HARI project, West Beacon Farm",GBR,United Kingdom
+179,433,"Porto, CUTE",PRT,Portugal
+180,437,Energiepark Mainz,DEU,Germany
+181,449,INGRID,ITA,Italy
+182,452,Tohoku pilot plant in 2003,JPN,Japan
+183,453,Gwalpahari Solar-Hydrogen demonstration,IND,India
+184,461,Solar Energy Centre SmartFuel hydrogen station,IND,India
+185,472,FaHyence,FRA,France
+186,477,CPI Zaoquan thermal power plant in China's Ningxia region,CHN,China
+187,487,Laboratory Plant HRI Quebec,CAN,Canada
+188,491,Power plant in Lebanon for a Power Plant Cooling application,LBN,Lebanon
+189,492,Minatec's semiconductor labs in Grenoble,FRA,France
+190,494,Grimstad Renewable Energy Park,NOR,Norway
+191,497,Hypos - Sunfire,DEU,Germany
+192,498,Electrochaea: Biological methanation in Avedøre,DNK,Denmark
+193,499,REMOTE - Agkistro (Greece,GRC,Greece
+194,500,"REMOTE - Spain, Canary Island",ITA,Italy
+195,501,Aman - Green Hydrogen Project,MRT,Mauritania
+196,502,HRS CMB Port of Antwerp,BEL,Belgium
+197,503,Haldor Topsoe - El-Opgraderet Biogas I,DNK,Denmark
+198,504,P2G-Biocat - Decommisioned,DNK,Denmark
+199,505,H2 Logic HRS with onsite electrolysis in Vejle,DNK,Denmark
+200,506,H2 Logic HRS with onsite electrolysis Holstebro,DNK,Denmark
+201,507,H2 Logic 3 HRS with onsite electrolysis in Copenhagen,DNK,Denmark
+202,508,Fertiberia/Iberdrola - Puertollano II (extension from Ref10),ESP,Spain
+203,509,"Hyoffwind Zeebrugge, 1st phase",BEL,Belgium
+204,510,"Hyoffwind Zeebrugge, 2nd phase",BEL,Belgium
+205,511,"Hyoffwind Zeebrugge, 3rd phase",BEL,Belgium
+206,512,Hyport,BEL,Belgium
+207,513,"""Waste-to-wheels"" Charleroi",BEL,Belgium
+208,514,"Power-to-Methanol, Antwerp, phase 1",BEL,Belgium
+209,516,Green Fuels for Denmark - Phase 1,DNK,Denmark
+210,517,Hystock (EnergyStock),NLD,Netherlands
+211,518,HAEOLUS,NOR,Norway
+212,519,FUTURECEM,DNK,Denmark
+213,520,Primolyzer (R&D),DNK,Denmark
+214,521,PROCON (R&D),DNK,Denmark
+215,522,Foulum Demonstration plant,DNK,Denmark
+216,524,Green Natural Gas,DNK,Denmark
+217,525,“Towards the Methane Society”,DNK,Denmark
+218,526,"MEDLYS, Medium temperature water electrolysis (R&D)",DNK,Denmark
+219,527,MeGa-stoRE,DNK,Denmark
+220,528,MeGa-stoRE Optimising and Upscaling,DNK,Denmark
+221,529,"Vestenskov/ Nakskov Industrial and Environmental Park, Lolland",DNK,Denmark
+222,530,H2RES - Orsted offshore wind,DNK,Denmark
+223,531,Samsø,DNK,Denmark
+224,532,Esbjerg green ammonia plant,DNK,Denmark
+225,533,HRS Aalborg,DNK,Denmark
+226,535,eSMR Methanol demo plant in Aarhus University,DNK,Denmark
+227,536,HyCycle - Center for renewable H2 (R&D),DNK,Denmark
+228,537,NEXPEL (R&D),NOR,Norway
+229,538,Glomfjord Hydrogen AS,NOR,Norway
+230,539,"HyNor Lillestrøm, Akershus Energy Park",NOR,Norway
+231,540,Statkraft-CELSA-Mo green H2 for steel production,NOR,Norway
+232,541,Utsira Island,NOR,Norway
+233,542,Nordic Blue Crude,NOR,Norway
+234,543,Acorn Aberdeenshire,GBR,United Kingdom
+235,544,Laboratory System at IFE Kjeller Phase 1,NOR,Norway
+236,545,Teesside collective,GBR,United Kingdom
+237,546,HyDEMO,NOR,Norway
+238,547,Aurora (former Pilot-E),NOR,Norway
+239,548,"Green fertilizer project Porsgrunn, phase 1",NOR,Norway
+240,549,4Kvinnherad Power-to-Gas,NOR,Norway
+241,550,Tjeldbergodden Hydrogen,NOR,Norway
+242,552,Gigastack-Hornsea 2,GBR,United Kingdom
+243,553,The Hydrogen office,GBR,United Kingdom
+244,554,RABH2,GBR,United Kingdom
+245,555,Air Fuel Synthesis pilot plant,GBR,United Kingdom
+246,556,"Aberdeen, Hydrogen bus project",GBR,United Kingdom
+247,557,"Fife, Levenmouth Community Energy Project",GBR,United Kingdom
+248,558,"PURE Project, Unst",GBR,United Kingdom
+249,559,Tyseley Energy Park refuelling hub,GBR,United Kingdom
+250,562,H2H Saltend (Related to Humber Cluster demos),GBR,United Kingdom
+251,563,Green Fuels for Denmark - Phase 2,DNK,Denmark
+252,565,Green Fuels for Denmark - Phase 3,DNK,Denmark
+253,566,Green Hydrogen for Scotland,GBR,United Kingdom
+254,568,H2morrow,DEU,Germany
+255,571,CF Industries - Donaldsonville Nitrogen Complex,USA,United States of America
+256,572,Linde - Ontario (California),USA,United States of America
+257,573,Westkuste 100 (Phase 2),DEU,Germany
+258,574,Get H2 Lingen,DEU,Germany
+259,575,HySynGas,DEU,Germany
+260,576,Northern Irish hydrogen project,GBR,United Kingdom
+261,577,"Liquid Wind, FlagshipONE",SWE,Sweden
+262,578,H2U - Eyre Peninsula Gateway Hydrogen Project at Port Bonython.,AUS,Australia
+263,579,"North CCU HUB, phase 1. North-C -Methanol Demo plant",BEL,Belgium
+264,580,Centurion,GBR,United Kingdom
+265,581,Asian Renewable Energy Hub,AUS,Australia
+266,582,IPCEI SilverFrog,ITA,Italy
+267,583,IPCEI New Green Flamingo,PRT,Portugal
+268,583,IPCEI New Green Flamingo,ESP,Spain
+269,584,Murchison,AUS,Australia
+270,585,Helios Green Fuels - Neom,SAU,Saudi Arabia
+271,586,IPCEI Blue Danube,ROU,Romania
+272,586,IPCEI Blue Danube,DEU,Germany
+273,586,IPCEI Blue Danube,AUT,Austria
+274,587,Project GERI,AUS,Australia
+275,588,IPCEI Black Horse (40 electrolysis production sites),POL,Poland
+276,588,IPCEI Black Horse (40 electrolysis production sites),CZE,Czechia
+277,588,IPCEI Black Horse (40 electrolysis production sites),SVK,Slovakia
+278,588,IPCEI Black Horse (40 electrolysis production sites),HUN,Hungary
+279,589,Project NEO,AUS,Australia
+280,590,NEL - Nikola Agreement H2 refuelling stations in USA (from 2020),USA,United States of America
+281,591,Hydrogen Delta - Zeeland,NLD,Netherlands
+282,592,HyEx - phase 1,CHL,Chile
+283,593,HyEx - phase 2,CHL,Chile
+284,594,Costa Rica Transportation Ecosystem Project,CRI,Costa Rica
+285,595,"HyNetherlands, 1st phase",NLD,Netherlands
+286,596,HyNetherlands 2nd phase,NLD,Netherlands
+287,597,Hygreen Provence 1st phase,FRA,France
+288,598,Hygreen Provence 2nd phase,FRA,France
+289,599,Hygreen Provence 3rd phase,FRA,France
+290,600,Sundance Hydrogen,CAN,Canada
+291,601,Port of Rotterdam BP refinery - H2.50,NLD,Netherlands
+292,602,"Hysencia, Phase I",ESP,Spain
+293,603,Ningxia Solar Hydrogen Project,CHN,China
+294,604,Dyno Nobel Renewable Hydrogen Project,AUS,Australia
+295,605,Green Crane Pais Vasco Hub,ESP,Spain
+296,606,"Green Crane, Asturias Hub, Phase I",ESP,Spain
+297,607,"Green Crane, Castilla y Leon Hub",ESP,Spain
+298,608,"Green Crane, Aragon Hub",ESP,Spain
+299,609,Hydrogen Plant for Westereems Wind Farm (RWE Eemshaven),NLD,Netherlands
+300,610,Queensland Nitrates Renewable Hydrogen and Ammonia,AUS,Australia
+301,611,"Hemweg
+ hub Amsterdam",NLD,Netherlands
+302,612,Yara Sluiskil (Deltaurus 2) - Haddock,NLD,Netherlands
+303,613,Weifang Binhai Photovoltaic 100MW Hydrogen Generation Project,CHN,China
+304,614,"GreenH2UB (10 hubs of 3-10MW, the first one Ref786)",NLD,Netherlands
+305,615,vHyGO - 1st Facility for H2 buses in Bouin (H2 Ouest),FRA,France
+306,616,vHyGO - 2nd facility in Vannes (EffiH2),FRA,France
+307,617,H2SusBuild / RES-H2,GRC,Greece
+308,618,Ferrolterra plant,ESP,Spain
+309,619,ELYGRID (R&D),ESP,Spain
+310,620,Aviation synfuels,PRT,Portugal
+311,621,Tapada do Outeiro natural gas power plant,PRT,Portugal
+312,622,"Lingen BP Refinery , phase 1",DEU,Germany
+313,623,Wunsiedel Energy Park (Phase 1),DEU,Germany
+314,624,Wunsiedel Energy Park (Phase 2),DEU,Germany
+315,625,Repsol Bilbao port synfuels project,ESP,Spain
+316,626,Methane Synthesis test facility in Koshijihara Plant of INPEX’s - Nagaoa,JPN,Japan
+317,627,Hydrogen Island Aitutaki,COK,Cook Islands (the)
+318,628,Hydrogen Island Bozcaada,TUR,Turkey
+319,629,E-Thor,NLD,Netherlands
+320,630,H₂ Air Base Leeuwarden,NLD,Netherlands
+321,631,SEE / Storage of electric energy,DEU,Germany
+322,632,New zealand Matiu/Somes Island,NZL,New Zealand
+323,633,Vendée hydrogène,FRA,France
+324,634,H2One - SP Group,SGP,Singapore
+325,635,RESelyser (R&D),EU,EU
+326,636,DVGW-EBI KIT - Demo-SNG,DEU,Germany
+327,637,Multiphly,NLD,Netherlands
+328,638,Semakau island microgrid Engie (SPORE),SGP,Singapore
+329,639,"PostBus Hydrogen bus, Brugg, aargau CHIC",CHE,Switzerland
+330,640,Emden I Biogas upgrading,DEU,Germany
+331,641,PtG Switzerland,CHE,Switzerland
+332,642,MYRTE,FRA,France
+333,643,H2OzBus Project,AUS,Australia
+334,644,"Sunfire PtL demo ""Fuel1""",DEU,Germany
+335,645,Hyport - Toulouse-Blagnac Airport,FRA,France
+336,646,DEMETER,FRA,France
+337,647,Ekolyser (R&D),DEU,Germany
+338,648,LastEISys (R&D),DEU,Germany
+339,649,PtG-Elektrolyse im MW-Maßstab (R&D),DEU,Germany
+340,650,"BioPower2Gas, Allendorf, Eder",DEU,Germany
+341,651,Rozenburg Power2Gas Phase 1,NLD,Netherlands
+342,652,"Greenhouse heating, solar-H2",ITA,Italy
+343,653,EE-Methan aus CO2 (R&D),AUT,Austria
+344,654,OptFuel (R&D),AUT,Austria
+345,655,Thüga PtG plant Frankfurt/Main,DEU,Germany
+346,656,RENOVAGAS,ESP,Spain
+347,657,"HyFLEET:CUTE, Hamburg",DEU,Germany
+348,658,Reduction and Reuse of CO2: Renewable Fuels for Electricity Production- ZHAW,CHE,Switzerland
+349,659,CHOCHCO,FRA,France
+350,660,Hydrogen Wind Farm Sotavento,ESP,Spain
+351,661,"CUTE, Stockholm",SWE,Sweden
+352,662,"HyFLEET:CUTE, Amesterdam",NLD,Netherlands
+353,663,"Wind2Hydrogen, HyCentA",AUT,Austria
+354,664,BOEING (rSOC Demonstrator),USA,United States of America
+355,665,Pilot & Demo PtM HSR,CHE,Switzerland
+356,666,Dresden,DEU,Germany
+357,667,Rapperswil,CHE,Switzerland
+358,668,"RegEnKibo, Kirchheimbolanden (R&D)",DEU,Germany
+359,669,ECTOS,ISL,Iceland
+360,670,"ETOGAS, Solar Fuel Alpha-plant 250 kW, ZSW",DEU,Germany
+361,671,"Shoro Dam in Shiranuka-cho, Shiranuka-gun, Hokkaido",JPN,Japan
+362,672,SoCalGas and University of California Irvine 1,USA,United States of America
+363,673,HELMETH (R&D),DEU,Germany
+364,674,SoCalGas and University of California Irvine 2,USA,United States of America
+365,675,Tomakomai,JPN,Japan
+366,676,GrInHy,DEU,Germany
+367,677,"Tomamae Town, Hokkaido",JPN,Japan
+368,678,Yokohama City Wind Power Plant (Hama Wing),JPN,Japan
+369,679,GRHYD,FRA,France
+370,680,ELY4OFF,ESP,Spain
+371,681,"Hidrolica, Tahivilla",ESP,Spain
+372,682,GenHyPEM (R&D),EU,EU
+373,683,Jupiter 1000,FRA,France
+374,684,Hawaii Hydrogen Power Park (phase 2),USA,United States of America
+375,685,PVFCSYS Sophia Antipolis,FRA,France
+376,686,PVFCSYS Agrate,ITA,Italy
+377,687,"THEUS H2 Energy Storage, Takasago (R&D)",JPN,Japan
+378,688,Aeropila,ESP,Spain
+379,689,PosHYdon,NLD,Netherlands
+380,690,FIRST - Showcase II,ESP,Spain
+381,691,IHAVU,ESP,Spain
+382,692,"WELTEMP, Water electrolysis at elevated temperature",EU,EU
+383,693,Ameland,NLD,Netherlands
+384,694,Wind-H2 Village Prince Edward Island,CAN,Canada
+385,695,"DTE Energy Hydrogen Technoly Park, Southfield Michigan",USA,United States of America
+386,696,Wind2H2 Project NREL,USA,United States of America
+387,697,Small Scale Renewable Power System DRI (Desert Research Institute),USA,United States of America
+388,698,IRENE System,CAN,Canada
+389,699,Bio SNG Güssing,AUT,Austria
+390,701,Fine Chemical Industry Park of Lanzhou,CHN,China
+391,702,GldH2,NLD,Netherlands
+392,703,P2P IPKW,NLD,Netherlands
+393,704,McPhy HRS,FRA,France
+394,705,MethFuel,DEU,Germany
+395,706,Coffeyville fertilizer plant,USA,United States of America
+396,707,PCS Nitrogen,USA,United States of America
+397,708,Port Arthur,USA,United States of America
+398,709,MCRC bio-hydrogen facility Chennai,IND,India
+399,710,Port Jerome,FRA,France
+400,711,Quest,CAN,Canada
+401,712,ElectroHgena,FRA,France
+402,713,Power to flex (several pilot projects),DEU,Germany
+403,714,"Minerve, Nantes",FRA,France
+404,716,HYPOS (several projects),DEU,Germany
+405,717,"Hazira, Reliance, back-up hydrogen supply",IND,India
+406,718,Air Liquide Becancour,CAN,Canada
+407,719,Hebei Jiantou Guyuan wind project - 2nd phase,CHN,China
+408,720,Air Products Net-Zero Hydrogen Energy Complex,CAN,Canada
+409,721,Haiperer Wind Power Hebei - first phase,CHN,China
+410,722,Guangdong Synergy Hydrogen Power Technology Co. 2n phase,CHN,China
+411,723,"Foshan hydrogen city, Phase 1",CHN,China
+412,724,"Foshan hydrogen city, Phase 2",CHN,China
+413,725,DEMO4GRID,AUT,Austria
+414,726,Anglo-American Mining Truck,ZAF,South Africa
+415,727,Walmart Quilicura forklifts,CHL,Chile
+416,728,Wuppertal refuelling station,DEU,Germany
+417,730,SALCOS - WindH2,DEU,Germany
+418,731,PtG-Fehndorf,DEU,Germany
+419,732,Hebei Jiantou Guyuan wind project - 1st phase,CHN,China
+420,733,"Green hydrogen Project, Mohammad Bin Rashid Solar Park",ARE,United Arab Emirates (the)
+421,734,Hydrogen Park South Australia - HyPSA,AUS,Australia
+422,735,NEL-Champaign-Urbana Mass Transit District,USA,United States of America
+423,736,Cyrus Smith,NLD,Netherlands
+424,737,Jemena Western Sydney - H2GO project,AUS,Australia
+425,738,Queensland Government HRS,AUS,Australia
+426,739,GRASSHOPPER,SVN,Slovenia
+427,740,Seafuel project,ESP,Spain
+428,741,Obayashi geothermal hydrogen,JPN,Japan
+429,742,Hydrogen village Burgenland,AUT,Austria
+430,743,"Unisa, Mawson Lakes campus",AUS,Australia
+431,744,North West Sturgeon refinery,CAN,Canada
+432,745,Nutrien (former Agrium) fertilizer,CAN,Canada
+433,746,Kidman Park in Adelaide depot,AUS,Australia
+434,747,"SPHYNX, R&D",FRA,France
+435,748,Laboratory Plant HRI Quebec,CAN,Canada
+436,749,Fronius HyLOG-Fleet (Hydrogen powered Logistic System),AUT,Austria
+437,750,"HyWindBalance, Oldenburg",DEU,Germany
+438,751,vHyGO -3rd facility in Brest,FRA,France
+439,752,Hyport@Duqm,OMN,Oman
+440,753,Engie - Yara Pilbara test,AUS,Australia
+441,754,Haiperer Wind Power Hebei - second phase,CHN,China
+442,755,"Crystal Brook Energy Park, South Australia",AUS,Australia
+443,756,Origin Energy - Kawasaki Heavy Industries Townsville project,AUS,Australia
+444,757,H2-hub Gladstone (Queensland) - phase 1,AUS,Australia
+445,758,"CIIC Tiangong wind and solar hydrogen, Zhangjiakou",CHN,China
+446,759,"Demonstration plant Kuala Terengganu, Malaysia",MYS,Malaysia
+447,760,Demo Plant Agricultural University Athens,GRC,Greece
+448,761,The Hydrogen house,USA,United States of America
+449,762,Fenosa Canberra hydrogen demo project,AUS,Australia
+450,764,Alliander Oosterwolde - solar park of GroenLeven,NLD,Netherlands
+451,765,Siemens Energy and Beijing Green Hydrogen Technology Development HRS,CHN,China
+452,766,RWE-Thyssenkrupp Duisburg steel plant (HydrOxy Hub Walsum),DEU,Germany
+453,767,HyAMMED HD trucksrefuelling station,FRA,France
+454,768,Ribatejo natural gas power plant,PRT,Portugal
+455,769,Air Liquide liquid hydrogen production plant,USA,United States of America
+456,770,"Haru Oni, phase 1",CHL,Chile
+457,771,Hollandse Kust (noord) - CrossWind - Pernis Refinery,NLD,Netherlands
+458,772,Sun Metals Zinc Refinery,AUS,Australia
+459,773,HRS TMB Barcelona,ESP,Spain
+460,774,HRS Charleroi,FRA,France
+461,775,HRS CNH2 Puertollano,ESP,Spain
+462,776,Fertiberia/Iberdrola - Palos de la Frontera I,ESP,Spain
+463,777,Hyflexpower,FRA,France
+464,778,HydroHub-Fenne,DEU,Germany
+465,779,Solena Group Plasma enhanced gasification,USA,United States of America
+466,780,H2U (former Proyecto Verne),URY,Uruguay
+467,781,Olive Creek 1,USA,United States of America
+468,782,Olive Creek 2,USA,United States of America
+469,783,Fertiberia/Iberdrola - Palos de la Frontera II,ESP,Spain
+470,784,Douglas PUD - industrial area north of East Wenatchee,AUS,Australia
+471,785,Chongli wind-solar Hydrogen Project - first phase,CHN,China
+472,786,"GreenH2UB (1st hub, Noord Brabant)",NLD,Netherlands
+473,787,Duwaal,NLD,Netherlands
+474,788,Chongli wind-solar Hydrogen Project - second phase,CHN,China
+475,789,Hysolar Green on Road - Nieuwegein,NLD,Netherlands
+476,790,Halcyon Power,NZL,New Zealand
+477,791,Hydrogenpilot Oosterwolde,NLD,Netherlands
+478,792,Kopernikus 2.0,DEU,Germany
+479,793,E-CO2MET Raffinerie Mitteldeutschland,DEU,Germany
+480,794,HESC (Liquefied hydrogen energy supply chain),AUS,Australia
+481,795,H-Vision (phase 1),NLD,Netherlands
+482,796,Preem CCS,SWE,Sweden
+483,797,METHYCENTRE,FRA,France
+484,798,Hydrogen Park Gladstone,AUS,Australia
+485,799,"Toyota Hydrogen Centre, Altona, Victoria",AUS,Australia
+486,800,GZI Next,NLD,Netherlands
+487,803,Yanchang Integrated Carbon Capture and Storage Demonstration,CHN,China
+488,804,Hazer group CH4 pyrolysis,AUS,Australia
+489,805,ECB Omega Green biofuel project,PRY,Paraguay
+490,806,"Element One (Element Eins), phase 1",DEU,Germany
+491,807,"H2V Normandy, 1st phase",FRA,France
+492,808,"H2V59, 1st phase",FRA,France
+493,809,Arrowsmith Hydrogen Project,AUS,Australia
+494,811,Bad Lauchstädt energy park,DEU,Germany
+495,812,"DJEWELS Chemiepark - Delfzijl, Phase 1",NLD,Netherlands
+496,813,UpHy,AUT,Austria
+497,814,Referenzkraftwerk Lausitz,DEU,Germany
+498,815,Lake Charles Methanol,USA,United States of America
+499,816,PGNiG - INGRID,POL,Poland
+500,817,LADWP - NREL Intermountain Power Project,USA,United States of America
+501,818,"DJEWELS Chemiepark - Delfzijl, Phase 2",NLD,Netherlands
+502,819,H2ermes,NLD,Netherlands
+503,820,"H2V Normandy, 2nd phase",FRA,France
+504,821,"H2V59, 2nd phase",FRA,France
+505,822,Hybridge,DEU,Germany
+506,823,H2M,NLD,Netherlands
+507,825,Wabash CarbonSAFE,USA,United States of America
+508,826,"Etzel, Salt caverns",DEU,Germany
+509,827,"Shell heavy residue gasification CCU - Pernis refinery (in 2024, the CCU project will become CCUS - ref1323 - once Porhtos project is available)",NLD,Netherlands
+510,828,Bio Energy Netherlands,NLD,Netherlands
+511,829,Blue Hydrogen Den Helder,NLD,Netherlands
+512,830,Nemo Hydrogen Project,GRC,Greece
+513,831,Baicheng City Bus Company - Songyuan City,CHN,China
+514,833,Repsol advanced biofuels plant Cartagena,ESP,Spain
+515,834,H2-based residential area in Van der Veen,NLD,Netherlands
+516,835,H2Gas,ESP,Spain
+517,836,Long Beach Fuel Cell plant,USA,United States of America
+518,837,Producing Hydrogen by Gasification of Biomass in 'het Groene Hart',NLD,Netherlands
+519,838,Ramboll study for an e-fuel plant in Greenland,DNK,Denmark
+520,839,Saint-Brieuc Armor Agglomeration production plant,FRA,France
+521,840,"Giner ELX, H2@Scale (Florida)",USA,United States of America
+522,841,"Exelon, H2@Scale",USA,United States of America
+523,842,"Frontier Energy, H2@Scale - electrolysis",USA,United States of America
+524,843,"DJEWELS Chemiepark - Delfzijl, Phase 3",NLD,Netherlands
+525,844,Curthyl,NLD,Netherlands
+526,845,Deltaurus 1,NLD,Netherlands
+527,846,Deltaurus 3,NLD,Netherlands
+528,847,"North CCU HUB, phase 3 (Deltaurus 4)",BEL,Belgium
+529,848,Centrale Vlissingen - VoltH2,NLD,Netherlands
+530,849,"HySynergy, phase 2",DNK,Denmark
+531,850,Green lab skive,DNK,Denmark
+532,851,Shell China - Zhangjiakou,CHN,China
+533,852,Dobrogea wind farm,ROU,Romania
+534,853,Aberdeen Hydrogen Hub,GBR,United Kingdom
+535,854,"Fortescue Metals Group - Bell Bay, Tasmania",AUS,Australia
+536,855,H2HUB,FRA,France
+537,856,"Green Crane - La Robla, Phase 1",ESP,Spain
+538,857,"Meirama plant, phase 1",ESP,Spain
+539,858,EMEC tidal-battery-hydrogen demo,GBR,United Kingdom
+540,859,Orange-BAT Puerto Valencia,ESP,Spain
+541,860,Huaneng electrolysis plant in Western Sichuan,CHN,China
+542,861,H-Vision (phase 2),NLD,Netherlands
+543,862,HaYrport,BEL,Belgium
+544,863,"Power-to-Methanol, Antwerp, phase 2",BEL,Belgium
+545,864,"Hyport, phase 2",BEL,Belgium
+546,865,"IPCEI Green Crane, Italy Hubs",ITA,Italy
+547,866,White Dragon,GRC,Greece
+548,867,"North CCU HUB, phase 2. North-C -full scale",BEL,Belgium
+549,868,HRS Halle (Continued as Ref148),BEL,Belgium
+550,869,HRS Wilrijk,BEL,Belgium
+551,870,Origin Energy Tasmania’s Bell Bay,AUS,Australia
+552,871,H2One Multistation- Tsuruga City,JPN,Japan
+553,872,"H100 Fife Project, Levenmouth",GBR,United Kingdom
+554,873,Steag-Thyssenkrupp Duisburg steel plant (HydrOxy Hub Walsum),DEU,Germany
+555,874,Gela refinery,ITA,Italy
+556,875,Taranto Sustainable Refinery,ITA,Italy
+557,876,Plug Power-Brookfield Renewable Susquehanna River (Pen) project,USA,United States of America
+558,877,"Green fertilizer project Porsgrunn, phase 2",NOR,Norway
+559,878,"BENORTH2 (Amorebieta-Boroa power plant), phase 1",ESP,Spain
+560,879,"BENORTH2 (Amorebieta-Boroa power plant), phase 2",ESP,Spain
+561,880,Camberra HRS,AUS,Australia
+562,881,Recycle Carbone Varennes biofuels plant,CAN,Canada
+563,882,Beijing Jingneng Power Company,CHN,China
+564,883,Western Jutland Green ammonia project,DNK,Denmark
+565,884,Wallonia e-methane project,BEL,Belgium
+566,885,Get H2 Nukleus,DEU,Germany
+567,886,"NortH2, phase 2",NLD,Netherlands
+568,887,"NortH2, phase 3",NLD,Netherlands
+569,888,"AquaPrimus (AquaVentus, phase 1), Heligoland",DEU,Germany
+570,889,Pacific Solar Hydrogen,AUS,Australia
+571,890,H2-hub Gladstone (Queensland) - phases 2-3,AUS,Australia
+572,891,Brande Hydrogen project,DNK,Denmark
+573,892,Hydrogen trial in Dalmine steel mill,ITA,Italy
+574,893,Horizeo project,FRA,France
+575,894,Deep Purple,NOR,Norway
+576,895,Pinto waste water plant,ESP,Spain
+577,896,Linde Leuna Chemical Complex,DEU,Germany
+578,897,Total’s La Mède biorefinery,FRA,France
+579,898,Project Haber,AUS,Australia
+580,899,Grupa Lotos refinery,POL,Poland
+581,900,Vattenfall's Moorburg plant,DEU,Germany
+582,901,H2TAS,AUS,Australia
+583,902,Sumitomo Queensland,AUS,Australia
+584,903,Sumitomo Oman,OMN,Oman
+585,904,Sumitomo Malaysia,MYS,Malaysia
+586,905,H24All,ESP,Spain
+587,906,As Pontes power plant,ESP,Spain
+588,907,Esslingen District,DEU,Germany
+589,908,Compostilla - Endesa,ESP,Spain
+590,909,Seseña - Endesa,ESP,Spain
+591,910,Huelva - Endesa,ESP,Spain
+592,911,Hidrogeno El Cierzo,ESP,Spain
+593,912,Tarragona - Endesa,ESP,Spain
+594,913,Teruel - Endesa,ESP,Spain
+595,914,Almeria - Endesa,ESP,Spain
+596,915,Barranco de Tirajana - Endesa,ESP,Spain
+597,916,Granadilla - Endesa,ESP,Spain
+598,917,Alcudia - Endesa,ESP,Spain
+599,918,"Green Crane, Asturias Hub, Phase Ib",ESP,Spain
+600,919,"Green Crane, Asturias Hub, Phase Ib",ESP,Spain
+601,920,"Hynet Northwest, phase 2",GBR,United Kingdom
+602,921,Zero Emission Valley (14 HRS),FRA,France
+603,922,Bahía H2 Offshore,ESP,Spain
+604,923,Liberty South - Port Anthony,AUS,Australia
+605,924,KOGAN HYDROGEN DEMONSTRATION PROJECT,AUS,Australia
+606,925,Masdar City green H2,ARE,United Arab Emirates (the)
+607,926,Lysekil refinery (phase 1),SWE,Sweden
+608,927,"Maasvlakte, phase I",NLD,Netherlands
+609,928,"Maasvlakte, phase II",NLD,Netherlands
+610,929,"Hydrogen Park Murray Valley, Victoria",AUS,Australia
+611,930,Clean Energy Innovation Park,AUS,Australia
+612,931,ORANGE.BAT Castellon,ESP,Spain
+613,932,Saras Sardinia refinery,ITA,Italy
+614,933,H2 Creteil,FRA,France
+615,934,SunLine Palms Springs,USA,United States of America
+616,935,Unknown project from NEL,USA,United States of America
+617,936,H2 Green Steel (H2GS),SWE,Sweden
+618,937,"New York Science, Technology and Advanced Manufacturing Park",USA,United States of America
+619,938,Abanto Technology Park,ESP,Spain
+620,939,HyDeal Ambition,ESP,Spain
+621,939,HyDeal Ambition,FRA,France
+622,940,Boryeong LNG Terminal,KOR,Korea (the Republic of)
+623,941,Florida Power & Light utility pilot plant,USA,United States of America
+624,942,Refhyne II,DEU,Germany
+625,943,H2-Login,ESP,Spain
+626,944,Changwon Industrial complex,KOR,Korea (the Republic of)
+627,945,Wilhelmshaven LNG terminal,DEU,Germany
+628,946,Sinopec Qilu Petrochemical CCS,CHN,China
+629,947,Karamay Dunhua Oil Technology CCUS EOR Project,CHN,China
+630,948,Great Plains Synfuel Plant and Weyburn-Midale,USA,United States of America
+631,949,Al Reyadah CCUS,ARE,United Arab Emirates (the)
+632,950,Leed Bradford Airport hub,GBR,United Kingdom
+633,951,Northwest Natural Holding synthetic methane plant,USA,United States of America
+634,952,Centre Point Energy Minnesota,USA,United States of America
+635,953,New Jersey Resources Howell,USA,United States of America
+636,954,Vantaa-Wartsila methanation,FIN,Finland
+637,955,AES Gener ammonia project,CHL,Chile
+638,956,PDO’s solar-paneled car park,OMN,Oman
+639,957,Amin Solar Renewable Energy Project,OMN,Oman
+640,958,Huaneng Qingneng Institute demo plant,CHN,China
+641,959,CNNC HTGR P2G demo,CHN,China
+642,960,CNNC 600MW HTGR P2G for steel,CHN,China
+643,961,"Datong City solar plant, phase 1",CHN,China
+644,962,Eco Energy World Quenssland project,AUS,Australia
+645,963,National grid green H2 storage in New York,USA,United States of America
+646,964,DH2Green Port of Malaga,ESP,Spain
+647,965,Saipem and Alboran Hydrogen (3 plants),ITA,Italy
+648,966,Saipem and Alboran Hydrogen (1 plant),MAR,Morocco
+649,967,Saipem and Alboran Hydrogen (1 plant),ALB,Albania
+650,968,Optimal-ITM agreement,AUS,Australia
+651,969,Unknown ITM peoject,,
+652,970,Green Hydrogen for Humberside,GBR,United Kingdom
+653,971,HRS Gatwick airport,GBR,United Kingdom
+654,972,4 projects of ITM in Australia,AUS,Australia
+655,973,HRS Swindon,GBR,United Kingdom
+656,974,HRS Beaconsfield,GBR,United Kingdom
+657,975,QEM Julia Creek - Queensland,AUS,Australia
+658,976,Rafnes chemical plants,NOR,Norway
+659,977,Synkero synfuels project,NLD,Netherlands
+660,978,Zenid Initiative,NLD,Netherlands
+661,979,H2Teeside 1st phase,GBR,United Kingdom
+662,980,H2Teeside 2nd phase,GBR,United Kingdom
+663,981,ITM-Sumitomo Coorp,JPN,Japan
+664,982,PT Panca Amara Utama ammonia plant in Luwuk,IDN,Indonesia
+665,983,OMV Schwechat Refinery,AUT,Austria
+666,984,Barents Blue ammonia plant,NOR,Norway
+667,985,"Hysencia, Phase II",ESP,Spain
+668,987,CEOG,GUF,French Guiana
+669,988,NewGen,TTO,Trinidad and Tobago
+670,989,"Nauticol Blue Methanol facility in Grande Prairie, Alberta",CAN,Canada
+671,990,Evolugen H2 injection project,CAN,Canada
+672,991,Bangladesh Council of Scientific and Industrial Research demo,BGD,Bangladesh
+673,992,Port of Pecem - Base One,BRA,Brazil
+674,993,Aquamarine,HUN,Hungary
+675,994,"Clean Hydrogen Coastline, Ems",DEU,Germany
+676,995,Herrenhausen sewage works,DEU,Germany
+677,996,Port of Duqm NH3 plant,OMN,Oman
+678,997,HRS Plataforma Logística PLAZA,ESP,Spain
+679,998,HRS Valecnia,ESP,Spain
+680,999,HRS Alicante,ESP,Spain
+681,1000,Prince George refinery,CAN,Canada
+682,1001,Science Parks of Tainan and Hsinchu,TWN,Taiwan (Province of China)
+683,1002,SeaH2Land,NLD,Netherlands
+684,1003,HRS Bremervörde - trains,DEU,Germany
+685,1004,ArcelorMittal Bremen,DEU,Germany
+686,1005,Rossello paper factory,ESP,Spain
+687,1006,DG Fuels,USA,United States of America
+688,1007,Energía Los Cabos,MEX,Mexico
+689,1008,GICON - Vietnam Petroleum Institute MoU,VNM,Viet Nam
+690,1009,Heritage Gas - Ottawa,CAN,Canada
+691,1010,Planetary Hydrogen - Ottawa,CAN,Canada
+692,1011,RHYME,DEU,Germany
+693,1012,Yanqing Hydrogen Energy Industrial Park,CHN,China
+694,1013,Cangzhou Bohai New District Hydrogen,CHN,China
+695,1014,"Wind Power Heating and Hydrogen Production Project in Fengning Manzu Autonomous County, Chengde City",CHN,China
+696,1015,Hydrogen Energy Equipment Industrial Cluster Project in Handan Economic and Technological Development Zone,CHN,China
+697,1016,Zhangjiakou Yangyuan Jingxi New Energy Base Project,CHN,China
+698,1017,CGN Baicheng Hydrogen Production Project - Jilin,CHN,China
+699,1018,Shanxi Jinzhong,CHN,China
+700,1019,Shanxi Changzhi,CHN,China
+701,1020,Jilin Yushu,CHN,China
+702,1021,"Datong City solar plant, phase 2",CHN,China
+703,1022,H2Pioneer,AUT,Austria
+704,1023,WIVA P&G Hydrogen Region,AUT,Austria
+705,1024,Carbon2ProductAustria - C2PAT,AUT,Austria
+706,1025,P2G4A,AUT,Austria
+707,1026,Matra power pant,HUN,Hungary
+708,1027,"Konin Power Plant, phase 1",POL,Poland
+709,1028,Project AIR (Perstorp - Stenungsund),SWE,Sweden
+710,1029,Birsfelden power plant,CHE,Switzerland
+711,1030,Steklarna Hrastnik glass manufactuing plant,SVN,Slovenia
+712,1031,"Solar Global group headquarters, phase 1",CZE,Czechia
+713,1032,"Solar Global group headquarters, phase 2",CZE,Czechia
+714,1033,Greening of Gas (GoG) - Net4Gas DEMO,CZE,Czechia
+715,1034,"Lingen BP Refinery , phase 2",DEU,Germany
+716,1035,HyMAT SH,DEU,Germany
+717,1036,We-4-PUR,DEU,Germany
+718,1037,H2 in the Ketzin energy transition laborator,DEU,Germany
+719,1038,Green Energy Hub Helmstedt,DEU,Germany
+720,1039,Speicherstadt Kerpen,DEU,Germany
+721,1040,AquaVentus (phase 3),DEU,Germany
+722,1041,SLOP2G Project,SVN,Slovenia
+723,1042,Thermal Power Plant Sostanj,SVN,Slovenia
+724,1043,TPJ Jesenice,SVN,Slovenia
+725,1045,Dolphyn 1,GBR,United Kingdom
+726,1046,Dolphyn 1,GBR,United Kingdom
+727,1047,"PTG Bilsthorpe, Nottinghamshire",GBR,United Kingdom
+728,1048,Uniper Killingholme site,GBR,United Kingdom
+729,1049,North Sea Wind Power Hub,NLD,Netherlands
+730,1050,P2G Velke Kapusany,NLD,Netherlands
+731,1051,"Element One (Element Eins), phase 2",DEU,Germany
+732,1052,"Element One (Element Eins), phase 2",DEU,Germany
+733,1053,"Green Hydrogen Hubs (Ahaus-Epe, Etzel, Harsefeld, Moeckow, Drenthe, Leer, Zuidwending, Denmark), phase 1",DEU,Germany
+734,1053,"Green Hydrogen Hubs (Ahaus-Epe, Etzel, Harsefeld, Moeckow, Drenthe, Leer, Zuidwending, Denmark), phase 1",DNK,Denmark
+735,1054,"Green Hydrogen Hubs (Ahaus-Epe, Etzel, Harsefeld, Moeckow,Drenthe, Leer, Zuidwending, Denmark), phase 2",DEU,Germany
+736,1054,"Green Hydrogen Hubs (Ahaus-Epe, Etzel, Harsefeld, Moeckow,Drenthe, Leer, Zuidwending, Denmark), phase 2",DNK,Denmark
+737,1055,Sun2Hy,ESP,Spain
+738,1056,HyGéo,FRA,France
+739,1057,Pegasus,ITA,Italy
+740,1058,Power to gas plant in the south of Italy,ITA,Italy
+741,1059,Hydrogen injection into the gas network in Lithuania,LTU,Lithuania
+742,1060,Power to Gas Production with infrastructure building/enhacement in Latvia,LVA,Latvia
+743,1061,"G2F - Gas to Future, phase 1",SVK,Slovakia
+744,1062,"G2F - Gas to Future, phase 2",SVK,Slovakia
+745,1063,Herten HRS,DEU,Germany
+746,1064,vHyGO -4th facility in St Nazaire,FRA,France
+747,1065,vHyGO -5th facility in Dieppe,FRA,France
+748,1066,NEL-Lhyfe Agreement,FRA,France
+749,1067,McDermott - CB&I 2nd project,USA,United States of America
+750,1068,Hy-Fi,CHL,Chile
+751,1069,HYBAYERN,DEU,Germany
+752,1070,Hyways for future,DEU,Germany
+753,1071,Norddeutsches Reallabor - Living Lab Northern Germany,DEU,Germany
+754,1072,"Haru Oni, phase 2",CHL,Chile
+755,1073,"Haru Oni, phase 3",CHL,Chile
+756,1074,Green Hydrogen Systems - Skai Energies,AUS,Australia
+757,1075,Hydrospider - Eglisau-Glattfelden,CHE,Switzerland
+758,1076,Pertamina Ulubelu gerothermal plant,MYS,Malaysia
+759,1077,Hitachi-P2X,FIN,Finland
+760,1078,Ercros - Sabinanigo,ESP,Spain
+761,1079,OMNI CT - California,USA,United States of America
+762,1081,Sapio - Mantova,ITA,Italy
+763,1082,Kokkola H2 plant,FIN,Finland
+764,1083,HyEnergy Zero Carbon Hydrogen,AUS,Australia
+765,1084,Yellow Sea,CHN,China
+766,1085,HNH,CHL,Chile
+767,1086,Rostock - RWE,DEU,Germany
+768,1087,CRS4-Italgas Sardinia,ITA,Italy
+769,1088,"Gen2 Energy - Vitol, 1st site",NOR,Norway
+770,1089,"Gen2 Energy - Vitol, 2nd site",NOR,Norway
+771,1090,BP Castellon refinery,ESP,Spain
+772,1091,SmartQuart project - Kaisersesch,DEU,Germany
+773,1092,Pedirka Hydrogen Project,AUS,Australia
+774,1093,"Canary Islands Hub, phase 1",ESP,Spain
+775,1094,"Canary Islands Hub, phase 2",ESP,Spain
+776,1095,Suncor Edmonton Refinery,CAN,Canada
+777,1096,Donghae 1 offshore wind plant,KOR,Korea (the Republic of)
+778,1097,Project Jupiter (Gladstone),AUS,Australia
+779,1098,Project Mars (Mackay),AUS,Australia
+780,1099,Liberty North (Newcastle),AUS,Australia
+781,1100,BayoTech - Carbon Clean MoU,USA,United States of America
+782,1101,GREENH2KER,ESP,Spain
+783,1102,ZEHUS,ITA,Italy
+784,1103,FUTURA,ITA,Italy
+785,1104,Sicilian Sustainable Steel,ITA,Italy
+786,1105,Green H2 for Chemical Application - North,ITA,Italy
+787,1106,Green H2 for Chemical Application - South,ITA,Italy
+788,1107,La Spezia Green Hydrogen,ITA,Italy
+789,1108,Road Runner,USA,United States of America
+790,1109,"Oman green H2 project, phase 1",OMN,Oman
+791,1110,Plug Power - Fort Worth,USA,United States of America
+792,1111,Offshore-to-X,DEU,Germany
+793,1112,Offshore-to-X,DEU,Germany
+794,1113,HyDeal LA,USA,United States of America
+795,1114,Energiepark Eemshaven West (phase I),NLD,Netherlands
+796,1115,Energiepark Eemshaven West (phase II),NLD,Netherlands
+797,1116,ELYgator,NLD,Netherlands
+798,1117,Stanwell-Iwatani Galdstone project,AUS,Australia
+799,1118,Zeeland Refinery,NLD,Netherlands
+800,1119,FUREC,NLD,Netherlands
+801,1120,BrigH2,NLD,Netherlands
+802,1121,Hydrogen Mill,NLD,Netherlands
+803,1122,H2-gateway,NLD,Netherlands
+804,1123,Sinopec - Ordos,CHN,China
+805,1124,Sinopec - Kuqa,CHN,China
+806,1125,MMEX - Texas,USA,United States of America
+807,1126,GreenHyScale,DNK,Denmark
+808,1127,EI-H2 - Aghada (phase 1),IRL,Ireland
+809,1128,Green lab skive (Phase II),DNK,Denmark
+810,1129,Khalifa Industrial Zone Abu Dhabi (KIZAD) - phase 1,ARE,United Arab Emirates (the)
+811,1130,"HySynergy, phase 3",DNK,Denmark
+812,1134,Green H2 New Zealand - Taranaki,NZL,New Zealand
+813,1137,Horizon Oil Sands,CAN,Canada
+814,1138,Cerulean Winds - North Sea,GBR,United Kingdom
+815,1139,Hyundai Oilbank - Blue H2 Ecosystem,KOR,Korea (the Republic of)
+816,1140,Forestal del Atlántico,ESP,Spain
+817,1141,SoHyCal,ESP,Spain
+818,1142,Bee’ah waste-to-hydrogen,ARE,United Arab Emirates (the)
+819,1143,Industrial Cachimayo,PER,Peru
+820,1145,Sirea - Castres site,FRA,France
+821,1146,Rostock - RWE (future phases),DEU,Germany
+822,1147,BASF Ludwigshafen,DEU,Germany
+823,1148,Davis-Basse Nuclear Power Station,USA,United States of America
+824,1149,Prairie Island,USA,United States of America
+825,1150,Palo Verde Generating Station,USA,United States of America
+826,1151,Bruce Nuclear Generating Station,CAN,Canada
+827,1152,Heysham demonstrator 1,GBR,United Kingdom
+828,1153,Heysham demonstrator 2,GBR,United Kingdom
+829,1154,Sizewell demonstrator 2,GBR,United Kingdom
+830,1155,Kola Nuclear Power Plant,RUS,Russian Federation (the)
+831,1156,Hydrogen Lab Bremerhaven (phase 1),DEU,Germany
+832,1157,Hydrogen Lab Bremerhaven (phase 2),DEU,Germany
+833,1158,Hydrogen Lab Leuna (phase 1),DEU,Germany
+834,1159,Hydrogen Lab Leuna (phase 1),DEU,Germany
+835,1160,Hydrogen Lab Gorlitz,DEU,Germany
+836,1161,Hydrogen Eagle (various hubs),POL,Poland
+837,1162,Hydrogen Eagle (various hubs),POL,Poland
+838,1163,Hydrogen Eagle (various hubs),POL,Poland
+839,1164,Hydrogen Eagle (Litvínov),CZE,Czechia
+840,1165,Hydrogen Eagle (Spolana),CZE,Czechia
+841,1166,Hydrogen Eagle (Spolana),CZE,Czechia
+842,1167,Hydrogen Eagle (various hubs),SVK,Slovakia
+843,1168,Sines refinery (phase 1),PRT,Portugal
+844,1169,Sines refinery (phase 2),PRT,Portugal
+845,1170,Porto do Acu Fortescue Ammonia Project,BRA,Brazil
+846,1171,Hoasis (TCP Gecomp),CHL,Chile
+847,1172,Ecopetrol 50kW electrolyser,COL,Colombia
+848,1173,H Valle Sur,CHL,Chile
+849,1174,METH2 Atacama,CHL,Chile
+850,1175,Villa Lisa,PRY,Paraguay
+851,1176,Ciudad del Este,PRY,Paraguay
+852,1177,Encarnacion,PRY,Paraguay
+853,1178,TA’ZIZ blue ammonia,ARE,United Arab Emirates (the)
+854,1179,Badgingarra Renewable Hydrogen Project,AUS,Australia
+855,1180,BHP Nickel West Green Hydrogen,AUS,Australia
+856,1181,Dawson Mine,AUS,Australia
+857,1182,"Candem County (GA), green power plant",USA,United States of America
+858,1183,Pego coal plant transition,PRT,Portugal
+859,1184,Lhyfe offshore electrolyser,FRA,France
+860,1185,Rajasthan pilot plant,IND,India
+861,1186,Morocco-Germany MoU,MAR,Morocco
+862,1187,Hofors rolling project,SWE,Sweden
+863,1188,Kazakhstan green hydrogen project,KAZ,Kazakhstan
+864,1189,Manilla Solar & Renewable Energy Storage Project,AUS,Australia
+865,1190,"Oman green H2 project, phase 2",OMN,Oman
+866,1191,AquaVentus (phase 4),DEU,Germany
+867,1192,EI-H2 - Aghada (phase 2),IRL,Ireland
+868,1193,EI-H2 - Aghada (phase 3),IRL,Ireland
+869,1194,Keadby Hydrogen,GBR,United Kingdom
+870,1195,New Jersey Offshore Wind plant,USA,United States of America
+871,1196,Delicias Solar,MEX,Mexico
+872,1197,Pico Truncado,ARG,Argentina
+873,1198,Dhamma Energy Guanajuato,MEX,Mexico
+874,1199,Mexican Green Hydrogen Hub,MEX,Mexico
+875,1200,Algeciras Bay,ESP,Spain
+876,1201,Gazifere grid injection,CAN,Canada
+877,1202,GREEN H2 Langosteira,ESP,Spain
+878,1203,Port of Immingham,GBR,United Kingdom
+879,1204,Pouakai - Taranaki - NH3,NZL,New Zealand
+880,1205,Pouakai - Taranaki - H2,NZL,New Zealand
+881,1215,Jintongling Biomass Gasification,CHN,China
+882,1216,Longji New Hydrogen Equipment Project,CHN,China
+883,1217,Khalifa Industrial Zone Abu Dhabi (KIZAD) - phase 2,ARE,United Arab Emirates (the)
+884,1218,Veolia wastewater sludge plant,FRA,France
+885,1219,Egypt Ministry of Electricity and Renewable Energy,EGY,Egypt
+886,1220,IPCEI Blue Danube - first project,DEU,Germany
+887,1221,BayH2,DEU,Germany
+888,1222,Enid fertiliser,USA,United States of America
+889,1223,Ervia CCS - Irving refinery,IRL,Ireland
+890,1224,Energean Prinos oil field,GRC,Greece
+891,1225,ArcelorMittal and AirLiquide Dunkirk low-carbon steel,FRA,France
+892,1226,CF Fertilisers Ince (part of the HyNet cluster),GBR,United Kingdom
+893,1227,Sinopec Zhongyuan Oilfield EOR,CHN,China
+894,1228,Changqing Oil Field EOR,CHN,China
+895,1229,Fortescue Future Industries - Port of Pecem,BRA,Brazil
+896,1230,Marítimo Dragão - Qair,BRA,Brazil
+897,1231,RIST Hydrogen Research Centre - nuclear Hydrogen project,KOR,Korea (the Republic of)
+898,1232,Rhode Green Energy Park,IRL,Ireland
+899,1233,Lysekil refinery (phase 2),SWE,Sweden
+900,1234,KIMA - Aswan electrolyser,EGY,Egypt
+901,1235,Zimbabwe NH3 plant,ZWE,Zimbabwe
+902,1236,Polaris CCS - Scotford refinery,CAN,Canada
+903,1237,Aukra CCS,NOR,Norway
+904,1238,ArcelorMittal DRI Gijon,ESP,Spain
+905,1239,APEX-Plug Power H2 plamt,USA,United States of America
+906,1240,3 x 1250 kW projects in USA,USA,United States of America
+907,1241,1 x 500 kW projects in USA,USA,United States of America
+908,1242,1 x 500 kW projects in USA,USA,United States of America
+909,1243,18x180 kW projects in USA,USA,United States of America
+910,1244,4x180 kW projects in USA,USA,United States of America
+911,1245,12 x 120 kW projects in USA,USA,United States of America
+912,1246,2 x 120 kW projects in USA,USA,United States of America
+913,1247,"Frontier Energy, H2@Scale - gasification",USA,United States of America
+914,1248,Foresa-Iberdrola Green Methanol (phase 1),ESP,Spain
+915,1249,Foresa-Iberdrola Green Methanol (phase 2),ESP,Spain
+916,1250,Danskammer Energy - Newburgh,USA,United States of America
+917,1251,Balico - Virginia,USA,United States of America
+918,1252,"Harrison Power Project in Cadiz, Ohio",USA,United States of America
+919,1253,Western Green Energy Hub,AUS,Australia
+920,1254,APA Renewable Methane Demonstration Project,AUS,Australia
+921,1255,Bio-Hydrogen Demonstration Plant,,
+922,1256,Bundaberg Hydrogen Hub,AUS,Australia
+923,1257,Daintree Microgrid Project,AUS,Australia
+924,1258,Christmas Creek Renewable Hydrogen Mobility Project,AUS,Australia
+925,1259,ABEL Energy Bell Bay Powerfuels Project,AUS,Australia
+926,1260,Grange Resources Renewable Hydrogen,AUS,Australia
+927,1261,Melbourne Hydrogen Hub,AUS,Australia
+928,1262,Melbourne Hydrogen Hub,AUS,Australia
+929,1263,Swinburne University of Technology Victorian Hydrogen Hub – CSIRO Hydrogen Refuelling Station,AUS,Australia
+930,1264,Agnes Energy Hub,ITA,Italy
+931,1265,"Konin Power Plant, phase 2",POL,Poland
+932,1266,"Konin Power Plant, phase 3",POL,Poland
+933,1267,AquaSector (AquaVentus phase 2),DEU,Germany
+934,1268,Port of Mukran,DEU,Germany
+935,1269,H2Mare,DEU,Germany
+936,1270,"Green Crane - La Robla, Phase 2",ESP,Spain
+937,1271,"Meirama plant, phase 2",ESP,Spain
+938,1272,Freienbach plant,CHE,Switzerland
+939,1273,"Siemens-Air Liquide Oberhausen, Phase 1",DEU,Germany
+940,1274,"Siemens-Air Liquide Oberhausen, Phase 1",DEU,Germany
+941,1275,Trafford Low Carbon Energy Park,GBR,United Kingdom
+942,1276,Quintero LNG terminal,CHL,Chile
+943,1277,Wintershall Dea - VNG Turquoise H2 project,DEU,Germany
+944,1278,"Green fertilizer project Porsgrunn, phase 3",NOR,Norway
+945,1279,"Green fertilizer project Porsgrunn, phase 4",NOR,Norway
+946,1280,Finnmark green NH3,NOR,Norway
+947,1281,Yarwun alumina refinery,AUS,Australia
+948,1282,H2V Las Tortolas,CHL,Chile
+949,1283,Sonam Nurboo Memorial Hopsital,IND,India
+950,1284,Hydrogen hub in Southland,NZL,New Zealand
+951,1285,Hokkaido green hydrogen plant,JPN,Japan
+952,1286,BP-Shell Trinidad and Tobago green NH3,TTO,Trinidad and Tobago
+953,1287,"MMEX - Pecos, Texas",USA,United States of America
+954,1288,Energy-Norweigian Catapult Centre,NOR,Norway
+955,1289,Raven - Republic Services H2 from waste plant,USA,United States of America
+956,1290,Imperial Oil renewable diesel,CAN,Canada
+957,1291,Javelina refinery,USA,United States of America
+958,1292,Port of Cromarty Firth,GBR,United Kingdom
+959,1293,North Dakota Hydrogen Hub (former Great Plains Synfuel Plant),USA,United States of America
+960,1294,Octopus Hydrogen,GBR,United Kingdom
+961,1295,HEVO-Sul,PRT,Portugal
+962,1296,NEL - Nikola Agreement H2 refuelling stations in USA (1st phase),USA,United States of America
+963,1297,HYVALUE,ESP,Spain
+964,1298,SunHy,ESP,Spain
+965,1299,H2 Valcamonica,ITA,Italy
+966,1300,H2 Évora - GreenGas I,PRT,Portugal
+967,1301,H2 Évora - GreenGas II,PRT,Portugal
+968,1302,PRIO ENERGY,PRT,Portugal
+969,1303,KEME ENERGY,PRT,Portugal
+970,1304,HEVO-Sines,PRT,Portugal
+971,1305,HEVO-Morocco,MAR,Morocco
+972,1306,OceanH2,ESP,Spain
+973,1307,TAQA-Emirates Steel Green H2,ARE,United Arab Emirates (the)
+974,1308,Salamander,GBR,United Kingdom
+975,1309,Cairo Green Hydrogen,EGY,Egypt
+976,1310,HRS Murcia,ESP,Spain
+977,1311,Tokyo Sewage-to-H2 plant,JPN,Japan
+978,1312,Inner Mongolia green hydrogen,CHN,China
+979,1313,Humber Zero,GBR,United Kingdom
+980,1314,Heroya Industrial Park,NOR,Norway
+981,1315,Esbjerg green hydrogen,DNK,Denmark
+982,1316,HBIS DRI in Xuanshan,CHN,China
+983,1317,Hydrogen Utopia waste-to-plastic plant,POL,Poland
+984,1318,Itochu/Petronas ammonia project,CAN,Canada
+985,1319,Lindsey refinery (Humber hub),GBR,United Kingdom
+986,1320,ArcelorMittal Hamburg,DEU,Germany
+987,1321,Power-to-gas Coquimbo,CHL,Chile
+988,1322,ENERTAG-Sunfire (Prenzlau),DEU,Germany
+989,1323,Shell heavy residue gasification CCUS - Pernis refinery,NLD,Netherlands
+990,1324,Repsol - Basque Corridor,ESP,Spain
+991,1325,Southland green hydrogen project,NZL,New Zealand
+992,1326,TotalEnergies’ Normandy platform - CCUS,FRA,France
+993,1327,TotalEnergies’ Normandy platform - Electrolysis,FRA,France

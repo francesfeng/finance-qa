@@ -1,0 +1,986 @@
+project_id,project_name,date_online,decomission_date,status
+1,Solar PV Plant port of Sines - phase I,01/01/2023,,FID
+2,Solar PV Plant port of Sines - phase II,01/01/2030,,Feasibility study
+3,H2GO - 1st phase,01/01/2021,,Under construction
+4,H2GO - 2nd phase,01/01/2030,,Concept
+5,"NortH2, phase 1",01/01/2027,,Feasibility study
+6,Norsk e-Fuel Phase 1,01/01/2023,,Feasibility study
+7,Norsk e-Fuel Phase 2,01/01/2026,,Concept
+8,HYBRIT pilot,01/01/2020,,Operational
+9,HYBRIT demo,01/01/2025,,Under construction
+10,Fertiberia/Iberdrola - Puertollano I,01/01/2021,,Under construction
+11,Power to Green H2 Mallorca - Phase 1,01/01/2021,,Under construction
+12,Power to Green H2 Mallorca (GREEN HYSLAND) - Phase 2,01/01/2022,,FID
+13,Drax Humber cluster completion,01/01/2040,,Concept
+14,CRI project in Norway,01/01/2023,,Feasibility study
+15,ARIES project,01/01/2021,,Under construction
+16,Fukushima Hydrogen Energy Research Field,01/01/2020,01/01/2023,Operational
+17,Hydrospider - St Gallen,01/01/2020,,Operational
+18,"Apex Energy, Rostock-Laage",01/01/2020,,Operational
+19,Leuchtturmprojekt Power-to-Gas Baden-Württemberg,01/01/2020,,Operational
+20,eFarm (5 production sites in North Frisia),01/01/2020,,Operational
+22,Hydrogen plant - Orkney Islands - BIG HIT 2n phase,01/01/2020,,Operational
+23,Wyhlen hydroelectric power plant,01/01/2020,,Operational
+24,GrInHy2.0,01/01/2020,,Operational
+25,Power2Met,01/01/2020,,Operational
+26,REMOTE - Norway,01/01/2020,,Operational
+27,H2One - Toranomon Hills Business Tower,01/01/2020,,Operational
+28,H2One - Toyama City Environment Center,01/01/2020,,Operational
+29,H2One - Tsuruga City,01/01/2020,,Operational
+30,H2FUTURE,01/01/2019,,Operational
+31,Guangdong Synergy Hydrogen Power Technology Co. 1st phase,01/01/2019,,Operational
+33,"Markham Energy Storage, Ontario",01/01/2019,,Operational
+34,PFI - Pirmasens-Winzeln,01/01/2019,,Operational
+35,HRS CMB,01/01/2019,,Operational
+36,MEFCO2,01/01/2019,,Operational
+37,"Windgas Haurup, 2nd phase",01/01/2021,,Operational
+38,Parnu refuelling station,01/01/2019,,Operational
+39,"H2Nodes, Parnu",01/01/2019,,Operational
+40,"H2Nodes, Riga",01/01/2019,,Operational
+41,SMT-AG Artois-Gohelle,01/01/2019,,Operational
+42,HyDeploy,01/01/2019,,Operational
+43,Quebec Great Toronto Area East,01/01/2019,,Operational
+44,Pau bus station HRS,01/01/2019,,Operational
+46,"Solothurn, STORE&GO",01/01/2019,,Operational
+49,Sarawak Energy,01/01/2019,,Operational
+50,Vårgårda Bostäder housing complex,01/01/2019,,Operational
+51,SoCalGas-NREL,01/01/2019,,Operational
+52,Stromlückenfüller 2nd phase,01/01/2019,,Operational
+54,ATCO clean energy innovation hub,01/01/2019,,Operational
+55,Tauron CO2-SNG,01/01/2019,,Operational
+56,Methane Synthesis test facility in Koshijihara Plant of INPEX’s - Nagaoa,01/01/2019,,DEMO
+58,VTT Bio economy+,01/01/2019,,DEMO
+59,Kopernikus,01/01/2021,,DEMO
+60,Rozenburg Power2Gas Phase 2,01/01/2019,,DEMO
+61,Balance project,01/01/2019,,DEMO
+62,H2One - SP Group,01/01/2019,,Operational
+63,Falkenhagen STORE&GO,01/01/2018,,Operational
+64,"NEDO kofu city, Yamanashi Prefecture",01/01/2019,,Operational
+65,Semakau island microgrid Engie (SPORE),01/01/2019,,Operational
+66,H2PLAZA - Toyota Industries Corporation’s Takahama,01/01/2019,,Operational
+67,Localhy,01/01/2019,,Operational
+68,Wind to gas Brunsbüttel,01/01/2018,,Operational
+69,Carbon2Chem,01/01/2018,,Operational
+70,SunLine Transit Agency,01/01/2018,,Operational
+71,HyBALANCE,01/01/2018,,Operational
+72,Aberdeen Conference Center,01/01/2018,,Operational
+73,Lam Takhong Wind Hydrogen Hybrid Project- EGAT,01/01/2018,,Operational
+74,H2ORIZON,01/01/2018,,Operational
+75,ASKO Midt-Norge,01/01/2018,,Operational
+76,Underground Sun Storage,01/01/2018,,Operational
+77,Hydrogen plant - Orkney Islands - BIG HIT 1st phase,01/01/2018,,Operational
+80,"Windgas Haurup, 1st phase",01/01/2018,,Operational
+82,"Troia, STORE&GO",01/01/2018,,Operational
+83,GNVert H2,01/01/2018,,Operational
+85,Tongji solar hybrid hydrogen refueling station,01/01/2018,,Operational
+87,Methanation at Eichhof,01/01/2018,,Operational
+88,"CoSin: Synthetic Natural Gas from Sewage, Barcelona",01/01/2018,,Operational
+89,REFLEX,01/01/2018,,Operational
+90,Sendai City,01/01/2018,,Operational
+92,"Rostock, Exytron Demonstrationsanlage",01/01/2018,,Operational
+93,Tokyu Construction Institute of Technology,01/01/2018,,Operational
+94,Rakuten Seimei Park Miyagi,01/01/2018,,Operational
+95,"MicroPyros, Altenstant",01/01/2018,,Operational
+96,Oxelösund Forklifts,01/01/2018,,Operational
+97,H21 North of England,01/01/2035,,Feasibility study
+98,Drax Humber cluster demonstrators,01/01/2025,,Feasibility study
+111,"Hynet Northwest, phase 1 (Essar Stanlow refinery)",01/01/2025,,Feasibility study
+113,"Baicheng, Jilin wind-solar project",01/01/2035,,Concept
+115,"Alzey, Exytron Null-E",01/01/2017,,Operational
+119,Energy observer,01/01/2017,,Operational
+120,Haldor Topsoe - El-Opgraderet Biogas II,01/01/2017,01/01/2020,DEMO
+121,Musashi-Mizonokuchi Station,01/01/2017,,Operational
+122,"H2One - Hydrogen Application Center, Fuchu Complex",01/01/2017,,Operational
+123,H2One - Asahi Breweries in Ibaraki,01/01/2017,,Operational
+124,Costa Rica Transportation Ecosystem Project,01/01/2017,,Operational
+125,Cerro Pabellón Microgrid 450 kWh Hydrogen ESS,01/01/2017,,Operational
+126,"Energy in the Container, Fraunhofer IISB, Erlangen, Leistungszentren Elektroniksysteme (LZE)",01/01/2017,,DEMO
+127,Hassfurt,01/01/2016,,Operational
+130,GreenHydroChem Central German Chemical Triangle,01/01/2024,,Feasibility study
+134,HPEM2GAS (R&D),01/01/2016,,Operational
+135,Hamburg - Schnackenburgallee,01/01/2016,,Operational
+136,smart grid solar - arzberg,01/01/2016,01/01/2017,DEMO
+137,"Naval Facilities Engineering Command, Engineering and Expeditionary Warfare Center",01/01/2016,,DEMO
+138,Laboratory System at IFE Kjeller Pahse 2,01/01/2016,,Operational
+139,"H2One - Kyushu Resort Hotel, Huis Ten Bosch",01/01/2016,,Operational
+140,H2One - Yokohama Cargo Center,01/01/2016,,Operational
+142,WindGas Hamburg-Reitbrook,01/01/2015,,Operational
+143,"RH2 Grapzow, Mecklenburg Vorpommern",01/01/2015,,Operational
+146,P2G-Biocat - Continued (Ref 508),01/01/2015,,Operational
+147,Raglan Nickel mine,01/01/2015,,Operational
+148,Don Quichote,01/01/2015,,Operational
+149,Regio Energie Solothurn/Aarmat hybrid plant,01/01/2015,,DEMO
+151,RWE PtG plant Ibbenbüren,01/01/2015,,Operational
+155,DemoSNG,01/01/2015,,DEMO
+163,Stromlückenfüller 1st phase,01/01/2015,,Operational
+164,Higashi-Ogishima-Naga-Park,01/01/2015,01/01/2021,DEMO
+165,Emden II Upscaling,01/01/2015,01/01/2020,DEMO
+167,SYNFUEL,01/01/2015,01/01/2018,DEMO
+169,"Hydrogen Valley South Tyrol - Bolzano, CHIC",01/01/2014,,Operational
+173,H2BER (Berlin airport),01/01/2014,,Operational
+178,"Westkuste 100 (Phase 1) - HyScale 100, Heide",01/01/2023,,FID
+198,"Hanau, Wolfgang Industrial Park",01/01/2014,,Operational
+199,"MicroPyros, Staubing",01/01/2014,,Operational
+200,"ETOGAS, Solar Fuel Beta-plant AUDI, Werlte (Audi e-gas)",01/01/2013,,Operational
+201,H2 Logic HRS with onsite electrolysis Aalborg,01/01/2013,,Operational
+202,Uniper/E-ON WindGas Falkenhagen Hydrogen Pilot Project,01/01/2013,,Operational
+203,P2G plant Erdgas Schwaben,01/01/2013,,Operational
+204,"Oslo, CHIC",01/01/2013,,Operational
+205,"HySynergy, phase 1",01/01/2022,,Under construction
+207,CO2RRECT-Niederaussem,01/01/2013,,Operational
+211,"Sir Samuel building Griffith Center, Brisbane, Australia",01/01/2013,,Operational
+213,"MicrobEnergy GmbH, Schwandorf",01/01/2013,,Operational
+221,"H2Move, Fraunhofer ISE",01/01/2013,,Operational
+222,"Hazira, Reliance, back-up hydrogen supply",01/01/2005,,Operational
+223,El Tubo - ACTA EL500,01/01/2013,,DEMO
+225,Refhyne,01/01/2021,,Operational
+227,H&R Ölwerke Hamburg-Neuhof,01/01/2018,,Operational
+235,H2Herten,01/01/2012,,Operational
+236,H2 research center BTU Cottbus,01/01/2012,,Operational
+239,Cotbus,01/01/2012,,Operational
+240,Eucolino Schwandorf,01/01/2012,,Operational
+241,Agios Efstratios,01/01/2012,,Operational
+246,Hydrogen mini grid system Yorkshire (Rotherham),01/01/2012,,Operational
+249,"Fronius Energy Cell, self-sufficient house",01/01/2012,,DEMO
+250,Hitachi Zosen - PTTEP CO2 Conversion to Methane Project R&D),01/01/2012,,DEMO
+251,Commercial Plant Svartsengi/George Olah plant,01/01/2011,,Operational
+254,"Hamburg Hafen City, CEP",01/01/2011,,Operational
+258,"Hybrid Power Plant Enertrag, Prenzlau",01/01/2011,,Operational
+259,"EnBW H2 station, Stuttgart",01/01/2011,,Operational
+270,Ramea Wind-Hydrogen-Diesel Project,01/01/2011,,Operational
+275,Hydrogen Island Bozcaada,01/01/2011,,Operational
+279,DNV Kema/DNV GL,01/01/2011,,Operational
+282,"HARP System, Bella Coola",01/01/2010,,Operational
+286,H2KT - Hydrogen Energy Storage in Nuuk,01/01/2010,,Operational
+288,ITHER,01/01/2010,,DEMO
+295,H2SusBuild,01/01/2010,,DEMO
+296,"Hybrid energy storage system NFCRC, California",01/01/2010,,DEMO
+299,Nukissiorfiit Nuuk Hydrogen Plant,01/01/2010,,Operational
+302,"Centre of Fuel Cell Technology, Chennai",01/01/2012,,Operational
+303,"Hychico, Comodoro Rivadavia",01/01/2009,,Operational
+305,Taleghan solar hydrogen energy system,01/01/2009,,Operational
+306,Istanbul,01/01/2009,,Operational
+309,AltHytude,01/01/2009,,DEMO
+312,Regenerativer Energipark Ostfalia/hybrid renewable energy park (HREP),01/01/2009,,Operational
+313,DRI CO2 recycling,01/01/2009,,DEMO
+314,Neo Olvio of Xanthi,01/01/2009,,DEMO
+315,HYLINK Totara,01/01/2009,,DEMO
+333,Baglan Energy Park Wales,01/01/2008,,Operational
+340,"Synthetic Energy, Idaho",01/01/2008,,DEMO
+341,Hydepark,01/01/2008,,DEMO
+342,"Stand-alone power system, Neo Olvio of Xanthi",01/01/2008,,DEMO
+343,"HYLINK, Totara Valley",01/01/2008,,DEMO
+356,RES2H2 Gran Canaria,01/01/2007,,DEMO
+362,"H2 from the sun, Brunate",01/01/2007,,DEMO
+363,CEC Denizli Turkey,01/01/2007,,DEMO
+366,"CUTE and HyFLEET:CUTE, Barcelona",01/01/2006,,DEMO
+387,Savli wind-hydrogen demo project,01/01/2013,,Operational
+405,"Dahej, Reliance, back-up hydrogen supply",01/01/2014,,Operational
+427,"HARI project, West Beacon Farm",01/01/2004,,Operational
+433,"Porto, CUTE",01/01/2003,,DEMO
+437,Energiepark Mainz,01/01/2014,,Operational
+449,INGRID,01/01/2016,,Operational
+452,Tohoku pilot plant in 2003,01/01/2003,,DEMO
+453,Gwalpahari Solar-Hydrogen demonstration,01/01/2015,,Operational
+461,Solar Energy Centre SmartFuel hydrogen station,01/01/2015,,Operational
+472,FaHyence,01/01/2017,,Operational
+477,CPI Zaoquan thermal power plant in China's Ningxia region,01/01/2017,,Operational
+487,Laboratory Plant HRI Quebec,01/01/2001,,DEMO
+491,Power plant in Lebanon for a Power Plant Cooling application,01/01/2018,,Operational
+492,Minatec's semiconductor labs in Grenoble,01/01/2018,,Operational
+494,Grimstad Renewable Energy Park,01/01/2000,,Operational
+497,Hypos - Sunfire,01/01/2019,,DEMO
+498,Electrochaea: Biological methanation in Avedøre,01/01/2014,01/01/2017,DEMO
+499,REMOTE - Agkistro (Greece,01/01/2021,,Operational
+500,"REMOTE - Spain, Canary Island",01/01/2021,,Under construction
+501,Aman - Green Hydrogen Project,,,Concept
+502,HRS CMB Port of Antwerp,01/01/2021,,Operational
+503,Haldor Topsoe - El-Opgraderet Biogas I,01/01/2013,01/01/2017,DEMO
+504,P2G-Biocat - Decommisioned,01/01/2015,01/01/2016,DEMO
+505,H2 Logic HRS with onsite electrolysis in Vejle,01/01/2013,,Operational
+506,H2 Logic HRS with onsite electrolysis Holstebro,01/01/2013,,Operational
+507,H2 Logic 3 HRS with onsite electrolysis in Copenhagen,01/01/2013,,Operational
+508,Fertiberia/Iberdrola - Puertollano II (extension from Ref10),01/01/2025,,Feasibility study
+509,"Hyoffwind Zeebrugge, 1st phase",01/01/2021,,Under construction
+510,"Hyoffwind Zeebrugge, 2nd phase",01/01/2023,,FID
+511,"Hyoffwind Zeebrugge, 3rd phase",01/01/2030,,Concept
+512,Hyport,01/01/2025,,FID
+513,"""Waste-to-wheels"" Charleroi",01/01/2022,,FID
+514,"Power-to-Methanol, Antwerp, phase 1",01/01/2023,,Feasibility study
+516,Green Fuels for Denmark - Phase 1,01/01/2023,,Feasibility study
+517,Hystock (EnergyStock),01/01/2019,,Operational
+518,HAEOLUS,01/01/2021,,Under construction
+519,FUTURECEM,,,Concept
+520,Primolyzer (R&D),01/01/2010,01/01/2012,DEMO
+521,PROCON (R&D),01/01/2010,01/01/2013,DEMO
+522,Foulum Demonstration plant,01/01/2011,01/01/2013,DEMO
+524,Green Natural Gas,01/01/2011,01/01/2014,DEMO
+525,“Towards the Methane Society”,01/01/2011,01/01/2012,DEMO
+526,"MEDLYS, Medium temperature water electrolysis (R&D)",01/01/2011,01/01/2015,DEMO
+527,MeGa-stoRE,01/01/2014,01/01/2015,DEMO
+528,MeGa-stoRE Optimising and Upscaling,01/01/2015,01/01/2018,DEMO
+529,"Vestenskov/ Nakskov Industrial and Environmental Park, Lolland",01/01/2007,01/01/2014,DEMO
+530,H2RES - Orsted offshore wind,01/01/2021,,Under construction
+531,Samsø,,,Other/Unknown
+532,Esbjerg green ammonia plant,01/01/2027,,Concept
+533,HRS Aalborg,01/01/2020,,Operational
+535,eSMR Methanol demo plant in Aarhus University,01/01/2022,,DEMO
+536,HyCycle - Center for renewable H2 (R&D),01/01/2008,01/01/2011,DEMO
+537,NEXPEL (R&D),01/01/2010,01/01/2012,DEMO
+538,Glomfjord Hydrogen AS,,,Feasibility study
+539,"HyNor Lillestrøm, Akershus Energy Park",01/01/2013,,Operational
+540,Statkraft-CELSA-Mo green H2 for steel production,01/01/2023,,Feasibility study
+541,Utsira Island,01/01/2004,01/01/2008,DEMO
+542,Nordic Blue Crude,01/01/2024,,Feasibility study
+543,Acorn Aberdeenshire,01/01/2024,,Feasibility study
+544,Laboratory System at IFE Kjeller Phase 1,01/01/2003,01/01/2016,DEMO
+545,Teesside collective,01/01/2024,,Feasibility study
+546,HyDEMO,01/01/2025,,Feasibility study
+547,Aurora (former Pilot-E),01/01/2024,,Feasibility study
+548,"Green fertilizer project Porsgrunn, phase 1",01/01/2023,,Feasibility study
+549,4Kvinnherad Power-to-Gas,01/01/2023,,Feasibility study
+550,Tjeldbergodden Hydrogen,,,Feasibility study
+552,Gigastack-Hornsea 2,,,Concept
+553,The Hydrogen office,01/01/2010,01/01/2014,DEMO
+554,RABH2,01/01/2011,01/01/2014,DEMO
+555,Air Fuel Synthesis pilot plant,01/01/2012,01/01/2013,DEMO
+556,"Aberdeen, Hydrogen bus project",01/01/2016,01/01/2018,DEMO
+557,"Fife, Levenmouth Community Energy Project",01/01/2016,,Operational
+558,"PURE Project, Unst",01/01/2005,,Operational
+559,Tyseley Energy Park refuelling hub,01/01/2021,,FID
+562,H2H Saltend (Related to Humber Cluster demos),01/01/2026,,Feasibility study
+563,Green Fuels for Denmark - Phase 2,01/01/2027,,Feasibility study
+565,Green Fuels for Denmark - Phase 3,01/01/2030,,Feasibility study
+566,Green Hydrogen for Scotland,01/01/2023,,Feasibility study
+568,H2morrow,01/01/2030,,Concept
+571,CF Industries - Donaldsonville Nitrogen Complex,01/01/2023,,FID
+572,Linde - Ontario (California),,,FID
+573,Westkuste 100 (Phase 2),01/01/2028,,Feasibility study
+574,Get H2 Lingen,,,Feasibility study
+575,HySynGas,,,Feasibility study
+576,Northern Irish hydrogen project,01/01/2021,,Under construction
+577,"Liquid Wind, FlagshipONE",01/01/2024,,Feasibility study
+578,H2U - Eyre Peninsula Gateway Hydrogen Project at Port Bonython.,01/01/2022,,Feasibility study
+579,"North CCU HUB, phase 1. North-C -Methanol Demo plant",01/01/2024,,Feasibility study
+580,Centurion,,,Concept
+581,Asian Renewable Energy Hub,01/01/2028,,Feasibility study
+582,IPCEI SilverFrog,01/01/2030,,Concept
+583,IPCEI New Green Flamingo,,,Concept
+584,Murchison,01/01/2028,,Feasibility study
+585,Helios Green Fuels - Neom,01/01/2025,,FID
+586,IPCEI Blue Danube,,,Concept
+587,Project GERI,,,Feasibility study
+588,IPCEI Black Horse (40 electrolysis production sites),01/01/2030,,Concept
+589,Project NEO,01/01/2027,,Concept
+590,NEL - Nikola Agreement H2 refuelling stations in USA (from 2020),,,Concept
+591,Hydrogen Delta - Zeeland,,,Concept
+592,HyEx - phase 1,01/01/2024,,Feasibility study
+593,HyEx - phase 2,,,Concept
+594,Costa Rica Transportation Ecosystem Project,01/01/2021,,Under construction
+595,"HyNetherlands, 1st phase",01/01/2024,,Feasibility study
+596,HyNetherlands 2nd phase,01/01/2028,,Feasibility study
+597,Hygreen Provence 1st phase,,,Feasibility study
+598,Hygreen Provence 2nd phase,01/01/2025,,Concept
+599,Hygreen Provence 3rd phase,01/01/2027,,Concept
+600,Sundance Hydrogen,,,Concept
+601,Port of Rotterdam BP refinery - H2.50,01/01/2025,,Feasibility study
+602,"Hysencia, Phase I",01/01/2023,,Feasibility study
+603,Ningxia Solar Hydrogen Project,01/01/2021,,FID
+604,Dyno Nobel Renewable Hydrogen Project,,,Feasibility study
+605,Green Crane Pais Vasco Hub,,,Feasibility study
+606,"Green Crane, Asturias Hub, Phase I",,,Feasibility study
+607,"Green Crane, Castilla y Leon Hub",,,Feasibility study
+608,"Green Crane, Aragon Hub",,,Feasibility study
+609,Hydrogen Plant for Westereems Wind Farm (RWE Eemshaven),01/01/2024,,Feasibility study
+610,Queensland Nitrates Renewable Hydrogen and Ammonia,,,Feasibility study
+611,"Hemweg
+ hub Amsterdam",01/01/2024,,Feasibility study
+612,Yara Sluiskil (Deltaurus 2) - Haddock,01/01/2025,,Feasibility study
+613,Weifang Binhai Photovoltaic 100MW Hydrogen Generation Project,,,Concept
+614,"GreenH2UB (10 hubs of 3-10MW, the first one Ref786)",01/01/2030,,Feasibility study
+615,vHyGO - 1st Facility for H2 buses in Bouin (H2 Ouest),01/01/2021,,Operational
+616,vHyGO - 2nd facility in Vannes (EffiH2),,,FID
+617,H2SusBuild / RES-H2,01/01/2010,01/01/2012,DEMO
+618,Ferrolterra plant,,,Feasibility study
+619,ELYGRID (R&D),01/01/2011,01/01/2014,DEMO
+620,Aviation synfuels,,,Feasibility study
+621,Tapada do Outeiro natural gas power plant,01/01/2024,,Feasibility study
+622,"Lingen BP Refinery , phase 1",01/01/2024,,Feasibility study
+623,Wunsiedel Energy Park (Phase 1),01/01/2022,,Under construction
+624,Wunsiedel Energy Park (Phase 2),,,Concept
+625,Repsol Bilbao port synfuels project,01/01/2024,,FID
+626,Methane Synthesis test facility in Koshijihara Plant of INPEX’s - Nagaoa,01/01/2019,,Operational
+627,Hydrogen Island Aitutaki,01/01/2011,01/01/2013,DEMO
+628,Hydrogen Island Bozcaada,01/01/2011,01/01/2014,DEMO
+629,E-Thor,,,Feasibility study
+630,H₂ Air Base Leeuwarden,01/01/2022,,Feasibility study
+631,SEE / Storage of electric energy,01/01/2011,01/01/2014,DEMO
+632,New zealand Matiu/Somes Island,01/01/2011,01/01/2012,DEMO
+633,Vendée hydrogène,,,DEMO
+634,H2One - SP Group,01/01/2019,,Operational
+635,RESelyser (R&D),01/01/2011,01/01/2014,DEMO
+636,DVGW-EBI KIT - Demo-SNG,01/01/2011,01/01/2015,DEMO
+637,Multiphly,01/01/2022,,Under construction
+638,Semakau island microgrid Engie (SPORE),01/01/2019,,Operational
+639,"PostBus Hydrogen bus, Brugg, aargau CHIC",01/01/2012,01/01/2016,DEMO
+640,Emden I Biogas upgrading,01/01/2012,01/01/2014,DEMO
+641,PtG Switzerland,01/01/2022,,Under construction
+642,MYRTE,01/01/2012,,DEMO
+643,H2OzBus Project,,,Concept
+644,"Sunfire PtL demo ""Fuel1""",01/01/2012,01/01/2016,DEMO
+645,Hyport - Toulouse-Blagnac Airport,01/01/2021,,FID
+646,DEMETER,01/01/2012,01/01/2014,DEMO
+647,Ekolyser (R&D),01/01/2012,01/01/2015,DEMO
+648,LastEISys (R&D),01/01/2012,01/01/2015,DEMO
+649,PtG-Elektrolyse im MW-Maßstab (R&D),01/01/2013,01/01/2016,DEMO
+650,"BioPower2Gas, Allendorf, Eder",01/01/2013,01/01/2016,DEMO
+651,Rozenburg Power2Gas Phase 1,01/01/2013,01/01/2018,DEMO
+652,"Greenhouse heating, solar-H2",01/01/2013,01/01/2014,DEMO
+653,EE-Methan aus CO2 (R&D),01/01/2013,01/01/2016,DEMO
+654,OptFuel (R&D),01/01/2013,01/01/2016,DEMO
+655,Thüga PtG plant Frankfurt/Main,01/01/2014,01/01/2016,DEMO
+656,RENOVAGAS,01/01/2014,01/01/2017,DEMO
+657,"HyFLEET:CUTE, Hamburg",01/01/2003,01/01/2011,DEMO
+658,Reduction and Reuse of CO2: Renewable Fuels for Electricity Production- ZHAW,01/01/2014,01/01/2017,DEMO
+659,CHOCHCO,01/01/2014,01/01/2017,DEMO
+660,Hydrogen Wind Farm Sotavento,01/01/2008,01/01/2011,DEMO
+661,"CUTE, Stockholm",01/01/2003,01/01/2006,DEMO
+662,"HyFLEET:CUTE, Amesterdam",01/01/2003,01/01/2009,DEMO
+663,"Wind2Hydrogen, HyCentA",01/01/2015,01/01/2017,DEMO
+664,BOEING (rSOC Demonstrator),01/01/2015,01/01/2017,DEMO
+665,Pilot & Demo PtM HSR,01/01/2015,01/01/2017,DEMO
+666,Dresden,01/01/2015,01/01/2017,DEMO
+667,Rapperswil,01/01/2015,01/01/2017,DEMO
+668,"RegEnKibo, Kirchheimbolanden (R&D)",01/01/2015,01/01/2018,DEMO
+669,ECTOS,01/01/2003,01/01/2007,DEMO
+670,"ETOGAS, Solar Fuel Alpha-plant 250 kW, ZSW",01/01/2009,01/01/2013,DEMO
+671,"Shoro Dam in Shiranuka-cho, Shiranuka-gun, Hokkaido",01/01/2016,01/01/2019,DEMO
+672,SoCalGas and University of California Irvine 1,01/01/2016,01/01/2017,DEMO
+673,HELMETH (R&D),01/01/2016,01/01/2017,DEMO
+674,SoCalGas and University of California Irvine 2,01/01/2016,01/01/2017,DEMO
+675,Tomakomai,01/01/2016,01/01/2019,DEMO
+676,GrInHy,01/01/2017,01/01/2019,DEMO
+677,"Tomamae Town, Hokkaido",01/01/2017,01/01/2019,DEMO
+678,Yokohama City Wind Power Plant (Hama Wing),01/01/2017,01/01/2018,DEMO
+679,GRHYD,01/01/2018,01/01/2020,DEMO
+680,ELY4OFF,01/01/2019,01/01/2020,DEMO
+681,"Hidrolica, Tahivilla",01/01/2008,01/01/2009,DEMO
+682,GenHyPEM (R&D),01/01/2005,01/01/2008,DEMO
+683,Jupiter 1000,01/01/2020,01/01/2023,DEMO
+684,Hawaii Hydrogen Power Park (phase 2),01/01/2007,01/01/2007,DEMO
+685,PVFCSYS Sophia Antipolis,01/01/2000,01/01/2004,DEMO
+686,PVFCSYS Agrate,01/01/2004,01/01/2004,DEMO
+687,"THEUS H2 Energy Storage, Takasago (R&D)",01/01/2005,01/01/2005,DEMO
+688,Aeropila,01/01/2004,01/01/2005,DEMO
+689,PosHYdon,01/01/2021,01/01/2023,DEMO
+690,FIRST - Showcase II,01/01/2000,01/01/2004,DEMO
+691,IHAVU,01/01/2008,01/01/2009,DEMO
+692,"WELTEMP, Water electrolysis at elevated temperature",01/01/2008,01/01/2011,DEMO
+693,Ameland,01/01/2008,01/01/2011,DEMO
+694,Wind-H2 Village Prince Edward Island,01/01/2009,01/01/2011,DEMO
+695,"DTE Energy Hydrogen Technoly Park, Southfield Michigan",01/01/2004,01/01/2009,DEMO
+696,Wind2H2 Project NREL,01/01/2007,01/01/2014,DEMO
+697,Small Scale Renewable Power System DRI (Desert Research Institute),01/01/2004,01/01/2008,DEMO
+698,IRENE System,01/01/2007,01/01/2009,DEMO
+699,Bio SNG Güssing,01/01/2002,01/01/2009,DEMO
+701,Fine Chemical Industry Park of Lanzhou,01/01/2020,,Operational
+702,GldH2,01/01/2023,,Feasibility study
+703,P2P IPKW,,,Feasibility study
+704,McPhy HRS,,,FID
+705,MethFuel,,,DEMO
+706,Coffeyville fertilizer plant,01/01/2013,,Operational
+707,PCS Nitrogen,01/01/2013,,Operational
+708,Port Arthur,01/01/2013,,Operational
+709,MCRC bio-hydrogen facility Chennai,01/01/2015,,DEMO
+710,Port Jerome,01/01/2015,,Operational
+711,Quest,01/01/2015,,Operational
+712,ElectroHgena,01/01/2016,,DEMO
+713,Power to flex (several pilot projects),01/01/2016,,DEMO
+714,"Minerve, Nantes",01/01/2018,,DEMO
+716,HYPOS (several projects),01/01/2019,,Operational
+717,"Hazira, Reliance, back-up hydrogen supply",01/01/2005,,Operational
+718,Air Liquide Becancour,01/01/2020,,Operational
+719,Hebei Jiantou Guyuan wind project - 2nd phase,01/01/2022,,Under construction
+720,Air Products Net-Zero Hydrogen Energy Complex,01/01/2024,,FID
+721,Haiperer Wind Power Hebei - first phase,01/01/2020,,Operational
+722,Guangdong Synergy Hydrogen Power Technology Co. 2n phase,01/01/2021,,Under construction
+723,"Foshan hydrogen city, Phase 1",,,Concept
+724,"Foshan hydrogen city, Phase 2",,,Concept
+725,DEMO4GRID,01/01/2021,,Under construction
+726,Anglo-American Mining Truck,01/01/2021,,Under construction
+727,Walmart Quilicura forklifts,01/01/2021,,Under construction
+728,Wuppertal refuelling station,01/01/2020,,Operational
+730,SALCOS - WindH2,01/01/2021,,Operational
+731,PtG-Fehndorf,01/01/2021,,Under construction
+732,Hebei Jiantou Guyuan wind project - 1st phase,01/01/2020,,Operational
+733,"Green hydrogen Project, Mohammad Bin Rashid Solar Park",01/01/2021,,Operational
+734,Hydrogen Park South Australia - HyPSA,01/01/2021,,Operational
+735,NEL-Champaign-Urbana Mass Transit District,01/01/2021,,Operational
+736,Cyrus Smith,,,DEMO
+737,Jemena Western Sydney - H2GO project,01/01/2021,,Under construction
+738,Queensland Government HRS,01/01/2021,,Under construction
+739,GRASSHOPPER,01/01/2020,,DEMO
+740,Seafuel project,01/01/2020,,DEMO
+741,Obayashi geothermal hydrogen,01/01/2020,,DEMO
+742,Hydrogen village Burgenland,01/01/2006,,DEMO
+743,"Unisa, Mawson Lakes campus",01/01/2020,,DEMO
+744,North West Sturgeon refinery,01/01/2020,,Operational
+745,Nutrien (former Agrium) fertilizer,01/01/2020,,Operational
+746,Kidman Park in Adelaide depot,01/01/2020,,DEMO
+747,"SPHYNX, R&D",01/01/2020,,DEMO
+748,Laboratory Plant HRI Quebec,01/01/2001,,DEMO
+749,Fronius HyLOG-Fleet (Hydrogen powered Logistic System),01/01/2006,,DEMO
+750,"HyWindBalance, Oldenburg",01/01/2006,,DEMO
+751,vHyGO -3rd facility in Brest,01/01/2021,,FID
+752,Hyport@Duqm,01/01/2026,,Feasibility study
+753,Engie - Yara Pilbara test,01/01/2023,,Feasibility study
+754,Haiperer Wind Power Hebei - second phase,01/01/2021,,FID
+755,"Crystal Brook Energy Park, South Australia",01/01/2024,,FID
+756,Origin Energy - Kawasaki Heavy Industries Townsville project,01/01/2025,,Feasibility study
+757,H2-hub Gladstone (Queensland) - phase 1,01/01/2025,,Feasibility study
+758,"CIIC Tiangong wind and solar hydrogen, Zhangjiakou",01/01/2022,,FID
+759,"Demonstration plant Kuala Terengganu, Malaysia",01/01/2006,,DEMO
+760,Demo Plant Agricultural University Athens,01/01/2006,,DEMO
+761,The Hydrogen house,01/01/2006,,DEMO
+762,Fenosa Canberra hydrogen demo project,,,Other/Unknown
+764,Alliander Oosterwolde - solar park of GroenLeven,01/01/2021,,Under construction
+765,Siemens Energy and Beijing Green Hydrogen Technology Development HRS,01/01/2021,,FID
+766,RWE-Thyssenkrupp Duisburg steel plant (HydrOxy Hub Walsum),01/01/2022,,Feasibility study
+767,HyAMMED HD trucksrefuelling station,01/01/2022,,FID
+768,Ribatejo natural gas power plant,01/01/2022,,DEMO
+769,Air Liquide liquid hydrogen production plant,01/01/2022,,Under construction
+770,"Haru Oni, phase 1",01/01/2022,,Under construction
+771,Hollandse Kust (noord) - CrossWind - Pernis Refinery,01/01/2023,,Feasibility study
+772,Sun Metals Zinc Refinery,01/01/2022,,FID
+773,HRS TMB Barcelona,01/01/2021,,Under construction
+774,HRS Charleroi,,,Concept
+775,HRS CNH2 Puertollano,01/01/2015,,Operational
+776,Fertiberia/Iberdrola - Palos de la Frontera I,01/01/2023,,Feasibility study
+777,Hyflexpower,01/01/2023,,Feasibility study
+778,HydroHub-Fenne,,,Concept
+779,Solena Group Plasma enhanced gasification,01/01/2023,,FID
+780,H2U (former Proyecto Verne),,,Other/Unknown
+781,Olive Creek 1,01/01/2021,,Under construction
+782,Olive Creek 2,,,Feasibility study
+783,Fertiberia/Iberdrola - Palos de la Frontera II,01/01/2027,,Feasibility study
+784,Douglas PUD - industrial area north of East Wenatchee,01/01/2021,,FID
+785,Chongli wind-solar Hydrogen Project - first phase,01/01/2021,,Under construction
+786,"GreenH2UB (1st hub, Noord Brabant)",01/01/2024,,Feasibility study
+787,Duwaal,01/01/2021,,Under construction
+788,Chongli wind-solar Hydrogen Project - second phase,01/01/2022,,FID
+789,Hysolar Green on Road - Nieuwegein,01/01/2021,,Under construction
+790,Halcyon Power,01/01/2021,,Under construction
+791,Hydrogenpilot Oosterwolde,01/01/2021,,Under construction
+792,Kopernikus 2.0,01/01/2021,,Under construction
+793,E-CO2MET Raffinerie Mitteldeutschland,01/01/2021,,DEMO
+794,HESC (Liquefied hydrogen energy supply chain),01/01/2030,,Feasibility study
+795,H-Vision (phase 1),01/01/2026,,Feasibility study
+796,Preem CCS,01/01/2025,,Feasibility study
+797,METHYCENTRE,01/01/2021,,DEMO
+798,Hydrogen Park Gladstone,01/01/2022,,Under construction
+799,"Toyota Hydrogen Centre, Altona, Victoria",01/01/2021,,Operational
+800,GZI Next,01/01/2022,,Feasibility study
+803,Yanchang Integrated Carbon Capture and Storage Demonstration,01/01/2021,,Under construction
+804,Hazer group CH4 pyrolysis,01/01/2021,,Under construction
+805,ECB Omega Green biofuel project,01/01/2022,,Feasibility study
+806,"Element One (Element Eins), phase 1",01/01/2022,,FID
+807,"H2V Normandy, 1st phase",01/01/2022,,Feasibility study
+808,"H2V59, 1st phase",01/01/2022,,Feasibility study
+809,Arrowsmith Hydrogen Project,01/01/2022,,Feasibility study
+811,Bad Lauchstädt energy park,01/01/2023,,FID
+812,"DJEWELS Chemiepark - Delfzijl, Phase 1",01/01/2022,,Feasibility study
+813,UpHy,01/01/2022,,FID
+814,Referenzkraftwerk Lausitz,01/01/2022,,DEMO
+815,Lake Charles Methanol,01/01/2025,,Feasibility study
+816,PGNiG - INGRID,01/01/2022,,Feasibility study
+817,LADWP - NREL Intermountain Power Project,01/01/2023,,Feasibility study
+818,"DJEWELS Chemiepark - Delfzijl, Phase 2",01/01/2023,,Feasibility study
+819,H2ermes,01/01/2023,,Feasibility study
+820,"H2V Normandy, 2nd phase",01/01/2023,,Feasibility study
+821,"H2V59, 2nd phase",01/01/2023,,Feasibility study
+822,Hybridge,01/01/2023,,Feasibility study
+823,H2M,01/01/2027,,Feasibility study
+825,Wabash CarbonSAFE,01/01/2022,,Under construction
+826,"Etzel, Salt caverns",01/01/2007,,DEMO
+827,"Shell heavy residue gasification CCU - Pernis refinery (in 2024, the CCU project will become CCUS - ref1323 - once Porhtos project is available)",01/01/2005,01/01/2024,Operational
+828,Bio Energy Netherlands,,,Feasibility study
+829,Blue Hydrogen Den Helder,,,Feasibility study
+830,Nemo Hydrogen Project,01/01/2025,,Concept
+831,Baicheng City Bus Company - Songyuan City,01/01/2021,,Under construction
+833,Repsol advanced biofuels plant Cartagena,01/01/2023,,FID
+834,H2-based residential area in Van der Veen,,,FID
+835,H2Gas,,,Concept
+836,Long Beach Fuel Cell plant,,,FID
+837,Producing Hydrogen by Gasification of Biomass in 'het Groene Hart',,,DEMO
+838,Ramboll study for an e-fuel plant in Greenland,,,Feasibility study
+839,Saint-Brieuc Armor Agglomeration production plant,01/01/2023,,Feasibility study
+840,"Giner ELX, H2@Scale (Florida)",01/01/2021,01/01/2023,DEMO
+841,"Exelon, H2@Scale",01/01/2021,01/01/2023,DEMO
+842,"Frontier Energy, H2@Scale - electrolysis",01/01/2020,01/01/2023,DEMO
+843,"DJEWELS Chemiepark - Delfzijl, Phase 3",01/01/2030,,Feasibility study
+844,Curthyl,01/01/2025,,Feasibility study
+845,Deltaurus 1,01/01/2024,,Feasibility study
+846,Deltaurus 3,01/01/2027,,Feasibility study
+847,"North CCU HUB, phase 3 (Deltaurus 4)",01/01/2030,,Concept
+848,Centrale Vlissingen - VoltH2,01/01/2023,,Feasibility study
+849,"HySynergy, phase 2",01/01/2025,,Feasibility study
+850,Green lab skive,01/01/2022,,Under construction
+851,Shell China - Zhangjiakou,01/01/2022,,FID
+852,Dobrogea wind farm,01/01/2021,,Concept
+853,Aberdeen Hydrogen Hub,,,FID
+854,"Fortescue Metals Group - Bell Bay, Tasmania",,,Feasibility study
+855,H2HUB,,,Concept
+856,"Green Crane - La Robla, Phase 1",,,Feasibility study
+857,"Meirama plant, phase 1",,,Feasibility study
+858,EMEC tidal-battery-hydrogen demo,,,DEMO
+859,Orange-BAT Puerto Valencia,,,Concept
+860,Huaneng electrolysis plant in Western Sichuan,,,FID
+861,H-Vision (phase 2),01/01/2030,,Feasibility study
+862,HaYrport,01/01/2022,,FID
+863,"Power-to-Methanol, Antwerp, phase 2",,,Concept
+864,"Hyport, phase 2",01/01/2030,,Concept
+865,"IPCEI Green Crane, Italy Hubs",,,Concept
+866,White Dragon,01/01/2029,,Feasibility study
+867,"North CCU HUB, phase 2. North-C -full scale",01/01/2028,,Concept
+868,HRS Halle (Continued as Ref148),,01/01/2014,DEMO
+869,HRS Wilrijk,01/01/2021,,Under construction
+870,Origin Energy Tasmania’s Bell Bay,01/01/2025,,Feasibility study
+871,H2One Multistation- Tsuruga City,01/01/2020,,Operational
+872,"H100 Fife Project, Levenmouth",01/01/2023,,FID
+873,Steag-Thyssenkrupp Duisburg steel plant (HydrOxy Hub Walsum),01/01/2025,,Feasibility study
+874,Gela refinery,01/01/2023,,Feasibility study
+875,Taranto Sustainable Refinery,01/01/2023,,Feasibility study
+876,Plug Power-Brookfield Renewable Susquehanna River (Pen) project,01/01/2022,,FID
+877,"Green fertilizer project Porsgrunn, phase 2",,,Feasibility study
+878,"BENORTH2 (Amorebieta-Boroa power plant), phase 1",01/01/2022,,FID
+879,"BENORTH2 (Amorebieta-Boroa power plant), phase 2",01/01/2030,,Feasibility study
+880,Camberra HRS,01/01/2021,,Operational
+881,Recycle Carbone Varennes biofuels plant,01/01/2024,,FID
+882,Beijing Jingneng Power Company,,,Concept
+883,Western Jutland Green ammonia project,01/01/2023,,FID
+884,Wallonia e-methane project,01/01/2025,,Feasibility study
+885,Get H2 Nukleus,01/01/2023,,Feasibility study
+886,"NortH2, phase 2",01/01/2030,,Feasibility study
+887,"NortH2, phase 3",,,Concept
+888,"AquaPrimus (AquaVentus, phase 1), Heligoland",01/01/2025,,Feasibility study
+889,Pacific Solar Hydrogen,01/01/2024,,Concept
+890,H2-hub Gladstone (Queensland) - phases 2-3,,,Feasibility study
+891,Brande Hydrogen project,01/01/2021,,DEMO
+892,Hydrogen trial in Dalmine steel mill,,,Feasibility study
+893,Horizeo project,,,Feasibility study
+894,Deep Purple,,,DEMO
+895,Pinto waste water plant,,,Feasibility study
+896,Linde Leuna Chemical Complex,01/01/2022,,FID
+897,Total’s La Mède biorefinery,01/01/2024,,FID
+898,Project Haber,01/01/2022,,FID
+899,Grupa Lotos refinery,01/01/2025,,Feasibility study
+900,Vattenfall's Moorburg plant,01/01/2025,,Feasibility study
+901,H2TAS,01/01/2023,,Feasibility study
+902,Sumitomo Queensland,01/01/2023,,Feasibility study
+903,Sumitomo Oman,01/01/2023,,Feasibility study
+904,Sumitomo Malaysia,,,Feasibility study
+905,H24All,01/01/2025,,Feasibility study
+906,As Pontes power plant,01/01/2025,,Feasibility study
+907,Esslingen District,01/01/2021,,Under construction
+908,Compostilla - Endesa,01/01/2023,,Feasibility study
+909,Seseña - Endesa,01/01/2024,,Feasibility study
+910,Huelva - Endesa,01/01/2024,,Feasibility study
+911,Hidrogeno El Cierzo,01/01/2023,,Feasibility study
+912,Tarragona - Endesa,01/01/2024,,Feasibility study
+913,Teruel - Endesa,01/01/2024,,Feasibility study
+914,Almeria - Endesa,01/01/2024,,Feasibility study
+915,Barranco de Tirajana - Endesa,01/01/2025,,Feasibility study
+916,Granadilla - Endesa,01/01/2025,,Feasibility study
+917,Alcudia - Endesa,01/01/2024,,Feasibility study
+918,"Green Crane, Asturias Hub, Phase Ib",,,Feasibility study
+919,"Green Crane, Asturias Hub, Phase Ib",,,Feasibility study
+920,"Hynet Northwest, phase 2",01/01/2030,,Feasibility study
+921,Zero Emission Valley (14 HRS),01/01/2023,,FID
+922,Bahía H2 Offshore,,,Feasibility study
+923,Liberty South - Port Anthony,,,Concept
+924,KOGAN HYDROGEN DEMONSTRATION PROJECT,,,Feasibility study
+925,Masdar City green H2,01/01/2022,,FID
+926,Lysekil refinery (phase 1),,,Feasibility study
+927,"Maasvlakte, phase I",01/01/2025,,Feasibility study
+928,"Maasvlakte, phase II",,,Feasibility study
+929,"Hydrogen Park Murray Valley, Victoria",01/01/2023,,Feasibility study
+930,Clean Energy Innovation Park,01/01/2023,,Feasibility study
+931,ORANGE.BAT Castellon,01/01/2024,,Feasibility study
+932,Saras Sardinia refinery,01/01/2024,,Feasibility study
+933,H2 Creteil,01/01/2022,,FID
+934,SunLine Palms Springs,01/01/2018,,Operational
+935,Unknown project from NEL,01/01/2021,,FID
+936,H2 Green Steel (H2GS),01/01/2030,,Feasibility study
+937,"New York Science, Technology and Advanced Manufacturing Park",01/01/2025,,FID
+938,Abanto Technology Park,01/01/2022,,FID
+939,HyDeal Ambition,01/01/2030,,Concept
+940,Boryeong LNG Terminal,01/01/2025,,Feasibility study
+941,Florida Power & Light utility pilot plant,01/01/2023,,Feasibility study
+942,Refhyne II,01/01/2025,,Feasibility study
+943,H2-Login,01/01/2021,,FID
+944,Changwon Industrial complex,01/01/2022,,FID
+945,Wilhelmshaven LNG terminal,,,Feasibility study
+946,Sinopec Qilu Petrochemical CCS,01/01/2021,,Under construction
+947,Karamay Dunhua Oil Technology CCUS EOR Project,01/01/2015,,Operational
+948,Great Plains Synfuel Plant and Weyburn-Midale,01/01/2000,,Operational
+949,Al Reyadah CCUS,01/01/2016,,Operational
+950,Leed Bradford Airport hub,01/01/2022,,FID
+951,Northwest Natural Holding synthetic methane plant,,,Concept
+952,Centre Point Energy Minnesota,,,Concept
+953,New Jersey Resources Howell,01/01/2021,,Under construction
+954,Vantaa-Wartsila methanation,01/01/2025,,FID
+955,AES Gener ammonia project,,,Concept
+956,PDO’s solar-paneled car park,,,Feasibility study
+957,Amin Solar Renewable Energy Project,,,Feasibility study
+958,Huaneng Qingneng Institute demo plant,01/01/2020,,DEMO
+959,CNNC HTGR P2G demo,01/01/2020,,DEMO
+960,CNNC 600MW HTGR P2G for steel,,,Concept
+961,"Datong City solar plant, phase 1",,,FID
+962,Eco Energy World Quenssland project,01/01/2023,,Feasibility study
+963,National grid green H2 storage in New York,01/01/2022,,FID
+964,DH2Green Port of Malaga,,,Concept
+965,Saipem and Alboran Hydrogen (3 plants),,,Concept
+966,Saipem and Alboran Hydrogen (1 plant),,,Concept
+967,Saipem and Alboran Hydrogen (1 plant),,,Concept
+968,Optimal-ITM agreement,,,Under construction
+969,Unknown ITM peoject,01/01/2022,,Under construction
+970,Green Hydrogen for Humberside,,,Concept
+971,HRS Gatwick airport,01/01/2019,,Operational
+972,4 projects of ITM in Australia,01/01/2018,,Operational
+973,HRS Swindon,01/01/2018,,Operational
+974,HRS Beaconsfield,01/01/2018,,Operational
+975,QEM Julia Creek - Queensland,,,Concept
+976,Rafnes chemical plants,,,Concept
+977,Synkero synfuels project,,,Concept
+978,Zenid Initiative,,,Concept
+979,H2Teeside 1st phase,01/01/2027,,Feasibility study
+980,H2Teeside 2nd phase,01/01/2030,,Feasibility study
+981,ITM-Sumitomo Coorp,01/01/2021,,Under construction
+982,PT Panca Amara Utama ammonia plant in Luwuk,,,Feasibility study
+983,OMV Schwechat Refinery,01/01/2023,,FID
+984,Barents Blue ammonia plant,01/01/2025,,Feasibility study
+985,"Hysencia, Phase II",,,Concept
+987,CEOG,01/01/2022,,Under construction
+988,NewGen,01/01/2024,,Feasibility study
+989,"Nauticol Blue Methanol facility in Grande Prairie, Alberta",01/01/2025,,Concept
+990,Evolugen H2 injection project,,,FID
+991,Bangladesh Council of Scientific and Industrial Research demo,01/01/2020,,DEMO
+992,Port of Pecem - Base One,01/01/2025,,Feasibility study
+993,Aquamarine,01/01/2023,,FID
+994,"Clean Hydrogen Coastline, Ems",01/01/2026,,Feasibility study
+995,Herrenhausen sewage works,01/01/2024,,FID
+996,Port of Duqm NH3 plant,01/01/2023,,Feasibility study
+997,HRS Plataforma Logística PLAZA,,,Feasibility study
+998,HRS Valecnia,,,Feasibility study
+999,HRS Alicante,,,Feasibility study
+1000,Prince George refinery,01/01/2023,,FID
+1001,Science Parks of Tainan and Hsinchu,01/01/2022,,Under construction
+1002,SeaH2Land,01/01/2030,,Feasibility study
+1003,HRS Bremervörde - trains,01/01/2022,,Under construction
+1004,ArcelorMittal Bremen,,,Feasibility study
+1005,Rossello paper factory,01/01/2023,,Feasibility study
+1006,DG Fuels,01/01/2022,,Concept
+1007,Energía Los Cabos,,,Feasibility study
+1008,GICON - Vietnam Petroleum Institute MoU,,,Feasibility study
+1009,Heritage Gas - Ottawa,,,FID
+1010,Planetary Hydrogen - Ottawa,01/01/2022,,FID
+1011,RHYME,01/01/2024,,Feasibility study
+1012,Yanqing Hydrogen Energy Industrial Park,01/01/2022,,Feasibility study
+1013,Cangzhou Bohai New District Hydrogen,,,Concept
+1014,"Wind Power Heating and Hydrogen Production Project in Fengning Manzu Autonomous County, Chengde City",01/01/2022,,Concept
+1015,Hydrogen Energy Equipment Industrial Cluster Project in Handan Economic and Technological Development Zone,01/01/2026,,Concept
+1016,Zhangjiakou Yangyuan Jingxi New Energy Base Project,01/01/2024,,Concept
+1017,CGN Baicheng Hydrogen Production Project - Jilin,01/01/2022,,DEMO
+1018,Shanxi Jinzhong,,,Concept
+1019,Shanxi Changzhi,,,Concept
+1020,Jilin Yushu,,,Concept
+1021,"Datong City solar plant, phase 2",,,FID
+1022,H2Pioneer,01/01/2022,,Under construction
+1023,WIVA P&G Hydrogen Region,01/01/2025,,Under construction
+1024,Carbon2ProductAustria - C2PAT,01/01/2030,,Concept
+1025,P2G4A,,,Concept
+1026,Matra power pant,,,Concept
+1027,"Konin Power Plant, phase 1",01/01/2022,,Under construction
+1028,Project AIR (Perstorp - Stenungsund),01/01/2023,,Feasibility study
+1029,Birsfelden power plant,01/01/2022,,FID
+1030,Steklarna Hrastnik glass manufactuing plant,01/01/2019,,Operational
+1031,"Solar Global group headquarters, phase 1",01/01/2021,,Under construction
+1032,"Solar Global group headquarters, phase 2",,,Feasibility study
+1033,Greening of Gas (GoG) - Net4Gas DEMO,01/01/2023,,Feasibility study
+1034,"Lingen BP Refinery , phase 2",,,Concept
+1035,HyMAT SH,,,Feasibility study
+1036,We-4-PUR,,,Feasibility study
+1037,H2 in the Ketzin energy transition laborator,,,Feasibility study
+1038,Green Energy Hub Helmstedt,,,Feasibility study
+1039,Speicherstadt Kerpen,,,Feasibility study
+1040,AquaVentus (phase 3),01/01/2030,,Concept
+1041,SLOP2G Project,,,Concept
+1042,Thermal Power Plant Sostanj,,,Operational
+1043,TPJ Jesenice,,,Operational
+1045,Dolphyn 1,01/01/2024,,Feasibility study
+1046,Dolphyn 1,01/01/2027,,Feasibility study
+1047,"PTG Bilsthorpe, Nottinghamshire",,,FID
+1048,Uniper Killingholme site,,,Feasibility study
+1049,North Sea Wind Power Hub,01/01/2032,,Concept
+1050,P2G Velke Kapusany,01/01/2023,,Feasibility study
+1051,"Element One (Element Eins), phase 2",01/01/2024,,Feasibility study
+1052,"Element One (Element Eins), phase 2",01/01/2028,,Feasibility study
+1053,"Green Hydrogen Hubs (Ahaus-Epe, Etzel, Harsefeld, Moeckow, Drenthe, Leer, Zuidwending, Denmark), phase 1",01/01/2027,,Concept
+1054,"Green Hydrogen Hubs (Ahaus-Epe, Etzel, Harsefeld, Moeckow,Drenthe, Leer, Zuidwending, Denmark), phase 2",01/01/2031,,Concept
+1055,Sun2Hy,01/01/2024,,Feasibility study
+1056,HyGéo,01/01/2024,,Concept
+1057,Pegasus,01/01/2024,,Feasibility study
+1058,Power to gas plant in the south of Italy,01/01/2025,,Concept
+1059,Hydrogen injection into the gas network in Lithuania,01/01/2024,,DEMO
+1060,Power to Gas Production with infrastructure building/enhacement in Latvia,01/01/2030,,Concept
+1061,"G2F - Gas to Future, phase 1",01/01/2025,,Feasibility study
+1062,"G2F - Gas to Future, phase 2",01/01/2035,,Concept
+1063,Herten HRS,,,FID
+1064,vHyGO -4th facility in St Nazaire,01/01/2021,,FID
+1065,vHyGO -5th facility in Dieppe,01/01/2021,,FID
+1066,NEL-Lhyfe Agreement,01/01/2027,,FID
+1067,McDermott - CB&I 2nd project,,,Feasibility study
+1068,Hy-Fi,01/01/2025,,Concept
+1069,HYBAYERN,01/01/2025,,FID
+1070,Hyways for future,01/01/2024,,Concept
+1071,Norddeutsches Reallabor - Living Lab Northern Germany,01/01/2026,,Feasibility study
+1072,"Haru Oni, phase 2",01/01/2024,,Feasibility study
+1073,"Haru Oni, phase 3",01/01/2026,,Concept
+1074,Green Hydrogen Systems - Skai Energies,01/01/2022,,Under construction
+1075,Hydrospider - Eglisau-Glattfelden,01/01/2022,,FID
+1076,Pertamina Ulubelu gerothermal plant,01/01/2021,,FID
+1077,Hitachi-P2X,01/01/2024,,Feasibility study
+1078,Ercros - Sabinanigo,,,Concept
+1079,OMNI CT - California,01/01/1900,,FID
+1081,Sapio - Mantova,01/01/2016,,Operational
+1082,Kokkola H2 plant,01/01/2014,,Operational
+1083,HyEnergy Zero Carbon Hydrogen,01/01/1900,,Concept
+1084,Yellow Sea,,,Concept
+1085,HNH,01/01/2026,,Concept
+1086,Rostock - RWE,,,Feasibility study
+1087,CRS4-Italgas Sardinia,,,Concept
+1088,"Gen2 Energy - Vitol, 1st site",01/01/2023,,Feasibility study
+1089,"Gen2 Energy - Vitol, 2nd site",01/01/2023,,Concept
+1090,BP Castellon refinery,01/01/2023,,Feasibility study
+1091,SmartQuart project - Kaisersesch,01/01/2022,,FID
+1092,Pedirka Hydrogen Project,,,Concept
+1093,"Canary Islands Hub, phase 1",,,Feasibility study
+1094,"Canary Islands Hub, phase 2",,,Concept
+1095,Suncor Edmonton Refinery,01/01/2028,,Feasibility study
+1096,Donghae 1 offshore wind plant,01/01/2024,,Feasibility study
+1097,Project Jupiter (Gladstone),,,Feasibility study
+1098,Project Mars (Mackay),,,Concept
+1099,Liberty North (Newcastle),,,Concept
+1100,BayoTech - Carbon Clean MoU,01/01/2022,,Feasibility study
+1101,GREENH2KER,,,Feasibility study
+1102,ZEHUS,01/01/2023,,Feasibility study
+1103,FUTURA,01/01/2024,,Feasibility study
+1104,Sicilian Sustainable Steel,01/01/2024,,Feasibility study
+1105,Green H2 for Chemical Application - North,01/01/2023,,Concept
+1106,Green H2 for Chemical Application - South,01/01/2023,,Concept
+1107,La Spezia Green Hydrogen,01/01/2024,,Concept
+1108,Road Runner,01/01/2023,,Feasibility study
+1109,"Oman green H2 project, phase 1",01/01/2028,,Concept
+1110,Plug Power - Fort Worth,,,Feasibility study
+1111,Offshore-to-X,,,Feasibility study
+1112,Offshore-to-X,,,Feasibility study
+1113,HyDeal LA,,,Feasibility study
+1114,Energiepark Eemshaven West (phase I),01/01/2024,,Feasibility study
+1115,Energiepark Eemshaven West (phase II),01/01/2027,,Feasibility study
+1116,ELYgator,01/01/2024,,Feasibility study
+1117,Stanwell-Iwatani Galdstone project,01/01/2030,,Concept
+1118,Zeeland Refinery,01/01/2026,,Feasibility study
+1119,FUREC,01/01/2025,,Feasibility study
+1120,BrigH2,01/01/2024,,Feasibility study
+1121,Hydrogen Mill,01/01/2022,,Under construction
+1122,H2-gateway,01/01/2025,,Feasibility study
+1123,Sinopec - Ordos,01/01/2022,,Feasibility study
+1124,Sinopec - Kuqa,,,Feasibility study
+1125,MMEX - Texas,,,Concept
+1126,GreenHyScale,01/01/2024,,Feasibility study
+1127,EI-H2 - Aghada (phase 1),01/01/2023,,Feasibility study
+1128,Green lab skive (Phase II),01/01/2023,,FID
+1129,Khalifa Industrial Zone Abu Dhabi (KIZAD) - phase 1,01/01/2024,,Feasibility study
+1130,"HySynergy, phase 3",01/01/2030,,Feasibility study
+1134,Green H2 New Zealand - Taranaki,,,FID
+1137,Horizon Oil Sands,,,Operational
+1138,Cerulean Winds - North Sea,01/01/2024,,Concept
+1139,Hyundai Oilbank - Blue H2 Ecosystem,01/01/2025,,Feasibility study
+1140,Forestal del Atlántico,,,Concept
+1141,SoHyCal,01/01/2022,,Under construction
+1142,Bee’ah waste-to-hydrogen,,,Concept
+1143,Industrial Cachimayo,01/01/1975,,Operational
+1145,Sirea - Castres site,01/01/2021,,Operational
+1146,Rostock - RWE (future phases),,,Concept
+1147,BASF Ludwigshafen,,,Feasibility study
+1148,Davis-Basse Nuclear Power Station,01/01/2021,,DEMO
+1149,Prairie Island,01/01/2021,,DEMO
+1150,Palo Verde Generating Station,01/01/2023,,Feasibility study
+1151,Bruce Nuclear Generating Station,01/01/2023,,Feasibility study
+1152,Heysham demonstrator 1,,,DEMO
+1153,Heysham demonstrator 2,,,DEMO
+1154,Sizewell demonstrator 2,,,DEMO
+1155,Kola Nuclear Power Plant,01/01/2020,01/01/2022,DEMO
+1156,Hydrogen Lab Bremerhaven (phase 1),01/01/2022,,Under construction
+1157,Hydrogen Lab Bremerhaven (phase 2),,,Concept
+1158,Hydrogen Lab Leuna (phase 1),01/01/2021,,Operational
+1159,Hydrogen Lab Leuna (phase 1),,,Concept
+1160,Hydrogen Lab Gorlitz,01/01/2022,,Under construction
+1161,Hydrogen Eagle (various hubs),01/01/2030,,Feasibility study
+1162,Hydrogen Eagle (various hubs),01/01/2030,,Feasibility study
+1163,Hydrogen Eagle (various hubs),01/01/2030,,Feasibility study
+1164,Hydrogen Eagle (Litvínov),01/01/2030,,Feasibility study
+1165,Hydrogen Eagle (Spolana),01/01/2030,,Feasibility study
+1166,Hydrogen Eagle (Spolana),01/01/2030,,Feasibility study
+1167,Hydrogen Eagle (various hubs),01/01/2030,,Feasibility study
+1168,Sines refinery (phase 1),01/01/2025,,Feasibility study
+1169,Sines refinery (phase 2),,,Concept
+1170,Porto do Acu Fortescue Ammonia Project,,,Feasibility study
+1171,Hoasis (TCP Gecomp),,,Concept
+1172,Ecopetrol 50kW electrolyser,01/01/2022,,Under construction
+1173,H Valle Sur,,,Concept
+1174,METH2 Atacama,,,Concept
+1175,Villa Lisa,,,Feasibility study
+1176,Ciudad del Este,,,Concept
+1177,Encarnacion,,,Concept
+1178,TA’ZIZ blue ammonia,01/01/2025,,Feasibility study
+1179,Badgingarra Renewable Hydrogen Project,01/01/2023,,Feasibility study
+1180,BHP Nickel West Green Hydrogen,01/01/2023,,Feasibility study
+1181,Dawson Mine,01/01/2023,,Feasibility study
+1182,"Candem County (GA), green power plant",01/01/2022,,Under construction
+1183,Pego coal plant transition,,,Feasibility study
+1184,Lhyfe offshore electrolyser,01/01/2022,,Under construction
+1185,Rajasthan pilot plant,01/01/2021,,Operational
+1186,Morocco-Germany MoU,01/01/2025,,FID
+1187,Hofors rolling project,01/01/2022,,FID
+1188,Kazakhstan green hydrogen project,,,Concept
+1189,Manilla Solar & Renewable Energy Storage Project,01/01/2022,,FID
+1190,"Oman green H2 project, phase 2",01/01/2038,,Concept
+1191,AquaVentus (phase 4),01/01/2035,,Concept
+1192,EI-H2 - Aghada (phase 2),01/01/2028,,Concept
+1193,EI-H2 - Aghada (phase 3),01/01/2028,,Concept
+1194,Keadby Hydrogen,01/01/2030,,Feasibility study
+1195,New Jersey Offshore Wind plant,,,Feasibility study
+1196,Delicias Solar,01/01/2026,,Feasibility study
+1197,Pico Truncado,,,Concept
+1198,Dhamma Energy Guanajuato,,,Concept
+1199,Mexican Green Hydrogen Hub,,,Concept
+1200,Algeciras Bay,,,Feasibility study
+1201,Gazifere grid injection,,,FID
+1202,GREEN H2 Langosteira,01/01/2023,,FID
+1203,Port of Immingham,01/01/2025,,Feasibility study
+1204,Pouakai - Taranaki - NH3,01/01/2024,,Feasibility study
+1205,Pouakai - Taranaki - H2,01/01/2024,,Feasibility study
+1215,Jintongling Biomass Gasification,,,FID
+1216,Longji New Hydrogen Equipment Project,01/01/2022,,Feasibility study
+1217,Khalifa Industrial Zone Abu Dhabi (KIZAD) - phase 2,01/01/2026,,Feasibility study
+1218,Veolia wastewater sludge plant,01/01/2021,,Operational
+1219,Egypt Ministry of Electricity and Renewable Energy,,,Feasibility study
+1220,IPCEI Blue Danube - first project,,,Feasibility study
+1221,BayH2,,,Feasibility study
+1222,Enid fertiliser,01/01/1982,,Operational
+1223,Ervia CCS - Irving refinery,,,Feasibility study
+1224,Energean Prinos oil field,,,Feasibility study
+1225,ArcelorMittal and AirLiquide Dunkirk low-carbon steel,01/01/2030,,Concept
+1226,CF Fertilisers Ince (part of the HyNet cluster),,,Feasibility study
+1227,Sinopec Zhongyuan Oilfield EOR,01/01/2015,,Operational
+1228,Changqing Oil Field EOR,01/01/2015,,Operational
+1229,Fortescue Future Industries - Port of Pecem,01/01/2030,,Concept
+1230,Marítimo Dragão - Qair,01/01/2023,,Concept
+1231,RIST Hydrogen Research Centre - nuclear Hydrogen project,,,DEMO
+1232,Rhode Green Energy Park,,,DEMO
+1233,Lysekil refinery (phase 2),,,Feasibility study
+1234,KIMA - Aswan electrolyser,01/01/2000,01/01/2019,Decommisioned
+1235,Zimbabwe NH3 plant,01/01/1975,01/01/2015,Decommisioned
+1236,Polaris CCS - Scotford refinery,01/01/2025,,Concept
+1237,Aukra CCS,,,Concept
+1238,ArcelorMittal DRI Gijon,01/01/2025,,Feasibility study
+1239,APEX-Plug Power H2 plamt,,,Feasibility study
+1240,3 x 1250 kW projects in USA,01/01/2000,,Operational
+1241,1 x 500 kW projects in USA,01/01/2000,,Operational
+1242,1 x 500 kW projects in USA,01/01/2021,,Under construction
+1243,18x180 kW projects in USA,01/01/2000,,Operational
+1244,4x180 kW projects in USA,01/01/2021,,Under construction
+1245,12 x 120 kW projects in USA,01/01/2000,,Operational
+1246,2 x 120 kW projects in USA,01/01/2021,,Under construction
+1247,"Frontier Energy, H2@Scale - gasification",01/01/2020,01/01/2023,DEMO
+1248,Foresa-Iberdrola Green Methanol (phase 1),,,Feasibility study
+1249,Foresa-Iberdrola Green Methanol (phase 2),,,Concept
+1250,Danskammer Energy - Newburgh,,,Concept
+1251,Balico - Virginia,,,Concept
+1252,"Harrison Power Project in Cadiz, Ohio",,,Concept
+1253,Western Green Energy Hub,,,Concept
+1254,APA Renewable Methane Demonstration Project,01/01/2023,,DEMO
+1255,Bio-Hydrogen Demonstration Plant,,,DEMO
+1256,Bundaberg Hydrogen Hub,,,Feasibility study
+1257,Daintree Microgrid Project,,,Concept
+1258,Christmas Creek Renewable Hydrogen Mobility Project,01/01/2022,,Under construction
+1259,ABEL Energy Bell Bay Powerfuels Project,01/01/2023,,Feasibility study
+1260,Grange Resources Renewable Hydrogen,,,Feasibility study
+1261,Melbourne Hydrogen Hub,,,Feasibility study
+1262,Melbourne Hydrogen Hub,,,Feasibility study
+1263,Swinburne University of Technology Victorian Hydrogen Hub – CSIRO Hydrogen Refuelling Station,01/01/2022,,Feasibility study
+1264,Agnes Energy Hub,,,Concept
+1265,"Konin Power Plant, phase 2",01/01/2022,,Under construction
+1266,"Konin Power Plant, phase 3",,,Feasibility study
+1267,AquaSector (AquaVentus phase 2),01/01/2028,,Feasibility study
+1268,Port of Mukran,01/01/2023,,Feasibility study
+1269,H2Mare,01/01/2026,,FID
+1270,"Green Crane - La Robla, Phase 2",,,Concept
+1271,"Meirama plant, phase 2",,,Concept
+1272,Freienbach plant,01/01/2023,,Feasibility study
+1273,"Siemens-Air Liquide Oberhausen, Phase 1",01/01/2023,,FID
+1274,"Siemens-Air Liquide Oberhausen, Phase 1",01/01/2023,,Feasibility study
+1275,Trafford Low Carbon Energy Park,01/01/2023,,Feasibility study
+1276,Quintero LNG terminal,,,Feasibility study
+1277,Wintershall Dea - VNG Turquoise H2 project,01/01/2023,,DEMO
+1278,"Green fertilizer project Porsgrunn, phase 3",,,Feasibility study
+1279,"Green fertilizer project Porsgrunn, phase 4",,,Concept
+1280,Finnmark green NH3,,,Concept
+1281,Yarwun alumina refinery,,,Feasibility study
+1282,H2V Las Tortolas,01/01/2021,,Operational
+1283,Sonam Nurboo Memorial Hopsital,,,Feasibility study
+1284,Hydrogen hub in Southland,01/01/2025,,Feasibility study
+1285,Hokkaido green hydrogen plant,01/01/2024,,Feasibility study
+1286,BP-Shell Trinidad and Tobago green NH3,01/01/2024,,Feasibility study
+1287,"MMEX - Pecos, Texas",,,Feasibility study
+1288,Energy-Norweigian Catapult Centre,01/01/2022,,FID
+1289,Raven - Republic Services H2 from waste plant,01/01/2022,,Feasibility study
+1290,Imperial Oil renewable diesel,01/01/2024,,Feasibility study
+1291,Javelina refinery,,,Concept
+1292,Port of Cromarty Firth,01/01/2024,,Feasibility study
+1293,North Dakota Hydrogen Hub (former Great Plains Synfuel Plant),01/01/2026,,Feasibility study
+1294,Octopus Hydrogen,01/01/2022,,FID
+1295,HEVO-Sul,01/01/2022,,FID
+1296,NEL - Nikola Agreement H2 refuelling stations in USA (1st phase),01/01/2022,,FID
+1297,HYVALUE,01/01/2025,,Feasibility study
+1298,SunHy,01/01/2025,,Feasibility study
+1299,H2 Valcamonica,01/01/2025,,Feasibility study
+1300,H2 Évora - GreenGas I,01/01/2021,,DEMO
+1301,H2 Évora - GreenGas II,01/01/2022,,DEMO
+1302,PRIO ENERGY,,,Feasibility study
+1303,KEME ENERGY,,,Feasibility study
+1304,HEVO-Sines,01/01/2026,,Feasibility study
+1305,HEVO-Morocco,01/01/2022,,Feasibility study
+1306,OceanH2,,,DEMO
+1307,TAQA-Emirates Steel Green H2,,,Concept
+1308,Salamander,,,Concept
+1309,Cairo Green Hydrogen,,,Concept
+1310,HRS Murcia,,,Feasibility study
+1311,Tokyo Sewage-to-H2 plant,01/01/2021,,Operational
+1312,Inner Mongolia green hydrogen,01/01/2023,,FID
+1313,Humber Zero,,,Feasibility study
+1314,Heroya Industrial Park,01/01/2022,,FID
+1315,Esbjerg green hydrogen,01/01/2024,,Feasibility study
+1316,HBIS DRI in Xuanshan,,,Feasibility study
+1317,Hydrogen Utopia waste-to-plastic plant,01/01/2022,,Feasibility study
+1318,Itochu/Petronas ammonia project,01/01/2026,,Concept
+1319,Lindsey refinery (Humber hub),01/01/2029,,Feasibility study
+1320,ArcelorMittal Hamburg,01/01/2025,,FID
+1321,Power-to-gas Coquimbo,01/01/2022,,FID
+1322,ENERTAG-Sunfire (Prenzlau),01/01/2022,,FID
+1323,Shell heavy residue gasification CCUS - Pernis refinery,01/01/2024,,Feasibility study
+1324,Repsol - Basque Corridor,01/01/2022,,FID
+1325,Southland green hydrogen project,01/01/2023,,Concept
+1326,TotalEnergies’ Normandy platform - CCUS,,,Concept
+1327,TotalEnergies’ Normandy platform - Electrolysis,,,Concept

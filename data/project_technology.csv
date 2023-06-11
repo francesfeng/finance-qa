@@ -1,0 +1,986 @@
+project_id,project_name,technology,technology_comment,type_of_electricity_for_electrolysis,type_of_renewables
+1,Solar PV Plant port of Sines - phase I,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+2,Solar PV Plant port of Sines - phase II,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+3,H2GO - 1st phase,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+4,H2GO - 2nd phase,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+5,"NortH2, phase 1",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+6,Norsk e-Fuel Phase 1,SOEC,,Dedicated renewable,Others/Various
+7,Norsk e-Fuel Phase 2,SOEC,,Dedicated renewable,Others/Various
+8,HYBRIT pilot,ALK,,Grid (excess renewable),
+9,HYBRIT demo,ALK,,Grid (excess renewable),
+10,Fertiberia/Iberdrola - Puertollano I,PEM,,Dedicated renewable,Solar PV
+11,Power to Green H2 Mallorca - Phase 1,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+12,Power to Green H2 Mallorca (GREEN HYSLAND) - Phase 2,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+13,Drax Humber cluster completion,NG w CCUS,ATR+CCS,,
+14,CRI project in Norway,Other Electrolysis,Unknown PtX,Other/unknown,
+15,ARIES project,PEM,,Other/unknown,
+16,Fukushima Hydrogen Energy Research Field,ALK,,Dedicated renewable,Solar PV
+17,Hydrospider - St Gallen,PEM,,Dedicated renewable,Hydropower
+18,"Apex Energy, Rostock-Laage",ALK,,Grid (excess renewable),
+19,Leuchtturmprojekt Power-to-Gas Baden-Württemberg,PEM,,Dedicated renewable,Hydropower
+20,eFarm (5 production sites in North Frisia),PEM,,Dedicated renewable,Onshore wind
+22,Hydrogen plant - Orkney Islands - BIG HIT 2n phase,PEM,,Dedicated renewable,Onshore wind
+23,Wyhlen hydroelectric power plant,ALK,,Dedicated renewable,Hydropower
+24,GrInHy2.0,SOEC,,Grid (excess renewable),
+25,Power2Met,Other Electrolysis,Unknown PtX,Grid (excess renewable),
+26,REMOTE - Norway,PEM,,Dedicated renewable,Others/Various
+27,H2One - Toranomon Hills Business Tower,PEM,,Grid,
+28,H2One - Toyama City Environment Center,PEM,,Grid,
+29,H2One - Tsuruga City,PEM,,Grid,
+30,H2FUTURE,PEM,,Grid (excess renewable),
+31,Guangdong Synergy Hydrogen Power Technology Co. 1st phase,PEM,,Dedicated renewable,Unknown
+33,"Markham Energy Storage, Ontario",PEM,,Grid (excess renewable),
+34,PFI - Pirmasens-Winzeln,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+35,HRS CMB,PEM,,Other/unknown,
+36,MEFCO2,PEM,,Grid (excess renewable),
+37,"Windgas Haurup, 2nd phase",PEM,,Dedicated renewable,Onshore wind
+38,Parnu refuelling station,ALK,,Other/unknown,
+39,"H2Nodes, Parnu",PEM,,Other/unknown,
+40,"H2Nodes, Riga",PEM,,Other/unknown,
+41,SMT-AG Artois-Gohelle,ALK,,Grid,
+42,HyDeploy,PEM,,Grid,
+43,Quebec Great Toronto Area East,ALK,,Other/unknown,
+44,Pau bus station HRS,PEM,,Grid (excess renewable),
+46,"Solothurn, STORE&GO",PEM,,Grid (excess renewable),
+49,Sarawak Energy,ALK,,Other/unknown,
+50,Vårgårda Bostäder housing complex,ALK,,Dedicated renewable,Solar PV
+51,SoCalGas-NREL,Other Electrolysis,Unknown PtX,Other/unknown,
+52,Stromlückenfüller 2nd phase,PEM,,Grid (excess renewable),
+54,ATCO clean energy innovation hub,PEM,,Grid (excess renewable),
+55,Tauron CO2-SNG,Other Electrolysis,Unknown PtX,Grid (excess renewable),
+56,Methane Synthesis test facility in Koshijihara Plant of INPEX’s - Nagaoa,Other Electrolysis,Unknown PtX,Other/Unknown,
+58,VTT Bio economy+,PEM,,Other/unknown,
+59,Kopernikus,SOEC,,Other/unknown,
+60,Rozenburg Power2Gas Phase 2,PEM,,Grid (excess renewable),
+61,Balance project,SOEC,,Other/unknown,
+62,H2One - SP Group,PEM,,Other/unknown,
+63,Falkenhagen STORE&GO,PEM,,Grid (excess renewable),
+64,"NEDO kofu city, Yamanashi Prefecture",PEM,,Other/unknown,
+65,Semakau island microgrid Engie (SPORE),Other Electrolysis,Unknown PtX,Other/Unknown,
+66,H2PLAZA - Toyota Industries Corporation’s Takahama,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+67,Localhy,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+68,Wind to gas Brunsbüttel,PEM,,Dedicated renewable,Onshore wind
+69,Carbon2Chem,ALK,,Grid (excess renewable),
+70,SunLine Transit Agency,PEM,,Other/unknown,
+71,HyBALANCE,PEM,,Dedicated renewable,Onshore wind
+72,Aberdeen Conference Center,ALK,,Other/unknown,
+73,Lam Takhong Wind Hydrogen Hybrid Project- EGAT,PEM,,Other/unknown,
+74,H2ORIZON,PEM,,Other/unknown,
+75,ASKO Midt-Norge,ALK,,Other/unknown,
+76,Underground Sun Storage,ALK,,Dedicated renewable,Solar PV
+77,Hydrogen plant - Orkney Islands - BIG HIT 1st phase,PEM,,Dedicated renewable,Onshore wind
+80,"Windgas Haurup, 1st phase",PEM,,Dedicated renewable,Onshore wind
+82,"Troia, STORE&GO",PEM,,Grid (excess renewable),
+83,GNVert H2,PEM,,Other/unknown,
+85,Tongji solar hybrid hydrogen refueling station,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+87,Methanation at Eichhof,PEM,,Other/unknown,
+88,"CoSin: Synthetic Natural Gas from Sewage, Barcelona",SOEC,,Other/unknown,
+89,REFLEX,SOEC,,Other/unknown,
+90,Sendai City,PEM,,Other/unknown,
+92,"Rostock, Exytron Demonstrationsanlage",ALK,,Grid (excess renewable),
+93,Tokyu Construction Institute of Technology,PEM,,Other/unknown,
+94,Rakuten Seimei Park Miyagi,PEM,,Other/unknown,
+95,"MicroPyros, Altenstant",Other Electrolysis,Unknown PtX,Other/unknown,
+96,Oxelösund Forklifts,PEM,,Other/unknown,
+97,H21 North of England,NG w CCUS,ATR+CCS,,
+98,Drax Humber cluster demonstrators,NG w CCUS,ATR+CCS,,
+111,"Hynet Northwest, phase 1 (Essar Stanlow refinery)",NG w CCUS,ATR+CCS,,
+113,"Baicheng, Jilin wind-solar project",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+115,"Alzey, Exytron Null-E",ALK,,Other/unknown,
+119,Energy observer,PEM,,Other/unknown,
+120,Haldor Topsoe - El-Opgraderet Biogas II,SOEC,,Other/unknown,
+121,Musashi-Mizonokuchi Station,PEM,,Other/unknown,
+122,"H2One - Hydrogen Application Center, Fuchu Complex",PEM,,Other/unknown,
+123,H2One - Asahi Breweries in Ibaraki,PEM,,Other/unknown,
+124,Costa Rica Transportation Ecosystem Project,PEM,,Dedicated renewable,Others/Various
+125,Cerro Pabellón Microgrid 450 kWh Hydrogen ESS,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+126,"Energy in the Container, Fraunhofer IISB, Erlangen, Leistungszentren Elektroniksysteme (LZE)",PEM,,Other/unknown,
+127,Hassfurt,PEM,,Grid (excess renewable),
+130,GreenHydroChem Central German Chemical Triangle,PEM,,Other/unknown,
+134,HPEM2GAS (R&D),PEM,,Other/unknown,
+135,Hamburg - Schnackenburgallee,PEM,,Grid (excess renewable),
+136,smart grid solar - arzberg,PEM,,Dedicated renewable,Solar PV
+137,"Naval Facilities Engineering Command, Engineering and Expeditionary Warfare Center",SOEC,,Other/unknown,
+138,Laboratory System at IFE Kjeller Pahse 2,PEM,,Other/unknown,
+139,"H2One - Kyushu Resort Hotel, Huis Ten Bosch",PEM,,Grid,
+140,H2One - Yokohama Cargo Center,PEM,,Grid,
+142,WindGas Hamburg-Reitbrook,PEM,,Dedicated renewable,Onshore wind
+143,"RH2 Grapzow, Mecklenburg Vorpommern",ALK,,Dedicated renewable,Onshore wind
+146,P2G-Biocat - Continued (Ref 508),ALK,,Other/unknown,
+147,Raglan Nickel mine,ALK,,Other/unknown,
+148,Don Quichote,ALK,,Dedicated renewable,Onshore wind
+149,Regio Energie Solothurn/Aarmat hybrid plant,PEM,,Other/unknown,
+151,RWE PtG plant Ibbenbüren,PEM,,Grid (excess renewable),
+155,DemoSNG,PEM,,Other/unknown,
+163,Stromlückenfüller 1st phase,PEM,,Grid (excess renewable),
+164,Higashi-Ogishima-Naga-Park,PEM,,Dedicated renewable,Solar PV
+165,Emden II Upscaling,PEM,,Other/unknown,
+167,SYNFUEL,SOEC,,Other/unknown,
+169,"Hydrogen Valley South Tyrol - Bolzano, CHIC",ALK,,Other/unknown,
+173,H2BER (Berlin airport),ALK,,Dedicated renewable,Onshore wind
+178,"Westkuste 100 (Phase 1) - HyScale 100, Heide",Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+198,"Hanau, Wolfgang Industrial Park",PEM,,Other/unknown,
+199,"MicroPyros, Staubing",Other Electrolysis,,Other/unknown,
+200,"ETOGAS, Solar Fuel Beta-plant AUDI, Werlte (Audi e-gas)",ALK,,Grid (excess renewable),
+201,H2 Logic HRS with onsite electrolysis Aalborg,ALK,,Grid (excess renewable),
+202,Uniper/E-ON WindGas Falkenhagen Hydrogen Pilot Project,ALK,,Dedicated renewable,Onshore wind
+203,P2G plant Erdgas Schwaben,PEM,,Other/unknown,
+204,"Oslo, CHIC",ALK,,Other/unknown,
+205,"HySynergy, phase 1",PEM,,Grid (excess renewable),
+207,CO2RRECT-Niederaussem,PEM,,Grid (excess renewable),
+211,"Sir Samuel building Griffith Center, Brisbane, Australia",ALK,,Other/unknown,
+213,"MicrobEnergy GmbH, Schwandorf",PEM,,Grid (excess renewable),
+221,"H2Move, Fraunhofer ISE",PEM,,Dedicated renewable,Solar PV
+222,"Hazira, Reliance, back-up hydrogen supply",ALK,,Other/Unknown,
+223,El Tubo - ACTA EL500,PEM,,Other/unknown,
+225,Refhyne,PEM,,Other/unknown,
+227,H&R Ölwerke Hamburg-Neuhof,PEM,,Grid (excess renewable),
+235,H2Herten,ALK,,Other/unknown,
+236,H2 research center BTU Cottbus,ALK,,Other/unknown,
+239,Cotbus,ALK,,Other/unknown,
+240,Eucolino Schwandorf,Other Electrolysis,Unknown PtX,Other/unknown,
+241,Agios Efstratios,Other Electrolysis,Unknown PtX,Other/unknown,
+246,Hydrogen mini grid system Yorkshire (Rotherham),ALK,,Other/unknown,
+249,"Fronius Energy Cell, self-sufficient house",PEM,,Other/Unknown,
+250,Hitachi Zosen - PTTEP CO2 Conversion to Methane Project R&D),Other Electrolysis,Unknown PtX,Other/unknown,
+251,Commercial Plant Svartsengi/George Olah plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+254,"Hamburg Hafen City, CEP",ALK,,Other/unknown,
+258,"Hybrid Power Plant Enertrag, Prenzlau",ALK,,Other/unknown,
+259,"EnBW H2 station, Stuttgart",ALK,,Other/unknown,
+270,Ramea Wind-Hydrogen-Diesel Project,ALK,,Other/unknown,
+275,Hydrogen Island Bozcaada,Other Electrolysis,Unknown PtX,Other/unknown,
+279,DNV Kema/DNV GL,PEM,,Other/unknown,
+282,"HARP System, Bella Coola",ALK,,Other/unknown,
+286,H2KT - Hydrogen Energy Storage in Nuuk,ALK,,Other/unknown,
+288,ITHER,ALK,,Other/unknown,
+295,H2SusBuild,Other Electrolysis,Unknown PtX,Other/unknown,
+296,"Hybrid energy storage system NFCRC, California",PEM,,Other/unknown,
+299,Nukissiorfiit Nuuk Hydrogen Plant,ALK,,Other/unknown,
+302,"Centre of Fuel Cell Technology, Chennai",PEM,,Other/unknown,
+303,"Hychico, Comodoro Rivadavia",ALK,,Dedicated renewable,Onshore wind
+305,Taleghan solar hydrogen energy system,Other Electrolysis,Unknown PtX,Other/unknown,
+306,Istanbul,ALK,,Other/unknown,
+309,AltHytude,ALK,,Other/unknown,
+312,Regenerativer Energipark Ostfalia/hybrid renewable energy park (HREP),ALK,,Grid (excess renewable),
+313,DRI CO2 recycling,PEM,,Other/unknown,
+314,Neo Olvio of Xanthi,PEM,,Other/unknown,
+315,HYLINK Totara,PEM,,Other/unknown,
+333,Baglan Energy Park Wales,ALK,,Other/unknown,
+340,"Synthetic Energy, Idaho",PEM,,Other/unknown,
+341,Hydepark,PEM,,Other/unknown,
+342,"Stand-alone power system, Neo Olvio of Xanthi",PEM,,Other/unknown,
+343,"HYLINK, Totara Valley",PEM,,Other/unknown,
+356,RES2H2 Gran Canaria,ALK,,Other/unknown,
+362,"H2 from the sun, Brunate",ALK,,Other/unknown,
+363,CEC Denizli Turkey,PEM,,Other/unknown,
+366,"CUTE and HyFLEET:CUTE, Barcelona",ALK,,Other/unknown,
+387,Savli wind-hydrogen demo project,Other Electrolysis,Unknown PtX,Other/unknown,
+405,"Dahej, Reliance, back-up hydrogen supply",ALK,,Other/unknown,
+427,"HARI project, West Beacon Farm",ALK,,Other/unknown,
+433,"Porto, CUTE",ALK,,Other/unknown,
+437,Energiepark Mainz,PEM,,Dedicated renewable,Onshore wind
+449,INGRID,ALK,,Other/unknown,
+452,Tohoku pilot plant in 2003,ALK,,Other/unknown,
+453,Gwalpahari Solar-Hydrogen demonstration,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+461,Solar Energy Centre SmartFuel hydrogen station,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+472,FaHyence,ALK,,Other/unknown,
+477,CPI Zaoquan thermal power plant in China's Ningxia region,ALK,,Other/unknown,
+487,Laboratory Plant HRI Quebec,ALK,,Other/unknown,
+491,Power plant in Lebanon for a Power Plant Cooling application,ALK,,Other/unknown,
+492,Minatec's semiconductor labs in Grenoble,ALK,,Other/unknown,
+494,Grimstad Renewable Energy Park,ALK,,Grid (excess renewable),
+497,Hypos - Sunfire,SOEC,,Other/unknown,
+498,Electrochaea: Biological methanation in Avedøre,ALK,,Other/unknown,
+499,REMOTE - Agkistro (Greece,Other Electrolysis,Unknown PtX,Dedicated renewable,Hydropower
+500,"REMOTE - Spain, Canary Island",PEM,,Dedicated renewable,Others/Various
+501,Aman - Green Hydrogen Project,Other Electrolysis,Unknown PtX,Dedicated renewable,
+502,HRS CMB Port of Antwerp,PEM,,Other/unknown,
+503,Haldor Topsoe - El-Opgraderet Biogas I,SOEC,,Other/unknown,
+504,P2G-Biocat - Decommisioned,ALK,,Other/unknown,
+505,H2 Logic HRS with onsite electrolysis in Vejle,ALK,,Grid (excess renewable),
+506,H2 Logic HRS with onsite electrolysis Holstebro,ALK,,Grid (excess renewable),
+507,H2 Logic 3 HRS with onsite electrolysis in Copenhagen,ALK,,Grid (excess renewable),
+508,Fertiberia/Iberdrola - Puertollano II (extension from Ref10),Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+509,"Hyoffwind Zeebrugge, 1st phase",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+510,"Hyoffwind Zeebrugge, 2nd phase",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+511,"Hyoffwind Zeebrugge, 3rd phase",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+512,Hyport,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+513,"""Waste-to-wheels"" Charleroi",Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+514,"Power-to-Methanol, Antwerp, phase 1",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+516,Green Fuels for Denmark - Phase 1,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+517,Hystock (EnergyStock),PEM,,Dedicated renewable,Solar PV
+518,HAEOLUS,PEM,,Dedicated renewable,Onshore wind
+519,FUTURECEM,Other Electrolysis,Unknown PtX,Other/unknown,
+520,Primolyzer (R&D),PEM,,Other/unknown,
+521,PROCON (R&D),PEM,,Other/unknown,
+522,Foulum Demonstration plant,PEM,,Other/unknown,
+524,Green Natural Gas,SOEC,,Other/unknown,
+525,“Towards the Methane Society”,Other Electrolysis,Unknown PtX,Other/unknown,
+526,"MEDLYS, Medium temperature water electrolysis (R&D)",Other Electrolysis,Unknown PtX,Other/unknown,
+527,MeGa-stoRE,ALK,,Grid (excess renewable),
+528,MeGa-stoRE Optimising and Upscaling,ALK,,Grid (excess renewable),
+529,"Vestenskov/ Nakskov Industrial and Environmental Park, Lolland",PEM,,Other/unknown,
+530,H2RES - Orsted offshore wind,ALK,,Dedicated renewable,Offshore wind
+531,Samsø,ALK,,Other/unknown,
+532,Esbjerg green ammonia plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+533,HRS Aalborg,ALK,,Grid (excess renewable),
+535,eSMR Methanol demo plant in Aarhus University,Other Electrolysis,Unknown PtX,Grid (excess renewable),
+536,HyCycle - Center for renewable H2 (R&D),PEM,,Other/unknown,
+537,NEXPEL (R&D),PEM,,Other/unknown,
+538,Glomfjord Hydrogen AS,ALK,,Dedicated renewable,Hydropower
+539,"HyNor Lillestrøm, Akershus Energy Park",Biomass,,,
+540,Statkraft-CELSA-Mo green H2 for steel production,ALK,,Dedicated renewable,Others/Various
+541,Utsira Island,ALK,,Other/unknown,
+542,Nordic Blue Crude,SOEC,,Dedicated renewable,Others/Various
+543,Acorn Aberdeenshire,NG w CCUS,ATR+CCS,,
+544,Laboratory System at IFE Kjeller Phase 1,PEM,,Other/Unknown,
+545,Teesside collective,NG w CCUS,SMR+CCS,,
+546,HyDEMO,NG w CCUS,SMR+CCS,,
+547,Aurora (former Pilot-E),Other Electrolysis,Unknown PtX,Dedicated renewable,
+548,"Green fertilizer project Porsgrunn, phase 1",ALK,,Grid,
+549,4Kvinnherad Power-to-Gas,Other Electrolysis,Unknown PtX,Other/unknown,
+550,Tjeldbergodden Hydrogen,Other,Membrane separation from purge gas with CCS,,
+552,Gigastack-Hornsea 2,PEM,,Dedicated renewable,Offshore wind
+553,The Hydrogen office,ALK,,Other/unknown,
+554,RABH2,ALK,,Other/unknown,
+555,Air Fuel Synthesis pilot plant,Other Electrolysis,Unknown PtX,Other/unknown,
+556,"Aberdeen, Hydrogen bus project",ALK,,Other/Unknown,
+557,"Fife, Levenmouth Community Energy Project",Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+558,"PURE Project, Unst",ALK,,Other/unknown,
+559,Tyseley Energy Park refuelling hub,PEM,,Dedicated renewable,Others/Various
+562,H2H Saltend (Related to Humber Cluster demos),NG w CCUS,ATR+CCS,,
+563,Green Fuels for Denmark - Phase 2,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+565,Green Fuels for Denmark - Phase 3,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+566,Green Hydrogen for Scotland,PEM,,Dedicated renewable,Solar PV
+568,H2morrow,NG w CCUS,SMR+CCS,,
+571,CF Industries - Donaldsonville Nitrogen Complex,ALK,,Grid,
+572,Linde - Ontario (California),Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+573,Westkuste 100 (Phase 2),ALK,,Dedicated renewable,Others/Various
+574,Get H2 Lingen,Other Electrolysis,Unknown PtX,Other/unknown,
+575,HySynGas,PEM,,Other/unknown,
+576,Northern Irish hydrogen project,Other Electrolysis,Unknown PtX,Other/unknown,
+577,"Liquid Wind, FlagshipONE",PEM,,Dedicated renewable,Others/Various
+578,H2U - Eyre Peninsula Gateway Hydrogen Project at Port Bonython.,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+579,"North CCU HUB, phase 1. North-C -Methanol Demo plant",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+580,Centurion,PEM,,Dedicated renewable,Others/Various
+581,Asian Renewable Energy Hub,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+582,IPCEI SilverFrog,PEM,,Dedicated renewable,Others/Various
+583,IPCEI New Green Flamingo,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+584,Murchison,PEM,,Dedicated renewable,Solar PV
+585,Helios Green Fuels - Neom,ALK,,Dedicated renewable,Others/Various
+586,IPCEI Blue Danube,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+587,Project GERI,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+588,IPCEI Black Horse (40 electrolysis production sites),Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+589,Project NEO,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+590,NEL - Nikola Agreement H2 refuelling stations in USA (from 2020),Other Electrolysis,Unknown PtX,Other/unknown,
+591,Hydrogen Delta - Zeeland,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+592,HyEx - phase 1,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+593,HyEx - phase 2,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+594,Costa Rica Transportation Ecosystem Project,PEM,,Dedicated renewable,Others/Various
+595,"HyNetherlands, 1st phase",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+596,HyNetherlands 2nd phase,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+597,Hygreen Provence 1st phase,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+598,Hygreen Provence 2nd phase,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+599,Hygreen Provence 3rd phase,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+600,Sundance Hydrogen,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+601,Port of Rotterdam BP refinery - H2.50,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+602,"Hysencia, Phase I",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+603,Ningxia Solar Hydrogen Project,ALK,,Dedicated renewable,Solar PV
+604,Dyno Nobel Renewable Hydrogen Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+605,Green Crane Pais Vasco Hub,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+606,"Green Crane, Asturias Hub, Phase I",Other Electrolysis,Unknown PtX,Grid,
+607,"Green Crane, Castilla y Leon Hub",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+608,"Green Crane, Aragon Hub",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+609,Hydrogen Plant for Westereems Wind Farm (RWE Eemshaven),Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+610,Queensland Nitrates Renewable Hydrogen and Ammonia,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+611,"Hemweg
+ hub Amsterdam",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+612,Yara Sluiskil (Deltaurus 2) - Haddock,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+613,Weifang Binhai Photovoltaic 100MW Hydrogen Generation Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+614,"GreenH2UB (10 hubs of 3-10MW, the first one Ref786)",Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+615,vHyGO - 1st Facility for H2 buses in Bouin (H2 Ouest),ALK,,Dedicated renewable,Unknown
+616,vHyGO - 2nd facility in Vannes (EffiH2),Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+617,H2SusBuild / RES-H2,ALK,,Other/Unknown,
+618,Ferrolterra plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+619,ELYGRID (R&D),ALK,,Other/unknown,
+620,Aviation synfuels,PEM,,Dedicated renewable,Others/Various
+621,Tapada do Outeiro natural gas power plant,Other Electrolysis,Unknown PtX,Other/unknown,
+622,"Lingen BP Refinery , phase 1",Other Electrolysis,Unknown PtX,Other/unknown,
+623,Wunsiedel Energy Park (Phase 1),PEM,,Dedicated renewable,Others/Various
+624,Wunsiedel Energy Park (Phase 2),PEM,,Dedicated renewable,Others/Various
+625,Repsol Bilbao port synfuels project,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+626,Methane Synthesis test facility in Koshijihara Plant of INPEX’s - Nagaoa,Other Electrolysis,Unknown PtX,Other/unknown,
+627,Hydrogen Island Aitutaki,ALK,,Other/unknown,
+628,Hydrogen Island Bozcaada,ALK,,Other/unknown,
+629,E-Thor,Other Electrolysis,Unknown PtX,Other/unknown,
+630,H₂ Air Base Leeuwarden,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+631,SEE / Storage of electric energy,ALK,,Other/unknown,
+632,New zealand Matiu/Somes Island,ALK,,Other/unknown,
+633,Vendée hydrogène,Other Electrolysis,Unknown PtX,Other/unknown,
+634,H2One - SP Group,PEM,,Grid,
+635,RESelyser (R&D),ALK,,Other/unknown,
+636,DVGW-EBI KIT - Demo-SNG,PEM,,Other/unknown,
+637,Multiphly,SOEC,,Dedicated renewable,Unknown
+638,Semakau island microgrid Engie (SPORE),Other Electrolysis,Unknown PtX,Other/unknown,
+639,"PostBus Hydrogen bus, Brugg, aargau CHIC",ALK,,Other/Unknown,
+640,Emden I Biogas upgrading,ALK,,Other/Unknown,
+641,PtG Switzerland,PEM,,Dedicated renewable,Others/Various
+642,MYRTE,PEM,,Other/unknown,
+643,H2OzBus Project,PEM,,Other/unknown,
+644,"Sunfire PtL demo ""Fuel1""",SOEC,,Other/unknown,
+645,Hyport - Toulouse-Blagnac Airport,Other Electrolysis,Unknown PtX,Other/Unknown,
+646,DEMETER,SOEC,,Other/Unknown,
+647,Ekolyser (R&D),PEM,,Other/Unknown,
+648,LastEISys (R&D),PEM,,Other/Unknown,
+649,PtG-Elektrolyse im MW-Maßstab (R&D),ALK,,Other/Unknown,
+650,"BioPower2Gas, Allendorf, Eder",PEM,,Other/Unknown,
+651,Rozenburg Power2Gas Phase 1,PEM,,Other/Unknown,
+652,"Greenhouse heating, solar-H2",ALK,,Other/Unknown,
+653,EE-Methan aus CO2 (R&D),Other Electrolysis,Unknown PtX,Other/Unknown,
+654,OptFuel (R&D),Other Electrolysis,Unknown PtX,Other/Unknown,
+655,Thüga PtG plant Frankfurt/Main,PEM,,Other/Unknown,
+656,RENOVAGAS,ALK,,Other/Unknown,
+657,"HyFLEET:CUTE, Hamburg",ALK,,Other/Unknown,
+658,Reduction and Reuse of CO2: Renewable Fuels for Electricity Production- ZHAW,PEM,,Other/Unknown,
+659,CHOCHCO,SOEC,,Other/Unknown,
+660,Hydrogen Wind Farm Sotavento,ALK,,Dedicated renewable,Offshore wind
+661,"CUTE, Stockholm",ALK,,Other/Unknown,
+662,"HyFLEET:CUTE, Amesterdam",ALK,,Other/Unknown,
+663,"Wind2Hydrogen, HyCentA",PEM,,Other/Unknown,
+664,BOEING (rSOC Demonstrator),SOEC,,Other/Unknown,
+665,Pilot & Demo PtM HSR,ALK,,Other/Unknown,
+666,Dresden,SOEC,,Other/Unknown,
+667,Rapperswil,Other Electrolysis,Unknown PtX,Other/Unknown,
+668,"RegEnKibo, Kirchheimbolanden (R&D)",Other Electrolysis,Unknown PtX,Other/Unknown,
+669,ECTOS,ALK,,Other/Unknown,
+670,"ETOGAS, Solar Fuel Alpha-plant 250 kW, ZSW",ALK,,Other/Unknown,
+671,"Shoro Dam in Shiranuka-cho, Shiranuka-gun, Hokkaido",PEM,,Other/Unknown,
+672,SoCalGas and University of California Irvine 1,PEM,,Other/Unknown,
+673,HELMETH (R&D),SOEC,,Other/Unknown,
+674,SoCalGas and University of California Irvine 2,PEM,,Other/Unknown,
+675,Tomakomai,NG w CCUS,SMR+CCS,,
+676,GrInHy,SOEC,,Other/Unknown,
+677,"Tomamae Town, Hokkaido",ALK,,Other/Unknown,
+678,Yokohama City Wind Power Plant (Hama Wing),PEM,,Other/Unknown,
+679,GRHYD,PEM,,Other/Unknown,
+680,ELY4OFF,PEM,,Other/Unknown,
+681,"Hidrolica, Tahivilla",PEM,,Other/Unknown,
+682,GenHyPEM (R&D),PEM,,Other/Unknown,
+683,Jupiter 1000,Other Electrolysis,PEM+ALK,Other/Unknown,
+684,Hawaii Hydrogen Power Park (phase 2),PEM,,Other/Unknown,
+685,PVFCSYS Sophia Antipolis,ALK,,Other/Unknown,
+686,PVFCSYS Agrate,ALK,,Other/Unknown,
+687,"THEUS H2 Energy Storage, Takasago (R&D)",PEM,,Other/Unknown,
+688,Aeropila,PEM,,Other/Unknown,
+689,PosHYdon,PEM,,Dedicated renewable,Others/Various
+690,FIRST - Showcase II,PEM,,Other/Unknown,
+691,IHAVU,Other Electrolysis,Unknown PtX,Other/Unknown,
+692,"WELTEMP, Water electrolysis at elevated temperature",PEM,,Other/Unknown,
+693,Ameland,PEM,,Other/Unknown,
+694,Wind-H2 Village Prince Edward Island,ALK,,Other/Unknown,
+695,"DTE Energy Hydrogen Technoly Park, Southfield Michigan",ALK,,Other/Unknown,
+696,Wind2H2 Project NREL,ALK,,Other/Unknown,
+697,Small Scale Renewable Power System DRI (Desert Research Institute),ALK,,Other/Unknown,
+698,IRENE System,ALK,,Other/Unknown,
+699,Bio SNG Güssing,Other Electrolysis,Unknown PtX,Other/Unknown,
+701,Fine Chemical Industry Park of Lanzhou,ALK,,Dedicated renewable,Solar PV
+702,GldH2,Other Electrolysis,Unknown PtX,Other/Unknown,
+703,P2P IPKW,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+704,McPhy HRS,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+705,MethFuel,PEM,,Other/Unknown,
+706,Coffeyville fertilizer plant,Oil w CCUS,Coke gasification with CCS,,
+707,PCS Nitrogen,NG w CCUS,SMR+CCS,,
+708,Port Arthur,NG w CCUS,SMR+CCS,,
+709,MCRC bio-hydrogen facility Chennai,Biomass,Microbial fermentation,,
+710,Port Jerome,NG w CCUS,SMR+CCS,,
+711,Quest,NG w CCUS,SMR+CCS,,
+712,ElectroHgena,Other Electrolysis,Unknown PtX,Other/Unknown,
+713,Power to flex (several pilot projects),PEM,,Other/Unknown,
+714,"Minerve, Nantes",SOEC,,Other/Unknown,
+716,HYPOS (several projects),Other Electrolysis,PEM+ALK+SOEC,Other/Unknown,
+717,"Hazira, Reliance, back-up hydrogen supply",ALK,,Other/Unknown,
+718,Air Liquide Becancour,PEM,,Dedicated renewable,Hydropower
+719,Hebei Jiantou Guyuan wind project - 2nd phase,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+720,Air Products Net-Zero Hydrogen Energy Complex,NG w CCUS,ATR+CCS,,
+721,Haiperer Wind Power Hebei - first phase,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+722,Guangdong Synergy Hydrogen Power Technology Co. 2n phase,PEM,,Dedicated renewable,Others/Various
+723,"Foshan hydrogen city, Phase 1",PEM,,Dedicated renewable,Others/Various
+724,"Foshan hydrogen city, Phase 2",PEM,,Dedicated renewable,Others/Various
+725,DEMO4GRID,ALK,,Grid (excess renewable),
+726,Anglo-American Mining Truck,ALK,,Dedicated renewable,Others/Various
+727,Walmart Quilicura forklifts,PEM,,Dedicated renewable,Solar PV
+728,Wuppertal refuelling station,PEM,,Dedicated renewable,Others/Various
+730,SALCOS - WindH2,PEM,,Dedicated renewable,Onshore wind
+731,PtG-Fehndorf,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+732,Hebei Jiantou Guyuan wind project - 1st phase,ALK,,Dedicated renewable,Onshore wind
+733,"Green hydrogen Project, Mohammad Bin Rashid Solar Park",PEM,,Dedicated renewable,Solar PV
+734,Hydrogen Park South Australia - HyPSA,PEM,,Dedicated renewable,Others/Various
+735,NEL-Champaign-Urbana Mass Transit District,PEM,,Other/Unknown,
+736,Cyrus Smith,Other Electrolysis,Unknown PtX,Other/Unknown,
+737,Jemena Western Sydney - H2GO project,Other Electrolysis,Unknown PtX,Grid,
+738,Queensland Government HRS,PEM,Unknown PtX,Other/Unknown,
+739,GRASSHOPPER,PEM,,Other/Unknown,
+740,Seafuel project,Other Electrolysis,PEM+ALK,Dedicated renewable,Others/Various
+741,Obayashi geothermal hydrogen,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+742,Hydrogen village Burgenland,PEM,,Other/Unknown,
+743,"Unisa, Mawson Lakes campus",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+744,North West Sturgeon refinery,Oil w CCUS,Bitumen gasification+CCS,,
+745,Nutrien (former Agrium) fertilizer,NG w CCUS,SMR+CCS,,
+746,Kidman Park in Adelaide depot,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+747,"SPHYNX, R&D",Other Electrolysis,Unknown PtX,Other/Unknown,
+748,Laboratory Plant HRI Quebec,ALK,,Other/Unknown,
+749,Fronius HyLOG-Fleet (Hydrogen powered Logistic System),PEM,,Other/Unknown,
+750,"HyWindBalance, Oldenburg",PEM,,Other/Unknown,
+751,vHyGO -3rd facility in Brest,ALK,Unknown PtX,Dedicated renewable,Unknown
+752,Hyport@Duqm,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+753,Engie - Yara Pilbara test,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+754,Haiperer Wind Power Hebei - second phase,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+755,"Crystal Brook Energy Park, South Australia",Other Electrolysis,Unknown PtX,Grid (excess renewable),
+756,Origin Energy - Kawasaki Heavy Industries Townsville project,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+757,H2-hub Gladstone (Queensland) - phase 1,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+758,"CIIC Tiangong wind and solar hydrogen, Zhangjiakou",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+759,"Demonstration plant Kuala Terengganu, Malaysia",PEM,,Other/Unknown,
+760,Demo Plant Agricultural University Athens,PEM,,Other/Unknown,
+761,The Hydrogen house,PEM,,Other/Unknown,
+762,Fenosa Canberra hydrogen demo project,Other Electrolysis,Unknown PtX,Other/Unknown,
+764,Alliander Oosterwolde - solar park of GroenLeven,ALK,,Dedicated renewable,Solar PV
+765,Siemens Energy and Beijing Green Hydrogen Technology Development HRS,PEM,,Other/Unknown,
+766,RWE-Thyssenkrupp Duisburg steel plant (HydrOxy Hub Walsum),ALK,,Grid,
+767,HyAMMED HD trucksrefuelling station,Other Electrolysis,Unknown PtX,Other/Unknown,
+768,Ribatejo natural gas power plant,Other Electrolysis,Unknown PtX,Other/Unknown,
+769,Air Liquide liquid hydrogen production plant,Biomass,Biogas reforming,,
+770,"Haru Oni, phase 1",PEM,,Dedicated renewable,Onshore wind
+771,Hollandse Kust (noord) - CrossWind - Pernis Refinery,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+772,Sun Metals Zinc Refinery,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+773,HRS TMB Barcelona,PEM,,Dedicated renewable,Others/Various
+774,HRS Charleroi,Other Electrolysis,Unknown PtX,Other/Unknown,
+775,HRS CNH2 Puertollano,ALK,,Dedicated renewable,Solar PV
+776,Fertiberia/Iberdrola - Palos de la Frontera I,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+777,Hyflexpower,PEM,,Dedicated renewable,Others/Various
+778,HydroHub-Fenne,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+779,Solena Group Plasma enhanced gasification,Biomass,Biomass gasification,,
+780,H2U (former Proyecto Verne),Other Electrolysis,Unknown PtX,Other/Unknown,
+781,Olive Creek 1,NG w CCUS,Methane pyrolysis,,
+782,Olive Creek 2,NG w CCUS,Methane pyrolysis,,
+783,Fertiberia/Iberdrola - Palos de la Frontera II,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+784,Douglas PUD - industrial area north of East Wenatchee,PEM,,Grid (excess renewable),
+785,Chongli wind-solar Hydrogen Project - first phase,PEM,,Dedicated renewable,Others/Various
+786,"GreenH2UB (1st hub, Noord Brabant)",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+787,Duwaal,PEM,,Dedicated renewable,Onshore wind
+788,Chongli wind-solar Hydrogen Project - second phase,PEM,,Dedicated renewable,Others/Various
+789,Hysolar Green on Road - Nieuwegein,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+790,Halcyon Power,PEM,,Dedicated renewable,Others/Various
+791,Hydrogenpilot Oosterwolde,Other Electrolysis,Unknown PtX,Grid (excess renewable),
+792,Kopernikus 2.0,SOEC,,Grid (excess renewable),
+793,E-CO2MET Raffinerie Mitteldeutschland,SOEC,,Other/Unknown,
+794,HESC (Liquefied hydrogen energy supply chain),Coal w CCUS,Coal gasification with CCS,,
+795,H-Vision (phase 1),NG w CCUS,ATR+CCS,,
+796,Preem CCS,NG w CCUS,SMR+CCS,,
+797,METHYCENTRE,PEM,,Other/Unknown,
+798,Hydrogen Park Gladstone,PEM,,Other/Unknown,
+799,"Toyota Hydrogen Centre, Altona, Victoria",Other Electrolysis,Unknown PtX,Grid (excess renewable),
+800,GZI Next,PEM,,Dedicated renewable,Others/Various
+803,Yanchang Integrated Carbon Capture and Storage Demonstration,Coal w CCUS,Coal gasification with CCS,,
+804,Hazer group CH4 pyrolysis,Biomass,Methane pyrolysis,,
+805,ECB Omega Green biofuel project,ALK,,Dedicated renewable,Others/Various
+806,"Element One (Element Eins), phase 1",ALK,,Dedicated renewable,Others/Various
+807,"H2V Normandy, 1st phase",ALK,,Grid,
+808,"H2V59, 1st phase",ALK,,Grid,
+809,Arrowsmith Hydrogen Project,ALK,,Dedicated renewable,Others/Various
+811,Bad Lauchstädt energy park,ALK,,Dedicated renewable,Solar PV
+812,"DJEWELS Chemiepark - Delfzijl, Phase 1",ALK,,Dedicated renewable,Offshore wind
+813,UpHy,PEM,,Other/Unknown,
+814,Referenzkraftwerk Lausitz,PEM,,Other/Unknown,
+815,Lake Charles Methanol,Oil w CCUS,Petroleum coke+CCS,,
+816,PGNiG - INGRID,Other Electrolysis,Unknown PtX,Other/Unknown,
+817,LADWP - NREL Intermountain Power Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+818,"DJEWELS Chemiepark - Delfzijl, Phase 2",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+819,H2ermes,Other Electrolysis,Unknown PtX,Other/Unknown,
+820,"H2V Normandy, 2nd phase",ALK,,Grid,
+821,"H2V59, 2nd phase",ALK,,Grid,
+822,Hybridge,Other Electrolysis,ALK+PEM,Grid,
+823,H2M,NG w CCUS,Unknown technology,,
+825,Wabash CarbonSAFE,Coal w CCUS,Coal gasification with CCS,,
+826,"Etzel, Salt caverns",Other Electrolysis,Unknown PtX,Other/Unknown,
+827,"Shell heavy residue gasification CCU - Pernis refinery (in 2024, the CCU project will become CCUS - ref1323 - once Porhtos project is available)",Oil w CCUS,Heavy oil residue gasification+CCS,,
+828,Bio Energy Netherlands,Biomass,Biomass gasification,,
+829,Blue Hydrogen Den Helder,Other,Combination of electrolysis and NG w CCS,,
+830,Nemo Hydrogen Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+831,Baicheng City Bus Company - Songyuan City,Other Electrolysis,Unknown PtX,Other/Unknown,
+833,Repsol advanced biofuels plant Cartagena,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+834,H2-based residential area in Van der Veen,Other Electrolysis,Unknown PtX,Other/Unknown,
+835,H2Gas,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+836,Long Beach Fuel Cell plant,Biomass,Biogas reforming,,
+837,Producing Hydrogen by Gasification of Biomass in 'het Groene Hart',Biomass,Biomass gasification,,
+838,Ramboll study for an e-fuel plant in Greenland,Other Electrolysis,Unknown PtX,Dedicated renewable,Hydropower
+839,Saint-Brieuc Armor Agglomeration production plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+840,"Giner ELX, H2@Scale (Florida)",PEM,,Grid (excess renewable),
+841,"Exelon, H2@Scale",PEM,,Nuclear,
+842,"Frontier Energy, H2@Scale - electrolysis",PEM,,Dedicated renewable,Others/Various
+843,"DJEWELS Chemiepark - Delfzijl, Phase 3",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+844,Curthyl,Other Electrolysis,Unknown PtX,Other/Unknown,
+845,Deltaurus 1,Other Electrolysis,Unknown PtX,Other/Unknown,
+846,Deltaurus 3,Other Electrolysis,Unknown PtX,Other/Unknown,
+847,"North CCU HUB, phase 3 (Deltaurus 4)",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+848,Centrale Vlissingen - VoltH2,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+849,"HySynergy, phase 2",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+850,Green lab skive,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+851,Shell China - Zhangjiakou,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+852,Dobrogea wind farm,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+853,Aberdeen Hydrogen Hub,Other Electrolysis,Unknown PtX,Other/Unknown,
+854,"Fortescue Metals Group - Bell Bay, Tasmania",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+855,H2HUB,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+856,"Green Crane - La Robla, Phase 1",Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+857,"Meirama plant, phase 1",Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+858,EMEC tidal-battery-hydrogen demo,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+859,Orange-BAT Puerto Valencia,Other Electrolysis,Unknown PtX,Grid (excess renewable),
+860,Huaneng electrolysis plant in Western Sichuan,Other Electrolysis,Unknown PtX,Dedicated renewable,Hydropower
+861,H-Vision (phase 2),NG w CCUS,ATR+CCS,,
+862,HaYrport,Other Electrolysis,Unknown PtX,Other/Unknown,
+863,"Power-to-Methanol, Antwerp, phase 2",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+864,"Hyport, phase 2",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+865,"IPCEI Green Crane, Italy Hubs",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+866,White Dragon,Other Electrolysis,Various,Dedicated renewable,Others/Various
+867,"North CCU HUB, phase 2. North-C -full scale",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+868,HRS Halle (Continued as Ref148),ALK,,Dedicated renewable,Onshore wind
+869,HRS Wilrijk,PEM,,Dedicated renewable,Unknown
+870,Origin Energy Tasmania’s Bell Bay,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+871,H2One Multistation- Tsuruga City,PEM,,Grid,
+872,"H100 Fife Project, Levenmouth",ALK,,Dedicated renewable,Others/Various
+873,Steag-Thyssenkrupp Duisburg steel plant (HydrOxy Hub Walsum),ALK,,Grid,
+874,Gela refinery,PEM,,Dedicated renewable,Others/Various
+875,Taranto Sustainable Refinery,PEM,,Dedicated renewable,Others/Various
+876,Plug Power-Brookfield Renewable Susquehanna River (Pen) project,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+877,"Green fertilizer project Porsgrunn, phase 2",ALK,,Grid,
+878,"BENORTH2 (Amorebieta-Boroa power plant), phase 1",Other Electrolysis,Unknown PtX,Grid (excess renewable),N/A
+879,"BENORTH2 (Amorebieta-Boroa power plant), phase 2",Other Electrolysis,Unknown PtX,Grid (excess renewable),N/A
+880,Camberra HRS,PEM,,Dedicated renewable,Others/Various
+881,Recycle Carbone Varennes biofuels plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+882,Beijing Jingneng Power Company,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+883,Western Jutland Green ammonia project,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+884,Wallonia e-methane project,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+885,Get H2 Nukleus,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+886,"NortH2, phase 2",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+887,"NortH2, phase 3",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+888,"AquaPrimus (AquaVentus, phase 1), Heligoland",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+889,Pacific Solar Hydrogen,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+890,H2-hub Gladstone (Queensland) - phases 2-3,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+891,Brande Hydrogen project,PEM,,Dedicated renewable,Offshore wind
+892,Hydrogen trial in Dalmine steel mill,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+893,Horizeo project,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+894,Deep Purple,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+895,Pinto waste water plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+896,Linde Leuna Chemical Complex,PEM,,Dedicated renewable,Unknown
+897,Total’s La Mède biorefinery,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+898,Project Haber,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+899,Grupa Lotos refinery,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+900,Vattenfall's Moorburg plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+901,H2TAS,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+902,Sumitomo Queensland,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+903,Sumitomo Oman,NG w CCUS,Unknown technology,,
+904,Sumitomo Malaysia,Other Electrolysis,Unknown PtX,Dedicated renewable,Hydropower
+905,H24All,ALK,,Other/Unknown,N/A
+906,As Pontes power plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+907,Esslingen District,ALK,,Grid (excess renewable),N/A
+908,Compostilla - Endesa,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+909,Seseña - Endesa,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+910,Huelva - Endesa,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+911,Hidrogeno El Cierzo,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+912,Tarragona - Endesa,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+913,Teruel - Endesa,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+914,Almeria - Endesa,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+915,Barranco de Tirajana - Endesa,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+916,Granadilla - Endesa,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+917,Alcudia - Endesa,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+918,"Green Crane, Asturias Hub, Phase Ib",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+919,"Green Crane, Asturias Hub, Phase Ib",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+920,"Hynet Northwest, phase 2",NG w CCUS,ATR+CCS,,
+921,Zero Emission Valley (14 HRS),Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+922,Bahía H2 Offshore,PEM,,Dedicated renewable,Others/Various
+923,Liberty South - Port Anthony,NG w CCUS,Methane pyrolysis,,
+924,KOGAN HYDROGEN DEMONSTRATION PROJECT,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+925,Masdar City green H2,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+926,Lysekil refinery (phase 1),Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+927,"Maasvlakte, phase I",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+928,"Maasvlakte, phase II",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+929,"Hydrogen Park Murray Valley, Victoria",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+930,Clean Energy Innovation Park,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+931,ORANGE.BAT Castellon,ALK,,Dedicated renewable,Others/Various
+932,Saras Sardinia refinery,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+933,H2 Creteil,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+934,SunLine Palms Springs,PEM,,Other/Unknown,N/A
+935,Unknown project from NEL,PEM,,Other/Unknown,
+936,H2 Green Steel (H2GS),Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+937,"New York Science, Technology and Advanced Manufacturing Park",PEM,,Dedicated renewable,Hydropower
+938,Abanto Technology Park,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+939,HyDeal Ambition,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+940,Boryeong LNG Terminal,NG w CCUS,,N/A,N/A
+941,Florida Power & Light utility pilot plant,Other Electrolysis,,Dedicated renewable,Solar PV
+942,Refhyne II,PEM,,Dedicated renewable,Offshore wind
+943,H2-Login,PEM,,Dedicated renewable,Solar PV
+944,Changwon Industrial complex,SOEC,,Dedicated renewable,Solar PV
+945,Wilhelmshaven LNG terminal,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+946,Sinopec Qilu Petrochemical CCS,Coal w CCUS,,N/A,N/A
+947,Karamay Dunhua Oil Technology CCUS EOR Project,Oil w CCUS,,N/A,N/A
+948,Great Plains Synfuel Plant and Weyburn-Midale,Coal w CCUS,,N/A,N/A
+949,Al Reyadah CCUS,Oil w CCUS,,N/A,N/A
+950,Leed Bradford Airport hub,PEM,,Other/Unknown,N/A
+951,Northwest Natural Holding synthetic methane plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+952,Centre Point Energy Minnesota,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+953,New Jersey Resources Howell,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+954,Vantaa-Wartsila methanation,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+955,AES Gener ammonia project,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+956,PDO’s solar-paneled car park,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+957,Amin Solar Renewable Energy Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+958,Huaneng Qingneng Institute demo plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+959,CNNC HTGR P2G demo,Other Electrolysis,Unknown PtX,Nuclear,N/A
+960,CNNC 600MW HTGR P2G for steel,Other Electrolysis,Unknown PtX,Nuclear,N/A
+961,"Datong City solar plant, phase 1",Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+962,Eco Energy World Quenssland project,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+963,National grid green H2 storage in New York,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+964,DH2Green Port of Malaga,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+965,Saipem and Alboran Hydrogen (3 plants),Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+966,Saipem and Alboran Hydrogen (1 plant),Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+967,Saipem and Alboran Hydrogen (1 plant),Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+968,Optimal-ITM agreement,PEM,,,N/A
+969,Unknown ITM peoject,PEM,,,N/A
+970,Green Hydrogen for Humberside,PEM,,,N/A
+971,HRS Gatwick airport,PEM,,Grid,N/A
+972,4 projects of ITM in Australia,PEM,,Other/Unknown,N/A
+973,HRS Swindon,PEM,,Grid,N/A
+974,HRS Beaconsfield,PEM,,Grid,N/A
+975,QEM Julia Creek - Queensland,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+976,Rafnes chemical plants,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+977,Synkero synfuels project,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+978,Zenid Initiative,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+979,H2Teeside 1st phase,NG w CCUS,,N/A,N/A
+980,H2Teeside 2nd phase,NG w CCUS,,N/A,N/A
+981,ITM-Sumitomo Coorp,PEM,,Other/Unknown,N/A
+982,PT Panca Amara Utama ammonia plant in Luwuk,NG w CCUS,,N/A,N/A
+983,OMV Schwechat Refinery,PEM,,Dedicated renewable,Others/Various
+984,Barents Blue ammonia plant,NG w CCUS,,N/A,N/A
+985,"Hysencia, Phase II",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+987,CEOG,ALK,,Dedicated renewable,Solar PV
+988,NewGen,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+989,"Nauticol Blue Methanol facility in Grande Prairie, Alberta",NG w CCUS,,N/A,N/A
+990,Evolugen H2 injection project,Other Electrolysis,Unknown PtX,Dedicated renewable,Hydropower
+991,Bangladesh Council of Scientific and Industrial Research demo,Biomass,,N/A,N/A
+992,Port of Pecem - Base One,Other Electrolysis,Unknown PtX,Dedicated renewable,Hydropower
+993,Aquamarine,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+994,"Clean Hydrogen Coastline, Ems",Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+995,Herrenhausen sewage works,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+996,Port of Duqm NH3 plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+997,HRS Plataforma Logística PLAZA,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+998,HRS Valecnia,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+999,HRS Alicante,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1000,Prince George refinery,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1001,Science Parks of Tainan and Hsinchu,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1002,SeaH2Land,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1003,HRS Bremervörde - trains,PEM,,Other/Unknown,N/A
+1004,ArcelorMittal Bremen,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1005,Rossello paper factory,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1006,DG Fuels,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1007,Energía Los Cabos,PEM,,Dedicated renewable,Solar PV
+1008,GICON - Vietnam Petroleum Institute MoU,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1009,Heritage Gas - Ottawa,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1010,Planetary Hydrogen - Ottawa,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1011,RHYME,PEM,,Dedicated renewable,Onshore wind
+1012,Yanqing Hydrogen Energy Industrial Park,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1013,Cangzhou Bohai New District Hydrogen,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1014,"Wind Power Heating and Hydrogen Production Project in Fengning Manzu Autonomous County, Chengde City",Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1015,Hydrogen Energy Equipment Industrial Cluster Project in Handan Economic and Technological Development Zone,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1016,Zhangjiakou Yangyuan Jingxi New Energy Base Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1017,CGN Baicheng Hydrogen Production Project - Jilin,Other Electrolysis,Unknown PtX,Nuclear,N/A
+1018,Shanxi Jinzhong,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1019,Shanxi Changzhi,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1020,Jilin Yushu,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1021,"Datong City solar plant, phase 2",Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1022,H2Pioneer,PEM,,Dedicated renewable,Others/Various
+1023,WIVA P&G Hydrogen Region,Other Electrolysis,PEM & SOEC,Dedicated renewable,Others/Various
+1024,Carbon2ProductAustria - C2PAT,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1025,P2G4A,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1026,Matra power pant,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1027,"Konin Power Plant, phase 1",PEM,,Dedicated renewable,Others/Various
+1028,Project AIR (Perstorp - Stenungsund),Other Electrolysis,Unknown PtX,Other/Unknown,
+1029,Birsfelden power plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Hydropower
+1030,Steklarna Hrastnik glass manufactuing plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1031,"Solar Global group headquarters, phase 1",Other Electrolysis,Unknown PtX,Grid (excess renewable),N/A
+1032,"Solar Global group headquarters, phase 2",Other Electrolysis,Unknown PtX,Grid (excess renewable),N/A
+1033,Greening of Gas (GoG) - Net4Gas DEMO,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1034,"Lingen BP Refinery , phase 2",Other Electrolysis,Unknown PtX,Other/unknown,
+1035,HyMAT SH,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1036,We-4-PUR,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1037,H2 in the Ketzin energy transition laborator,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1038,Green Energy Hub Helmstedt,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1039,Speicherstadt Kerpen,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1040,AquaVentus (phase 3),Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1041,SLOP2G Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1042,Thermal Power Plant Sostanj,Other Electrolysis,Unknown PtX,Other/Unknown,
+1043,TPJ Jesenice,Other Electrolysis,Unknown PtX,Other/Unknown,
+1045,Dolphyn 1,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1046,Dolphyn 1,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1047,"PTG Bilsthorpe, Nottinghamshire",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1048,Uniper Killingholme site,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1049,North Sea Wind Power Hub,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1050,P2G Velke Kapusany,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1051,"Element One (Element Eins), phase 2",ALK,,Dedicated renewable,Others/Various
+1052,"Element One (Element Eins), phase 2",ALK,,Dedicated renewable,Others/Various
+1053,"Green Hydrogen Hubs (Ahaus-Epe, Etzel, Harsefeld, Moeckow, Drenthe, Leer, Zuidwending, Denmark), phase 1",Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1054,"Green Hydrogen Hubs (Ahaus-Epe, Etzel, Harsefeld, Moeckow,Drenthe, Leer, Zuidwending, Denmark), phase 2",Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1055,Sun2Hy,Other,Photoelectrochemical processes,,
+1056,HyGéo,Other Electrolysis,Unknown PtX,Grid,
+1057,Pegasus,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1058,Power to gas plant in the south of Italy,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1059,Hydrogen injection into the gas network in Lithuania,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1060,Power to Gas Production with infrastructure building/enhacement in Latvia,Other Electrolysis,Unknown PtX,Grid (excess renewable),N/A
+1061,"G2F - Gas to Future, phase 1",Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1062,"G2F - Gas to Future, phase 2",Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1063,Herten HRS,PEM,,Dedicated renewable,Others/Various
+1064,vHyGO -4th facility in St Nazaire,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1065,vHyGO -5th facility in Dieppe,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1066,NEL-Lhyfe Agreement,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1067,McDermott - CB&I 2nd project,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1068,Hy-Fi,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1069,HYBAYERN,PEM,,Dedicated renewable,Unknown
+1070,Hyways for future,PEM,,Grid (excess renewable),N/A
+1071,Norddeutsches Reallabor - Living Lab Northern Germany,PEM,,Dedicated renewable,Unknown
+1072,"Haru Oni, phase 2",PEM,,,Others/Various
+1073,"Haru Oni, phase 3",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1074,Green Hydrogen Systems - Skai Energies,ALK,,Other/Unknown,N/A
+1075,Hydrospider - Eglisau-Glattfelden,Other Electrolysis,Unknown PtX,Dedicated renewable,Hydropower
+1076,Pertamina Ulubelu gerothermal plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1077,Hitachi-P2X,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1078,Ercros - Sabinanigo,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1079,OMNI CT - California,Other,Waste gasification,,
+1081,Sapio - Mantova,NG w CCUS,,,
+1082,Kokkola H2 plant,ALK,,Other/Unknown,
+1083,HyEnergy Zero Carbon Hydrogen,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1084,Yellow Sea,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1085,HNH,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1086,Rostock - RWE,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1087,CRS4-Italgas Sardinia,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1088,"Gen2 Energy - Vitol, 1st site",Other Electrolysis,Unknown PtX,Dedicated renewable,Hydropower
+1089,"Gen2 Energy - Vitol, 2nd site",Other Electrolysis,Unknown PtX,Dedicated renewable,Hydropower
+1090,BP Castellon refinery,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1091,SmartQuart project - Kaisersesch,PEM,,Other/Unknown,N/A
+1092,Pedirka Hydrogen Project,Coal w CCUS,,,
+1093,"Canary Islands Hub, phase 1",Other Electrolysis,Unknown PtX,,
+1094,"Canary Islands Hub, phase 2",Other Electrolysis,Unknown PtX,,
+1095,Suncor Edmonton Refinery,NG w CCUS,,,
+1096,Donghae 1 offshore wind plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1097,Project Jupiter (Gladstone),NG w CCUS,Methane pyrolysis,,
+1098,Project Mars (Mackay),NG w CCUS,Methane pyrolysis,,
+1099,Liberty North (Newcastle),NG w CCUS,Methane pyrolysis,,
+1100,BayoTech - Carbon Clean MoU,NG w CCUS,,,
+1101,GREENH2KER,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1102,ZEHUS,ALK,,Dedicated renewable,Onshore wind
+1103,FUTURA,ALK,,Dedicated renewable,Hydropower
+1104,Sicilian Sustainable Steel,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1105,Green H2 for Chemical Application - North,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1106,Green H2 for Chemical Application - South,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1107,La Spezia Green Hydrogen,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1108,Road Runner,ALK,,Dedicated renewable,Solar PV
+1109,"Oman green H2 project, phase 1",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1110,Plug Power - Fort Worth,PEM,,Dedicated renewable,Onshore wind
+1111,Offshore-to-X,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1112,Offshore-to-X,Other,Methane pyrolysis,,
+1113,HyDeal LA,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1114,Energiepark Eemshaven West (phase I),Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1115,Energiepark Eemshaven West (phase II),Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1116,ELYgator,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1117,Stanwell-Iwatani Galdstone project,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1118,Zeeland Refinery,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1119,FUREC,Biomass,,N/A,N/A
+1120,BrigH2,Biomass,,N/A,N/A
+1121,Hydrogen Mill,Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1122,H2-gateway,NG w CCUS,,,
+1123,Sinopec - Ordos,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1124,Sinopec - Kuqa,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1125,MMEX - Texas,NG w CCUS,,,
+1126,GreenHyScale,ALK,,,Others/Various
+1127,EI-H2 - Aghada (phase 1),Other Electrolysis,Unknown PtX,Grid (excess renewable),
+1128,Green lab skive (Phase II),Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1129,Khalifa Industrial Zone Abu Dhabi (KIZAD) - phase 1,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1130,"HySynergy, phase 3",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1134,Green H2 New Zealand - Taranaki,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1137,Horizon Oil Sands,Oil w CCUS,,,
+1138,Cerulean Winds - North Sea,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1139,Hyundai Oilbank - Blue H2 Ecosystem,NG w CCUS,,,
+1140,Forestal del Atlántico,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1141,SoHyCal,PEM,,Dedicated renewable,Solar PV
+1142,Bee’ah waste-to-hydrogen,Biomass,,,
+1143,Industrial Cachimayo,ALK,,Dedicated renewable,Hydropower
+1145,Sirea - Castres site,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1146,Rostock - RWE (future phases),Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1147,BASF Ludwigshafen,PEM,,Dedicated renewable,Unknown
+1148,Davis-Basse Nuclear Power Station,PEM,,Nuclear,N/A
+1149,Prairie Island,SOEC,,Nuclear,N/A
+1150,Palo Verde Generating Station,PEM,,Nuclear,N/A
+1151,Bruce Nuclear Generating Station,Other Electrolysis,Unknown PtX,Nuclear,N/A
+1152,Heysham demonstrator 1,ALK,,Nuclear,N/A
+1153,Heysham demonstrator 2,PEM,,Nuclear,N/A
+1154,Sizewell demonstrator 2,Other Electrolysis,Unknown PtX,Nuclear,N/A
+1155,Kola Nuclear Power Plant,Other Electrolysis,Unknown PtX,Nuclear,N/A
+1156,Hydrogen Lab Bremerhaven (phase 1),Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1157,Hydrogen Lab Bremerhaven (phase 2),Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1158,Hydrogen Lab Leuna (phase 1),SOEC,,Dedicated renewable,Onshore wind
+1159,Hydrogen Lab Leuna (phase 1),Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1160,Hydrogen Lab Gorlitz,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1161,Hydrogen Eagle (various hubs),Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1162,Hydrogen Eagle (various hubs),Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1163,Hydrogen Eagle (various hubs),Biomass,Waste gasification,N/A,N/A
+1164,Hydrogen Eagle (Litvínov),Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1165,Hydrogen Eagle (Spolana),Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1166,Hydrogen Eagle (Spolana),Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1167,Hydrogen Eagle (various hubs),Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1168,Sines refinery (phase 1),Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1169,Sines refinery (phase 2),Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1170,Porto do Acu Fortescue Ammonia Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1171,Hoasis (TCP Gecomp),Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1172,Ecopetrol 50kW electrolyser,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1173,H Valle Sur,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1174,METH2 Atacama,Other Electrolysis,Unknown PtX,Other/Unknown,Others/Various
+1175,Villa Lisa,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1176,Ciudad del Este,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1177,Encarnacion,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1178,TA’ZIZ blue ammonia,NG w CCUS,,N/A,N/A
+1179,Badgingarra Renewable Hydrogen Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1180,BHP Nickel West Green Hydrogen,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1181,Dawson Mine,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1182,"Candem County (GA), green power plant",PEM,,Dedicated renewable,Others/Various
+1183,Pego coal plant transition,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1184,Lhyfe offshore electrolyser,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1185,Rajasthan pilot plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1186,Morocco-Germany MoU,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1187,Hofors rolling project,ALK,,Grid (excess renewable),N/A
+1188,Kazakhstan green hydrogen project,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1189,Manilla Solar & Renewable Energy Storage Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1190,"Oman green H2 project, phase 2",Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1191,AquaVentus (phase 4),Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1192,EI-H2 - Aghada (phase 2),Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1193,EI-H2 - Aghada (phase 3),Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1194,Keadby Hydrogen,NG w CCUS,,N/A,N/A
+1195,New Jersey Offshore Wind plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1196,Delicias Solar,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1197,Pico Truncado,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1198,Dhamma Energy Guanajuato,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1199,Mexican Green Hydrogen Hub,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1200,Algeciras Bay,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1201,Gazifere grid injection,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1202,GREEN H2 Langosteira,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1203,Port of Immingham,PEM,,Dedicated renewable,Offshore wind
+1204,Pouakai - Taranaki - NH3,NG w CCUS,Allam Cycle,N/A,N/A
+1205,Pouakai - Taranaki - H2,NG w CCUS,Allam Cycle,N/A,N/A
+1215,Jintongling Biomass Gasification,Biomass,Biomass gasification,N/A,N/A
+1216,Longji New Hydrogen Equipment Project,Other Electrolysis,Unknown PtX,Other/Unknown,N/A
+1217,Khalifa Industrial Zone Abu Dhabi (KIZAD) - phase 2,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1218,Veolia wastewater sludge plant,Biomass,Waste gasification,N/A,N/A
+1219,Egypt Ministry of Electricity and Renewable Energy,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1220,IPCEI Blue Danube - first project,Other Electrolysis,Unknown PtX,Dedicated renewable,Hydropower
+1221,BayH2,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1222,Enid fertiliser,NG w CCUS,,N/A,N/A
+1223,Ervia CCS - Irving refinery,NG w CCUS,,N/A,N/A
+1224,Energean Prinos oil field,NG w CCUS,ATR+CCS,N/A,N/A
+1225,ArcelorMittal and AirLiquide Dunkirk low-carbon steel,NG w CCUS,,N/A,N/A
+1226,CF Fertilisers Ince (part of the HyNet cluster),NG w CCUS,,N/A,N/A
+1227,Sinopec Zhongyuan Oilfield EOR,Coal w CCUS,,N/A,N/A
+1228,Changqing Oil Field EOR,Coal w CCUS,,N/A,N/A
+1229,Fortescue Future Industries - Port of Pecem,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1230,Marítimo Dragão - Qair,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1231,RIST Hydrogen Research Centre - nuclear Hydrogen project,Other Electrolysis,Unknown PtX,Nuclear,N/A
+1232,Rhode Green Energy Park,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1233,Lysekil refinery (phase 2),Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1234,KIMA - Aswan electrolyser,ALK,,Dedicated renewable,Hydropower
+1235,Zimbabwe NH3 plant,ALK,,Other/Unknown,N/A
+1236,Polaris CCS - Scotford refinery,NG w CCUS,,N/A,N/A
+1237,Aukra CCS,NG w CCUS,,N/A,N/A
+1238,ArcelorMittal DRI Gijon,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1239,APEX-Plug Power H2 plamt,PEM,,Dedicated renewable,Onshore wind
+1240,3 x 1250 kW projects in USA,PEM,,Other/Unknown,N/A
+1241,1 x 500 kW projects in USA,PEM,,Other/Unknown,N/A
+1242,1 x 500 kW projects in USA,PEM,,Other/Unknown,N/A
+1243,18x180 kW projects in USA,PEM,,Other/Unknown,N/A
+1244,4x180 kW projects in USA,PEM,,Other/Unknown,N/A
+1245,12 x 120 kW projects in USA,PEM,,Other/Unknown,N/A
+1246,2 x 120 kW projects in USA,PEM,,Other/Unknown,N/A
+1247,"Frontier Energy, H2@Scale - gasification",Biomass,Various,N/A,N/A
+1248,Foresa-Iberdrola Green Methanol (phase 1),Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1249,Foresa-Iberdrola Green Methanol (phase 2),Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1250,Danskammer Energy - Newburgh,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1251,Balico - Virginia,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1252,"Harrison Power Project in Cadiz, Ohio",Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1253,Western Green Energy Hub,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1254,APA Renewable Methane Demonstration Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1255,Bio-Hydrogen Demonstration Plant,Biomass,Waste gases from biofuels production,N/A,N/A
+1256,Bundaberg Hydrogen Hub,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1257,Daintree Microgrid Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1258,Christmas Creek Renewable Hydrogen Mobility Project,PEM,,Dedicated renewable,Solar PV
+1259,ABEL Energy Bell Bay Powerfuels Project,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1260,Grange Resources Renewable Hydrogen,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1261,Melbourne Hydrogen Hub,PEM,,Grid (excess renewable),N/A
+1262,Melbourne Hydrogen Hub,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1263,Swinburne University of Technology Victorian Hydrogen Hub – CSIRO Hydrogen Refuelling Station,Other Electrolysis,Unknown PtX,Grid,N/A
+1264,Agnes Energy Hub,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1265,"Konin Power Plant, phase 2",PEM,,Dedicated renewable,Others/Various
+1266,"Konin Power Plant, phase 3",PEM,,Dedicated renewable,Others/Various
+1267,AquaSector (AquaVentus phase 2),Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1268,Port of Mukran,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1269,H2Mare,PEM,,Dedicated renewable,Offshore wind
+1270,"Green Crane - La Robla, Phase 2",Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1271,"Meirama plant, phase 2",Other Electrolysis,Unknown PtX,Dedicated renewable,Onshore wind
+1272,Freienbach plant,Other Electrolysis,Unknown PtX,Grid (excess renewable),N/A
+1273,"Siemens-Air Liquide Oberhausen, Phase 1",PEM,,Dedicated renewable,Unknown
+1274,"Siemens-Air Liquide Oberhausen, Phase 1",PEM,,Dedicated renewable,Unknown
+1275,Trafford Low Carbon Energy Park,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1276,Quintero LNG terminal,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1277,Wintershall Dea - VNG Turquoise H2 project,Other,Methane pyrolysis,N/A,N/A
+1278,"Green fertilizer project Porsgrunn, phase 3",ALK,,Grid,N/A
+1279,"Green fertilizer project Porsgrunn, phase 4",ALK,,Grid,N/A
+1280,Finnmark green NH3,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1281,Yarwun alumina refinery,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1282,H2V Las Tortolas,PEM,,Dedicated renewable,Solar PV
+1283,Sonam Nurboo Memorial Hopsital,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1284,Hydrogen hub in Southland,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1285,Hokkaido green hydrogen plant,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1286,BP-Shell Trinidad and Tobago green NH3,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1287,"MMEX - Pecos, Texas",PEM,,Dedicated renewable,Solar PV
+1288,Energy-Norweigian Catapult Centre,ALK,,Dedicated renewable,Unknown
+1289,Raven - Republic Services H2 from waste plant,Biomass,Waste reforming,N/A,N/A
+1290,Imperial Oil renewable diesel,NG w CCUS,,N/A,N/A
+1291,Javelina refinery,NG w CCUS,,N/A,N/A
+1292,Port of Cromarty Firth,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1293,North Dakota Hydrogen Hub (former Great Plains Synfuel Plant),NG w CCUS,ATR+CCS,N/A,N/A
+1294,Octopus Hydrogen,ALK,,Dedicated renewable,Unknown
+1295,HEVO-Sul,PEM,,Dedicated renewable,Solar PV
+1296,NEL - Nikola Agreement H2 refuelling stations in USA (1st phase),ALK,,Other/unknown,N/A
+1297,HYVALUE,Biomass,Waste gasification,N/A,N/A
+1298,SunHy,Other,Photoelectrocatalytic technology,N/A,N/A
+1299,H2 Valcamonica,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1300,H2 Évora - GreenGas I,PEM,,Dedicated renewable,Solar PV
+1301,H2 Évora - GreenGas II,PEM,,Dedicated renewable,Solar PV
+1302,PRIO ENERGY,PEM,,Dedicated renewable,Solar PV
+1303,KEME ENERGY,PEM,,Dedicated renewable,Solar PV
+1304,HEVO-Sines,PEM,,Dedicated renewable,Solar PV
+1305,HEVO-Morocco,PEM,,Dedicated renewable,Solar PV
+1306,OceanH2,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1307,TAQA-Emirates Steel Green H2,Other Electrolysis,Unknown PtX,Dedicated renewable,Solar PV
+1308,Salamander,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1309,Cairo Green Hydrogen,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1310,HRS Murcia,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1311,Tokyo Sewage-to-H2 plant,Biomass,Waste gasification,N/A,N/A
+1312,Inner Mongolia green hydrogen,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1313,Humber Zero,NG w CCUS,,N/A,N/A
+1314,Heroya Industrial Park,ALK,,Dedicated renewable,Unknown
+1315,Esbjerg green hydrogen,Other Electrolysis,Unknown PtX,Dedicated renewable,Offshore wind
+1316,HBIS DRI in Xuanshan,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1317,Hydrogen Utopia waste-to-plastic plant,Biomass,Waste gasification,N/A,N/A
+1318,Itochu/Petronas ammonia project,NG w CCUS,,N/A,N/A
+1319,Lindsey refinery (Humber hub),NG w CCUS,,N/A,N/A
+1320,ArcelorMittal Hamburg,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1321,Power-to-gas Coquimbo,Other Electrolysis,Unknown PtX,Dedicated renewable,Others/Various
+1322,ENERTAG-Sunfire (Prenzlau),ALK,,Dedicated renewable,Unknown
+1323,Shell heavy residue gasification CCUS - Pernis refinery,Oil w CCUS,Heavy oil residue gasification+CCS,N/A,N/A
+1324,Repsol - Basque Corridor,ALK,,Dedicated renewable,Unknown
+1325,Southland green hydrogen project,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
+1326,TotalEnergies’ Normandy platform - CCUS,NG w CCUS,,,
+1327,TotalEnergies’ Normandy platform - Electrolysis,Other Electrolysis,Unknown PtX,Dedicated renewable,Unknown
