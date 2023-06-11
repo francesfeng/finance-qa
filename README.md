@@ -34,3 +34,11 @@ At the moment, we have 4 tables available in SQL database, which are project_cap
 - os.environ['PG_DATABASE']
 - os.environ['PG_USER']
 - os.environ['PG_PASSWORD']
+  <br>
+  <br>
+
+## Run
+
+```
+python terminal.py
+```
