@@ -1,23 +1,36 @@
-# ChatGPT SQL
+# Finance QA
 
-![Demo](https://s2.gifyu.com/images/chatgpt-sql-demo.gif)
+Connecting ChatGPT to Pinecone vector store and PostgreSQL database, so that you can ask questions about hydrogen. You will get an answer in text, data or chart, depending on how ChatGPT routes the question.
 
-Connecting ChatGPT to an SQL Server so that you can ask questions about data in natural language, and you also get an answer in natural language.  It works by creating a layer between the user and ChatGPT that routes messages between the user and ChatGPT on one side, and ChatGPT and the SQL server on the other. ChatGPT is indicating whether the message it meant for the user or for the server. What you see in the below image is the following:
+At the moment, we have 4 tables available in SQL database, which are project_capacity, project_status, project_location, and project_technology. Any questions about hydrogen projects' capacity, status, location and technology will be routed to SQL database. Any other questions will be routed to Pinecone datastore for text answers.
+</br>
+</br>
 
-1. The user asks a question ("What is the top selling product by revenue in 2013?")
-2. The script forwards the question to ChatGPT.
-3. ChatGPT responds with a request for schema information.
-4. The script queries the database schema in SQL server and sends the result back to ChatGPT.
-5. ChatGPT Formulates an SQL query based on the schema information
-6. The script executes the query against the database and sends the result back to ChatGPT.
-7. ChatGPT interprets the result and formulates an answer (indicating it should be shared with the user)
-8. The script shares the answer with the user. ("The top selling product by revenue in 2013 is the Mountain-200 Black, 38.").
+### The workflow of interacting with SQL database is following:
 
-The app is currently configured to work with the [AdventureWorks database](https://learn.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver16&tabs=ssms), but it should be possible to make it work with any other database as well.
+1. Depending on the context of the question, ChatGPT will ask database server for the schema of selected tables which contains the answers
+2. From the schema given, ChatGPT generate SQL query
+3. Server run the SQL query and reply with the data in csv stream.
+4. Dependings on the data given, if it is a sinple row of data, ChatGPT will answer in natural language. If more than one row, ChatGPT will further generate python charting code based on the data structure.
+   </br>
+   </br>
 
-Some caveats:
-* The database I use is the AdventureWorks database, which ChatGPT also knows from it's training data, which means it's probably performing better than it would with other databases.
-* It sometimes breaks, due to ChatGPT not following protocol.
+### The workflow of interacting with Pinecone is following:
 
-Still, I think it's a pretty cool POC :slightly_smiling_face:
+1. The prerequisite of using Pinecone datastore is that index has been created, and all relevant text data is vectorised, and its embedding is stored in Pinecone datastore already.
+2. Using ada-text-embedding-02 model, create embedding of the question/Query
+3. Pinecone retrieve the top 10 most relevant records to the query by cosine similarities (context)
+4. Feed both the question and the top10 relevant records into prompt, and retrieve answers from ChatGPT (in-context learning)
+   </br>
+   </br>
 
+### Following environment variables need to set:
+
+- os.environ['OPENAI_API_KEY']
+- os.environ['PINECONE_API_KEY']
+- os.environ['PINECONE_ENVIRONMENT']
+- os.environ['PINECONE_INDEX']
+- os.environ['PG_HOST']
+- os.environ['PG_DATABASE']
+- os.environ['PG_USER']
+- os.environ['PG_PASSWORD']
