@@ -7,19 +7,19 @@ import csv
 import sys
 
 # Read the config file
-config = configparser.ConfigParser()
-config.read("config.ini")
+# config = configparser.ConfigParser()
+# config.read("config.ini")
 
-# Access the config values
-#driver = config.get("database", "driver")
-host = config.get("database", "host")
-database = config.get("database", "database")
-user = config.get("database", "user")
-password = config.get("database", "password")
-#encrypt = config.get("database", "encrypt")
-openai_api_key = config.get("openai", "api_key")
-openai_org = ''
-openai_model = config.get("openai", "model")
+# # Access the config values
+# #driver = config.get("database", "driver")
+# host = config.get("database", "host")
+# database = config.get("database", "database")
+# user = config.get("database", "user")
+# password = config.get("database", "password")
+# #encrypt = config.get("database", "encrypt")
+# openai_api_key = config.get("openai", "api_key")
+# openai_org = ''
+# openai_model = config.get("openai", "model")
 
 
 class Controller:
@@ -34,15 +34,14 @@ class Controller:
                                  os.environ['PINECONE_ENVIRONMENT'],
                                  os.environ['PINECONE_INDEX']
                                  )
-        self.google_sql = GoogleCloudSQL(os.environ['PG_HOST'], 
-                                         os.environ['PG_DATABASE'],
-                                         os.environ['PG_USER'],
-                                         os.environ['PG_PASSWORD'])
+        self.google_sql = GoogleCloudSQL(os.environ['NEON_HOST'], 
+                                         os.environ['NEON_DATABASE'],
+                                         os.environ['NEON_USER'],
+                                         os.environ['NEON_PASSWORD'])
         self.google_sql.connect()
 
     def run(self, message):
         label = self.chatModel.generate_label(message)
-
         match label:
             case "Text":
                 response = self.chatModel.summarise_text(message)

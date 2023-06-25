@@ -26,19 +26,52 @@ At the moment, we have 4 tables available in SQL database, which are project_cap
 
 ### Following environment variables need to set:
 
-- os.environ['OPENAI_API_KEY']
-- os.environ['PINECONE_API_KEY']
-- os.environ['PINECONE_ENVIRONMENT']
-- os.environ['PINECONE_INDEX']
-- os.environ['PG_HOST']
-- os.environ['PG_DATABASE']
-- os.environ['PG_USER']
-- os.environ['PG_PASSWORD']
-  <br>
-  <br>
+```
+   #OpenAI API
+   os.environ['OPENAI_API_KEY']```
 
-## Run
+   #Pinecone vector datastore
+   os.environ['PINECONE_API_KEY']
+   os.environ['PINECONE_ENVIRONMENT']
+   os.environ['PINECONE_INDEX']
+
+   #Database setup (using neon.tech)
+   os.environ['NEON_HOST']
+   os.environ['NEON_DATABASE']
+   os.environ['NEON_USER']
+   os.environ['NEON_PASSWORD']
+ ```
+
+## Set up
+
+### Database/Postgresql
 
 ```
-python terminal.py
+psql 'postgresql://{username}:{password}@ep-lucky-boat-370025.eu-central-1.aws.neon.tech/neondb'
 ```
+A detailed instructions of connecting to pgAdmin is provided [here](https://neon.tech/docs/connect/connect-postgres-gui)
+### Run 
+```
+# clone repo
+git clone https://github.com/endepth/finance-qa.git
+
+cd finance-qa
+
+# start virtual environment
+pipenv shell --python 3.10
+pipenv shell
+
+# install requirements
+pip install -r requirements.txt
+
+# Start uvicorn server
+uvicorn server.main:app
+
+```
+
+Test the API in [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
+### Sample questions
+1. What is analysts' latest view on NEL ASA
+2. What is the largest hydrogen project in United Kingdom
+3. List the number of hydrogen projects per year

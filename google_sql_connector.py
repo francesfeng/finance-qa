@@ -21,6 +21,7 @@ class GoogleCloudSQL:
     def connect(self):
         try:
             self.conn = psycopg2.connect(host=self.host, database=self.database, user=self.user, password=self.password)
+            print("database successfully connected")
             return True
         except Exception as e:
             return str(e)

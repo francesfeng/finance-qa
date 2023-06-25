@@ -1,85 +1,31 @@
 import streamlit as st
-import logging
-from controller import Controller
+import os
+import requests
+from requests.adapters import HTTPAdapter, Retry
 
 
-# Configure the logging settings
-logging.basicConfig(filename='debug.log', filemode='a', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+BEARER_TOKEN = os.environ.get("BEARER_TOKEN") or "BEARER_TOKEN_HERE"
+headers = {
+    "Authorization": f"Bearer {BEARER_TOKEN}"
+}
 
+endpoint_url = "http://localhost:8000"
+s = requests.Session()
 
-controller = Controller()
-input = st.text_input(label="Questions", value="", label_visibility="collapsed", placeholder="Ask me anything about hydrogen")
-topics = controller.run_topics(input)
+# we setup a retry strategy to retry on 5xx errors
+retries = Retry(
+    total=5,  # number of retries before raising error
+    backoff_factor=0.1,
+    status_forcelist=[500, 502, 503, 504]
+)
+s.mount('http://', HTTPAdapter(max_retries=retries))
 
-col11, col12 = st.columns(2)
-with col11: 
-    st.caption(topics["1"]["Topic"])
-    response = controller.run(topics["1"]["Question"])
+query = st.text_input('Ask me anything about hydrogen!', '')
 
-    if response['type'] == 'sentence':
-        st.subheader(response['response'])
-    elif response['type'] == 'summary':
-        st.write(response['response'])
-    elif response['type'] == 'chart':
-        st.write(response['response'])
-        exec(response['response'])
-    else:
-        st.warning(response['response'])
+res = requests.post(
+        f"{endpoint_url}/query",
+        headers=headers,
+        json={'query': query}
+    )
 
-with col12: 
-    st.caption(topics["2"]["Topic"])
-    response = controller.run(topics["2"]["Question"])
-
-    if response['type'] == 'sentence':
-        st.subheader(response['response'])
-    elif response['type'] == 'summary':
-        st.write(response['response'])
-    elif response['type'] == 'chart':
-        st.write(response['response'])
-        exec(response['response'])
-    else:
-        st.warning(response['response'])
-
-col21, col22 = st.columns(2)
-with col21: 
-    st.caption(topics["3"]["Topic"])
-    response = controller.run(topics["3"]["Question"])
-
-    if response['type'] == 'sentence':
-        st.subheader(response['response'])
-    elif response['type'] == 'summary':
-        st.write(response['response'])
-    elif response['type'] == 'chart':
-        st.write(response['response'])
-        exec(response['response'])
-    else:
-        st.warning(response['response'])
-
-with col22: 
-    st.caption(topics["4"]["Topic"])
-    response = controller.run(topics["4"]["Question"])
-
-    if response['type'] == 'sentence':
-        st.subheader(response['response'])
-    elif response['type'] == 'summary':
-        st.write(response['response'])
-    elif response['type'] == 'chart':
-        st.write(response['response'])
-        exec(response['response'])
-    else:
-        st.warning(response['response'])
-
-col31, _ = st.columns(2)
-with col31: 
-    st.caption(topics["5"]["Topic"])
-    response = controller.run(topics["5"]["Question"])
-
-    if response['type'] == 'sentence':
-        st.subheader(response['response'])
-    elif response['type'] == 'summary':
-        st.write(response['response'])
-    elif response['type'] == 'chart':
-        st.write(response['response']['explanation'])
-        exec(response['response']['code'])
-    else:
-        st.warning(response['response'])
+st.text(res.json())
