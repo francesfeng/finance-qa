@@ -2,7 +2,7 @@ import os
 import openai
 import logging
 import json
-from datastore import DataStore
+from app.src.datastore import DataStore
 
 
 class ChatGPT:

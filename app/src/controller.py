@@ -1,6 +1,6 @@
 import json
-from chatgpt import ChatGPT
-from google_sql_connector import GoogleCloudSQL
+from app.src.chatgpt import ChatGPT
+from app.src.google_sql_connector import GoogleCloudSQL
 import configparser
 import os
 import csv

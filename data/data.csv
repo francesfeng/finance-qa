@@ -1,2 +1,7 @@
-project_name
-HyDeal Ambition
+"Table, Column, DataType, Is_Nullable"
+"project_technology, project_id, integer, NO"
+"project_technology, project_name, character varying, NO"
+"project_technology, technology, character varying, YES"
+"project_technology, technology_comment, character varying, YES"
+"project_technology, type_of_electricity_for_electrolysis, character varying, YES"
+"project_technology, type_of_renewables, character varying, YES"
