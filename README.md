@@ -27,8 +27,13 @@ At the moment, we have 4 tables available in SQL database, which are project_cap
 ### Following environment variables need to set:
 
 ```
+   #Bear token
+   os.environ['BEARER_TOKEN']
+
    #OpenAI API
-   os.environ['OPENAI_API_KEY']```
+   os.environ['OPENAI_API_KEY']
+   os.environ['OPENAI_MODEL']
+   
 
    #Pinecone vector datastore
    os.environ['PINECONE_API_KEY']
@@ -65,7 +70,10 @@ pipenv shell
 pip install -r requirements.txt
 
 # Start uvicorn server
-uvicorn server.main:app
+uvicorn app.main:app
+
+# Deploy
+flyctl launch --dockerfile ./Dockerfile
 
 ```
 
