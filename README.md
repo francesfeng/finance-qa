@@ -72,14 +72,36 @@ pip install -r requirements.txt
 # Start uvicorn server
 uvicorn app.main:app
 
-# Deploy
-flyctl launch --dockerfile ./Dockerfile
-
 ```
 
+### Deploy
+```
+flyctl launch --dockerfile ./Dockerfile
+
+
+```
 Test the API in [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 ### Sample questions
 1. What is analysts' latest view on NEL ASA
 2. What is the largest hydrogen project in United Kingdom
 3. List the number of hydrogen projects per year
+
+
+### Sections
+
+To run the query model 
+
+```
+query = "CEVA Logistics partners with Toyota Motor Europe to test new Hydrogen Fuel Cell Truck?"
+#filter = {"type": Type.table}
+q = Query(query=query, top_k=10)
+
+
+# Run query against pinecone table 
+res = await agent.query_text_table(q, model=PromptType.table_datastore)
+
+
+# Run query against pinecone text only (including pdfs and news)
+res = await agent.query_text_table(q, model=PromptType.text)
+```

@@ -2,7 +2,7 @@ import os
 import openai
 import logging
 import json
-from app.src.datastore import DataStore
+from src.datastore import DataStore
 
 
 class ChatGPT:
@@ -52,6 +52,7 @@ class ChatGPT:
         {"role": "user", "content": "Input data: country,total_hydrogen_capacity_kilotons_per_year\r\nSpain,13037.4\r\nAustralia,11993.4\r\nFrance,11818.5\r\nNetherlands,5556.0\r\nKazakhstan,5198.0\r\nMauritania,5197.6\r\nUnited Kingdom,5174.7\r\nGermany,3402.8\r\n"},
     ]
 
+    # Potential redundant
     startLabelMessageStack = [
         {"role": "system", "content": "You are a helpful assistant. Your main goal is to assign a \"Database\" or a \"Text\" label to the question, by judging from the context of the question."},
         {"role": "user", "content": "From now you will only respond with \"Database\" or \"Text\"."},
@@ -64,14 +65,13 @@ class ChatGPT:
         {"role": "system", "content": "You are a helpful assistant. Your goal is to answer questions strictly based on the context provided."},
     ]
 
-    startRelatedTopicsStack = [
-        {"role": "system", "content": "You are a helpful assistant. You goal is to list topics that are related to the question provided, and ask the question about that topic. Keep the topics simple and direct."},
-        {"role": "user", "content": "From now you will respond with json list. When asked to give 5 more examples, keep the response in json list."},
-        {"role": "user", "content": "You prioritise topics that relates to hydrogen projects\' location, capacity, size, technology, status or live date."},
+    startLabelRelatedTopicsStack = [
+        {"role": "system", "content": "You are a helpful market research analyst. You goal is to: 1. summarise the given question into a short topic. 2. assign a \"Database\" or a \"Text\" label to the question, by judging from the context of the question. 3. Ask 6 additional related questions to the question provided, summarise each question into a short topic, and assigned a \“Database\” or \“Text\” label to each question"},
+        {"role": "user", "content": "You assign the question \"Database\" label if the question can be answered by executing SQL query against the database, otherwise assign the \"Text\" label. If the user asks questions relating to hydrogen projects' capacity, size, location, status, the go-live date, or the usage of technology, it is a \"Database\" label, otherwise assign the \"Text\" label"},
+        {"role": "user", "content": "From now you will respond with json list. When asked to give 6 more examples, keep the response in json format: {\“original question\”: the question provided, \“original topic\”: the summary based on the original question, \“original label\”: the \“Database\” or \“Text\” label assigned, \“related questions\”: [{\“question\”: first related question, \“topic\”: the summary based on the first related question, \“label\”: the label assigned to the first question}, {\“question\”: the second related question, \“topic\”: the summary based on the second related question, \“label\”: the label assigned to the second question}, …}."},
+        {"role": "user", "content": "You prioritise questions and topics that relates to hydrogen projects\' location, capacity, size, technology, status or live date."},
         {"role": "user", "content": "Do not list topics or questions that have appeared in the prompt before."},
-        #{"role": "user", "content": "Question: what is Austria\'s hydrogen strategy?\n\n1: Topic: Austria\'s total planned hydrogen capacity\nQuestion: What is Austria\'s total planned hydrogen capacity?\n\n2.Topic: The largest hydrogen project in Austria\nQuestion: What is the largest hydrogen project in Austria?\n\n3.Topic: hydrogen project online by years in Austria\nQuestion: How many hydrogen projects are coming online each year in Austria?\n\n4.Topic: Status of Austria\'s hydrogen strategy\nQuestion: What is the current status of Austria\'s hydrogen strategy implementation?\n\n5.Topic: Notable collaborations in the largest Austria\'s hydrogen project\nQuestion: Are there any notable collaborations or partnerships involved in the development of the largest hydrogen project in Austria?\n\n"},
-        {"role": "user", "content": "Question: what is Austria\'s hydrogen strategy?\n\n{\"1\": {\"Topic\": \"Austria\'s total planned hydrogen capacity\", \"Question\": \"What is Austria\'s total planned hydrogen capacity?\"}, \"2\": {\"Topic\": \"The largest hydrogen project in Austria\", \"Question\": \"What is the largest hydrogen project in Austria?\"}, \"3\": {\"Topic\": \"hydrogen project online by years in Austria\", \"Question\": \"How many hydrogen projects are coming online each year in Austria?\"}, \"4\": {\"Topic\": \"Status of Austria\'s hydrogen strategy\", \"Question\": \"What is the current status of Austria\'s hydrogen strategy implementation?\"}, \"5\": {\"Topic\": \"Notable collaborations in the largest Austria\'s hydrogen project\", \"Question\": \"Are there any notable collaborations or partnerships involved in the development of the largest hydrogen project in Austria?\"}}"},
-    
+        #{"role", "user", "content": f"Original question{question}"}
     ]
 
 
@@ -82,10 +82,9 @@ class ChatGPT:
         self.model = model
         self.messages_query = self.startMessageStack.copy()
         self.messages_chart = self.startChartingMessageStack.copy()
-        self.messages_label = self.startLabelMessageStack.copy()
+        self.messages_label = self.startLabelMessageStack.copy() # Potential redundant
         self.messages_text = self.startTextSearchStack.copy()
-        self.messages_topics = self.startRelatedTopicsStack.copy()
-
+        self.messages_labeltopics = self.startLabelRelatedTopicsStack.copy()
         self.datastore = DataStore(datastore_api_key, datastore_env, datastore_index, top_k)
 
 
@@ -108,9 +107,9 @@ class ChatGPT:
     def reset(self):
         self.messages_query = self.startMessageStack.copy()
         self.messages_chart = self.startChartingMessageStack.copy()
-        self.messages_label = self.startLabelMessageStack.copy()
+        self.messages_label = self.startLabelMessageStack.copy() #redundant
         self.messages_text = self.startTextSearchStack.copy()
-        self.messages_topics = self.startRelatedTopicsStack.copy()
+        self.messages_labeltopics = self.startLabelRelatedTopicsStack.copy()
         print('model was reset to intial state')
 
     def generate_chart(self, message):
@@ -134,6 +133,7 @@ class ChatGPT:
 
         return response
 
+    # Potential redundant
     def generate_label(self, message):
         self.messages_label.append({"role": "user", "content": f"Questions:{message}\nLabel:"})
         logging.debug('Label message to OpenAI')
@@ -156,8 +156,6 @@ class ChatGPT:
             # resend request if the response is not one of the two labels
             self.messages_label.append({"role": "user", "content": "Respond with \"Text\" or \"Database\"."})
 
-
-    
 
     def summarise_text(self, message):
         logging.debug('Text question to OpenAI')
@@ -197,24 +195,25 @@ class ChatGPT:
         return response
     
 
-    def generate_topics(self, message):
+    def generate_labeltopics(self, message):
         logging.debug('Original question submitted')
         logging.debug(message)
 
-        self.messages_topics.append({"role":"user", "content": f"Question: {message}"})
+        self.messages_labeltopics.append({"role": "user", "content": f"Original question: {message}"})
+        
         return self.__send_topics_message()
 
     def generate_more_topics(self, qty = 5):
         logging.debug('Generate more topics and questions')
 
-        self.messages_topics.append({"role": "user", "content": f"Please give {qty} more topics and questions based on the previous question. Keep the output JSON only."})
+        self.messages_labeltopics.append({"role": "user", "content": f"{qty} more."})
         return self.__send_topics_message()
 
 
     def __send_topics_message(self):
         completion = openai.ChatCompletion.create(
             model = self.model,
-            messages = self.messages_topics
+            messages = self.messages_labeltopics
         )
 
         response = completion.choices[0].message.content 
@@ -224,11 +223,11 @@ class ChatGPT:
         # return json loads reponse, if errors, ask Chat to re-generate output in json format
         try: 
             response_json = json.loads(response)
-            self.messages_topics.append({"role": "assistant", "content": response})
+            self.messages_labeltopics.append({"role": "assistant", "content": response})
             return response_json
         
         except ValueError:
-            self.messages_topics.append({"role": "user", "content": "Please repeat the response but use valid JSON only."})
+            self.messages_labeltopics.append({"role": "user", "content": "Please repeat the response but use valid JSON only."})
             self.__send_topics_message()
         
 

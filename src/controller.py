@@ -1,6 +1,6 @@
 import json
-from app.src.chatgpt import ChatGPT
-from app.src.google_sql_connector import GoogleCloudSQL
+from src.chatgpt import ChatGPT
+from src.google_sql_connector import GoogleCloudSQL
 import configparser
 import os
 import csv
@@ -41,29 +41,42 @@ class Controller:
         self.google_sql.connect()
 
     def run(self, message):
-        label = self.chatModel.generate_label(message)
+        output_json = self.chatModel.generate_labeltopics(message)
+        print(output_json)
+        label = output_json['original label']
         match label:
             case "Text":
                 response = self.chatModel.summarise_text(message)
-                return {'type': 'summary', 'response': response}
+                result = {'query': message, 'type': 'summary', 'response': response}
             case "Database":
                 response_json = self.run_query(message, 'USER')
                 match response_json["recipient"]:
                     case "USER":
                         response = response_json["message"]
-                        return {'type': 'sentence', 'response': response}
+                        result = {'query': message, 'type': 'sentence', 'response': response}
                     case "DATA":
                         response_code = self.run_chart()
 
                         if 'error' in response_code:
-                            return {'type': 'error', 'response': response_code['error'] }
+                            result = {'query': message, 'type': 'error', 'response': response_code['error'] }
                         else:
-                            return {'type': 'chart', 'response': response_code}
+                            result = {'query': message, 'type': 'chart', 'response': response_code}
 
                     case _:
-                        return {'type': 'error', 'response': response_json['error']}
+                        result = {'query': message, 'type': 'error', 'response': response_json['error']}
             case _:
-                return {'type': 'error', 'response': 'errors in categorise the question'}
+                result = {'query': message, 'type': 'error', 'response': 'errors in categorise the question'}
+
+        result['code'] = 404 if result['type'] == 'error' else 200
+        result['type'] = result['type']
+        result['label'] = label
+        result['query'] = message
+        result['title'] = output_json['original topic']
+        result['response'] = result['response']
+        result['related_topics'] = [{'query': i['question'], 'title': i['topic'], 'label': i['label']} for i in output_json['related questions']]
+
+        return result
+    
 
     def run_topics(self, message):
         # calling ChatModel to generate related topics
