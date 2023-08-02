@@ -1,0 +1,85 @@
+schema: 'Table, Column, DataType, Possible Values
+
+  project_capacity, project_id, integer
+
+  project_capacity, project_name, character varying
+
+  project_capacity, announced_capacity, character varying
+
+  project_capacity, normalised_capacity_in_megawatt_electrolyser, double precision
+
+  project_capacity, normalised_capacity_in_normal_cubit_meter_hydrogen_per_hour, double
+  precision
+
+  project_capacity, normalised_capacity_in_kilotons_hydrogen_per_year, double precision
+
+  project_capacity, normalised_capacity_in_tones_co2_captured_per_year, double precision
+
+  project_capacity, iea_zero_carbon_estimated_normalized_capacity_nm3_h2_per_hour,
+  double precision
+
+  project_location, project_location_id, integer
+
+  project_location, project_id, integer
+
+  project_location, project_name, character varying
+
+  project_location, country_code, character varying, ALB, ARE, ARG, AUS, AUT, BEL,
+  BGD, BRA, CAN, CHE, CHL, CHN, COK, COL, CRI, CZE, DEU, DNK, EGY, ESP, EST, EU, FIN,
+  FRA, GBR, GRC, GUF, HUN, IDN, IND, IRL, IRN, ISL, ITA, JPN, KAZ, KOR, LBN, LTU,
+  LVA, MAR, MEX, MRT, MYS, NLD, NOR, NZL, OMN, PER, POL, PRT, PRY, ROU, RUS, SAU,
+  SGP, SVK, SVN, SWE, THA, TTO, TUR, TWN, URY, USA, VNM, ZAF, ZWE
+
+  project_location, country, character varying, Albania, Argentina, Australia, Austria,
+  Bangladesh, Belgium, Brazil, Canada, Chile, China, Colombia, Cook Islands (the),
+  Costa Rica, Czechia, Denmark, EU, Egypt, Estonia, Finland, France, French Guiana,
+  Germany, Greece, Hungary, Iceland, India, Indonesia, Iran, Ireland, Italy, Japan,
+  Kazakhstan, Korea (the Republic of), Latvia, Lebanon, Lithuania, Malaysia, Mauritania,
+  Mexico, Morocco, Netherlands, New Zealand, Norway, Oman, Paraguay, Peru, Poland,
+  Portugal, Romania, Russian Federation (the), Saudi Arabia, Singapore, Slovakia,
+  Slovenia, South Africa, Spain, Sweden, Switzerland, Taiwan (Province of China),
+  Thailand, Trinidad and Tobago, Turkey, United Arab Emirates (the), United Kingdom,
+  United States of America, Uruguay, Viet Nam, Zimbabwe
+
+  project_status, project_id, integer
+
+  project_status, project_name, character varying
+
+  project_status, date_online, date
+
+  project_status, decomission_date, date
+
+  project_status, status, character varying, Concept, DEMO, Decommisioned, FID, Feasibility
+  study, Operational, Other/Unknown, Under construction
+
+  project_technology, project_id, integer
+
+  project_technology, project_name, character varying
+
+  project_technology, technology, character varying, ALK, Biomass, Coal w CCUS, NG
+  w CCUS, Oil w CCUS, Other, Other Electrolysis, PEM, SOEC
+
+  project_technology, technology_comment, character varying, ALK+PEM, ATR+CCS, Allam
+  Cycle, Biogas reforming, Biomass gasification, Bitumen gasification+CCS, Coal gasification
+  with CCS, Coke gasification with CCS, Combination of electrolysis and NG w CCS,
+  Heavy oil residue gasification+CCS, Membrane separation from purge gas with CCS,
+  Methane pyrolysis, Microbial fermentation, PEM & SOEC, PEM+ALK, PEM+ALK+SOEC, Petroleum
+  coke+CCS, Photoelectrocatalytic technology, Photoelectrochemical processes, SMR+CCS,
+  Unknown PtX, Unknown technology, Various, Waste gases from biofuels production,
+  Waste gasification, Waste reforming
+
+  project_technology, type_of_electricity_for_electrolysis, character varying, Dedicated
+  renewable, Grid, Grid (excess renewable), N/A, Nuclear, Other/Unknown, Other/unknown
+
+  project_technology, type_of_renewables, character varying, Hydropower, N/A, Offshore
+  wind, Onshore wind, Others/Various, Solar PV, Unknown'
+schema_short: 'project_capacity (project_id, project_name, announced_capacity, normalised_capacity_in_megawatt_electrolyser,
+  normalised_capacity_in_normal_cubit_meter_hydrogen_per_hour, normalised_capacity_in_kilotons_hydrogen_per_year,
+  normalised_capacity_in_tones_co2_captured_per_year, iea_zero_carbon_estimated_normalized_capacity_nm3_h2_per_hour)
+
+  project_location (project_location_id, project_id, project_name, country_code, country)
+
+  project_status (project_id, project_name, date_online, decomission_date, status)
+
+  project_technology (project_id, project_name, technology, technology_comment, type_of_electricity_for_electrolysis,
+  type_of_renewables)'

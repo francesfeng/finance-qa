@@ -15,6 +15,7 @@ from src.connect.gpt import test_query
 # Define the model. TODO: move to seperate models.api file
 class QueryText(BaseModel):
     query: str
+    data: str = None
 
 class RelatedTopic(BaseModel):
     query: str
@@ -69,28 +70,81 @@ async def query(query: QueryText = Body(...)):
         return Response(**result)
     except Exception as e:
         logger.error(e)
-        raise HTTPException(status_code=500, detail="Internal Server Error")
+        raise HTTPException(status_code=500, detail=str(e))
     
 
-@app.post("/query/v1")
+# Table based on pincone text, streaming
+@app.post("/query/text_table")
 async def query_table(querytext: QueryText = Body(...)):
-    # Contruct query class
-    query = query = Query(
-        query = querytext.query,
-        filter = {"type": Type.table},
-        top_k = 10
-    )
     try:
         return StreamingResponse(
-            await agent.query_text_table(query = query, model = "table_datastore"), 
+            await agent.query_text_table(query = querytext.query, is_streaming=True), 
             media_type="text/event-stream"
             )
     except Exception as e:
         logger.error(e)
-        raise HTTPException(status_code=500, detail="Internal Server Error")
+        raise HTTPException(status_code=500, detail=str(e))
+
+# Text based on pinecone, streaming
+@app.post("/query/text")
+async def query_text(querytext: QueryText = Body(...)):
+    try:
+        return StreamingResponse(
+            await agent.query_text(query = querytext.query, is_streaming=True), 
+            media_type="text/event-stream"
+            )
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail=str(e))
     
+
+# Pincone Table to Chart
+@app.post("/query/table_to_chart")
+async def query_table_to_chart(querytext: QueryText = Body(...)):
+    try:
+        return await agent.query_table_to_chart(querytext.query, querytext.data)
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+# Get SQL query
+@app.post("/query/sql")
+async def query_sql(querytext: QueryText = Body(...)):
+    try:
+        return await agent.query_sql(querytext.query)
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+# Run SQL Query
+@app.post("/query/sql_table")
+async def query_sql_to_table(querytext: QueryText = Body(...)):
+    try:
+        return await agent.run_sql(querytext.query)
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# SQL Query to Chart
+@app.post("/query/sql_chart")
+async def query_sql_to_chart(querytext: QueryText = Body(...)):
+    try:
+        return await agent.query_sql_chart(querytext.query, querytext.data)
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail=str(e))
+    
+
+
+
 @app.post("/query/v2")
 async def query_text(querytext: QueryText = Body(...)):
+    """
+    The non-streaming version of the query endpoint for calling Chat GPT
+    """
     # Contruct query class
     query = query = Query(
         query = querytext.query,
@@ -101,7 +155,7 @@ async def query_text(querytext: QueryText = Body(...)):
         return await agent.query_non_stream(query = query, model = "table_datastore")
     except Exception as e:
         logger.error(e)
-        raise HTTPException(status_code=500, detail="Internal Server Error")
+        raise HTTPException(status_code=500, detail=str(e))
 
 # @app.post("/query/demo")
 # async def query_demo(num: int = Body(...)):

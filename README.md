@@ -105,3 +105,13 @@ res = await agent.query_text_table(q, model=PromptType.table_datastore)
 # Run query against pinecone text only (including pdfs and news)
 res = await agent.query_text_table(q, model=PromptType.text)
 ```
+
+### Update schema
+
+Run this following script to update the schema to the latest database structure. The updated schema will saved at 'src/connect/schemas.yaml'. When running ChatGPT, these schemas will be uploaded automatically. 
+```
+cd src/connect
+python3 update_schema.py
+
+```
+

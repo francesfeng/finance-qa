@@ -1,9 +1,12 @@
 from typing import List
 import openai
 import os
-
+import timeit
 
 from tenacity import retry, wait_random_exponential, stop_after_attempt
+from loguru import logger
+#logger.add("file_prompt.log", rotation="12:00")  
+level_gpt = logger.level("GPT", no=38, color="<yellow>", icon="♣")
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -49,20 +52,35 @@ def get_chat_completion_stream(messages, model="gpt-3.5-turbo", temperature=0):
 
 
 @retry(wait=wait_random_exponential(multiplier=1, max=20), stop=stop_after_attempt(3))
-def get_chat_completion(messages, model="gpt-3.5-turbo", temperature=0):
+def get_chat_completion(messages, model="gpt-3.5-turbo", temperature: float = 0, max_tokens: int = None):
 
     """
     Get the chat completion using OpenAI's Chat Completion API.
     """
-    
-    response = openai.ChatCompletion.create(
-        model=model,
-        messages=messages,
-        temperature=temperature,
-    )
+    start = timeit.default_timer()
+    if max_tokens:
+        response = openai.ChatCompletion.create(
+            model=model,
+            messages=messages,
+            temperature=temperature,
+            max_tokens=max_tokens
+        )
+    else:
+        response = openai.ChatCompletion.create(
+            model=model,
+            messages=messages,
+            temperature=temperature,
+        ) 
+    stop = timeit.default_timer()
+    logger.opt(lazy=True).log("GPT", f"Query: {messages} | Processing Time: {stop - start} | Response: {response}")
 
     choices = response["choices"]
-    completion = choices[0].message.content.strip()
+    finish_reason = choices[0]["finish_reason"]
+
+    if finish_reason == "length":
+        completion = 'ERROR: Max tokens exceeded.'
+    else:
+        completion = choices[0].message.content.strip()
     return completion
 
 
