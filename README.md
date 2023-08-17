@@ -115,6 +115,12 @@ python3 update_schema.py
 
 ```
 
+## Local run 
+
+```
+uvicorn app.main:app    
+```
+
 # API Structure
 
 [`API routers`](/app/README.md) 

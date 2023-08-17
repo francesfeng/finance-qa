@@ -1,12 +1,12 @@
 import asyncio
 import json
 from typing import Optional
-from src.connect.datastore import DataStore
-from src.connect.db import Database
-from src.connect.gpt import get_chat_completion_stream, get_chat_completion
+from app.src.connect.datastore import DataStore
+from app.src.connect.db import Database
+from app.src.connect.gpt import get_chat_completion_stream, get_chat_completion
 
-from src.models.models import Query, Type
-from src.models.prompt import get_prompt
+from app.models.models import Query, Type
+from app.src.runner.prompt import get_prompt
 
 
 import timeit
@@ -35,7 +35,7 @@ class Agent:
         self.datastore = DataStore()
         
 
-        with open('src/connect/schemas.yaml', 'r') as file:
+        with open('app/src/connect/schemas.yaml', 'r') as file:
             # Load the content using yaml.load
             data = yaml.load(file, Loader=yaml.FullLoader)
             self.schema = data['schema']

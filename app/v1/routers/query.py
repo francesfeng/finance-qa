@@ -4,8 +4,8 @@ from app.models.api_models import QueryText, Response
 from loguru import logger
 
 
-from src.models.agents import Agent
-from src.models.controller import Controller
+from app.src.runner.agents import Agent
+from app.src.runner.controller import Controller
 
 
 router = APIRouter(prefix="/query",

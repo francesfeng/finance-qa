@@ -1,8 +1,8 @@
 import json
 from loguru import logger
 import timeit
-from src.models.agents import Agent
-from src.models.models import Response, ResponseType, Label
+from app.src.runner.agents import Agent
+from app.models.models import Response, ResponseType, Label
 
 from loguru import logger
 #logger.add("file_prompt.log", rotation="12:00")  

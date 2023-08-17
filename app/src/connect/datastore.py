@@ -2,9 +2,9 @@ from typing import List, Optional, Dict, Any
 import pinecone
 import os
 
-from src.models.models import Query, QueryWithEmbedding, DocumentMetadataFilter, DocumentChunkWithScore
-from src.connect.gpt import get_embeddings
-from src.utils.date import to_unix_timestamp, to_datestr
+from app.models.models import Query, QueryWithEmbedding, DocumentMetadataFilter, DocumentChunkWithScore
+from app.src.connect.gpt import get_embeddings
+from app.src.utils.date import to_unix_timestamp, to_datestr
 
 # Read environment variables for Pinecone configuration
 PINECONE_API_KEY = os.environ.get("PINECONE_API_KEY")

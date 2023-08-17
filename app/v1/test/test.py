@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Body,HTTPException
 from fastapi.responses import StreamingResponse
 
-from src.models.agents import Agent
-from src.models.controller import Controller
+from app.src.runner.agents import Agent
+from app.src.runner.controller import Controller
 from app.models.api_models import QueryText, Response
 from loguru import logger
 

@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import List, Optional, Dict 
 from enum import Enum
-from src.models.models import ResponseType
+from app.models.models import ResponseType
 
 
 class Label(str, Enum):
