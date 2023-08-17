@@ -79,7 +79,7 @@ jobs:
       
       # Step 3
       - name: Upload to S3
-        run: aws s3 cp api.zip s3://serverless-api-artifact
+        run: aws s3 cp api.zip s3://endepth-api-artifact
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
