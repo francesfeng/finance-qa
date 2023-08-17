@@ -3,3 +3,10 @@ config.ini
 credentials.json
 token.json
 __pycache__/
+
+*.log 
+SQL/
+data/
+
+*.ipynb
+

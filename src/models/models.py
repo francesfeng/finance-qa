@@ -1,20 +1,7 @@
-from typing import Optional, List
+from typing import Optional, List, Dict
 from pydantic import BaseModel
 
 from enum import Enum
-
-
-class PromptType(str, Enum):
-    table_datastore = "table_datastore"
-    text = "text"
-    sql = "sql"
-
-    table_to_chart = "table_to_chart"
-    sqldata_to_chart = "sqldata_to_chart"
-
-    title_and_related = "title_and_related"
-    verify = "verify"
-    
 
 
 class Source(str, Enum):
@@ -41,6 +28,9 @@ class Type(str, Enum):
     text = "text"
     image = "image" # reserved for future chart recognition
     other = "other"
+
+
+
 
 class DocumentMetadata(BaseModel):
     source: Optional[Source] = None
@@ -85,6 +75,30 @@ class Query(BaseModel):
 class QueryWithEmbedding(Query):
     embedding: List[float] 
 
+
+class ResponseType(str, Enum):
+    text = "text" # streaming text from datastore
+    table = "table" # streaming table from datastore
+    data = "data" # sql data
+    chart = "chart" #
+    textdata = "textdata" # text from sql data
+    error = "error"
+
+
+
+class Label(str, Enum):
+    text = "text"
+    database = "database"
+
+
+class Response(BaseModel):
+    code: int
+    type: ResponseType
+    label: Label
+    query: str
+    title: Optional[str] = None
+    response: Optional[str] = None
+    related_topics: Optional[List[Dict[str, str]]] = None
 
 
 

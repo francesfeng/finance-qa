@@ -1,35 +1,62 @@
-from src.models.models import PromptType
-
-def get_prompt(model: PromptType, query: str = None, context: str = None):
+from typing import Dict, List, Optional
+def get_prompt(model: str, query: str = None, context: str = None) -> List[Dict[str, str]]:
     """
     Retrieve the prompt for a given model.
     """
 
     CLASSIFICATION_RELATED_PROMPT = [
-        {"role": "system", "content": "You are a helpful market research analyst. You goal is to: 1. summarise the given question into a short topic. 2. assign a \"Database\" or a \"Text\" label to the question, by judging from the context of the question. 3. Ask 6 additional related questions to the question provided, summarise each question into a short topic, and assigned a \“Database\” or \“Text\” label to each question"},
+        {"role": "system", "content": "You are a helpful market research analyst. You goal is to: 1. summarise the given question into a short topic. 2. assign a \"Database\" or a \"Text\" label to the question, by judging from the context of the question. 3. Ask 6 additional related questions to the question provided, and summarise each question into a short topic"},
         {"role": "user", "content": "You assign the question \"Database\" label if the question can be answered by executing SQL query against the database, otherwise assign the \"Text\" label. If the user asks questions that can be answered based on the information contained in the following schema, it is a \"Database\" label, otherwise assign the \"Text\" label."},
-        {"role": "user", "content": "From now you will respond with json list. Provide only 6 related questions. Keep the response in json format: {\“original question\”: the question provided, \“original topic\”: the summary based on the original question, \“original label\”: the \“Database\” or \“Text\” label assigned, \“related questions\”: [{\“question\”: first related question, \“topic\”: the summary based on the first related question, \“label\”: the label assigned to the first question}, {\“question\”: the second related question, \“topic\”: the summary based on the second related question, \“label\”: the label assigned to the second question}, …}."},    
+        {"role": "user", "content": "From now you will respond with json list. Provide only 6 related questions. Keep the response in json format: {\“original question\”: the question provided, \“original topic\”: the summary based on the original question, \“original label\”: the \“Database\” or \“Text\” label assigned, \“related questions\”: [{\“question\”: first related question, \“topic\”: the summary based on the first related question}, {\“question\”: the second related question, \“topic\”: the summary based on the second related question}, …}."},    
         {"role": "user", "content": "You prioritise questions and topics that contains information in the schema provided above."},
         {"role": "user", "content": "Do not list topics or questions that have appeared in the prompt before."},
-        {"role": "user", "content": "Schema: \"\"\"{context}\"\"\""},
+        {"role": "user", "content": f"Schema: \"\"\"{context}\"\"\""},
         {"role": "user", "content": f"Original question: {query}"},
     ]
+
+    CLASSIFICATION_PROMPT = [
+        {"role": "system", "content": "You are a helpful market research analyst. You goal is to: 1. summarise the given question into a short topic. 2. assign a \"Database\" or a \"Text\" label to the question, by judging from the context of the question."},
+        {"role": "user", "content": "You assign the question \"Database\" label if the question can be answered by executing SQL query against the database, otherwise assign the \"Text\" label. If the user asks questions that can be answered based on the information contained in the following schema, it is a \"Database\" label, otherwise assign the \"Text\" label."},
+        {"role": "user", "content": "From now you will respond with json list. Provide only 6 related questions. Keep the response in json format: {\“question\”: the question provided, \“topic\”: the summary based on the original question, \“label\”: the \“Database\” or \“Text\” label assigned}."},    
+        {"role": "user", "content": f"Schema: \"\"\"{context}\"\"\""},
+        {"role": "user", "content": f"Original question: {query}"},
+    ]
+
+    RELATED_PROMPT = [
+        {"role": "system", "content": "You are a helpful market research analyst. You goal is to ask 6 additional related questions to the question provided, summarise each question into a short topic."},
+        {"role": "user", "content": "From now you will respond with json list. Provide only 6 related questions. Keep the response in json list format: [{\“question\”: first related question, \“topic\”: the summary based on the first related question}, {\“question\”: the second related question, \“topic\”: the summary based on the second related question}, …]."},    
+        {"role": "user", "content": "You prioritise questions and topics that contains information in the schema provided above."},
+        {"role": "user", "content": "Do not list topics or questions that have appeared in the prompt before."},
+        {"role": "user", "content": f"Schema: \"\"\"{context}\"\"\""},
+        {"role": "user", "content": f"Original question: {query}"},
+    ]
+
 
     TABLE_DATASTORE_PROMPT = [
         {"role": "system", "content": "You are a helpful market analyst. Your goal is to answer the question strictly based on the text provided below. The answer should take into account the time sensitive topics and only provide answers based on the relevant date. However the date doesn\’t need to be part of the answer."},
         {"role": "user", "content": "The text below provides the date on which the text is based, and the actual body of the context, separated by \“——\“. "},
         {"role": "user", "content": "Keep the answer in table format."},
         {"role": "user", "content": "Think carefully, the response should be logical and make sense. You can rewrite the text, and not copy the exact wordings from the text."},
-        {"role": "user", "content": "When you cannot derive the answer from the text provided, you can respond with one sentence: \"Sorry, seems the question is not relevant. Could you please ask a different question?\"."},
+        #{"role": "user", "content": "When you cannot derive the answer from the text provided, you can respond with one sentence: \"Sorry, seems the question is not relevant. Could you please ask a different question?\"."},
         {"role": "user", "content": f"Question: {query}"},
         {"role": "user", "content": f"Text: \"\"\"{context}\"\"\""},
     ]
 
     TEXT_DATASTORE_PROMPT = [
-        {"role": "system", "content": "You are a helpful market analyst. Your goal is to answer questions strictly based on the context provided."},
-        {"role": "user", "content": "When you cannot derive the answer from the text provided, you can respond with one sentence: \"Sorry, seems the question is not relevant. Could you please ask a different question?\"."},
+        {"role": "system", "content": "You are a helpful market analyst. Your goal is to answer questions based on the context provided."},
+        #{"role": "user", "content": "When you cannot answer the question, you can respond with one sentence: \"Sorry, seems the question is not relevant. Could you please ask a different question?\"."},
         {"role": "user", "content": f"Question: {query}"},
         {"role": "user", "content": f"Text: \"\"\"{context}\"\"\""},
+    ]
+
+    COMBINED_PROMPT = [
+        {"role": "system", "content": "You are a helpful market analyst. Your goal is to answer the question strictly based on the text provided below. The answer should take into account the time sensitive topics and only provide answers based on the relevant date. However the date doesn\’t need to be part of the response."},
+        {"role": "user", "content": "The text below provides the date on which the text is based, and the actual body of the context, separated by \“——\“."},
+        {"role": "user", "content": "The output consists two parts, 1) tables: if the context provided includes markdown tables. 2) text: to provide more detailed explanations."},
+        {"role": "user", "content": "Think carefully, the response should be logical and make sense. You can rewrite the text, and not copy the exact wordings from the text."},
+        {"role": "user", "content": f"Question: {query}"},
+        {"role": "user", "content": f"Text: \"\"\"{context}\"\"\""},
+
     ]
 
     TABLE_TO_CHART_PROMPT = [
@@ -61,16 +88,31 @@ def get_prompt(model: PromptType, query: str = None, context: str = None):
         {"role": "user", "content": "ECharts JSON: option = { "}
     ]
 
+    DATA_TO_TEXT_PROMPT = [
+        {"role": "system", "content": "You are a helpful market analyst, your goal is to answer the question based on the data provided."},
+        {"role": "user", "content": f"Question: {query}"},
+        {"role": "user", "content": f"Data: \"\"\"{context}\"\"\""},
+    ]
+
 
 
     if model == 'classification_and_related':
         return CLASSIFICATION_RELATED_PROMPT
+    
+    elif model == 'classification':
+        return CLASSIFICATION_PROMPT
+    
+    elif model == 'related':
+        return RELATED_PROMPT
     
     elif model == 'table_datastore':
         return TABLE_DATASTORE_PROMPT
     
     elif model == 'text':
         return TEXT_DATASTORE_PROMPT
+    
+    elif model == 'combined':
+        return COMBINED_PROMPT
     
     elif model == 'table_to_chart':
         return TABLE_TO_CHART_PROMPT
@@ -80,6 +122,9 @@ def get_prompt(model: PromptType, query: str = None, context: str = None):
     
     elif model == 'sql_to_chart':
         return SQL_TO_CHART_PROMPT
+    
+    elif model == 'data_to_text':
+        return DATA_TO_TEXT_PROMPT
     
 
     else:

@@ -4,6 +4,8 @@ import sqlalchemy
 import os
 from io import StringIO
 import csv
+import pandas as pd
+from loguru import logger
 
 host = os.environ['NEON_HOST']
 database = os.environ['NEON_DATABASE']
@@ -28,9 +30,10 @@ class Database:
     def close(self):
         self.conn.close()
 
-    def execute_query(self, query:str, output_headers = True):
+    def execute_query(self, query:str, output_headers = True) -> str:
         """
-        Execute a query and return the result
+        Execute a query and return the result. 
+        Remove rows with all null values in the result.
         """
         try:
             cursor = self.conn.cursor()
@@ -39,18 +42,33 @@ class Database:
 
             # The output is a csv string format
             if output_headers == True:
+
+                # write header and data to csv string
                 headers = [column[0] for column in cursor.description]
                 output = StringIO()
                 csv_writer = csv.writer(output)
                 csv_writer.writerow(headers)
                 csv_writer.writerows(result)
-                return output.getvalue()  
+
+                data = output.getvalue()
+
+                # remove rows with all null values
+                df = pd.read_csv(StringIO(data))
+                df = df[~df.isna().all(axis=1)]
+
+                # write data from pandas to csv string
+                s = StringIO()
+                df.to_csv(s, index=False, lineterminator='\r\n')
+
+                return s.getvalue().strip()
              
             # The output is a list of tuples, without headers
             else:          
                 return result
         except Exception as e:
-            raise f"Error executing query: {e}"
+            logger.error(f"SQL: {sql} | Error: {e}")
+            return 'Error executing query'
+            #raise RuntimeError(f"Error executing query: {e}")
         
 
     def get_table_names(self):

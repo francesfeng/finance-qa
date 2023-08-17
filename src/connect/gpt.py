@@ -5,7 +5,7 @@ import timeit
 
 from tenacity import retry, wait_random_exponential, stop_after_attempt
 from loguru import logger
-#logger.add("file_prompt.log", rotation="12:00")  
+logger.add("file_prompt.log", rotation="12:00")  
 level_gpt = logger.level("GPT", no=38, color="<yellow>", icon="♣")
 
 openai.api_key = os.getenv("OPENAI_API_KEY")

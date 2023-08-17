@@ -7,10 +7,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from loguru import logger
 from pydantic import BaseModel
 from typing import List
-from src.controller import Controller
-from src.models.models import Query, Type
+#from src.controller import Controller
+from src.models.models import Query, Type, Response
 from src.models.agents import Agent
+from src.models.controller import Controller
 from src.connect.gpt import test_query
+
 
 # Define the model. TODO: move to seperate models.api file
 class QueryText(BaseModel):
@@ -22,7 +24,7 @@ class RelatedTopic(BaseModel):
     title: str
     label: str
 
-class Response(BaseModel):
+class ResponseFull(BaseModel):
     code: int
     type: str
     label: str
@@ -67,14 +69,51 @@ async def root():
 async def query(query: QueryText = Body(...)):
     try:
         result = controller.run(query.query)
-        return Response(**result)
+        return ResponseFull(**result)
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail=str(e))
+
+#--------------------------------------------------------------------------
+# Version 1 endpoints
+
+@app.post("/v1/query")
+async def query(query: QueryText = Body(...)):
+    try:
+        result = await controller.run_query(query.query)
+        return Response(**result.dict())
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+#--------------------------------------------------------------------------
+# Following are test endpoints for the new agent
+
+@app.post("/test/query/classify")
+async def query_classify(query: QueryText = Body(...)):
+    try:
+        return await agent.classification(query = query.query)
     except Exception as e:
         logger.error(e)
         raise HTTPException(status_code=500, detail=str(e))
     
 
+@app.post("/test/query/combined")
+async def query_combined(querytext: QueryText = Body(...)):
+    try:
+        return StreamingResponse(
+            await agent.query_combined(query = querytext.query, is_streaming=True), 
+            media_type="text/event-stream"
+            )
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail=str(e))
+    
+    
+
 # Table based on pincone text, streaming
-@app.post("/query/text_table")
+@app.post("/test/query/text_table")
 async def query_table(querytext: QueryText = Body(...)):
     try:
         return StreamingResponse(
@@ -86,7 +125,7 @@ async def query_table(querytext: QueryText = Body(...)):
         raise HTTPException(status_code=500, detail=str(e))
 
 # Text based on pinecone, streaming
-@app.post("/query/text")
+@app.post("/test/query/text")
 async def query_text(querytext: QueryText = Body(...)):
     try:
         return StreamingResponse(
@@ -99,7 +138,7 @@ async def query_text(querytext: QueryText = Body(...)):
     
 
 # Pincone Table to Chart
-@app.post("/query/table_to_chart")
+@app.post("/test/query/table_to_chart")
 async def query_table_to_chart(querytext: QueryText = Body(...)):
     try:
         return await agent.query_table_to_chart(querytext.query, querytext.data)
@@ -109,7 +148,7 @@ async def query_table_to_chart(querytext: QueryText = Body(...)):
     
 
 # Get SQL query
-@app.post("/query/sql")
+@app.post("/test/query/sql")
 async def query_sql(querytext: QueryText = Body(...)):
     try:
         return await agent.query_sql(querytext.query)
@@ -119,8 +158,8 @@ async def query_sql(querytext: QueryText = Body(...)):
     
 
 # Run SQL Query
-@app.post("/query/sql_table")
-async def query_sql_to_table(querytext: QueryText = Body(...)):
+@app.post("/test/query/run_sql")
+async def run_sql(querytext: QueryText = Body(...)):
     try:
         return await agent.run_sql(querytext.query)
     except Exception as e:
@@ -128,8 +167,19 @@ async def query_sql_to_table(querytext: QueryText = Body(...)):
         raise HTTPException(status_code=500, detail=str(e))
 
 
+# Get SQL query, Run SQL Query, and return table
+@app.post("/test/query/sql_table")
+async def query_sql_to_table(querytext: QueryText = Body(...)):
+    try:
+        return await agent.query_sql_table(querytext.query)
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+
 # SQL Query to Chart
-@app.post("/query/sql_chart")
+@app.post("/test/query/sql_chart")
 async def query_sql_to_chart(querytext: QueryText = Body(...)):
     try:
         return await agent.query_sql_chart(querytext.query, querytext.data)
@@ -138,7 +188,13 @@ async def query_sql_to_chart(querytext: QueryText = Body(...)):
         raise HTTPException(status_code=500, detail=str(e))
     
 
-
+@app.post("/test/query/table_text_non_stream")
+async def query_table_text(querytext: QueryText = Body(...)):
+    try:
+        return await agent.query_text_table(querytext.query, is_streaming=False)
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/query/v2")
 async def query_text(querytext: QueryText = Body(...)):

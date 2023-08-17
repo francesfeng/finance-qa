@@ -106,4 +106,12 @@ class DataStore:
         source = list(set(source))
         return context, source
 
+
+    def combine_sort_retrieval(self, res1: List[DocumentChunkWithScore], res2: List[DocumentChunkWithScore]) -> List[str]:
+        """
+        Combine the results from two queries and sort by score.
+        """
+        res = res1 + res2
+        res.sort(key=lambda x: x.score, reverse=True)
+        return self.format_response(res)
  
