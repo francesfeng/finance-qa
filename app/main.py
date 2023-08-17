@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.dependencies import bearer_scheme
 from app.v1.routers import query
 from app.v1.test import test
+from mangum import Mangum
 
 
 app = FastAPI(dependencies=[Depends(bearer_scheme)])
@@ -23,16 +24,17 @@ app.add_middleware(
 )
 
 
-app.include_router(query.router, prefix="/v1")
-app.include_router(test.router)
-
-
 @app.get("/")
 async def root():
     return {"message": "Welcome to Endepth!"}
 
-def start():
-    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)
+app.include_router(query.router, prefix="/v1")
+app.include_router(test.router)
+
+handler = Mangum(app=app)
+
+# def start():
+#     uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)
 
 #--------------------------------------------------------------------------
 # Version 1 endpoints
