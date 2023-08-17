@@ -16,10 +16,12 @@ jobs:
       
       # Step 2
       - name: Set up Python 
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v3
         with:
-          python-version: 3.10
+          python-version: '3.10'
           architecture: x64
+        #env:
+          #AGENT_TOOLSDIRECTORY: /opt/hostedtoolcache
       # Step 3
       - name: Install Python Virtual ENV
         run: pip3 install virtualenv
