@@ -11,18 +11,18 @@ from app.src.runner.prompt import get_prompt
 
 import timeit
 import yaml
-from loguru import logger
-logger.add("file_prompt.log", rotation="12:00")  
-level_classification = logger.level("CLASSIFICATION", no=38, color="<yellow>", icon="♣")
-level_related = logger.level("RELATED", no=38, color="<yellow>", icon="♣")
-level_datastore = logger.level("RETRIEVAL", no=38, color="<yellow>", icon="♣")
-level_text = logger.level("TEXT", no=30, color="<green>", icon="♨")
-level_table= logger.level("TABLE", no=30, color="<magenta>", icon="♨")
-level_table_chart = logger.level("TABLECHART", no=30, color="<blue>", icon="♨")
-level_sql = logger.level("SQL", no=30, color="<green>", icon="♨")
-level_run_sql = logger.level("RUNSQL", no=30, color="<green>", icon="♨")
-level_sql_chart = logger.level("SQLECHART", no=30, color="<green>", icon="♨")
-level_data_text = logger.level("DATATEXT", no=30, color="<green>", icon="♨")
+#from loguru import logger
+#logger.add("file_prompt.log", rotation="12:00")  
+#level_classification = logger.level("CLASSIFICATION", no=38, color="<yellow>", icon="♣")
+#level_related = logger.level("RELATED", no=38, color="<yellow>", icon="♣")
+#level_datastore = logger.level("RETRIEVAL", no=38, color="<yellow>", icon="♣")
+#level_text = logger.level("TEXT", no=30, color="<green>", icon="♨")
+#level_table= logger.level("TABLE", no=30, color="<magenta>", icon="♨")
+#level_table_chart = logger.level("TABLECHART", no=30, color="<blue>", icon="♨")
+#level_sql = logger.level("SQL", no=30, color="<green>", icon="♨")
+#level_run_sql = logger.level("RUNSQL", no=30, color="<green>", icon="♨")
+#level_sql_chart = logger.level("SQLECHART", no=30, color="<green>", icon="♨")
+#level_data_text = logger.level("DATATEXT", no=30, color="<green>", icon="♨")
 
 
 
@@ -57,7 +57,7 @@ class Agent:
         res = get_chat_completion(messages)
         end = timeit.default_timer()
 
-        logger.opt(lazy=True).log("CLASSIFICATION", f"Query: {query} | Processing Time: {end - start} | Response: {res}")
+        #logger.opt(lazy=True).log("CLASSIFICATION", f"Query: {query} | Processing Time: {end - start} | Response: {res}")
 
         return res
     
@@ -70,7 +70,7 @@ class Agent:
         res = get_chat_completion(messages)
         end = timeit.default_timer()
 
-        logger.opt(lazy=True).log("CLASSIFICATION", f"Query: {query} | Processing Time: {end - start} | Response: {res}")
+        #logger.opt(lazy=True).log("CLASSIFICATION", f"Query: {query} | Processing Time: {end - start} | Response: {res}")
 
         return res
 
@@ -101,7 +101,7 @@ class Agent:
             time_start_table = timeit.default_timer()
             res = get_chat_completion(messages, temperature=1)
             time_end_table = timeit.default_timer()
-            logger.opt(lazy=True).log("TABLE", f"Query: {query_class} | Processing Time: {time_end_table - time_start_table} | Response: {res}")
+            #logger.opt(lazy=True).log("TABLE", f"Query: {query_class} | Processing Time: {time_end_table - time_start_table} | Response: {res}")
             return res
 
 
@@ -116,7 +116,7 @@ class Agent:
 
         res = "{" + res + "}"
 
-        logger.opt(lazy=True).log("TABLECHART", f"Query: {query} | Processing Time: {time_end_chart - time_start_chart} | Response: {res}")
+        #logger.opt(lazy=True).log("TABLECHART", f"Query: {query} | Processing Time: {time_end_chart - time_start_chart} | Response: {res}")
 
         return self._check_json(res)
 
@@ -146,7 +146,7 @@ class Agent:
             time_start_text = timeit.default_timer()
             res = get_chat_completion(messages, temperature=1)
             time_end_text = timeit.default_timer()
-            logger.opt(lazy=True).log("TEXT", f"Query: {query_class.query} | Processing Time: {time_end_text - time_start_text} | Response: {res}")
+            #logger.opt(lazy=True).log("TEXT", f"Query: {query_class.query} | Processing Time: {time_end_text - time_start_text} | Response: {res}")
             return res
     
 
@@ -173,7 +173,7 @@ class Agent:
             time_start_text = timeit.default_timer()
             res = get_chat_completion(messages)
             time_end_text = timeit.default_timer()
-            logger.opt(lazy=True).log("TEXT", f"Query: {query} | Processing Time: {time_end_text - time_start_text} | Response: {res}")
+            #logger.opt(lazy=True).log("TEXT", f"Query: {query} | Processing Time: {time_end_text - time_start_text} | Response: {res}")
             return res
 
 
@@ -233,7 +233,7 @@ class Agent:
         time_end_sql = timeit.default_timer()
 
         time_sql = time_end_sql - time_start_sql
-        logger.opt(lazy=True).log("SQL", f"Query: {query} | Processing Time: {time_sql} | Response: {res}")
+        #logger.opt(lazy=True).log("SQL", f"Query: {query} | Processing Time: {time_sql} | Response: {res}")
 
         # Reformat SQL Code
         sql = res.replace("SQL:", "").strip().replace("\n", " ") 
@@ -246,7 +246,7 @@ class Agent:
         start = timeit.default_timer()
         data = db.execute_query(query)
         stop = timeit.default_timer()
-        logger.opt(lazy=True).log("RUNSQL", f"Query: {query} | Processing Time: {stop - start} | Response: {data}")
+        #logger.opt(lazy=True).log("RUNSQL", f"Query: {query} | Processing Time: {stop - start} | Response: {data}")
         return data
     
 
@@ -258,7 +258,7 @@ class Agent:
         time_end_chart = timeit.default_timer()
 
         res = "{" + res + "}"
-        logger.opt(lazy=True).log("SQLECHART", f"Query: {query} | Processing Time: {time_end_chart - time_start_chart} | Response: {res}")
+        #logger.opt(lazy=True).log("SQLECHART", f"Query: {query} | Processing Time: {time_end_chart - time_start_chart} | Response: {res}")
 
         return self._check_json(res)
     
@@ -268,7 +268,7 @@ class Agent:
         try: 
             return await self.run_sql(sql)
         except Exception as e:
-            logger.error(f"Query: {query} | SQL: {sql} | Error: {e}")
+            #logger.error(f"Query: {query} | SQL: {sql} | Error: {e}")
             return 'Error in SQL query'
         
     
@@ -277,7 +277,7 @@ class Agent:
         start = timeit.default_timer()
         res = get_chat_completion(messages)
         end = timeit.default_timer()
-        logger.opt(lazy=True).log("DATATEXT", f"Query: {query} | Processing Time: {end - start} | Response: {res}")
+        #logger.opt(lazy=True).log("DATATEXT", f"Query: {query} | Processing Time: {end - start} | Response: {res}")
         return res
         
     
@@ -312,6 +312,6 @@ class Agent:
         start = timeit.default_timer()
         res = await self.datastore.query(query)
         stop = timeit.default_timer()
-        logger.opt(lazy=True).log("RETRIEVAL", f"Query: {query} | Processing Time: {stop - start} | Response: {[i.dict() for i in res]}")
+        #logger.opt(lazy=True).log("RETRIEVAL", f"Query: {query} | Processing Time: {stop - start} | Response: {[i.dict() for i in res]}")
 
         return res

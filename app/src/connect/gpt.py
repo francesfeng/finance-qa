@@ -4,9 +4,9 @@ import os
 import timeit
 
 from tenacity import retry, wait_random_exponential, stop_after_attempt
-from loguru import logger
-logger.add("file_prompt.log", rotation="12:00")  
-level_gpt = logger.level("GPT", no=38, color="<yellow>", icon="♣")
+#from loguru import logger
+#logger.add("file_prompt.log", rotation="12:00")  
+#level_gpt = logger.level("GPT", no=38, color="<yellow>", icon="♣")
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
@@ -72,7 +72,7 @@ def get_chat_completion(messages, model="gpt-3.5-turbo", temperature: float = 0,
             temperature=temperature,
         ) 
     stop = timeit.default_timer()
-    logger.opt(lazy=True).log("GPT", f"Query: {messages} | Processing Time: {stop - start} | Response: {response}")
+    #logger.opt(lazy=True).log("GPT", f"Query: {messages} | Processing Time: {stop - start} | Response: {response}")
 
     choices = response["choices"]
     finish_reason = choices[0]["finish_reason"]

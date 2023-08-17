@@ -1,10 +1,9 @@
 import json
-from loguru import logger
 import timeit
 from app.src.runner.agents import Agent
 from app.models.models import Response, ResponseType, Label
 
-from loguru import logger
+#from loguru import logger
 #logger.add("file_prompt.log", rotation="12:00")  
 #level_response = logger.level("RESPONSE", no=38, color="<yellow>", icon="♣")
 
@@ -28,7 +27,7 @@ class Controller:
             related =  [{'query': i['question'], 'title': i['topic']} for i in res_json['related questions']]
         # When there is JSONDecodeError, assume the classification is Text 
         except Exception as e:
-            logger.error(f"Query: {query} | Error: {e}")
+            #logger.error(f"Query: {query} | Error: {e}")
             classify = 'Text'
             title = query
             related = None

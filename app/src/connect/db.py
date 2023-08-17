@@ -5,7 +5,7 @@ import os
 from io import StringIO
 import csv
 import pandas as pd
-from loguru import logger
+#from loguru import logger
 
 host = os.environ['NEON_HOST']
 database = os.environ['NEON_DATABASE']
@@ -66,7 +66,7 @@ class Database:
             else:          
                 return result
         except Exception as e:
-            logger.error(f"SQL: {sql} | Error: {e}")
+            #logger.error(f"SQL: {sql} | Error: {e}")
             return 'Error executing query'
             #raise RuntimeError(f"Error executing query: {e}")
         
