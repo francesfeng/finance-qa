@@ -22,12 +22,11 @@ jobs:
           architecture: x64
       # Step 3
       - name: Install Python Virtual ENV
-        run: |
-          python3 -m venv venv
-          source venv/bin/activate
+        run: pip3 install virtualenv
       # Step 4
-      - name:  Install dependencies
-        run: pip install -r requirements.txt
+      - name: Activate and Install Depencies into Virtual env
+        run: python -m venv venv && source venv/bin/activate &&
+          pip3 install -r requirements.txt
       
       # Step 7
       - name: Create Zipfile archive of Dependencies
