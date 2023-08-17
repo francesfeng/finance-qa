@@ -7,6 +7,9 @@ __pycache__/
 *.log 
 SQL/
 data/
+*.sql 
+
+*.log
 
 *.ipynb
 

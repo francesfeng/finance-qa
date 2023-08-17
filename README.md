@@ -117,5 +117,5 @@ python3 update_schema.py
 
 # API Structure
 
-[`API structure`](/app/README.md) 
+[`API routers`](/app/README.md) 
 
