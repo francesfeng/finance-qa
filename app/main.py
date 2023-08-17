@@ -1,47 +1,9 @@
-import os
 import uvicorn
-from fastapi import FastAPI, HTTPException, Depends, Body
-from fastapi.responses import StreamingResponse
-from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
-from loguru import logger
-from pydantic import BaseModel
-from typing import List
-#from src.controller import Controller
-from src.models.models import Query, Type, Response
-from src.models.agents import Agent
-from src.models.controller import Controller
-from src.connect.gpt import test_query
-
-
-# Define the model. TODO: move to seperate models.api file
-class QueryText(BaseModel):
-    query: str
-    data: str = None
-
-class RelatedTopic(BaseModel):
-    query: str
-    title: str
-    label: str
-
-class ResponseFull(BaseModel):
-    code: int
-    type: str
-    label: str
-    query: str
-    title: str
-    response: str
-    related_topics: List[RelatedTopic]
-
-bearer_scheme = HTTPBearer()
-# BEARER_TOKEN = os.environ.get("BEARER_TOKEN")
-# assert BEARER_TOKEN is not None
-
-
-# def validate_token(credentials: HTTPAuthorizationCredentials = Depends(bearer_scheme)):
-#     if credentials.scheme != "Bearer" or credentials.credentials != BEARER_TOKEN:
-#         raise HTTPException(status_code=401, detail="Invalid or missing token")
-#     return credentials
+from app.dependencies import bearer_scheme
+from app.v1.routers import query
+from app.v1.test import test
 
 
 app = FastAPI(dependencies=[Depends(bearer_scheme)])
@@ -60,23 +22,21 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+app.include_router(query.router, prefix="/v1")
+app.include_router(test.router)
+
+
 @app.get("/")
 async def root():
-    return {"message": "Hello, welcome to EnDepth"}
+    return {"message": "Welcome to Endepth!"}
 
-
-@app.post("/query")
-async def query(query: QueryText = Body(...)):
-    try:
-        result = controller.run(query.query)
-        return ResponseFull(**result)
-    except Exception as e:
-        logger.error(e)
-        raise HTTPException(status_code=500, detail=str(e))
+def start():
+    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)
 
 #--------------------------------------------------------------------------
 # Version 1 endpoints
-
+""" 
 @app.post("/v1/query")
 async def query(query: QueryText = Body(...)):
     try:
@@ -188,30 +148,7 @@ async def query_sql_to_chart(querytext: QueryText = Body(...)):
         raise HTTPException(status_code=500, detail=str(e))
     
 
-@app.post("/test/query/table_text_non_stream")
-async def query_table_text(querytext: QueryText = Body(...)):
-    try:
-        return await agent.query_text_table(querytext.query, is_streaming=False)
-    except Exception as e:
-        logger.error(e)
-        raise HTTPException(status_code=500, detail=str(e))
 
-@app.post("/query/v2")
-async def query_text(querytext: QueryText = Body(...)):
-    """
-    The non-streaming version of the query endpoint for calling Chat GPT
-    """
-    # Contruct query class
-    query = query = Query(
-        query = querytext.query,
-        filter = {"type": Type.table},
-        top_k = 10
-    )
-    try:
-        return await agent.query_non_stream(query = query, model = "table_datastore")
-    except Exception as e:
-        logger.error(e)
-        raise HTTPException(status_code=500, detail=str(e))
 
 # @app.post("/query/demo")
 # async def query_demo(num: int = Body(...)):
@@ -229,8 +166,6 @@ async def startup():
 
 @app.get("/healthcheck")
 def read_root():
-    return {"status": "ok"}
+    return {"status": "ok"} """
 
 
-def start():
-    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)

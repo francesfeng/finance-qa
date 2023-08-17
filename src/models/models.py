@@ -85,7 +85,6 @@ class ResponseType(str, Enum):
     error = "error"
 
 
-
 class Label(str, Enum):
     text = "text"
     database = "database"
@@ -99,6 +98,8 @@ class Response(BaseModel):
     title: Optional[str] = None
     response: Optional[str] = None
     related_topics: Optional[List[Dict[str, str]]] = None
+
+
 
 
 
