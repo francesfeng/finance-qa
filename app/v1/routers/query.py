@@ -50,7 +50,7 @@ async def query_combined(querytext: QueryText = Body(...)):
     
 
 # Table based on pincone text, streaming
-@router.post("text_table")
+@router.post("/text_table")
 async def query_table(querytext: QueryText = Body(...)):
     try:
         return StreamingResponse(

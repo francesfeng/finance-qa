@@ -6,21 +6,22 @@ from app.v1.test import test
 from mangum import Mangum
 
 
-app = FastAPI(dependencies=[Depends(bearer_scheme)])
+app = FastAPI()
+# app = FastAPI(dependencies=[Depends(bearer_scheme)])
 
-origins = [
-    "http://localhost:8765",
-    "http://localhost:8000/",
-    "http://localhost"
-    ]
+# origins = [
+#     "http://localhost:8765",
+#     "http://localhost:8000/",
+#     "http://localhost"
+#     ]
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=origins,
-    allow_credentials=True,
-    allow_methods=["POST", "GET"],
-    allow_headers=["*"],
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=origins,
+#     allow_credentials=True,
+#     allow_methods=["POST", "GET"],
+#     allow_headers=["*"],
+# )
 
 
 @app.get("/")

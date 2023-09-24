@@ -47,7 +47,8 @@ class Agent:
         schema_short = self.schema_short
         messages = get_prompt('classification_and_related', query, schema_short)
 
-        return get_chat_completion(messages)
+        response = get_chat_completion(messages)
+        return json.loads(response)
     
 
     async def classification(self, query: str):

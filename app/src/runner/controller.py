@@ -15,13 +15,13 @@ class Controller:
     async def run_query(self, query: str) -> Response:
 
         start = timeit.default_timer()
-        res = await self.agent.classification_related(query)
+        res_json = await self.agent.classification_related(query)
         classify = None
         data = None
         text = None
 
         try:
-            res_json = json.loads(res)
+            #res_json = json.loads(res)
             classify = res_json['original label']
             title = res_json['original topic']
             related =  [{'query': i['question'], 'title': i['topic']} for i in res_json['related questions']]

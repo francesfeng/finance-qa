@@ -22,10 +22,9 @@ class Source(str, Enum):
 
 
 class Type(str, Enum):
-    pdf = "pdf"
     table = "table"
     html = "html"
-    text = "text"
+    text = "text" # including pdfs and news
     image = "image" # reserved for future chart recognition
     other = "other"
 
@@ -48,7 +47,7 @@ class DocumentChunkMetadata(DocumentMetadata):
 class DocumentChunk(BaseModel):
     id: Optional[str] = None
     text: str
-    metadata: DocumentChunkMetadata
+    metadata: Optional[DocumentChunkMetadata] = None
     embedding: Optional[List[float]] = None
 
 

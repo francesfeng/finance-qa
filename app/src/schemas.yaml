@@ -1,0 +1,208 @@
+schema: "Table, Column, DataType, Possible Values\nproject_location, id, integer\n\
+  project_location, Ref, character varying\nproject_location, Project Type, character\
+  \ varying, Carbon Capture Utilisation and Storage (CCUS), Hydrogen, Hydrogen Fueling\
+  \ Stations, Hydrogen-Fueled Vehicles\nproject_location, Country, character varying,\
+  \ Albania, Algeria, Angola, Argentina, Australia, Austria, Bahrain, Bangladesh,\
+  \ Barbados, Belgium, Botswana, Brazil, Bulgaria, Canada, Chile, China, Chinese Taipei,\
+  \ Colombia, Congo (DRC), Cook Islands, Costa Rica, Croatia, Cyprus, Czech Republic,\
+  \ Denmark, Djibouti, Egypt, Estonia, Finland, France, French Guiana, Germany, Greece,\
+  \ Hungary, Iceland, India, Indonesia, Iran, Ireland, Italy, Japan, Kazakhstan, Kenya,\
+  \ Latvia, Lebanon, Lithuania, Luxembourg, Lybia, Malaysia, Mauritania, Mexico, Morocco,\
+  \ Namibia, Netherlands, New Zealand, Niger, Norway, Oman, Pakistan, Papua New Guinea,\
+  \ Paraguay, Peru, Poland, Portugal, Qatar, Romania, Russia, Saudi Arabia, Singapore,\
+  \ Slovakia, Slovenia, South Africa, South Korea, Spain, Sri Lanka, Sweden, Switzerland,\
+  \ Taiwan, Thailand, Trinidad And Tobago, Turkey, Ukraine, United Arab Emirates,\
+  \ United Kingdom, United States, Unknown, Uruguay, Vietnam, Zimbabwe\nproject_location,\
+  \ Region, character varying, #N/A, Africa, Australia and Oceania, Carribean, Central\
+  \ America, Central Asia, East Asia, Eastern Europe, Middle East, North America,\
+  \ South America, South Asia, Southeast Asia, Unknown, Western Europe\nproject_location,\
+  \ State, character varying, #N/A, Aberdeen, Aichi, Akershus, Albacete, Alberta,\
+  \ Aragon, Auckland, Australian Capital Territory, Auvergne-Rh\xF4ne-Alpes, Baden-W\xFC\
+  rttemberg, Bayern, Beijing, Berlin, Brandenburg, Bremen, British Columbia, Busan,\
+  \ California, Canton Aargau, Canton Zurich, Capital Region, Central Jutland, Centre-Val\
+  \ de Loire, Chiba, Chungcheongbuk-do, Chungcheongbukdo, Chungcheongnamdo, Connecticut,\
+  \ Costa Rica Guancaste, DE, Daegu, Daejeon, Delaware, Drenthe, Ealing, Flanders,\
+  \ Flemish, Fukui, Fukuoka, Fukushima, Gangwondo, Gelderland, Georgia, Gifu, Groningen,\
+  \ Guangdong, Gunma, Gwangju, Gyeonggido, Gyeongsangbukdo, Gyeongsangnamdo, G\xE4\
+  vleborg County, Hamburg, Haryana State, Hauts-de-France, Hawaii, Hebei, Henan, Hessen,\
+  \ Hillingdon, Hiroshima, Hokkaido, Hubei, Hyogo, Ibaraki, Illinois, Incheon, Ishikawa,\
+  \ Ivry-sur-Seine, Jeollabukdo, Jeollanamdo, Jiangsu, Kagawa, Kagoshima, Kanagawa,\
+  \ Kochi, Kumamoto, Kyoto, Liaoning, Lu'an, Maryland, Massachusetts, Mecklenburg-Vorpommern,\
+  \ Miyagi, Monmouthshire, M\xF6dling, Nagano, Nara, National Capital Territory of\
+  \ Delhi, Neath Port Talbot, Nebraska, Nevada, New Jersey, New South Wales, New York,\
+  \ Niedersachsen, Niigata, Nordrhein-Westfalen, Normandy, North Carolina, North Holland,\
+  \ Northern Ireland, Nouvelle-Aquitaine, Occitanie, Ohio, Oita, Okayama, Ontario,\
+  \ Osaka, Oslo, Pennsylvania, Quebec, Queensland, Rainham, Havering (East London),\
+  \ Reykjanesb\xE6r, Rheinland-Pfalz, Saarland, Sachsen, Sachsen-Anhalt, Saga, Saitama,\
+  \ Sao Paulo, Schleswig-Holstein, Sejong, Seoul, Shandong, Shanghai, Shanxi, Shiga,\
+  \ Shizuoka, Sichuan, Sichuan; Pidu District, South Bucks District, South Holland,\
+  \ South Tyrol, South West England, South Yorkshire, Southern Jutland, Stockholm,\
+  \ Styria, Sussex, Taichung County, Teddington, Middlesex, Th\xFCringen, Tochigi,\
+  \ Tokushima, Tokyo, Toyama, Triple, Trondheim Region, Tyrol, Ulsan, Upper Austria,\
+  \ Victoria, Vienna, Virginia, V\xE4sterbotten, V\xE4stra G\xF6taland County, Wakayama,\
+  \ Wallonia, Washington, West Midlands, Western Austrailia, Western Norway, Wisconsin,\
+  \ Wyoming, Yamaguchi, Yamanashi, Zealand, Zhejiang, chungcheongnamdo, unknown, \xCE\
+  le-de-France\nproject_location, City/Area, character varying\nproject_location,\
+  \ Address/Location, text\nhydrogen_fueled_vehicles, Ref, character varying\nhydrogen_fueled_vehicles,\
+  \ Operator, character varying\nhydrogen_fueled_vehicles, Manufacturer, character\
+  \ varying\nhydrogen_fueled_vehicles, Vehicle, character varying\nhydrogen_fueled_vehicles,\
+  \ Project, character varying\nhydrogen_fueled_vehicles, Status, character varying,\
+  \ Active, Planned\nhydrogen_fueled_vehicles, Fleet Size, integer\nhydrogen_fueled_vehicles,\
+  \ Vehicle Type, character varying, Bus, Heavy duty truck, Medium duty truck, Passenger\
+  \ vehicle, Utility Tractor Rig (UTR), passenger vehicle\nhydrogen_fueled_vehicles,\
+  \ Start Date, date\nhydrogen_fueled_vehicles, End Date, date\nhydrogen_fueled_vehicles,\
+  \ Conversion Technology, character varying, Fuel cell, Fuel cell range extender,\
+  \ Hybrid, range extender\nus_stationary_fuel_cells, Ref, character varying\nus_stationary_fuel_cells,\
+  \ Host, character varying\nus_stationary_fuel_cells, Project, character varying\n\
+  us_stationary_fuel_cells, Status, character varying, active, planned\nus_stationary_fuel_cells,\
+  \ Start Date, date\nus_stationary_fuel_cells, Site Classification, character varying,\
+  \ airport, apartment complex, bus station, casino, cold storage, college/university,\
+  \ dairy farm, data center, distribution center, fuel cell park, hospital, hotel,\
+  \ jail/prison, manufacturing facility, military, municipal , natural gas pressure\
+  \ reduction facility, office building, other, pharmaceutical company, port, retail,\
+  \ school, substation, telecommunications, wastewater treatment plant\nus_stationary_fuel_cells,\
+  \ Application, character varying, CHP, baseload power, baseload power\nmicro-grid,\
+  \ grid support, primary power, \u2022 backup power\n\u2022 CHP, \u2022 backup power\n\
+  \u2022 baseload power, \u2022 backup power\n\u2022 baseload power\n\u2022 CHP, \u2022\
+  \ backup power\n\u2022 baseload power\n\u2022 CHP\n, \u2022 backup power\n\u2022\
+  \ grid support, \u2022 baseload power\n\u2022 CHP, \u2022 baseload power\n\u2022\
+  \ CHP\n\u2022 grid support, \u2022 baseload power\n\u2022 chiller support\nus_stationary_fuel_cells,\
+  \ Number of Units, integer\nus_stationary_fuel_cells, Fuel Cell Type, character\
+  \ varying, MCFC, PAFC, SOFC\nus_stationary_fuel_cells, Model, character varying,\
+  \ DFC 1500, DFC 300MA, DFC-ERG, DFC1500, DFC300, DFC3000, DFC300MA, PC25, PureCell\
+  \ 200, PureCell 400, SureSource 1500, SureSource 3000, SureSource 4000, SureSource\
+  \ 4000; 3000, sureSource 3000, sureSource 4000\nus_stationary_fuel_cells, Fuel,\
+  \ character varying, biofuel, biogas, natural gas, \u2022 biogas\n\u2022 natural\
+  \ gas\nus_stationary_fuel_cells, Single Unit Nominal Power Output (kW), integer\n\
+  us_stationary_fuel_cells, Total Nominal Power at Site (kW), integer\ninternational_fuelling_stations,\
+  \ Ref, character varying\ninternational_fuelling_stations, Title, character varying\n\
+  international_fuelling_stations, Project, character varying\ninternational_fuelling_stations,\
+  \ Status, character varying, active, delete, planned\ninternational_fuelling_stations,\
+  \ Beginning Date, date\ninternational_fuelling_stations, Accessible to Public, boolean\n\
+  international_fuelling_stations, Refueler Type, character varying, Mobile, Portable,\
+  \ Stationary, gas, small scale\ninternational_fuelling_stations, H\u2082 Compression\
+  \ Available (Mpa), character varying,  , 35, 35\n70, 35, 70, 35; 70 allowed, 70,\
+  \ 70, 35, 700, 700(2), 700(3), \u2022 20\n\u2022 35, \u2022 35\n\u2022 70\ninternational_fuelling_stations,\
+  \ H\u2082 Production/Delivery Method, character varying,  , By-product hydrogen\
+  \ pipeline, Compressed hydrogen delivery, On-site electrolysis, On-site electrolysis\
+  \ , On-site electrolysis (100% renewable), On-site electrolysis, On-site reforming\
+  \ of natural gas, On-site electrolysis; renewable, industrial off-gas, on-site alkaline\
+  \ electrolysis (100% renewable), on-site production from biomass, solar-powered\
+  \ generation, \u2022 Compressed hydrogen delivery\n\u2022 On-site reforming of natural\
+  \ gas, \u2022 Compressed hydrogen delivery\n\u2022 on-site natural gas reformation,\
+  \ \u2022 On-site electrolysis\n\u2022 On-site reforming of natural gas\ninternational_fuelling_stations,\
+  \ On-site H2 Production, character varying\ninternational_fuelling_stations, Storage\
+  \ Capacity (kg), character varying,  , 100 kg/day, 1000, 120, 1200, 1360, 15, 20\
+  \ kg/day, 200, 200 kg, 2000, 25, 25 MPa: 4700 kg \n25 MPa: 2400 kg, 250, 250 kg,\
+  \ 40 kg/day, 400, 420 kg, 450, 48, 50, 500, 550, 560, 600, 64, 640, 80 kg/day, 800,\
+  \ 90\ncarbon_capture_and_storage_project, Ref, character varying\ncarbon_capture_and_storage_project,\
+  \ Project Name, character varying\ncarbon_capture_and_storage_project, Project Type,\
+  \ character varying, CCU, Capture, Full Chain, Storage, Transport, Transport & Storage\n\
+  carbon_capture_and_storage_project, Announcement Date, date\ncarbon_capture_and_storage_project,\
+  \ FID Date, date\ncarbon_capture_and_storage_project, Operation Date, date\ncarbon_capture_and_storage_project,\
+  \ Suspension/decommissioning Date, date\ncarbon_capture_and_storage_project, Project\
+  \ Status, character varying, Decommissioned, Operational, Planned, Suspended, Under\
+  \ construction\ncarbon_capture_and_storage_project, Project phase, integer\ncarbon_capture_and_storage_project,\
+  \ Announced capacity (low) (Mt CO2/yr), double precision\ncarbon_capture_and_storage_project,\
+  \ Announced capacity (high) (Mt CO2/yr), double precision\ncarbon_capture_and_storage_project,\
+  \ Sector, character varying, Biofuels, CO2 storage, CO2 transport, CO2 transport\
+  \ & storage, Cement, Direct Air Capture, Hydrogen/ammonia, Iron and steel, Natural\
+  \ gas processing, Other fuel transformation, Other industry, Power and heat\ncarbon_capture_and_storage_project,\
+  \ Fate of carbon, character varying, Dedicated storage, Enhanced oil recovery, Enhanced\
+  \ oil recovery and use, Mixed, Storage, Unknown/unspecified, Use, Use and storage\n\
+  carbon_capture_and_storage_project, Part of CCUS hub, character varying\nhydrogen_project_finance_schemes,\
+  \ id, integer\nhydrogen_project_finance_schemes, Ref, character varying\nhydrogen_project_finance_schemes,\
+  \ Project Name, character varying\nhydrogen_project_finance_schemes, Scheme Name,\
+  \ character varying\nhydrogen_project_finance_schemes, Funding Amount, character\
+  \ varying\nhydrogen_project_finance_schemes, Funding Amount in USD, double precision\n\
+  hydrogen_project_enduse, id, integer\nhydrogen_project_enduse, Ref, character varying\n\
+  hydrogen_project_enduse, Project Name, character varying\nhydrogen_project_enduse,\
+  \ End Use, character varying, Ammonia, Biofuels, Combined Heat & Power (fuel cells\
+  \ or turbines), Domestic Heat, Grid Injection, Iron&Steel, Methane Grid Injection,\
+  \ Methane Mobility, Methanol, Mobility, Other Industry, Power, Refining, Synfuels\n\
+  hydrogen_policy, id, integer\nhydrogen_policy, Policy Name, character varying\n\
+  hydrogen_policy, Country, character varying, Argentina, Australia, Austria, Belgium,\
+  \ Bolivarian Republic of Venezuela, Canada, Chile, Chinese Taipei, Colombia, Denmark,\
+  \ Estonia, European Union, Finland, France, Germany, Hungary, India, Ireland, Italy,\
+  \ Jamaica, Japan, Jordan, Korea, Kuwait, Lithuania, Luxembourg, Mexico, Morocco,\
+  \ Namibia, Netherlands, New Zealand, Norway, Oman, People's Republic of China, Poland,\
+  \ Portugal, Romania, Russian Federation, Saudi Arabia, Singapore, Slovak Republic,\
+  \ South Africa, Spain, Sweden, Switzerland, Thailand, Turkey, United Arab Emirates,\
+  \ United Kingdom, United States, Uzbekistan\nhydrogen_policy, Year, integer\nhydrogen_policy,\
+  \ Status, character varying, Announced, Ended, In force, Planned\nhydrogen_policy,\
+  \ Jurisdiction, character varying, International, National, State/Provincial\nhydrogen_policy,\
+  \ Topics, text\nhydrogen_policy, Policy Types, text\nhydrogen_policy, Sectors, text\n\
+  hydrogen_policy, Technologies, text\nhydrogen_policy, Description, text\nhydrogen_policy,\
+  \ Total Budget, text\nhydrogen_policy, Total Budget in USD, double precision\nhydrogen_policy,\
+  \ Governing Body, character varying\nhydrogen_policy, Target Project, text\nhydrogen_policy,\
+  \ Target Capacity, text\nhydrogen_policy, Beneficiary, text\nhydrogen_policy, Target\
+  \ Year, text\nhydrogen_policy, Period, text\nhydrogen_policy, Emission Goal, text\n\
+  hydrogen_project, Ref, character varying\nhydrogen_project, Project Name, character\
+  \ varying\nhydrogen_project, Date Online, date\nhydrogen_project, Decomission Date,\
+  \ date\nhydrogen_project, Status, character varying, Concept, DEMO, Decommisioned,\
+  \ FID, Feasibility study, Operational, Other/Unknown, Under construction\nhydrogen_project,\
+  \ Status Commissioned, character varying, Commissioned, De-Commissioned, Pre-Commissioned,\
+  \ Under Construction, Unknown, Unknown \nhydrogen_project, Technology, character\
+  \ varying, Alkaline electrolysis (ALK), Biomass, Biomass w CCUS, Coal gasification\
+  \ with CCUS, Natural gas reforming with CCUS, Oil-based processes with CCUS, Other,\
+  \ Other Electrolysis, Proton exchange membrane electrolysis (PEM), Solid oxide electrolysis\
+  \ cells (SOEC)\nhydrogen_project, Technology Detail, character varying, Alkaline\
+  \ electrolysis (ALK), Alkaline electrolysis (ALK) + Proton exchange membrane electrolysis\
+  \ (PEM), Alkaline electrolysis (ALK) + Proton exchange membrane electrolysis (PEM)\
+  \ + Solid oxide electrolysis cells (SOEC), Allam Cycle, Autothermal reforming (ATR)\
+  \ with carbon capture and storage, Biogas reforming, Biomass, Biomass gasification,\
+  \ Biomass w CCUS, Bitumen gasification with carbon capture and storage, Coal gasification\
+  \ with CCUS, Coal gasification with capture and storage, Coke gasification with\
+  \ carbon capture and storage, Combination of electrolysis and natural gas with carbon\
+  \ capture and storage, Concentrated solar synfuels production, Electrolysis + Biomass/Biomethane,\
+  \ Heavy oil residue gasification with carbon capture and storage, Membrane separation\
+  \ from purge gas with carbon capture and storage, Membrane-free electrolyser, Methane\
+  \ pyrolysis, Microbial fermentation, Natural gas reforming with CCUS, Oil-based\
+  \ processes with CCUS, Other, Other Electrolysis, Petcoke+biomass gasification with\
+  \ carbon capture and storage, Petroleum coke with carbon capture and storage, Photoelectrocatalytic\
+  \ technology, Photoelectrochemical processes, Proton exchange membrane electrolysis\
+  \ (PEM), Proton exchange membrane electrolysis (PEM) + Solid oxide electrolysis\
+  \ cells (SOEC), Solid oxide electrolysis cells (SOEC), Steam methane reforming (SMR)\
+  \ with carbon capture and storage, Undisclosed electrolysis, Unknown green/blue\
+  \ hydrogen, Unknown technology, Various, Waste gases from biofuels production, Waste\
+  \ gasification, Waste gasification CCU with carbon capture and storage, Waste pyrolysis\n\
+  hydrogen_project, Feedstock, character varying, Biomass, Coal, Gird, Hydropower,\
+  \ Natural gas, Offshore wind, Oil, Onshore Wind, Other, Power, Renewable Energy,\
+  \ Solar PV\nhydrogen_project, Hydrogen Color, character varying, Blue, Green, Grey,\
+  \ Purple/Pink, Turquoise, Yellow\nhydrogen_project, Product, character varying,\
+  \ Ammonia, Hydrogen, Liquid organic hydrogen carriers, Methane, Methanol, Synthetic\
+  \ liquid fuels, Various\nhydrogen_project, MWel, double precision\nhydrogen_project,\
+  \ nm\xB3 H\u2082/h, double precision\nhydrogen_project, kt H2/y, double precision\n\
+  hydrogen_project, t CO\u2082 captured/y, double precision\nhydrogen_project, Total\
+  \ Investment, character varying\nhydrogen_project, Total Investment in USD, double\
+  \ precision\nproject_investor, id, integer\nproject_investor, Ref, character varying\n\
+  project_investor, Project Type, character varying, Carbon Capture Utilisation and\
+  \ Storage (CCUS), Hydrogen, Hydrogen Fueling Stations, Hydrogen-Fueled Vehicles\n\
+  project_investor, Project Name, character varying\nproject_investor, Investor Name,\
+  \ character varying\nproject_investor, Parent Investor Name, character varying\n\
+  project_investor, Investment Amount, character varying\nproject_investor, Investment\
+  \ Amount in USD, double precision\nproject_investor, Stake, numeric\nproject_investor,\
+  \ Share the Pool, boolean"
+schema_short: "project_location (id, Ref, Project Type, Country, Region, State, City/Area,\
+  \ Address/Location)\nhydrogen_fueled_vehicles (Ref, Operator, Manufacturer, Vehicle,\
+  \ Project, Status, Fleet Size, Vehicle Type, Start Date, End Date, Conversion Technology)\n\
+  us_stationary_fuel_cells (Ref, Host, Project, Status, Start Date, Site Classification,\
+  \ Application, Number of Units, Fuel Cell Type, Model, Fuel, Single Unit Nominal\
+  \ Power Output (kW), Total Nominal Power at Site (kW))\ninternational_fuelling_stations\
+  \ (Ref, Title, Project, Status, Beginning Date, Accessible to Public, Refueler Type,\
+  \ H\u2082 Compression Available (Mpa), H\u2082 Production/Delivery Method, On-site\
+  \ H2 Production, Storage Capacity (kg))\ncarbon_capture_and_storage_project (Ref,\
+  \ Project Name, Project Type, Announcement Date, FID Date, Operation Date, Suspension/decommissioning\
+  \ Date, Project Status, Project phase, Announced capacity (low) (Mt CO2/yr), Announced\
+  \ capacity (high) (Mt CO2/yr), Sector, Fate of carbon, Part of CCUS hub)\nhydrogen_project_finance_schemes\
+  \ (id, Ref, Project Name, Scheme Name, Funding Amount, Funding Amount in USD)\n\
+  hydrogen_project_enduse (id, Ref, Project Name, End Use)\nhydrogen_policy (id, Policy\
+  \ Name, Country, Year, Status, Jurisdiction, Topics, Policy Types, Sectors, Technologies,\
+  \ Description, Total Budget, Total Budget in USD, Governing Body, Target Project,\
+  \ Target Capacity, Beneficiary, Target Year, Period, Emission Goal)\nhydrogen_project\
+  \ (Ref, Project Name, Date Online, Decomission Date, Status, Status Commissioned,\
+  \ Technology, Technology Detail, Feedstock, Hydrogen Color, Product, MWel, nm\xB3\
+  \ H\u2082/h, kt H2/y, t CO\u2082 captured/y, Total Investment, Total Investment\
+  \ in USD)\nproject_investor (id, Ref, Project Type, Project Name, Investor Name,\
+  \ Parent Investor Name, Investment Amount, Investment Amount in USD, Stake, Share\
+  \ the Pool)"

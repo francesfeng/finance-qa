@@ -123,5 +123,72 @@ uvicorn app.main:app
 
 # API Structure
 
+The API response json has the following key, value fields:
+
+- **type**: the display type of the response
+   - text = "text" # streaming text from datastore
+   - table = "table" # streaming table from datastore
+   - data = "data" # sql data
+   - chart = "chart" #
+   - textdata = "textdata" # text from sql data
+   - error = "error"
+
+
+- **label**: "database" if the answer is from SQL, otherwise is "text"
+
+
+
+
+for type "text", the response can only be the following format: 
+
+```
+{
+   "type":  "text"
+   "label": "text"
+   "response": {
+      "text":
+   }
+}
+```
+
+for type "table", the response can only be the following format: 
+
+```
+{
+   "type":  "table"
+   "label": "text"
+   "response": {
+      "text":
+      "table": 
+      "chart": "the echarts option specification in json, generated based on markdown table
+   }
+}
+```
+
+
+for type "data", the response can only be the following format: 
+```
+{
+   "type": "data"
+   "label": "database"
+   "response": {
+      "data":
+      "chart":
+   }
+}
+```
+
+for type "textdata", the response can only be the following format: 
+
+```
+{
+   "type":  "textdata"
+   "label": "text"
+   "response": {
+      "text":
+   }
+}
+```
+
 [`API routers`](/app/README.md) 
 

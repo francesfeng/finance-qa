@@ -3,8 +3,13 @@ from fastapi.responses import StreamingResponse
 
 from app.src.runner.agents import Agent
 from app.src.runner.controller import Controller
+from app.src.connect.datastore import DataStore
 from app.models.api_models import QueryText, Response
+
+from app.models.models import Query
+
 from loguru import logger
+
 
 router = APIRouter()
 
@@ -18,7 +23,7 @@ router = APIRouter(prefix="/test",
 @router.post("/classify")
 async def query_classify(query: QueryText = Body(...)):
     try:
-        return await agent.classification(query = query.query)
+        return await agent.classification_related(query = query.query)
     except Exception as e:
         logger.error(e)
         raise HTTPException(status_code=500, detail=str(e))
@@ -74,6 +79,17 @@ async def query_sql_to_table(querytext: QueryText = Body(...)):
     except Exception as e:
         logger.error(e)
         raise HTTPException(status_code=500, detail=str(e))
+    
+
+# Retrieve text data from pinecone
+@router.post("/retrieval")
+async def retrieval(querytext: QueryText = Body(...)):
+    query = Query(query = querytext.query, top_k=10)
+    try:
+        return await datastore.query(query)
+    except Exception as e:
+        logger.error(e)
+        raise HTTPException(status_code=500, detail=str(e))
 
 
 # @app.post("/test/query/table_text_non_stream")
@@ -106,7 +122,9 @@ async def query_sql_to_table(querytext: QueryText = Body(...)):
 async def startup():
     global controller
     global agent
+    global datastore
     controller = Controller()
     agent = Agent()
+    datastore = DataStore()
 
 
