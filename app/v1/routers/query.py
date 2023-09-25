@@ -2,6 +2,7 @@ from fastapi import APIRouter, Body,HTTPException
 from fastapi.responses import StreamingResponse
 from app.models.api_models import QueryText, Response
 from loguru import logger
+import json
 
 
 from app.src.runner.agents import Agent
@@ -19,7 +20,12 @@ router = APIRouter(prefix="/query",
 async def query(query: QueryText = Body(...)):
     try:
         result = await controller.run_query(query.query)
-        return Response(**result.dict())
+        # return Response(**result.dict())
+        return {
+            'statusCode': 200,
+            'headers': {'Content-Type': 'application/json'},
+            'body': json.dumps(result.dict())
+        }
     except Exception as e:
         logger.error(e)
         raise HTTPException(status_code=500, detail=str(e))
