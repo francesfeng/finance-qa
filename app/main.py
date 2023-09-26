@@ -15,13 +15,14 @@ app = FastAPI()
 #     "http://localhost"
 #     ]
 
-# app.add_middleware(
-#     CORSMiddleware,
-#     allow_origins=origins,
-#     allow_credentials=True,
-#     allow_methods=["POST", "GET"],
-#     allow_headers=["*"],
-# )
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins='*',
+    allow_credentials=False,
+    allow_methods=["GET", "POST", "OPTIONS"],
+    allow_headers=["x-apigateway-header", "Content-Type", "X-Amz-Date"],
+)
+
 
 
 @app.get("/")
