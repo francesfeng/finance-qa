@@ -32,7 +32,7 @@ async def root():
 app.include_router(query.router, prefix="/v1")
 app.include_router(test.router)
 
-handler = Mangum(app=app, lifespan="off")
+handler = Mangum(app=app, lifespan="on")
 
 # def start():
 #     uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)
