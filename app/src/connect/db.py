@@ -98,11 +98,13 @@ class Database:
         query = ''
         if not column_name.endswith('_id'):
             if column_name != 'Project Name' and column_name != 'City/Area' and column_name != 'Address/Location' and column_name != 'Ref'\
+                and column_name != 'Country' and column_name != 'State' and column_name != 'Technology Detail' \
                   and column_name != 'Operator' and column_name != 'Manufacturer' and column_name != 'Vehicle' and column_name != 'Project'\
                   and column_name != 'Policy Name' and column_name != 'Governing Body' and column_name != 'Scheme Name' and column_name != 'Funding Amount' \
                   and column_name != 'Title' and column_name != 'Investor Name' and column_name != 'Parent Investor Name' and column_name != 'Investment Amount'\
-                  and column_name != 'Total Investment' and column_name != 'Host' and column_name != 'Project' and column_name != 'Part of CCUS hub' \
-                  and column_name != 'On-site H2 Production': 
+                  and column_name != 'Total Investment' and column_name != 'Host' and column_name != 'Project' and column_name != 'Part of CCUS Hub' \
+                  and column_name != 'On-site H2 Production' and column_name != 'H2 Compression Available (Mpa)' and column_name != 'H2 Production/Delivery Method'\
+                  and column_name != 'Storage Capacity (kg)' and column_name != 'Application': 
                 
                 # Return distincting values for character varying columns
                 if data_type == 'character varying':

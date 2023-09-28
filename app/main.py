@@ -169,6 +169,7 @@ async def startup():
 
 @app.get("/healthcheck")
 def read_root():
-    return {"status": "ok"} """
+    return {"status": "ok"} 
+"""
 
 

@@ -13,7 +13,7 @@ def main():
         "schema_short": schemas_short
     }
 
-    path = './schemas.yaml'
+    path = './connect/schemas.yaml'
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, 'w') as file:
