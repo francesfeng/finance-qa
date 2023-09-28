@@ -35,47 +35,46 @@ class Controller:
 
         if classify == 'Database':
             sql = await self.agent.query_sql(query)
-            data = await self.agent.run_sql(sql)
 
-            # If error in SQL query, change label to Text and re-run as text query
-            if 'error' in data.lower():
+            if sql.startswith('Error'):
                 classify = 'Text'
 
-            else:
-                data_len = len(data.split('\r\n'))
+        if classify == 'Database':
+            data = await self.agent.run_sql(sql)
 
-                # If data is empty, change label to Text and re-run as text query
-                print(f"Data length: {data_len}")
-                if data_len == 1:
-                    classify = 'Text'
+            data_len = len(data.split('\r\n'))
 
-                elif data_len == 2:
-                    text = await self.agent.query_data_to_text(query, data)
-                    #stop = timeit.default_timer()
-                    return Response(
-                        code=200, 
-                        type=ResponseType.textdata, 
-                        label=Label.database, 
-                        query=query, 
-                        title=title,
-                        response=text, 
-                        related_topics=related
-                        )
-                    #logger.opt(lazy=True).log("RESPONSE", f"Query: {query} | Processing Time: {stop - start} | Response: {response}")
+            # If data is empty, change label to Text and re-run as text query
+            if data_len == 1:
+                classify = 'Text'
+
+            elif data_len == 2:
+                text = await self.agent.query_data_to_text(query, data)
+                #stop = timeit.default_timer()
+                return Response(
+                    code=200, 
+                    type=ResponseType.textdata, 
+                    label=Label.database, 
+                    query=query, 
+                    title=title,
+                    response=text,                         
+                    related_topics=related
+                )
+                #logger.opt(lazy=True).log("RESPONSE", f"Query: {query} | Processing Time: {stop - start} | Response: {response}")
                     
                 
-                else:
-                    # Need to further process to generate chart code
-                    #stop = timeit.default_timer()
-                    return Response(
-                        code=200, 
-                        type=ResponseType.data, 
-                        label=Label.database, 
-                        query=query, 
-                        title=title,
-                        response=data,
-                        related_topics=related
-                        )
+            else:
+                # Need to further process to generate chart code
+                #stop = timeit.default_timer()
+                return Response(
+                    code=200, 
+                    type=ResponseType.data, 
+                    label=Label.database, 
+                    query=query, 
+                    title=title,
+                    response=data,
+                    related_topics=related
+                )
                     #logger.opt(lazy=True).log("RESPONSE", f"Query: {query} | Processing Time: {stop - start} | Response: {response}")
                     
                 

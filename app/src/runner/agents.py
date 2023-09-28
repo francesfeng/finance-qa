@@ -227,17 +227,30 @@ class Agent:
         # Retrieve full schema from database, and construct prompt
         schema = self.schema
         messages = get_prompt('sql', query, schema)
+        count = 0
         
-        # Call ChatGPT to generate SQL
-        time_start_sql = timeit.default_timer()
-        res =  get_chat_completion(messages, max_tokens=350)
-        time_end_sql = timeit.default_timer()
+        #  Try 3 times, if still not valid, return error SQL starts with "Error:"
+        while True:
+            if count == 3:
+                sql = 'Error:' + sql
+                break
 
-        time_sql = time_end_sql - time_start_sql
-        #logger.opt(lazy=True).log("SQL", f"Query: {query} | Processing Time: {time_sql} | Response: {res}")
+            res =  get_chat_completion(messages, max_tokens=350)
 
-        # Reformat SQL Code
-        sql = res.replace("SQL:", "").strip().replace("\n", " ") 
+            #logger.opt(lazy=True).log("SQL", f"Query: {query} | Processing Time: {time_sql} | Response: {res}")
+
+            # Reformat SQL Code
+            sql = res.replace("SQL:", "").strip().replace("\n", " ") 
+            data = await  self.run_sql(sql)
+
+            if not data.startswith('Error'):
+                break
+            
+            # append error message and try again
+            error_msg = ' '.join([l.strip() for l in data.split('\n')])
+            messages.append({"role": "user", "content": f"In the SQL response {sql}, there is an error {error_msg}, please rewrite SQL query"})
+            count += 1
+
         return sql
     
 
@@ -249,7 +262,8 @@ class Agent:
         stop = timeit.default_timer()
         #logger.opt(lazy=True).log("RUNSQL", f"Query: {query} | Processing Time: {stop - start} | Response: {data}")
         return data
-    
+        
+
 
     async def query_sql_chart(self, query: str, data: str) -> Optional[str]:
         # From data to generate chart code

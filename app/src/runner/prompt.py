@@ -72,6 +72,7 @@ def get_prompt(model: str, query: str = None, context: str = None) -> List[Dict[
         {"role": "system", "content": f"""You are a helpful database engineer. Your goal is to answer user\'s questions strictly based on the following schemas:\n\n{context}\n\nyou will need use some complex join SQL statement to generate a sql based on user\'s question, and return valid SQL codes only."""},
         {"role": "user", "content": "SQL is strictly based on the schemas provided. Do not make up tables or columns that does not exist in the schemas provided."},
         {"role": "user", "content": "When you cannot answer the question by producing valid SQL from the schemas provided, you can respond with one sentence: \"Sorry, seems the question is not relevant. Could you please ask a different question?\"."},
+        {"role": "user", "content": "When asked to rewrite the SQL query, don't apologise, just rewrite the SQL query in the format starts with SQL:"},
         {"role": "user", "content": "SQL should filter out Null values when comparing or sorting columns that are integer or double precision"},
         {"role": "user", "content": "Question: What is the top 5 largest hydrogen projects in UK by capacity?"},
         {"role": "user", "content": "SQL: SELECT a.\"Ref\",\"Project Name\", \"kt H2/y\" from hydrogen_project AS a JOIN project_location AS b ON a.\"Ref\" = b.\"Ref\" WHERE (b.\"Country\" = 'United Kingdom' OR b.\"Country\" = 'UK' OR b.\"Country\" = 'Great Britain') AND a.\"kt H2/y\" IS NOT NULL ORDER BY a.\"kt H2/y\" DESC LIMIT 5"},

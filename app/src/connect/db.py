@@ -67,7 +67,7 @@ class Database:
                     return result
         except Exception as e:
             print(e)
-            return 'Error executing query'
+            return f'Error: {e}'
             #raise RuntimeError(f"Error executing query: {e}")
         
 
