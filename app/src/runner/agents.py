@@ -1,19 +1,27 @@
 import asyncio
 import json
-from typing import Optional
+from functools import partial
+import asyncio
+import time
+
+from typing import Optional, List, Dict
 from app.src.connect.datastore import DataStore
 from app.src.connect.db import Database
 from app.src.connect.gpt import get_chat_completion_stream, get_chat_completion
+from app.src.connect.gpt_v2 import get_chat_completion_v2, get_function_call, get_chat_completion_json, get_chat_completion_stream_v2
+from .function_call import get_text_retrieval_function_call
+from .functions import retrieve_context_from_datastore, retrieve_context_from_google_search
+from .sql import SQLAgent
 
 from app.models.models import Query, Type
 from app.src.runner.prompt import get_prompt
+from app.models.api_models import Response, Label
 
 
 import timeit
 import yaml
-#from loguru import logger
-#logger.add("file_prompt.log", rotation="12:00")  
-#level_classification = logger.level("CLASSIFICATION", no=38, color="<yellow>", icon="♣")
+from loguru import logger
+level_agent = logger.level("AGENT", no=38, color="<yellow>", icon="♣")
 #level_related = logger.level("RELATED", no=38, color="<yellow>", icon="♣")
 #level_datastore = logger.level("RETRIEVAL", no=38, color="<yellow>", icon="♣")
 #level_text = logger.level("TEXT", no=30, color="<green>", icon="♨")
@@ -33,6 +41,8 @@ class Agent:
         Initialise the agent.
         """
         self.datastore = DataStore()
+        self.model_basic = 'gpt-3.5-turbo-1106'
+        self.model_advanced = 'gpt-4-1106-preview'
         
 
         with open('app/src/connect/schemas.yaml', 'r') as file:
@@ -41,25 +51,49 @@ class Agent:
             self.schema = data['schema']
             self.schema_short = data['schema_short']
 
+        with open('app/src/connect/source.yaml', 'r') as file:
+            self.source = yaml.load(file, Loader=yaml.FullLoader)
 
 
+    # updated
     async def classification_related(self, query: str):
-        schema_short = self.schema_short
-        messages = get_prompt('classification_and_related', query, schema_short)
+        messages = get_prompt('classification_and_related', query, self.schema_short)
 
-        response = get_chat_completion(messages)
-        return json.loads(response)
+        res = get_chat_completion_json(messages, temperature=1, model=self.model_advanced)
+
+        related = []
+
+        try:
+            for r in res['related questions']:
+                related.append({"query": r["question"], "title": r["topic"]})
+
+            
+
+            return Response(
+                code = 200,
+                label = Label.database if res.get("original label") == 'Database' else Label.text,
+                query = res.get("original question"),
+                title = res.get("original topic"),
+                related_topics = related
+            )
+        except Exception as e:
+            return Response(
+                code = 404
+                )
+        
+    
     
 
     async def classification(self, query: str):
         schema_short = self.schema_short
         messages = get_prompt('classification', query, schema_short)
-        start = timeit.default_timer()
+        time_start = time.time()
         res = get_chat_completion(messages)
-        end = timeit.default_timer()
+        time_end = time.time()
 
-        #logger.opt(lazy=True).log("CLASSIFICATION", f"Query: {query} | Processing Time: {end - start} | Response: {res}")
+        logger.opt(lazy=True).log("CLASSIFICATION", f"Query: {query} | Processing Time: {time_end - time_start} | Response: {res}")
 
+        
         return res
     
 
@@ -76,206 +110,134 @@ class Agent:
         return res
 
 
-
-    async def query_text_table(self, query: str, is_streaming: bool = False):
         
-        # Contruct Query class
-        query_class = Query(query = query, filter = {"type": Type.table}, top_k = 5)
-
-        # Retrieve context, and record the start and end time to calculate processing time
-        retrieved = await self._retrieval(query_class)
-        # Reformat the context
-        text, source = self.datastore.format_response(retrieved)
-
-        # Terminate the process, when none of retrieved text has relevant score > 0.8
-        if len(text) == 0:
-            return 'Sorry, seems the question is not relevant. Could you please ask a different question?'
-
-        # Retrieve the prompt template and filled with query and context
-        messages = get_prompt('table_datastore', query_class.query, text)
-        
-        if is_streaming:
-            # Call ChatGPT to generate the answer in streaming text
-            return get_chat_completion_stream(messages)
-        else:
-            # Call ChatGPT to generate the answer in non-streaming text
-            time_start_table = timeit.default_timer()
-            res = get_chat_completion(messages, temperature=1)
-            time_end_table = timeit.default_timer()
-            #logger.opt(lazy=True).log("TABLE", f"Query: {query_class} | Processing Time: {time_end_table - time_start_table} | Response: {res}")
-            return res
-
-
-
-    async def query_table_to_chart(self, query: str, data: str) -> Optional[str]:
-
-        # Retrieve context, and record the start and end time to calculate processing time
-        time_start_chart = timeit.default_timer()
-        messages = get_prompt('table_to_chart', context = data)
-        res = get_chat_completion(messages)
-        time_end_chart= timeit.default_timer()
-
-        res = "{" + res + "}"
-
-        #logger.opt(lazy=True).log("TABLECHART", f"Query: {query} | Processing Time: {time_end_chart - time_start_chart} | Response: {res}")
-
-        return self._check_json(res)
-
-        
-
+    # updated
     async def query_text(self, query: str, is_streaming: bool = False):
-        query_class = Query(query=query, top_k=10)
-        
-        # Retrieve context, and record the start and end time to calculate processing time
-        retrieved = await self._retrieval(query_class)
-        
-        # Reformat the context
-        text, source = self.datastore.format_response(retrieved)
-        # Terminate the process, when none of retrieved text has relevant score > 0.8
-        if len(text) == 0:
-            return 'Sorry, seems the question is not relevant. Could you please ask a different question?'
 
-        # Retrieve the prompt
-        messages = get_prompt('text', query_class.query, text)
-
-        # Get streaming result
-        if is_streaming:
-            return get_chat_completion_stream(messages)
-        
-        # Get non-streaming result
-        else:
-            time_start_text = timeit.default_timer()
-            res = get_chat_completion(messages, temperature=1)
-            time_end_text = timeit.default_timer()
-            #logger.opt(lazy=True).log("TEXT", f"Query: {query_class.query} | Processing Time: {time_end_text - time_start_text} | Response: {res}")
-            return res
-    
-
-
-
-    async def query_combined(self, query: str, is_streaming: bool = True):
         """
-            Retrieved context include both Text and Table
-            Output has 2 parts: Table and Text
+        Generate text response from user queries
+        Rely on context retrieved from 2 source: datastore and google search
         """
 
-        query_text = Query(query = query, top_k = 10)
-        retrieved_text = await self._retrieval(query_text)
-        text, source = self.datastore.format_response(retrieved_text)
+        time_start = time.time()
+        # Generate function specification for text retrieval
+        function_call_messages = get_prompt('text_retrieval_function_call', query)
+        tools = get_text_retrieval_function_call()
+        functions = get_function_call(function_call_messages, tools, model=self.model_advanced)
 
-        messages = get_prompt('combined', query, text)
+        # print(f"Function call results: {functions}")
 
-        # Get streaming result
-        if is_streaming:
-            return get_chat_completion_stream(messages)
-        
-        # Get non-streaming result
-        else:
-            time_start_text = timeit.default_timer()
-            res = get_chat_completion(messages)
-            time_end_text = timeit.default_timer()
-            #logger.opt(lazy=True).log("TEXT", f"Query: {query} | Processing Time: {time_end_text - time_start_text} | Response: {res}")
-            return res
-
-
-    async def classify_text(self, query: str):
-        """
-            From retrieved text, classify whether it is text table, or error
+        if functions:
             
-            Error: if none of retrieved text has relevant score > 0.8
-            Table: if there is at least 1 table in retrieved text
-            Text: if there is no table in retrieved text
+            #Retrieve context from datastore
+            if 'retrieve_context_from_datastore' in functions.keys():
+                fn_name = 'retrieve_context_from_datastore'
+                context_datastore = await retrieve_context_from_datastore(functions[fn_name]['query'], 
+                                                                    functions[fn_name].get('start_date'), 
+                                                                    functions[fn_name].get('end_date')
+                                                                    )
+            else:
+                context_datastore = await retrieve_context_from_datastore(query)
 
-        """
-        query_class = Query(query=query, top_k=10)
-        retrieved_text = await self._retrieval(query_class)
+            if 'retrieve_context_from_google_search' in functions.keys():
+                fn_name = 'retrieve_context_from_google_search'
+                context_search = await retrieve_context_from_google_search(functions[fn_name]['query'], functions[fn_name].get('date_period'))
+            else:
+                context_search = await retrieve_context_from_google_search(query)
 
-        types = [r.metadata.type for r in retrieved_text if r.score > 0.8]
-        num_table = sum([True if t == 'table' else False for t in types])
 
-        if len(types) == 0:
-            return 'error'
-        elif num_table > 0:
-            return 'table'
         else:
-            return 'text'
+            context_search = []
+            context_datastore = []
+
+        # Combine the context from 2 sources
+        print(context_datastore)
+        context = context_datastore + context_search
         
+        # Get list of scores, texts, and sources
+
+        unique_ids = set()
+        unique_context = []
+        scores = []
+        for item in context:
+            id = item.id 
+            if id not in unique_ids:
+                unique_ids.add(id)
+                unique_context.append(item)
+                scores.append(item.score)
+
+        # Sort the context by score
+        sorted_context = [t for score, t in sorted(zip(scores, unique_context), reverse=True)]
+
+        formatted_context = [f"Source: {t.metadata.publisher} \n Content: {t.text}" for t in sorted_context[:15]]
+        for p in sorted_context:
+            print(p)
+            print("-----")
+
+        messages = get_prompt('text', query, '\n\n'.join(formatted_context))
+
+        if is_streaming:
+
+            return get_chat_completion_stream_v2(messages, model=self.model_basic)
+        
+        else:
 
     
-    # async def query_non_stream(self, query: Query, model: str):
-        
-    #     # Retrieve context, and record the start and end time to calculate processing time
-    #     retrieved = await self._retrieval(query)
-    #     # Reformat the context
-    #     text, source = self.datastore.format_response(retrieved)
-
-    #     # Retrieve the prompt template and filled with query and context
-    #     if model == PromptType.table_datastore:
-    #         messages = get_prompt('table_datastore', query.query, text)
-    #     elif model == PromptType.text:
-    #         messages = get_prompt('text', query.query, text)
-    #     else:
-    #         raise ValueError(f"Model {model} not recognised")
-
-    #     # Call ChatGPT to generate the answer in streaming text
-    #     return get_chat_completion(messages)
-    
-
-
-    async def query_sql(self, query: str):
-
-        # Retrieve full schema from database, and construct prompt
-        schema = self.schema
-        messages = get_prompt('sql', query, schema)
-        count = 0
-        
-        #  Try 3 times, if still not valid, return error SQL starts with "Error:"
-        while True:
-            if count == 3:
-                sql = 'Error:' + sql
-                break
-
-            res =  get_chat_completion(messages, max_tokens=350)
-
-            #logger.opt(lazy=True).log("SQL", f"Query: {query} | Processing Time: {time_sql} | Response: {res}")
-
-            # Reformat SQL Code
-            sql = res.replace("SQL:", "").strip().replace("\n", " ") 
-            data = await  self.run_sql(sql)
-
-            if not data.startswith('Error'):
-                break
+            res = get_chat_completion_v2(messages, model=self.model_basic)
+            time_end = time.time()
+            logger.opt(lazy=True).log("AGENT", f"Text | Query: {query} | Processing Time: {time_end - time_start} | Response: {res}")
             
-            # append error message and try again
-            error_msg = ' '.join([l.strip() for l in data.split('\n')])
-            messages.append({"role": "user", "content": f"In the SQL response {sql}, there is an error {error_msg}, please rewrite SQL query"})
-            count += 1
-
-        return sql
-    
-
-    # TODO: Move to query_sql
-    async def run_sql(self, query: str):
-        db = Database()
-        start = timeit.default_timer()
-        data = db.execute_query(query)
-        stop = timeit.default_timer()
-        #logger.opt(lazy=True).log("RUNSQL", f"Query: {query} | Processing Time: {stop - start} | Response: {data}")
-        return data
+            return res
         
 
 
-    async def query_sql_chart(self, query: str, data: str) -> Optional[str]:
+
+    async def query_data(self, query: str) -> Optional[Dict[str, Dict[str, str]]]:
+        """
+            Get data based on SQL
+
+            Return:
+            if success
+                {   
+                    'status': 'success', 
+                    'sql': SQL query,
+                    'data': csv data,
+                    'explanation': explanation of the data,
+                }
+            if error;
+                {'status': 'failed', 'message': error message}
+        """
+        sql_agent = SQLAgent(query)
+        return await sql_agent.get_data()
+
+        
+
+
+        
+        
+
+
+    async def query_data_chart(self, query: str, data: str) -> Optional[str]:
         # From data to generate chart code
         time_start_chart = timeit.default_timer()
-        messages = get_prompt('sql_to_chart', query, data)
-        res = get_chat_completion(messages)
+        messages = get_prompt('data_to_chart', query, data)
+        res = get_chat_completion_json(messages)
         time_end_chart = timeit.default_timer()
 
-        res = "{" + res + "}"
         #logger.opt(lazy=True).log("SQLECHART", f"Query: {query} | Processing Time: {time_end_chart - time_start_chart} | Response: {res}")
 
-        return self._check_json(res)
+        return res
+    
+
+    # Linked to test API endpoint
+    async def run_sql(self, query: str):
+        db = Database()
+        time_start = time.time()
+        data = db.execute_query(query)
+        time_end = time.time()
+        #logger.opt(lazy=True).log("RUNSQL", f"Query: {query} | Processing Time: {stop - start} | Response: {data}")
+        return data
+
     
 
     async def query_sql_table(self, query: str) -> str:
@@ -294,6 +256,80 @@ class Agent:
         end = timeit.default_timer()
         #logger.opt(lazy=True).log("DATATEXT", f"Query: {query} | Processing Time: {end - start} | Response: {res}")
         return res
+    
+
+    async def query_subtitle_content(self, query: str, table_of_content: str) -> str:
+        """
+            Generate text analysis based on the subtitle and table of content
+            Args:
+                query: subtitle
+                context: table of content
+            Returns:
+                {
+                    "subtitle": the subtitle, 
+                    "content": the text analysis, 
+                    "source": the source of the data
+                }
+        """
+        query_class = Query(query=query, top_k=10)
+        
+        # Retrieve context, keep only above threshold
+        context, source = self.datastore.retrieval(query_class)
+
+        # If no context retrieved, resort to ChatGPT
+        if len(context) == 0:
+            messages = get_prompt('report_content_gpt', query, None, table_of_content)        
+        else:
+            messages = get_prompt('report_content', query, context ,table_of_content)
+        
+        res = get_chat_completion_json(messages, self.model_basic)
+
+        # In case the subtitle field from model output is not the same as the original value, overwrite it
+        res['title'] = query    
+        res['source'] = source if len(source) > 0 else 'Endepth Data Insight'
+
+        return res
+    
+
+    
+
+    async def generate_report_content(self, table_of_content: Dict[str, str]):
+        table_content_str = json.dumps(table_of_content)
+
+        # Get a list of subtitles
+        subtitles = []
+        for k, v in table_of_content.items():
+            for k1, v1 in v['subtitles'].items():
+                subtitles.append(v1)
+
+
+        # Get the analysis for each subtitle concurrently
+        time_start = time.time()
+        content_partial = partial(self.query_subtitle_content, table_of_content = table_content_str)
+        tasks = [content_partial(subtitle) for subtitle in subtitles]
+        contents = await asyncio.gather(*tasks)
+
+        time_end = time.time()
+
+        logger.opt(lazy=True).log("AGENT", f"Generate full report | Processing Time: {time_end - time_start} | Table of Content: {table_content_str} |Response: {contents}")
+        
+        # Transform the result into a dictionary
+        contents_dic = {t['title']: t['content'] for t in contents}
+
+        # Construct the report dictionary
+        report = {}
+
+        for k, v in table_of_content.items():
+            report[k] = {'title': v['title'], 'content': {}}
+            for k1, v1 in v['subtitles'].items():
+                report[k]['content'][k1] = {'subtitle': v1, 'content': contents_dic[v1]}
+
+        return report
+
+
+
+
+
         
     
 
@@ -321,12 +357,3 @@ class Agent:
 
         return valid_str
     
-
-    async def _retrieval(self, query: Query):
-
-        start = timeit.default_timer()
-        res = await self.datastore.query(query)
-        stop = timeit.default_timer()
-        #logger.opt(lazy=True).log("RETRIEVAL", f"Query: {query} | Processing Time: {stop - start} | Response: {[i.dict() for i in res]}")
-
-        return res

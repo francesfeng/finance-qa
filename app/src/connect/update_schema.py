@@ -1,5 +1,5 @@
 import yaml
-from connect.db import Database
+from app.src.connect.db import Database
 import os
 
 def main():
@@ -13,7 +13,7 @@ def main():
         "schema_short": schemas_short
     }
 
-    path = './connect/schemas.yaml'
+    path = 'app/src/connect/schemas.yaml'
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, 'w') as file:

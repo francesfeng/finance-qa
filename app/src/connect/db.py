@@ -66,7 +66,7 @@ class Database:
                 else:          
                     return result
         except Exception as e:
-            print(e)
+            print(f'SQL execution error is: {e}')
             return f'Error: {e}'
             #raise RuntimeError(f"Error executing query: {e}")
         
@@ -86,7 +86,24 @@ class Database:
         """
         Get all columns from a table
         """
-        query = f"""SELECT TABLE_NAME, COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME IN ('{table_name}')"""
+        query = f"""SELECT
+            c.table_name,
+            c.column_name,
+            c.data_type,
+            tc.constraint_type
+        FROM
+            information_schema.columns c
+        LEFT JOIN
+            information_schema.key_column_usage kcu
+        ON
+            c.table_name = kcu.table_name
+            AND c.column_name = kcu.column_name
+        LEFT JOIN
+            information_schema.table_constraints tc
+        ON
+            kcu.constraint_name = tc.constraint_name
+        WHERE
+            c.table_name IN ('{table_name}')"""
         return self.execute_query(query, output_headers=False)
     
     
@@ -97,8 +114,8 @@ class Database:
         """
         query = ''
         if not column_name.endswith('_id'):
-            if column_name != 'Project Name' and column_name != 'City/Area' and column_name != 'Address/Location' and column_name != 'Ref'\
-                and column_name != 'Country' and column_name != 'State' and column_name != 'Technology Detail' \
+            if column_name != 'Project Name' and column_name != 'Address/Location' and column_name != 'Ref'\
+                and column_name != 'Technology Detail' \
                   and column_name != 'Operator' and column_name != 'Manufacturer' and column_name != 'Vehicle' and column_name != 'Project'\
                   and column_name != 'Policy Name' and column_name != 'Governing Body' and column_name != 'Scheme Name' and column_name != 'Funding Amount' \
                   and column_name != 'Title' and column_name != 'Investor Name' and column_name != 'Parent Investor Name' and column_name != 'Investment Amount'\
@@ -120,7 +137,7 @@ class Database:
         """
         Get all schemas from the database
         """
-        schemas = ['Table, Column, DataType, Possible Values']
+        schemas = ['Table, Column, DataType, IsPrimaryKey, Possible Values']
         tables = self.get_table_names()
         for t in tables:
             print(f'Get schema for table: {t}')
@@ -129,10 +146,13 @@ class Database:
             for c in columns:
                     
                 values = self.get_values(c[0], c[1], c[2])
+                fields = [field if field else '' for field in c]
                 if values is not None:
-                    schemas.append(', '.join(c) + ', ' + values[0][0])
+                    # concatenate table name, column name, data type, and values
+                    # values are concatenated in comma separated list
+                    schemas.append(', '.join(fields) + ', [' + values[0][0] + ',]')
                 else:
-                    schemas.append(', '.join(c))
+                    schemas.append(', '.join(fields))
 
         return '\n'.join(schemas)
     

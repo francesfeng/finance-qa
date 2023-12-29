@@ -192,3 +192,10 @@ for type "textdata", the response can only be the following format:
 
 [`API routers`](/app/README.md) 
 
+
+## Roadmap
+
+1. Provide more drill-down info when there are hyperlink on the text that leads to more detailed analysis, e.g. https://www.energy.gov/eere/fuelcells/hydrogen-and-fuel-cell-technologies-office-newsletter-july-october-2023
+
+2. User function all to produce many filters for gogole search templates
+

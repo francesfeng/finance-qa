@@ -1,102 +1,99 @@
-schema: "Table, Column, DataType, IsPrimaryKey, Possible Values\nhydrogen_fueled_vehicles,\
-  \ Ref, character varying, PRIMARY KEY\nhydrogen_fueled_vehicles, Operator, character\
-  \ varying, \nhydrogen_fueled_vehicles, Manufacturer, character varying, \nhydrogen_fueled_vehicles,\
-  \ Vehicle, character varying, \nhydrogen_fueled_vehicles, Project, character varying,\
-  \ \nhydrogen_fueled_vehicles, Status, character varying, , [Active, Planned,]\n\
-  hydrogen_fueled_vehicles, Fleet Size, integer, \nhydrogen_fueled_vehicles, Vehicle\
-  \ Type, character varying, , [Bus, Heavy duty truck, Medium duty truck, Passenger\
-  \ vehicle, Utility Tractor Rig (UTR),]\nhydrogen_fueled_vehicles, Start Date, date,\
-  \ \nhydrogen_fueled_vehicles, End Date, date, \nhydrogen_fueled_vehicles, Conversion\
-  \ Technology, character varying, , [Fuel cell, Fuel cell range extender, Hybrid,\
-  \ range extender,]\nus_stationary_fuel_cells, Ref, character varying, PRIMARY KEY\n\
-  us_stationary_fuel_cells, Host, character varying, \nus_stationary_fuel_cells, Project,\
-  \ character varying, \nus_stationary_fuel_cells, Status, character varying, , [active,\
-  \ planned,]\nus_stationary_fuel_cells, Start Date, date, \nus_stationary_fuel_cells,\
-  \ Site Classification, character varying, , [airport, apartment complex, bus station,\
+schema: "Table, Column, DataType, Possible Values\nhydrogen_fueled_vehicles, Ref,\
+  \ character varying\nhydrogen_fueled_vehicles, Operator, character varying\nhydrogen_fueled_vehicles,\
+  \ Manufacturer, character varying\nhydrogen_fueled_vehicles, Vehicle, character\
+  \ varying\nhydrogen_fueled_vehicles, Project, character varying\nhydrogen_fueled_vehicles,\
+  \ Status, character varying, [Active, Planned,]\nhydrogen_fueled_vehicles, Fleet\
+  \ Size, integer\nhydrogen_fueled_vehicles, Vehicle Type, character varying, [Bus,\
+  \ Heavy duty truck, Medium duty truck, Passenger vehicle, Utility Tractor Rig (UTR),]\n\
+  hydrogen_fueled_vehicles, Start Date, date\nhydrogen_fueled_vehicles, End Date,\
+  \ date\nhydrogen_fueled_vehicles, Conversion Technology, character varying, [Fuel\
+  \ cell, Fuel cell range extender, Hybrid, range extender,]\nus_stationary_fuel_cells,\
+  \ Ref, character varying\nus_stationary_fuel_cells, Host, character varying\nus_stationary_fuel_cells,\
+  \ Project, character varying\nus_stationary_fuel_cells, Status, character varying,\
+  \ [active, planned,]\nus_stationary_fuel_cells, Start Date, date\nus_stationary_fuel_cells,\
+  \ Site Classification, character varying, [airport, apartment complex, bus station,\
   \ casino, cold storage, college/university, dairy farm, data center, distribution\
   \ center, fuel cell park, hospital, hotel, jail/prison, manufacturing facility,\
   \ military, municipal , natural gas pressure reduction facility, office building,\
   \ other, pharmaceutical company, port, retail, school, substation, telecommunications,\
   \ wastewater treatment plant,]\nus_stationary_fuel_cells, Application, character\
-  \ varying, \nus_stationary_fuel_cells, Number of Units, integer, \nus_stationary_fuel_cells,\
-  \ Fuel Cell Type, character varying, , [MCFC, PAFC, SOFC,]\nus_stationary_fuel_cells,\
-  \ Model, character varying, , [DFC 1500, DFC 300MA, DFC-ERG, DFC1500, DFC300, DFC3000,\
+  \ varying\nus_stationary_fuel_cells, Number of Units, integer\nus_stationary_fuel_cells,\
+  \ Fuel Cell Type, character varying, [MCFC, PAFC, SOFC,]\nus_stationary_fuel_cells,\
+  \ Model, character varying, [DFC 1500, DFC 300MA, DFC-ERG, DFC1500, DFC300, DFC3000,\
   \ DFC300MA, PC25, PureCell 200, PureCell 400, SureSource 1500, SureSource 3000,\
   \ SureSource 4000, SureSource 4000; 3000, sureSource 3000, sureSource 4000,]\nus_stationary_fuel_cells,\
-  \ Fuel, character varying, , [biofuel, biogas, natural gas, \u2022 biogas\n\u2022\
+  \ Fuel, character varying, [biofuel, biogas, natural gas, \u2022 biogas\n\u2022\
   \ natural gas,]\nus_stationary_fuel_cells, Single Unit Nominal Power Output (kW),\
-  \ integer, \nus_stationary_fuel_cells, Total Nominal Power at Site (kW), integer,\
-  \ \nhydrogen_project, Ref, character varying, PRIMARY KEY\nhydrogen_project, Project\
-  \ Name, character varying, \nhydrogen_project, Date Online, date, \nhydrogen_project,\
-  \ Decomission Date, date, \nhydrogen_project, Status, character varying, , [Concept,\
-  \ DEMO, Decommisioned, FID, Feasibility study, Operational, Other/Unknown, Under\
-  \ construction,]\nhydrogen_project, Status Commissioned, character varying, , [Commissioned,\
-  \ De-Commissioned, Pre-Commissioned, Under Construction, Unknown, Unknown ,]\nhydrogen_project,\
-  \ Technology, character varying, , [Alkaline electrolysis (ALK), Biomass, Biomass\
-  \ w CCUS, Coal gasification with CCUS, Natural gas reforming with CCUS, Oil-based\
-  \ processes with CCUS, Other, Other Electrolysis, Proton exchange membrane electrolysis\
-  \ (PEM), Solid oxide electrolysis cells (SOEC),]\nhydrogen_project, Technology Detail,\
-  \ character varying, \nhydrogen_project, Feedstock, character varying, , [Biomass,\
-  \ Coal, Gird, Hydropower, Natural gas, Offshore wind, Oil, Onshore Wind, Other,\
-  \ Power, Renewable Energy, Solar PV,]\nhydrogen_project, Hydrogen Color, character\
-  \ varying, , [Blue, Green, Grey, Purple/Pink, Turquoise, Unknown, Yellow,]\nhydrogen_project,\
-  \ Product, character varying, , [Ammonia, Hydrogen, Liquid organic hydrogen carriers,\
-  \ Methane, Methanol, Synthetic liquid fuels, Various,]\nhydrogen_project, MWel,\
-  \ double precision, \nhydrogen_project, Nm3 H2/h, double precision, \nhydrogen_project,\
-  \ kt H2/y, double precision, \nhydrogen_project, t CO2 captured/y, double precision,\
-  \ \nhydrogen_project, Total Investment, character varying, \nhydrogen_project, Total\
-  \ Investment in USD, double precision, \ncarbon_capture_and_storage_project, Ref,\
-  \ character varying, \ncarbon_capture_and_storage_project, Project Name, character\
-  \ varying, \ncarbon_capture_and_storage_project, Project Type, character varying,\
-  \ , [CCU, Capture, Full Chain, Storage, Transport, Transport & Storage,]\ncarbon_capture_and_storage_project,\
-  \ Announcement Date, date, \ncarbon_capture_and_storage_project, FID Date, date,\
-  \ \ncarbon_capture_and_storage_project, Operation Date, date, \ncarbon_capture_and_storage_project,\
-  \ Decommission Date, date, \ncarbon_capture_and_storage_project, Project Status,\
-  \ character varying, , [Decommissioned, Operational, Planned, Suspended, Under construction,]\n\
-  carbon_capture_and_storage_project, Project Phase, integer, \ncarbon_capture_and_storage_project,\
-  \ Announced capacity (low) (Mt CO2/yr), double precision, \ncarbon_capture_and_storage_project,\
-  \ Announced capacity (high) (Mt CO2/yr), double precision, \ncarbon_capture_and_storage_project,\
-  \ Sector, character varying, , [Biofuels, CO2 storage, CO2 transport, CO2 transport\
+  \ integer\nus_stationary_fuel_cells, Total Nominal Power at Site (kW), integer\n\
+  hydrogen_project, Ref, character varying\nhydrogen_project, Project Name, character\
+  \ varying\nhydrogen_project, Date Online, date\nhydrogen_project, Decomission Date,\
+  \ date\nhydrogen_project, Status, character varying, [Concept, DEMO, Decommisioned,\
+  \ FID, Feasibility study, Operational, Other/Unknown, Under construction,]\nhydrogen_project,\
+  \ Status Commissioned, character varying, [Commissioned, De-Commissioned, Pre-Commissioned,\
+  \ Under Construction, Unknown, Unknown ,]\nhydrogen_project, Technology, character\
+  \ varying, [Alkaline electrolysis (ALK), Biomass, Biomass w CCUS, Coal gasification\
+  \ with CCUS, Natural gas reforming with CCUS, Oil-based processes with CCUS, Other,\
+  \ Other Electrolysis, Proton exchange membrane electrolysis (PEM), Solid oxide electrolysis\
+  \ cells (SOEC),]\nhydrogen_project, Technology Detail, character varying\nhydrogen_project,\
+  \ Feedstock, character varying, [Biomass, Coal, Gird, Hydropower, Natural gas, Offshore\
+  \ wind, Oil, Onshore Wind, Other, Power, Renewable Energy, Solar PV,]\nhydrogen_project,\
+  \ Hydrogen Color, character varying, [Blue, Green, Grey, Purple/Pink, Turquoise,\
+  \ Unknown, Yellow,]\nhydrogen_project, Product, character varying, [Ammonia, Hydrogen,\
+  \ Liquid organic hydrogen carriers, Methane, Methanol, Synthetic liquid fuels, Various,]\n\
+  hydrogen_project, MWel, double precision\nhydrogen_project, Nm3 H2/h, double precision\n\
+  hydrogen_project, kt H2/y, double precision\nhydrogen_project, t CO2 captured/y,\
+  \ double precision\nhydrogen_project, Total Investment, character varying\nhydrogen_project,\
+  \ Total Investment in USD, double precision\ncarbon_capture_and_storage_project,\
+  \ Ref, character varying\ncarbon_capture_and_storage_project, Project Name, character\
+  \ varying\ncarbon_capture_and_storage_project, Project Type, character varying,\
+  \ [CCU, Capture, Full Chain, Storage, Transport, Transport & Storage,]\ncarbon_capture_and_storage_project,\
+  \ Announcement Date, date\ncarbon_capture_and_storage_project, FID Date, date\n\
+  carbon_capture_and_storage_project, Operation Date, date\ncarbon_capture_and_storage_project,\
+  \ Decommission Date, date\ncarbon_capture_and_storage_project, Project Status, character\
+  \ varying, [Decommissioned, Operational, Planned, Suspended, Under construction,]\n\
+  carbon_capture_and_storage_project, Project Phase, integer\ncarbon_capture_and_storage_project,\
+  \ Announced capacity (low) (Mt CO2/yr), double precision\ncarbon_capture_and_storage_project,\
+  \ Announced capacity (high) (Mt CO2/yr), double precision\ncarbon_capture_and_storage_project,\
+  \ Sector, character varying, [Biofuels, CO2 storage, CO2 transport, CO2 transport\
   \ & storage, Cement, Direct Air Capture, Hydrogen/ammonia, Iron and steel, Natural\
   \ gas processing, Other fuel transformation, Other industry, Power and heat,]\n\
-  carbon_capture_and_storage_project, Fate of Carbon, character varying, , [Dedicated\
+  carbon_capture_and_storage_project, Fate of Carbon, character varying, [Dedicated\
   \ storage, Enhanced oil recovery, Enhanced oil recovery and use, Mixed, Storage,\
   \ Unknown/unspecified, Use, Use and storage,]\ncarbon_capture_and_storage_project,\
-  \ Part of CCUS Hub, character varying, \ninternational_fuelling_stations, Ref, character\
-  \ varying, PRIMARY KEY\ninternational_fuelling_stations, Title, character varying,\
-  \ \ninternational_fuelling_stations, Project, character varying, \ninternational_fuelling_stations,\
-  \ Status, character varying, , [active, delete, planned,]\ninternational_fuelling_stations,\
-  \ Beginning Date, date, \ninternational_fuelling_stations, Accessible to Public,\
-  \ boolean, \ninternational_fuelling_stations, Refueler Type, character varying,\
-  \ , [Mobile, Portable, Stationary, gas, small scale,]\ninternational_fuelling_stations,\
-  \ H2 Compression Available (Mpa), character varying, \ninternational_fuelling_stations,\
-  \ H2 Production/Delivery Method, character varying, \ninternational_fuelling_stations,\
-  \ On-site H2 Production, character varying, \ninternational_fuelling_stations, Storage\
-  \ Capacity (kg), character varying, \nproject_location, id, integer, PRIMARY KEY\n\
-  project_location, Ref, character varying, \nproject_location, Project Type, character\
-  \ varying, , [Carbon Capture Utilisation and Storage (CCUS), Hydrogen, Hydrogen\
-  \ Fueling Stations, Hydrogen-Fueled Vehicles,]\nproject_location, Country, character\
-  \ varying, , [Albania, Algeria, Angola, Argentina, Australia, Austria, Bahrain,\
-  \ Bangladesh, Barbados, Belgium, Botswana, Brazil, Bulgaria, Canada, Chile, China,\
-  \ Chinese Taipei, Colombia, Congo (DRC), Cook Islands, Costa Rica, Croatia, Cyprus,\
-  \ Czech Republic, Denmark, Djibouti, Egypt, Estonia, Finland, France, French Guiana,\
-  \ Germany, Greece, Hungary, Iceland, India, Indonesia, Iran, Ireland, Italy, Japan,\
-  \ Kazakhstan, Kenya, Latvia, Lebanon, Lithuania, Luxembourg, Lybia, Malaysia, Mauritania,\
-  \ Mexico, Morocco, Namibia, Netherlands, New Zealand, Niger, Norway, Oman, Pakistan,\
-  \ Papua New Guinea, Paraguay, Peru, Poland, Portugal, Qatar, Romania, Russia, Saudi\
-  \ Arabia, Singapore, Slovakia, Slovenia, South Africa, South Korea, Spain, Sri Lanka,\
-  \ Sweden, Switzerland, Taiwan, Thailand, Trinidad And Tobago, Turkey, Ukraine, United\
-  \ Arab Emirates, United Kingdom, United States, Unknown, Uruguay, Vietnam, Zimbabwe,]\n\
-  project_location, Region, character varying, , [Africa, Australia and Oceania, Carribean,\
-  \ Central America, Central Asia, East Asia, Eastern Europe, Middle East, North America,\
-  \ South America, South Asia, Southeast Asia, Unknown, Western Europe,]\nproject_location,\
-  \ State, character varying, , [Aberdeen, Aichi, Akershus, Albacete, Alberta, Aragon,\
-  \ Auckland, Australian Capital Territory, Auvergne-Rh\xF4ne-Alpes, Baden-W\xFCrttemberg,\
-  \ Bayern, Beijing, Berlin, Brandenburg, Bremen, British Columbia, Busan, California,\
-  \ Canton Aargau, Canton Zurich, Capital Region, Central Jutland, Centre-Val de Loire,\
-  \ Chiba, Chungcheongbuk-do, Chungcheongbukdo, Chungcheongnamdo, Connecticut, Costa\
-  \ Rica Guancaste, DE, Daegu, Daejeon, Delaware, Drenthe, Ealing, Flanders, Flemish,\
-  \ Fukui, Fukuoka, Fukushima, Gangwondo, Gelderland, Georgia, Gifu, Groningen, Guangdong,\
+  \ Part of CCUS Hub, character varying\ninternational_fuelling_stations, Ref, character\
+  \ varying\ninternational_fuelling_stations, Title, character varying\ninternational_fuelling_stations,\
+  \ Project, character varying\ninternational_fuelling_stations, Status, character\
+  \ varying, [active, delete, planned,]\ninternational_fuelling_stations, Beginning\
+  \ Date, date\ninternational_fuelling_stations, Accessible to Public, boolean\ninternational_fuelling_stations,\
+  \ Refueler Type, character varying, [Mobile, Portable, Stationary, gas, small scale,]\n\
+  international_fuelling_stations, H2 Compression Available (Mpa), character varying\n\
+  international_fuelling_stations, H2 Production/Delivery Method, character varying\n\
+  international_fuelling_stations, On-site H2 Production, character varying\ninternational_fuelling_stations,\
+  \ Storage Capacity (kg), character varying\nproject_location, id, integer\nproject_location,\
+  \ Ref, character varying\nproject_location, Project Type, character varying, [Carbon\
+  \ Capture Utilisation and Storage (CCUS), Hydrogen, Hydrogen Fueling Stations, Hydrogen-Fueled\
+  \ Vehicles,]\nproject_location, Country, character varying, [Albania, Algeria, Angola,\
+  \ Argentina, Australia, Austria, Bahrain, Bangladesh, Barbados, Belgium, Botswana,\
+  \ Brazil, Bulgaria, Canada, Chile, China, Chinese Taipei, Colombia, Congo (DRC),\
+  \ Cook Islands, Costa Rica, Croatia, Cyprus, Czech Republic, Denmark, Djibouti,\
+  \ Egypt, Estonia, Finland, France, French Guiana, Germany, Greece, Hungary, Iceland,\
+  \ India, Indonesia, Iran, Ireland, Italy, Japan, Kazakhstan, Kenya, Latvia, Lebanon,\
+  \ Lithuania, Luxembourg, Lybia, Malaysia, Mauritania, Mexico, Morocco, Namibia,\
+  \ Netherlands, New Zealand, Niger, Norway, Oman, Pakistan, Papua New Guinea, Paraguay,\
+  \ Peru, Poland, Portugal, Qatar, Romania, Russia, Saudi Arabia, Singapore, Slovakia,\
+  \ Slovenia, South Africa, South Korea, Spain, Sri Lanka, Sweden, Switzerland, Taiwan,\
+  \ Thailand, Trinidad And Tobago, Turkey, Ukraine, United Arab Emirates, United Kingdom,\
+  \ United States, Unknown, Uruguay, Vietnam, Zimbabwe,]\nproject_location, Region,\
+  \ character varying, [Africa, Australia and Oceania, Carribean, Central America,\
+  \ Central Asia, East Asia, Eastern Europe, Middle East, North America, South America,\
+  \ South Asia, Southeast Asia, Unknown, Western Europe,]\nproject_location, State,\
+  \ character varying, [Aberdeen, Aichi, Akershus, Albacete, Alberta, Aragon, Auckland,\
+  \ Australian Capital Territory, Auvergne-Rh\xF4ne-Alpes, Baden-W\xFCrttemberg, Bayern,\
+  \ Beijing, Berlin, Brandenburg, Bremen, British Columbia, Busan, California, Canton\
+  \ Aargau, Canton Zurich, Capital Region, Central Jutland, Centre-Val de Loire, Chiba,\
+  \ Chungcheongbuk-do, Chungcheongbukdo, Chungcheongnamdo, Connecticut, Costa Rica\
+  \ Guancaste, DE, Daegu, Daejeon, Delaware, Drenthe, Ealing, Flanders, Flemish, Fukui,\
+  \ Fukuoka, Fukushima, Gangwondo, Gelderland, Georgia, Gifu, Groningen, Guangdong,\
   \ Gunma, Gwangju, Gyeonggido, Gyeongsangbukdo, Gyeongsangnamdo, G\xE4vleborg County,\
   \ Hamburg, Haryana State, Hauts-de-France, Hawaii, Hebei, Henan, Hessen, Hillingdon,\
   \ Hiroshima, Hokkaido, Hubei, Hyogo, Ibaraki, Illinois, Incheon, Ishikawa, Ivry-sur-Seine,\
@@ -116,7 +113,7 @@ schema: "Table, Column, DataType, IsPrimaryKey, Possible Values\nhydrogen_fueled
   \ Virginia, V\xE4sterbotten, V\xE4stra G\xF6taland County, Wakayama, Wallonia, Washington,\
   \ West Midlands, Western Austrailia, Western Norway, Wisconsin, Wyoming, Yamaguchi,\
   \ Yamanashi, Zealand, Zhejiang, chungcheongnamdo, unknown, \xCEle-de-France,]\n\
-  project_location, City/Area, character varying, , [AMITYVILLE, ATLANTA, AVON, Aachen,\
+  project_location, City/Area, character varying, [AMITYVILLE, ATLANTA, AVON, Aachen,\
   \ Aberdeen, Abergavenny, Acton, Ahnsan, Ahnsung, Ahsan, Albacete, Albany, Alhambra,\
   \ Alkmaar, Ama City, Amagasaki City, Amsterdam, Anaheim, Anaheim Hills, Anderson,\
   \ Anjo City, Ansan, Ansung, Antioch, Antwerp, Antwerp - Wilrijk, Apple Valley, Arakawa-ku,\
@@ -244,43 +241,41 @@ schema: "Table, Column, DataType, IsPrimaryKey, Possible Values\nhydrogen_fueled
   \ Zibo, Zofingen, boryung-si, buk-gu, chungju-si, dong-gu, donghae-si, gangsu-gu,\
   \ gimpo, gwangjin-gu, gwangyang-si, hampyeong-gun, kangdonggu, multiple, namdogu,\
   \ namgu, nationwide, samcheok-si, sasang, seo-gu, unknown, wonju-si, yong-in, \xC5\
-  sane (Bergen), \xC9vreux,]\nproject_location, Address/Location, text, \nhydrogen_project_finance_schemes,\
-  \ id, integer, PRIMARY KEY\nhydrogen_project_finance_schemes, Ref, character varying,\
-  \ \nhydrogen_project_finance_schemes, Project Name, character varying, \nhydrogen_project_finance_schemes,\
-  \ Scheme Name, character varying, \nhydrogen_project_finance_schemes, Funding Amount,\
-  \ character varying, \nhydrogen_project_finance_schemes, Funding Amount in USD,\
-  \ double precision, \nhydrogen_project_enduse, id, integer, PRIMARY KEY\nhydrogen_project_enduse,\
-  \ Ref, character varying, \nhydrogen_project_enduse, Project Name, character varying,\
-  \ \nhydrogen_project_enduse, End Use, character varying, , [Ammonia, Biofuels, Combined\
-  \ Heat & Power (fuel cells or turbines), Domestic Heat, Grid Injection, Iron&Steel,\
-  \ Methane Grid Injection, Methane Mobility, Methanol, Mobility, Other Industry,\
-  \ Power, Refining, Synfuels,]\nhydrogen_policy, id, integer, PRIMARY KEY\nhydrogen_policy,\
-  \ Policy Name, character varying, \nhydrogen_policy, Country, character varying,\
-  \ , [Argentina, Australia, Austria, Belgium, Bolivarian Republic of Venezuela, Canada,\
-  \ Chile, Chinese Taipei, Colombia, Denmark, Estonia, European Union, Finland, France,\
-  \ Germany, Hungary, India, Ireland, Italy, Jamaica, Japan, Jordan, Korea, Kuwait,\
-  \ Lithuania, Luxembourg, Mexico, Morocco, Namibia, Netherlands, New Zealand, Norway,\
-  \ Oman, People's Republic of China, Poland, Portugal, Romania, Russian Federation,\
-  \ Saudi Arabia, Singapore, Slovak Republic, South Africa, Spain, Sweden, Switzerland,\
-  \ Thailand, Turkey, United Arab Emirates, United Kingdom, United States, Uzbekistan,]\n\
-  hydrogen_policy, Year, integer, \nhydrogen_policy, Status, character varying, ,\
-  \ [Announced, Ended, In force, Planned,]\nhydrogen_policy, Jurisdiction, character\
-  \ varying, , [International, National, State/Provincial,]\nhydrogen_policy, Topics,\
-  \ text, \nhydrogen_policy, Policy Types, text, \nhydrogen_policy, Sectors, text,\
-  \ \nhydrogen_policy, Technologies, text, \nhydrogen_policy, Description, text, \n\
-  hydrogen_policy, Total Budget, text, \nhydrogen_policy, Total Budget in USD, double\
-  \ precision, \nhydrogen_policy, Governing Body, character varying, \nhydrogen_policy,\
-  \ Target Project, text, \nhydrogen_policy, Target Capacity, text, \nhydrogen_policy,\
-  \ Beneficiary, text, \nhydrogen_policy, Target Year, text, \nhydrogen_policy, Period,\
-  \ text, \nhydrogen_policy, Emission Goal, text, \nproject_investor, id, integer,\
-  \ PRIMARY KEY\nproject_investor, Ref, character varying, \nproject_investor, Project\
-  \ Type, character varying, , [Carbon Capture Utilisation and Storage (CCUS), Hydrogen,\
-  \ Hydrogen Fueling Stations, Hydrogen-Fueled Vehicles,]\nproject_investor, Project\
-  \ Name, character varying, \nproject_investor, Investor Name, character varying,\
-  \ \nproject_investor, Parent Investor Name, character varying, \nproject_investor,\
-  \ Investment Amount, character varying, \nproject_investor, Investment Amount in\
-  \ USD, double precision, \nproject_investor, Stake, numeric, \nproject_investor,\
-  \ Share the Pool, boolean, "
+  sane (Bergen), \xC9vreux,]\nproject_location, Address/Location, text\nhydrogen_project_finance_schemes,\
+  \ id, integer\nhydrogen_project_finance_schemes, Ref, character varying\nhydrogen_project_finance_schemes,\
+  \ Project Name, character varying\nhydrogen_project_finance_schemes, Scheme Name,\
+  \ character varying\nhydrogen_project_finance_schemes, Funding Amount, character\
+  \ varying\nhydrogen_project_finance_schemes, Funding Amount in USD, double precision\n\
+  hydrogen_project_enduse, id, integer\nhydrogen_project_enduse, Ref, character varying\n\
+  hydrogen_project_enduse, Project Name, character varying\nhydrogen_project_enduse,\
+  \ End Use, character varying, [Ammonia, Biofuels, Combined Heat & Power (fuel cells\
+  \ or turbines), Domestic Heat, Grid Injection, Iron&Steel, Methane Grid Injection,\
+  \ Methane Mobility, Methanol, Mobility, Other Industry, Power, Refining, Synfuels,]\n\
+  hydrogen_policy, id, integer\nhydrogen_policy, Policy Name, character varying\n\
+  hydrogen_policy, Country, character varying, [Argentina, Australia, Austria, Belgium,\
+  \ Bolivarian Republic of Venezuela, Canada, Chile, Chinese Taipei, Colombia, Denmark,\
+  \ Estonia, European Union, Finland, France, Germany, Hungary, India, Ireland, Italy,\
+  \ Jamaica, Japan, Jordan, Korea, Kuwait, Lithuania, Luxembourg, Mexico, Morocco,\
+  \ Namibia, Netherlands, New Zealand, Norway, Oman, People's Republic of China, Poland,\
+  \ Portugal, Romania, Russian Federation, Saudi Arabia, Singapore, Slovak Republic,\
+  \ South Africa, Spain, Sweden, Switzerland, Thailand, Turkey, United Arab Emirates,\
+  \ United Kingdom, United States, Uzbekistan,]\nhydrogen_policy, Year, integer\n\
+  hydrogen_policy, Status, character varying, [Announced, Ended, In force, Planned,]\n\
+  hydrogen_policy, Jurisdiction, character varying, [International, National, State/Provincial,]\n\
+  hydrogen_policy, Topics, text\nhydrogen_policy, Policy Types, text\nhydrogen_policy,\
+  \ Sectors, text\nhydrogen_policy, Technologies, text\nhydrogen_policy, Description,\
+  \ text\nhydrogen_policy, Total Budget, text\nhydrogen_policy, Total Budget in USD,\
+  \ double precision\nhydrogen_policy, Governing Body, character varying\nhydrogen_policy,\
+  \ Target Project, text\nhydrogen_policy, Target Capacity, text\nhydrogen_policy,\
+  \ Beneficiary, text\nhydrogen_policy, Target Year, text\nhydrogen_policy, Period,\
+  \ text\nhydrogen_policy, Emission Goal, text\nproject_investor, id, integer\nproject_investor,\
+  \ Ref, character varying\nproject_investor, Project Type, character varying, [Carbon\
+  \ Capture Utilisation and Storage (CCUS), Hydrogen, Hydrogen Fueling Stations, Hydrogen-Fueled\
+  \ Vehicles,]\nproject_investor, Project Name, character varying\nproject_investor,\
+  \ Investor Name, character varying\nproject_investor, Parent Investor Name, character\
+  \ varying\nproject_investor, Investment Amount, character varying\nproject_investor,\
+  \ Investment Amount in USD, double precision\nproject_investor, Stake, numeric\n\
+  project_investor, Share the Pool, boolean"
 schema_short: 'hydrogen_fueled_vehicles (Ref, Operator, Manufacturer, Vehicle, Project,
   Status, Fleet Size, Vehicle Type, Start Date, End Date, Conversion Technology)
 

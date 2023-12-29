@@ -6,7 +6,6 @@ import json
 
 
 from app.src.runner.agents import Agent
-from app.src.runner.controller import Controller
 
 
 router = APIRouter(prefix="/query",
@@ -19,18 +18,17 @@ router = APIRouter(prefix="/query",
 @router.post("/")
 async def query(query: QueryText = Body(...)):
     try:
-        result = await controller.run_query(query.query)
-        return Response(**result.dict())
+        return await agent.classification_related(query.query)
     except Exception as e:
         logger.error(e)
         raise HTTPException(status_code=500, detail=str(e))
     
     
 # SQL Query to Chart
-@router.post("/sql_chart")
-async def query_sql_to_chart(querytext: QueryText = Body(...)):
+@router.post("/data_chart")
+async def query_data_to_chart(querytext: QueryText = Body(...)):
     try:
-        return await agent.query_sql_chart(querytext.query, querytext.data)
+        return await agent.query_data_chart(querytext.query, querytext.data)
     except Exception as e:
         logger.error(e)
         raise HTTPException(status_code=500, detail=str(e))
@@ -39,44 +37,30 @@ async def query_sql_to_chart(querytext: QueryText = Body(...)):
 
 # Gete text, which is composed of text and markdown table
 @router.post("/text")
-async def query_combined(querytext: QueryText = Body(...)):
+async def query_text(querytext: QueryText = Body(...)):
     try:
         return StreamingResponse(
-            await agent.query_combined(query = querytext.query, is_streaming=True), 
+            await agent.query_text(query = querytext.query, is_streaming=True), 
             media_type="text/event-stream"
             )
     except Exception as e:
         logger.error(e)
         raise HTTPException(status_code=500, detail=str(e))
     
-
-# Table based on pincone text, streaming
-@router.post("/text_table")
-async def query_table(querytext: QueryText = Body(...)):
+    
+@router.post("/data")
+async def query_data(querytext: QueryText = Body(...)):
     try:
-        return StreamingResponse(
-            await agent.query_text_table(query = querytext.query, is_streaming=True), 
-            media_type="text/event-stream"
-            )
+        return await agent.query_data(querytext.query)
     except Exception as e:
         logger.error(e)
         raise HTTPException(status_code=500, detail=str(e))
     
-
-# Pincone SQL Table to Chart
-@router.post("/table_to_chart")
-async def query_table_to_chart(querytext: QueryText = Body(...)):
-    try:
-        return await agent.query_table_to_chart(querytext.query, querytext.data)
-    except Exception as e:
-        logger.error(e)
-        raise HTTPException(status_code=500, detail=str(e))
     
+
 
 
 @router.on_event("startup")
 async def startup():
-    global controller
     global agent
-    controller = Controller()
     agent = Agent()

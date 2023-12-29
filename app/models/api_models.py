@@ -1,7 +1,6 @@
 from pydantic import BaseModel
 from typing import List, Optional, Dict 
 from enum import Enum
-from app.models.models import ResponseType
 
 
 class Label(str, Enum):
@@ -21,9 +20,8 @@ class RelatedTopic(BaseModel):
 
 class Response(BaseModel):
     code: int
-    type: ResponseType
-    label: Label
-    query: str
+    label: Optional[Label] = None
+    query: Optional[str] = None
     title: Optional[str] = None
     response: Optional[str] = None
     related_topics: Optional[List[Dict[str, str]]] = None

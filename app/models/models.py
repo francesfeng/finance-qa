@@ -10,6 +10,7 @@ class Source(str, Enum):
     regulatory_filing = "regulatory_filing"
 
     news_article = "news"
+    google_search = "google_search"
     blog_post = "blog_post"
     social_media = "social_media"
 
