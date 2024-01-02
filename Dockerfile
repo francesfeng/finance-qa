@@ -1,43 +1,21 @@
+# Use an official lightweight Python image.
 # https://hub.docker.com/_/python
-#FROM python:3.10-slim-bullseye
-# FROM python:3.10
+FROM python:3.10-slim
 
-# ENV PYTHONUNBUFFERED True
-# ENV APP_HOME /app
-# WORKDIR $APP_HOME
-# COPY . ./
+# Set environment variables. PYTHONUNBUFFERED ensures our console output looks familiar and is not buffered by Docker, which is useful for debugging.
+ENV PYTHONUNBUFFERED True
 
-# RUN pip install --no-cache-dir -r requirements.txt
+# Set the working directory to /app
+WORKDIR /app
 
-# WORKDIR /code
-# COPY ./requirements.txt /code/requirements.txt
-# RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
-# COPY ./app /code/app
+# Copy the current directory contents into the container at /app
+COPY . /app
 
-# CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-
-# Use a slim Python base image
-FROM python:3.10-slim-bullseye
-
-# Create a dedicated directory for your app
-WORKDIR /code
-
-# Copy the requirements file into the Docker image
-COPY ./requirements.txt /code/requirements.txt
-
-# Install Python dependencies
-RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
-
-# Copy the rest of the application into the Docker image
-COPY ./app /code/app
-
-# Indicate that the application listens on port 8080
-EXPOSE 8080
-
-# Specify a non-root user to run the application
-RUN useradd -m myuser
-USER myuser
+# Inform Docker that the container listens on the specified network ports at runtime. 80 is standard for HTTP.
+EXPOSE 80
 
 # Run the application
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
