@@ -1,6 +1,18 @@
 # Use an official lightweight Python image.
 # https://hub.docker.com/_/python
-FROM python:3.10-slim
+FROM python:3.10
+
+# Update and install system dependencies
+
+RUN apt-get update && apt-get install -y gcc unixodbc-dev
+
+# RUN apt-get update && apt-get install -y \
+#     gcc \
+#     libc-dev \
+#     && rm -rf /var/lib/apt/lists/*
+
+# Upgrade pip, setuptools, and wheel
+RUN pip install --upgrade pip setuptools wheel
 
 # Set environment variables. PYTHONUNBUFFERED ensures our console output looks familiar and is not buffered by Docker, which is useful for debugging.
 ENV PYTHONUNBUFFERED True
