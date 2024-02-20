@@ -1,5 +1,5 @@
-from app.src.assistants.assistant import Assistant
-from app.src.runner.prompt import get_prompt
+from app.src.assistant_old.assistant import Assistant
+from app.src.config.prompt.prompt import get_prompt
 
 
 class ChartAssistant(Assistant):

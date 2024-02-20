@@ -2,8 +2,11 @@ from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from app.dependencies import bearer_scheme
 from app.v1.routers import query
+from app.v1.routers import assistant
 from app.v1.test import test
 from mangum import Mangum
+from loguru import logger
+import sys
 
 
 app = FastAPI()
@@ -27,9 +30,11 @@ app.add_middleware(
 
 @app.get("/")
 async def root():
+    logger.add(sys.stderr, enqueue=True)
     return {"message": "Welcome to Endepth!"}
 
 app.include_router(query.router, prefix="/v1")
+app.include_router(assistant.router, prefix="/v1")
 app.include_router(test.router)
 
 handler = Mangum(app=app, lifespan="on")

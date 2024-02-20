@@ -50,8 +50,8 @@ async def retrieve_context_from_google_search(query: str, date_period: Optional[
     queries = [q.strip() for q in query.split(",")]
 
     time_start = time.time()
-    search = GoogleSearch(query = queries, date_period=date_period)
-    context = search.run()
+    search = GoogleSearch(queries = queries, date_period=date_period)
+    context = await search.run()
     time_end = time.time()
 
     logger.opt(lazy=True).log("FUNCTION_CALL", f"retrieve_context_from_google | Query: {query} | date_period: {date_period} | Processing time: {time_end - time_start} seconds | Context length: {len(context)}")

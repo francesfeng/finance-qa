@@ -6,16 +6,20 @@ import time
 
 from typing import Optional, List, Dict
 from app.src.connect.datastore import DataStore
-from app.src.connect.db import Database
+from app.src.database.db import Database
+#from app.src.database.cache_emb import EmbeddingCache
+from app.src.database.db_datasets import DatasetsDB
+from app.src.database.cache_query import QueryCache
 from app.src.connect.gpt import get_chat_completion_stream, get_chat_completion
 from app.src.connect.gpt_v2 import get_chat_completion_v2, get_function_call, get_chat_completion_json, get_chat_completion_stream_v2
 from .function_call import get_text_retrieval_function_call
 from .functions import retrieve_context_from_datastore, retrieve_context_from_google_search
 from .sql import SQLAgent
 
-from app.models.models import Query, Type
-from app.src.runner.prompt import get_prompt
-from app.models.api_models import Response, Label
+from app.models.models import Query, Type, Dataset, Related
+from app.src.config.prompt.prompt import get_prompt
+from app.models.models import Response, Label
+from app.models.api_models import MessageResponse
 
 
 import timeit
@@ -43,16 +47,19 @@ class Agent:
         self.datastore = DataStore()
         self.model_basic = 'gpt-3.5-turbo-1106'
         self.model_advanced = 'gpt-4-1106-preview'
+        self.cache_query = QueryCache()
+        self.db_datasets = DatasetsDB()
         
 
-        with open('app/src/connect/schemas.yaml', 'r') as file:
+        with open('app/src/config/schemas.yaml', 'r') as file:
             # Load the content using yaml.load
             data = yaml.load(file, Loader=yaml.FullLoader)
             self.schema = data['schema']
             self.schema_short = data['schema_short']
 
-        with open('app/src/connect/source.yaml', 'r') as file:
-            self.source = yaml.load(file, Loader=yaml.FullLoader)
+        with open('app/src/config/datasets.yaml', 'r') as file:
+            datasets = yaml.load(file, Loader=yaml.FullLoader)
+            self.source = {k: {"source": v['source']} for k, v in datasets.items()}
 
 
     # updated
@@ -65,36 +72,56 @@ class Agent:
 
         try:
             for r in res['related questions']:
-                related.append({"query": r["question"], "title": r["topic"]})
+                related.append(Related(query=r["question"], title=r["topic"], sql=r.get("SQL")))
 
-            
 
-            return Response(
+            response = Response(
                 code = 200,
                 label = Label.database if res.get("original label") == 'Database' else Label.text,
                 query = res.get("original question"),
                 title = res.get("original topic"),
                 related_topics = related
             )
+
+            print(f"Response is: {response}")
+
+            asyncio.create_task(self.cache_query.insert_query(response))
+
+            return response
         except Exception as e:
+            print(e)
             return Response(
                 code = 404
                 )
+            
         
     
     
 
-    async def classification(self, query: str):
+    async def classification(self, query: str) -> Response:
+        """
+            Get Label(text or database), Title from the query
+        """
         schema_short = self.schema_short
         messages = get_prompt('classification', query, schema_short)
         time_start = time.time()
-        res = get_chat_completion(messages)
+        res = get_chat_completion_json(messages)
         time_end = time.time()
 
-        logger.opt(lazy=True).log("CLASSIFICATION", f"Query: {query} | Processing Time: {time_end - time_start} | Response: {res}")
+        logger.opt(lazy=True).log("AGENT", f"Classification | Query: {query} | Processing Time: {time_end - time_start} | Response: {res}")
 
-        
-        return res
+        response = Response(
+            code = 200,
+            label = Label.database if res.get("label") == 'Database' else Label.text,
+            query = query,
+            title = res.get('topic'),
+        )
+
+        # Insert into cache
+        asyncio.create_task(self.cache_query.insert_query(response, query))
+        return response
+    
+
     
 
     async def related(self, query: str):
@@ -102,7 +129,7 @@ class Agent:
         messages = get_prompt('related', query, schema_short)
 
         start = timeit.default_timer()
-        res = get_chat_completion(messages)
+        res = get_chat_completion_json(messages)
         end = timeit.default_timer()
 
         #logger.opt(lazy=True).log("CLASSIFICATION", f"Query: {query} | Processing Time: {end - start} | Response: {res}")
@@ -151,7 +178,6 @@ class Agent:
             context_datastore = []
 
         # Combine the context from 2 sources
-        print(context_datastore)
         context = context_datastore + context_search
         
         # Get list of scores, texts, and sources
@@ -167,12 +193,9 @@ class Agent:
                 scores.append(item.score)
 
         # Sort the context by score
-        sorted_context = [t for score, t in sorted(zip(scores, unique_context), reverse=True)]
+        sorted_context = sorted(unique_context, key=lambda x: x.score, reverse=True)
 
         formatted_context = [f"Source: {t.metadata.publisher} \n Content: {t.text}" for t in sorted_context[:15]]
-        for p in sorted_context:
-            print(p)
-            print("-----")
 
         messages = get_prompt('text', query, '\n\n'.join(formatted_context))
 
@@ -184,9 +207,13 @@ class Agent:
 
     
             res = get_chat_completion_v2(messages, model=self.model_basic)
+
             time_end = time.time()
             logger.opt(lazy=True).log("AGENT", f"Text | Query: {query} | Processing Time: {time_end - time_start} | Response: {res}")
             
+            # upload response to cache
+            asyncio.create_task(self.cache_query.insert_text_response(res, query))
+
             return res
         
 
@@ -208,13 +235,12 @@ class Agent:
                 {'status': 'failed', 'message': error message}
         """
         sql_agent = SQLAgent(query)
-        return await sql_agent.get_data()
+        res = await sql_agent.get_data()
 
-        
-
-
-        
-        
+        # upload response to cache
+        asyncio.create_task(self.cache_query.insert_data_response(res, query))
+        return res
+ 
 
 
     async def query_data_chart(self, query: str, data: str) -> Optional[str]:
@@ -223,6 +249,9 @@ class Agent:
         messages = get_prompt('data_to_chart', query, data)
         res = get_chat_completion_json(messages)
         time_end_chart = timeit.default_timer()
+
+        # upload response to cache
+        asyncio.create_task(self.cache_query.insert_chart_response(res, query))
 
         #logger.opt(lazy=True).log("SQLECHART", f"Query: {query} | Processing Time: {time_end_chart - time_start_chart} | Response: {res}")
 
@@ -237,6 +266,45 @@ class Agent:
         time_end = time.time()
         #logger.opt(lazy=True).log("RUNSQL", f"Query: {query} | Processing Time: {stop - start} | Response: {data}")
         return data
+    
+
+    async def query_dataset_summary(self, message: Optional[List[Dict[str, str]]]= None, thread_id: Optional[str]=None):
+        context = ''
+        chat_message = []
+        if message:
+            # if message is provided, use it
+            chat_message = message
+
+        elif thread_id:
+            # if message not provide, retrieve message from database by thread_id
+            chat_message = await self.db_datasets.get_messages_by_thread_id('data_requests', thread_id)
+            
+        else:
+            print("In order to summarise dataset request, please provide either message or thread_id")
+            return None
+        
+        # Convert to MessageResponse object
+        chat_message = [MessageResponse(**m) for m in chat_message]
+    
+        # Reformat the user and assistant message history, right before Step 3: Notification
+        for m in chat_message:
+            if m.content.startswith('**Specify Data Source:**'):
+                break
+            context += f"\"{m.role}\" : \"{m.content}\"\n\n"
+
+        messages = get_prompt('dataset_summary', context=context)
+        res = get_chat_completion_json(messages)
+
+        structure = ''
+        for col, des in res['column_names'].items():
+            structure += f"- **{col}**: {des}\n\n"
+        
+        return Dataset(name=res['dataset_name'], 
+                       description=res['dataset_summary'], 
+                       sector=res['tags'], 
+                       structure=structure,
+                       query=res['queries'],
+                       )
 
     
 

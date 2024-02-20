@@ -1,5 +1,5 @@
 from typing import List, Dict, Optional
-from openai import OpenAI
+from openai import OpenAI, AsyncOpenAI
 import os
 import json
 from loguru import logger
@@ -7,6 +7,7 @@ from loguru import logger
 level_gpt = logger.level("GPT", no=38, color="<yellow>", icon="♣")
 
 client = OpenAI(api_key=os.environ['OPENAI_API_KEY'])
+async_client = AsyncOpenAI(api_key=os.environ['OPENAI_API_KEY'])
 
 def get_chat_completion_json(
         messages, 
@@ -91,7 +92,7 @@ def get_chat_completion_v2(
 def get_chat_completion_stream_v2(messages, model="gpt-3.5-turbo-1106", temperature=0):
     """
     Get the chat completion using OpenAI's Chat Completion API.
-    Using streaming output
+    Returning JSON output, transformed into 
     """
     for response in client.chat.completions.create(
         model=model,
@@ -99,10 +100,15 @@ def get_chat_completion_stream_v2(messages, model="gpt-3.5-turbo-1106", temperat
         temperature=temperature,
         stream=True
     ):
-        if response.choices[0].finish_reason == 'stop':
-            break
-        yield response.choices[0].delta.content
+        
+        #yield response.choices[0].delta.content
+         
+        data = {"finish_reason": response.choices[0].finish_reason, "content": response.choices[0].delta.content}
+        sse_data = f"data: {json.dumps(data)}\n\n"
+        yield sse_data
 
+        if response.choices[0].finish_reason == 'stop':
+            return
 
 
 def get_function_call(messages, tools, model = "gpt-4-1106-preview", temperature: float = 1):
@@ -141,52 +147,27 @@ def get_function_call(messages, tools, model = "gpt-4-1106-preview", temperature
     else:
         return
 
-    
 
-def get_chat_completion_function_call(messages, tools, model = "gpt-4-1106-preview", temperature: float = 1):
-    response = client.chat.completions.create(
-        model=model,
-        messages=messages,
-        response_format={ "type": "json_object" },
-        temperature=temperature,
-        tools = tools,
-        tool_choice = "auto"
-    )
-
-    tool_calls = response.choices[0].message.tool_calls
-    functions = {}
-
-    # return function calls if available
-    if tool_calls:
-        for tool_call in tool_calls:
-            function_name = tool_call.function.name
-            function_args = json.loads(tool_call.function.arguments)
-            functions[function_name] = function_args
-
-        
-        return {'Function': functions }
-    else:
-        choices = response.choices
-        finish_reason = choices[0].finish_reason
-
-        if finish_reason == 'stop':
-            completion = choices[0].message.content.strip()
-            return completion
-        
-        else:
-            return {'Error', 'Errors in generating response'}
-
-
-
-def get_embeddings_v2(texts: List[str]) -> List[List[float]]:
+def get_embeddings_v2(texts: List[str], model: str = 'text-embedding-3-small') -> List[List[float]]:
     """
     Get the embeddings of a list of texts
     """
     response = client.embeddings.create(
         input=texts,
-        model="text-embedding-ada-002"
+        model=model
     )
 
     data = response.data
 
     return [result.embedding for result in data]
+
+
+async def get_image(file_id: str):
+    """
+    Get the image from OpenAI's file API
+    """
+    image_data = await async_client.files.content(file_id)
+    return image_data.read()
+
+
+

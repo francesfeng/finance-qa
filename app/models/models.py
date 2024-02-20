@@ -1,4 +1,4 @@
-from typing import Optional, List, Dict
+from typing import Optional, List, Dict, Any
 from pydantic import BaseModel
 
 from enum import Enum
@@ -55,6 +55,11 @@ class DocumentChunk(BaseModel):
 class DocumentChunkWithScore(DocumentChunk):
     score: float
 
+
+class DocumentSearch(DocumentChunk):
+    query: Optional[str] = None
+    
+
 class DocumentMetadataFilter(BaseModel):
     document_id: Optional[str] = None
     source: Optional[str] = None
@@ -90,17 +95,43 @@ class Label(str, Enum):
     database = "database"
 
 
+class Related(BaseModel):
+    query: str
+    title: str
+    sql: Optional[str] = None
+
+
+
+
 class Response(BaseModel):
     code: int
-    type: ResponseType
     label: Label
     query: str
     title: Optional[str] = None
-    response: Optional[str] = None
-    related_topics: Optional[List[Dict[str, str]]] = None
+    response: Optional[Dict[str, Any]] = None
+    related_topics: Optional[List[Related]] = None
 
 
 
+
+class AssistantModel(BaseModel):
+    assistant_id: str
+    thread_id: str
+
+
+class AssistantMessageResponse(BaseModel):
+    role: str
+    content: str
+    created_at: str
+    run_id: Optional[str] = None
+    
+
+class Dataset(BaseModel):
+    name: str
+    description: str
+    sector: List[str]
+    structure: str
+    query: str
 
 
 

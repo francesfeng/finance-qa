@@ -1,0 +1,960 @@
+Ref,Host,Project,Status,Start Date,Site Classification,Application,Number of Units,Fuel Cell Type,Model,Fuel,Single Unit Nominal Power Output (kW),Total Nominal Power at Site (kW)
+HFS_US_1,,,active,2021-01-01,,,,SOFC,,,,400.0
+HFS_US_2,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_3,,,active,2018-01-01,,,,SOFC,,,,1000.0
+HFS_US_4,,,active,2013-01-01,,,,SOFC,,,,750.0
+HFS_US_5,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_6,,,active,2016-01-01,,,,SOFC,,,,1250.0
+HFS_US_7,,,active,2017-01-01,,,,SOFC,,,,2200.0
+HFS_US_8,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_9,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_10,,,active,2017-01-01,,,,SOFC,,,,1400.0
+HFS_US_11,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_12,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_13,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_14,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_15,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_16,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_17,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_18,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_19,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_20,,,active,2016-01-01,,,,SOFC,,,,300.0
+HFS_US_21,,,active,2018-01-01,,,,SOFC,,,,500.0
+HFS_US_22,,,active,2020-01-01,,,,SOFC,,,,300.0
+HFS_US_23,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_24,,,active,2016-01-01,,,,SOFC,,,,300.0
+HFS_US_25,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_26,,,active,2020-01-01,,,,SOFC,,,,400.0
+HFS_US_27,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_28,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_29,Cache Creek Casino Resort,,active,2007-01-01,casino,"• baseload power
+• CHP",3.0,MCFC,DFC300,natural gas,300.0,900.0
+HFS_US_30,,,active,2021-01-01,,,,SOFC,,,,650.0
+HFS_US_31,,,active,2011-01-01,,,,SOFC,,,,500.0
+HFS_US_32,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_33,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_34,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_35,,,active,2013-01-01,,,,SOFC,,,,300.0
+HFS_US_36,,,active,2017-01-01,,,,SOFC,,,,500.0
+HFS_US_37,,,active,2020-01-01,,,,SOFC,,,,1000.0
+HFS_US_38,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_39,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_40,,,active,2016-01-01,,,,SOFC,,,,500.0
+HFS_US_41,,,active,2021-01-01,,,,SOFC,,,,1700.0
+HFS_US_42,,,active,2014-01-01,,,,SOFC,,,,600.0
+HFS_US_43,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_44,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_45,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_46,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_47,,,active,2017-01-01,,,,SOFC,,,,450.0
+HFS_US_48,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_49,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_50,,,active,2019-01-01,,,,SOFC,,,,375.0
+HFS_US_51,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_52,,,active,2013-01-01,,,,SOFC,,,,600.0
+HFS_US_53,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_54,,,active,2021-01-01,,,,SOFC,,,,750.0
+HFS_US_55,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_56,,,active,2017-01-01,,,,SOFC,,,,500.0
+HFS_US_57,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_58,Aerojet Rocketdyne ,California Self Generation Incentive Program; federal investment tax credit,active,2012-01-01,manufacturing facility,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_59,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_60,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_61,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_62,,,active,2016-01-01,,,,SOFC,,,,500.0
+HFS_US_63,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_64,,,active,2016-01-01,,,,SOFC,,,,300.0
+HFS_US_65,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_66,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_67,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_68,,,active,2017-01-01,,,,SOFC,,,,1000.0
+HFS_US_69,,,active,2017-01-01,,,,SOFC,,,,1000.0
+HFS_US_70,,,active,2017-01-01,,,,SOFC,,,,1000.0
+HFS_US_71,,,active,2017-01-01,,,,SOFC,,,,1000.0
+HFS_US_72,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_73,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_74,,,active,2021-01-01,,,,SOFC,,,,200.0
+HFS_US_75,,,active,2012-01-01,,,,SOFC,,,,400.0
+HFS_US_76,,,active,2012-01-01,,,,SOFC,,,,600.0
+HFS_US_77,,,active,2012-01-01,,,,SOFC,,,,1200.0
+HFS_US_78,,,active,2012-01-01,,,,SOFC,,,,1000.0
+HFS_US_79,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_80,,,active,2016-01-01,,,,SOFC,,,,600.0
+HFS_US_81,,,active,2017-01-01,,,,SOFC,,,,500.0
+HFS_US_82,South Coast Air Quality Management District Headquarters Building,Self-Generation Incentive Program,active,2013-01-01,office building,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,,400.0,400.0
+HFS_US_83,,,active,2016-01-01,,,,SOFC,,,,600.0
+HFS_US_84,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_85,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_86,,,active,2016-01-01,,,,SOFC,,,,600.0
+HFS_US_87,,,active,2016-01-01,,,,SOFC,,,,1000.0
+HFS_US_88,,,active,2017-01-01,,,,SOFC,,,,700.0
+HFS_US_89,Santa Rita Jail (Alameda County) ,unknown,active,2017-01-01,jail/prison,"• baseload power
+• CHP",1.0,MCFC,SureSource 3000,natural gas,2800.0,2800.0
+HFS_US_90,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_91,,,active,2017-01-01,,,,SOFC,,,,300.0
+HFS_US_92,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_93,,,active,2019-01-01,,,,SOFC,,,,600.0
+HFS_US_94,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_95,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_96,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_97,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_98,,,active,2017-01-01,,,,SOFC,,,,1000.0
+HFS_US_99,,,active,2017-01-01,,,,SOFC,,,,1500.0
+HFS_US_100,,,active,2019-01-01,,,,SOFC,,,,500.0
+HFS_US_101,,,active,2014-01-01,,,,SOFC,,,,1000.0
+HFS_US_102,,,active,2015-01-01,,,,SOFC,,,,300.0
+HFS_US_103,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_104,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_105,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_106,,,active,2019-01-01,,,,SOFC,,,,1000.0
+HFS_US_107,,,active,2020-01-01,,,,SOFC,,,,300.0
+HFS_US_108,,,active,2015-01-01,,,,SOFC,,,,750.0
+HFS_US_109,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_110,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_111,,,active,2015-01-01,,,,SOFC,,,,300.0
+HFS_US_112,,,active,2016-01-01,,,,SOFC,,,,300.0
+HFS_US_113,,,active,2019-01-01,,,,SOFC,,,,500.0
+HFS_US_114,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_115,,,active,2016-01-01,,,,SOFC,,,,450.0
+HFS_US_116,,,active,2017-01-01,,,,SOFC,,,,300.0
+HFS_US_117,,,active,2020-01-01,,,,SOFC,,,,1250.0
+HFS_US_118,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_119,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_120,,,active,2017-01-01,,,,SOFC,,,,500.0
+HFS_US_121,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_122,,,active,2020-01-01,,,,SOFC,,,,300.0
+HFS_US_123,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_124,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_125,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_126,,,active,2013-01-01,,,,SOFC,,,,1000.0
+HFS_US_127,,,active,2019-01-01,,,,SOFC,,,,400.0
+HFS_US_128,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_129,,,active,2013-01-01,,,,SOFC,,,,750.0
+HFS_US_130,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_131,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_132,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_133,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_134,,,active,2017-01-01,,,,SOFC,,,,300.0
+HFS_US_135,,,active,2018-01-01,,,,SOFC,,,,500.0
+HFS_US_136,,,active,2019-01-01,,,,SOFC,,,,700.0
+HFS_US_137,,,active,2021-01-01,,,,SOFC,,,,1400.0
+HFS_US_138,,,active,2013-01-01,,,,SOFC,,,,300.0
+HFS_US_139,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_140,,,active,2016-01-01,,,,SOFC,,,,1000.0
+HFS_US_141,"California State University, East Bay",,active,2011-01-01,college/university,"• baseload power
+• CHP",1.0,MCFC,DFC1500,natural gas,1400.0,1400.0
+HFS_US_142,,,active,2012-01-01,,,,SOFC,,,,300.0
+HFS_US_143,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_144,,,active,2016-01-01,,,,SOFC,,,,1000.0
+HFS_US_145,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_146,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_147,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_148,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_149,,,active,2021-01-01,,,,SOFC,,,,200.0
+HFS_US_150,,,active,2015-01-01,,,,SOFC,,,,250.0
+HFS_US_151,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_152,,,active,2017-01-01,,,,SOFC,,,,150.0
+HFS_US_153,,,active,2015-01-01,,,,SOFC,,,,500.0
+HFS_US_154,,,active,2015-01-01,,,,SOFC,,,,500.0
+HFS_US_155,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_156,,,active,2016-01-01,,,,SOFC,,,,800.0
+HFS_US_157,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_158,,,active,2017-01-01,,,,SOFC,,,,1000.0
+HFS_US_159,,,active,2018-01-01,,,,SOFC,,,,600.0
+HFS_US_160,,,active,2019-01-01,,,,SOFC,,,,200.0
+HFS_US_161,"UC, Irvine Medical Center",unknown,active,,hospital,baseload power,1.0,MCFC,,,1400.0,1400.0
+HFS_US_162,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_163,,,active,2021-01-01,,,,SOFC,,,,750.0
+HFS_US_164,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_165,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_166,,,active,2016-01-01,,,,SOFC,,,,600.0
+HFS_US_167,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_168,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_169,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_170,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_171,,,active,2014-01-01,,,,SOFC,,,,750.0
+HFS_US_172,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_173,,,active,2017-01-01,,,,SOFC,,,,600.0
+HFS_US_174,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_175,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_176,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_177,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_178,,,active,2020-01-01,,,,SOFC,,,,350.0
+HFS_US_179,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_180,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_181,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_182,,,active,2021-01-01,,,,SOFC,,,,1400.0
+HFS_US_183,VA Hospital,unknown,active,2012-01-01,hospital,baseload power,2.0,PAFC,PureCell 400,natural gas,400.0,800.0
+HFS_US_184,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_185,"California State University, Long Beach",,active,2007-01-01,college/university,"• baseload power
+• CHP
+• grid support",1.0,MCFC,DFC1500,,1400.0,1400.0
+HFS_US_186,,,active,2011-01-01,,,,SOFC,,,,200.0
+HFS_US_187,Port of Long Beach Toyota Logistics Services,SureSource Tri-Gen with agricultural waste,planned,2020-01-01,port,baseload power,1.0,MCFC,,biogas,2300.0,2300.0
+HFS_US_188,CBS Studios,,active,2013-01-01,office building,"• backup power
+• CHP",3.0,PAFC,PureCell 400,natural gas,400.0,1200.0
+HFS_US_189,,,active,2013-01-01,,,,SOFC,,,,250.0
+HFS_US_190,,,active,2013-01-01,,,,SOFC,,,,500.0
+HFS_US_191,,,active,2013-01-01,,,,SOFC,,,,500.0
+HFS_US_192,,,active,2015-01-01,,,,SOFC,,,,500.0
+HFS_US_193,,,active,2015-01-01,,,,SOFC,,,,500.0
+HFS_US_194,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_195,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_196,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_197,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_198,,,active,2016-01-01,,,,SOFC,,,,1000.0
+HFS_US_199,,,active,2017-01-01,,,,SOFC,,,,1000.0
+HFS_US_200,,,active,2017-01-01,,,,SOFC,,,,900.0
+HFS_US_201,,,active,2019-01-01,,,,SOFC,,,,300.0
+HFS_US_202,,,active,2019-01-01,,,,SOFC,,,,300.0
+HFS_US_203,,,active,2019-01-01,,,,SOFC,,,,500.0
+HFS_US_204,,,active,2020-01-01,,,,SOFC,,,,2400.0
+HFS_US_205,,,active,2020-01-01,,,,SOFC,,,,1200.0
+HFS_US_206,,,active,2020-01-01,,,,SOFC,,,,900.0
+HFS_US_207,,,active,2021-01-01,,,,SOFC,,,,1000.0
+HFS_US_208,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_209,,,active,2012-01-01,,,,SOFC,,,,1000.0
+HFS_US_210,,,active,2012-01-01,,,,SOFC,,,,400.0
+HFS_US_211,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_212,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_213,,,active,2014-01-01,,,,SOFC,,,,800.0
+HFS_US_214,,,active,2016-01-01,,,,SOFC,,,,500.0
+HFS_US_215,,,active,2017-01-01,,,,SOFC,,,,1025.0
+HFS_US_216,,,active,2019-01-01,,,,SOFC,,,,850.0
+HFS_US_217,,,active,2019-01-01,,,,SOFC,,,,300.0
+HFS_US_218,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_219,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_220,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_221,,,active,2016-01-01,,,,SOFC,,,,300.0
+HFS_US_222,,,active,2020-01-01,,,,SOFC,,,,500.0
+HFS_US_223,Moreno Valley Water Reclamation Facility,,active,2009-01-01,wastewater treatment plant,"• baseload power
+• CHP",5.0,MCFC,DFC300MA,"• biogas
+• natural gas",300.0,1500.0
+HFS_US_224,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_225,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_226,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_227,,,active,2015-01-01,,,,SOFC,,,,400.0
+HFS_US_228,,,active,2016-01-01,,,,SOFC,,,,300.0
+HFS_US_229,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_230,,,active,2017-01-01,,,,SOFC,,,,2500.0
+HFS_US_231,,,active,2017-01-01,,,,SOFC,,,,2250.0
+HFS_US_232,,,active,2021-01-01,,,,SOFC,,,,300.0
+HFS_US_233,,,active,2021-01-01,,,,SOFC,,,,600.0
+HFS_US_234,,,active,2017-01-01,,,,SOFC,,,,700.0
+HFS_US_235,,,active,2020-01-01,,,,SOFC,,,,800.0
+HFS_US_236,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_237,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_238,Norco Community College,unknown,active,2014-01-01,college/university,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_239,,,active,2013-01-01,,,,SOFC,,,,600.0
+HFS_US_240,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_241,"California State University, Northridge",unknown,active,2007-01-01,college/university,"• baseload power
+• CHP",4.0,MCFC,DFC300,natural gas,250.0,1000.0
+HFS_US_242,,,active,2016-01-01,,,,SOFC,,,,325.0
+HFS_US_243,,,active,2016-01-01,,,,SOFC,,,,800.0
+HFS_US_244,,,active,2016-01-01,,,,SOFC,,,,700.0
+HFS_US_245,,,active,2013-01-01,,,,SOFC,,,,400.0
+HFS_US_246,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_247,,,active,2016-01-01,,,,SOFC,,,,500.0
+HFS_US_248,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_249,,,active,2017-01-01,,,,SOFC,,,,750.0
+HFS_US_250,,,active,2018-01-01,,,,SOFC,,,,250.0
+HFS_US_251,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_252,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_253,,,active,2019-01-01,,,,SOFC,,,,2500.0
+HFS_US_254,,,active,2016-01-01,,,,SOFC,,,,300.0
+HFS_US_255,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_256,,,active,2016-01-01,,,,SOFC,,,,1000.0
+HFS_US_257,Inland Empire Utilities Agency water recycling plant,,active,2012-01-01,wastewater treatment plant,"• baseload power
+• CHP",1.0,MCFC,DFC3000,biogas,2800.0,2800.0
+HFS_US_258,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_259,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_260,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_261,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_262,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_263,Gills Onions ,unknown,active,2008-01-01,manufacturing facility,"• baseload power
+• CHP",2.0,MCFC,DFC300,"• biogas
+• natural gas",300.0,600.0
+HFS_US_264,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_265,,,active,2016-01-01,,,,SOFC,,,,450.0
+HFS_US_266,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_267,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_268,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_269,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_270,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_271,,,active,2018-01-01,,,,SOFC,,,,1600.0
+HFS_US_272,,,active,2016-01-01,,,,SOFC,,,,1000.0
+HFS_US_273,,,active,2016-01-01,,,,SOFC,,,,1000.0
+HFS_US_274,,,active,2016-01-01,,,,SOFC,,,,100.0
+HFS_US_275,,,active,2017-01-01,,,,SOFC,,,,600.0
+HFS_US_276,,,active,2018-01-01,,,,SOFC,,,,300.0
+HFS_US_277,,,active,2019-01-01,,,,SOFC,,,,1000.0
+HFS_US_278,,,active,2020-01-01,,,,SOFC,,,,1200.0
+HFS_US_279,,,active,2020-01-01,,,,SOFC,,,,200.0
+HFS_US_280,,,active,2016-01-01,,,,SOFC,,,,600.0
+HFS_US_281,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_282,Perris Valley Regional Water Reclamation Facility,unknown,active,2011-01-01,wastewater treatment plant,"• baseload power
+• CHP",2.0,MCFC,DFC300,biogas,300.0,600.0
+HFS_US_283,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_284,,,active,2020-01-01,,,,SOFC,,,,400.0
+HFS_US_285,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_286,,,active,2019-01-01,,,,SOFC,,,,200.0
+HFS_US_287,Dublin San Ramon Services District's Waste Water Treatment Plant,unknown,active,2007-01-01,wastewater treatment plant,"• baseload power
+• CHP",2.0,MCFC,DFC300MA,"• biogas
+• natural gas",300.0,600.0
+HFS_US_288,,,active,2015-01-01,,,,SOFC,,,,500.0
+HFS_US_289,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_290,,,active,2017-01-01,,,,SOFC,,,,1000.0
+HFS_US_291,,,active,2018-01-01,,,,SOFC,,,,400.0
+HFS_US_292,,,active,2020-01-01,,,,SOFC,,,,1000.0
+HFS_US_293,Roche Molecular Diagnostics ,,active,2011-01-01,pharmaceutical company,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_294,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_295,,,active,2016-01-01,,,,SOFC,,,,300.0
+HFS_US_296,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_297,,,active,2013-01-01,,,,SOFC,,,,600.0
+HFS_US_298,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_299,,,active,2014-01-01,,,,SOFC,,,,1000.0
+HFS_US_300,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_301,Cox Communications,California's Self Generation Incentive Program,active,2011-01-01,telecommunications,baseload power,2.0,PAFC,PureCell 400,"• biogas
+• natural gas",400.0,800.0
+HFS_US_302,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_303,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_304,,,active,2021-01-01,,,,SOFC,,,,850.0
+HFS_US_305,,,active,2015-01-01,,,,SOFC,,,,1000.0
+HFS_US_306,,,active,2017-01-01,,,,SOFC,,,,400.0
+HFS_US_307,City of Rialto Wastewater Treatment Plant,unknown,active,2010-01-01,wastewater treatment plant,baseload power,3.0,MCFC,DFC 300MA,biogas,300.0,900.0
+HFS_US_308,,,active,2015-01-01,,,,SOFC,,,,300.0
+HFS_US_309,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_310,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_311,,,active,2017-01-01,,,,SOFC,,,,500.0
+HFS_US_312,,,active,2019-01-01,,,,SOFC,,,,400.0
+HFS_US_313,,,active,2020-01-01,,,,SOFC,,,,200.0
+HFS_US_314,,,active,2017-01-01,,,,SOFC,,,,150.0
+HFS_US_315,,,active,2013-01-01,,,,SOFC,,,,300.0
+HFS_US_316,,,active,2013-01-01,,,,SOFC,,,,600.0
+HFS_US_317,Riverside Water Quality Control Plant,unknown,active,2016-01-01,wastewater treatment plant,"• baseload power
+• CHP",1.0,MCFC,,"• biogas
+• natural gas",1400.0,1400.0
+HFS_US_318,,,active,2012-01-01,,,,SOFC,,,,600.0
+HFS_US_319,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_320,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_321,Cal Denier Dairy Farm,,active,2014-01-01,dairy farm,baseload power,1.0,MCFC,,biogas,,
+HFS_US_322,,,active,2012-01-01,,,,SOFC,,,,600.0
+HFS_US_323,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_324,,,active,2018-01-01,,,,SOFC,,,,1000.0
+HFS_US_325,,,active,2019-01-01,,,,SOFC,,,,1000.0
+HFS_US_326,,,active,2019-01-01,,,,SOFC,,,,1500.0
+HFS_US_327,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_328,California State University,,active,,college/university,"• baseload power
+• CHP",1.0,MCFC,DFC1500,,1400.0,1400.0
+HFS_US_329,City of San Bernardino Municipal Water Department (SBMWD),,planned,2020-01-01,wastewater treatment plant,,1.0,MCFC,SureSource 1500,biofuel,1400.0,1400.0
+HFS_US_330,,,active,2014-01-01,,,,SOFC,,,,1000.0
+HFS_US_331,,,active,2015-01-01,,,,SOFC,,,,800.0
+HFS_US_332,,,active,2016-01-01,,,,SOFC,,,,500.0
+HFS_US_333,,,active,2017-01-01,,,,SOFC,,,,300.0
+HFS_US_334,Cox Communications,Cox Enterprises' National Sustainability Program,active,2011-01-01,telecommunications,baseload power,2.0,PAFC,PureCell 400,natural gas,400.0,800.0
+HFS_US_335,Haggen (Albertsons),unknown,active,2010-01-01,retail,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_336,,,active,2012-01-01,,,,SOFC,,,,500.0
+HFS_US_337,,,active,2013-01-01,,,,SOFC,,,,500.0
+HFS_US_338,,,active,2014-01-01,,,,SOFC,,,,400.0
+HFS_US_339,,,active,2015-01-01,,,,SOFC,,,,1000.0
+HFS_US_340,,,active,2016-01-01,,,,SOFC,,,,250.0
+HFS_US_341,,,active,2016-01-01,,,,SOFC,,,,450.0
+HFS_US_342,,,active,2016-01-01,,,,SOFC,,,,250.0
+HFS_US_343,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_344,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_345,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_346,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_347,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_348,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_349,,,active,2016-01-01,,,,SOFC,,,,600.0
+HFS_US_350,,,active,2016-01-01,,,,SOFC,,,,1000.0
+HFS_US_351,,,active,2017-01-01,,,,SOFC,,,,425.0
+HFS_US_352,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_353,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_354,,,active,2017-01-01,,,,SOFC,,,,750.0
+HFS_US_355,,,active,2018-01-01,,,,SOFC,,,,550.0
+HFS_US_356,,,active,2018-01-01,,,,SOFC,,,,500.0
+HFS_US_357,,,active,2018-01-01,,,,SOFC,,,,500.0
+HFS_US_358,,,active,2018-01-01,,,,SOFC,,,,500.0
+HFS_US_359,,,active,2019-01-01,,,,SOFC,,,,3500.0
+HFS_US_360,,,active,2020-01-01,,,,SOFC,,,,450.0
+HFS_US_361,,,active,2020-01-01,,,,SOFC,,,,1000.0
+HFS_US_362,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_363,,,active,2021-01-01,,,,SOFC,,,,1500.0
+HFS_US_364,Point Loma Wastewater Treatment  Plant,Biofuels Energy Project,active,2011-01-01,wastewater treatment plant,baseload power,1.0,MCFC,DFC300,biogas,300.0,300.0
+HFS_US_365,San Diego Sheraton Hotel,,active,2017-01-01,hotel,baseload power,2.0,PAFC,PureCell 400,biogas,400.0,800.0
+HFS_US_366,South Bay Wastewater Treatment Facility,unknown,active,2011-01-01,wastewater treatment plant,"• baseload power
+• CHP",1.0,MCFC,DFC1500,biogas,1400.0,1400.0
+HFS_US_367,"University of California, San Diego",unknown,active,2011-01-01,school,"• baseload power
+• CHP",1.0,MCFC,SureSource 3000,biogas,2800.0,2800.0
+HFS_US_368,,,active,2011-01-01,,,,SOFC,,,,400.0
+HFS_US_369,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_370,,,active,2016-01-01,,,,SOFC,,,,1000.0
+HFS_US_371,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_372,,,active,2013-01-01,,,,SOFC,,,,500.0
+HFS_US_373,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_374,,,active,2020-01-01,,,,SOFC,,,,100.0
+HFS_US_375,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_376,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_377,San Francisco State University,unknown,active,2011-01-01,college/university,"• baseload power
+• CHP",1.0,MCFC,DFC1500,natural gas,1400.0,1400.0
+HFS_US_378,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_379,City of San José Water Pollution Control Facility,,active,2012-01-01,wastewater treatment plant,CHP,1.0,MCFC,DFC 1500,"• biogas
+• natural gas",1400.0,1400.0
+HFS_US_380,,,active,2013-01-01,,,,SOFC,,,,1000.0
+HFS_US_381,,,active,2013-01-01,,,,SOFC,,,,500.0
+HFS_US_382,,,active,2014-01-01,,,,SOFC,,,,1000.0
+HFS_US_383,,,active,2014-01-01,,,,SOFC,,,,400.0
+HFS_US_384,,,active,2014-01-01,,,,SOFC,,,,400.0
+HFS_US_385,,,active,2014-01-01,,,,SOFC,,,,1000.0
+HFS_US_386,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_387,,,active,2015-01-01,,,,SOFC,,,,1000.0
+HFS_US_388,,,active,2015-01-01,,,,SOFC,,,,250.0
+HFS_US_389,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_390,,,active,2016-01-01,,,,SOFC,,,,600.0
+HFS_US_391,,,active,2016-01-01,,,,SOFC,,,,600.0
+HFS_US_392,,,active,2016-01-01,,,,SOFC,,,,1300.0
+HFS_US_393,,,active,2016-01-01,,,,SOFC,,,,1000.0
+HFS_US_394,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_395,,,active,2016-01-01,,,,SOFC,,,,1000.0
+HFS_US_396,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_397,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_398,,,active,2017-01-01,,,,SOFC,,,,500.0
+HFS_US_399,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_400,,,active,2017-01-01,,,,SOFC,,,,1800.0
+HFS_US_401,,,active,2017-01-01,,,,SOFC,,,,1950.0
+HFS_US_402,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_403,,,active,2017-01-01,,,,SOFC,,,,2400.0
+HFS_US_404,,,active,2017-01-01,,,,SOFC,,,,2100.0
+HFS_US_405,,,active,2017-01-01,,,,SOFC,,,,500.0
+HFS_US_406,,,active,2018-01-01,,,,SOFC,,,,2000.0
+HFS_US_407,,,active,2018-01-01,,,,SOFC,,,,2000.0
+HFS_US_408,,,active,2018-01-01,,,,SOFC,,,,500.0
+HFS_US_409,,,active,2018-01-01,,,,SOFC,,,,500.0
+HFS_US_410,,,active,2018-01-01,,,,SOFC,,,,1000.0
+HFS_US_411,,,active,2018-01-01,,,,SOFC,,,,2000.0
+HFS_US_412,,,active,2018-01-01,,,,SOFC,,,,500.0
+HFS_US_413,,,active,2019-01-01,,,,SOFC,,,,1200.0
+HFS_US_414,,,active,2019-01-01,,,,SOFC,,,,1000.0
+HFS_US_415,,,active,2019-01-01,,,,SOFC,,,,500.0
+HFS_US_416,,,active,2019-01-01,,,,SOFC,,,,500.0
+HFS_US_417,,,active,2019-01-01,,,,SOFC,,,,1200.0
+HFS_US_418,,,active,2020-01-01,,,,SOFC,,,,1100.0
+HFS_US_419,,,active,2020-01-01,,,,SOFC,,,,1500.0
+HFS_US_420,,,active,2021-01-01,,,,SOFC,,,,600.0
+HFS_US_421,Verizon ,,active,2013-01-01,telecommunications,baseload power,2.0,PAFC,PureCell 400,natural gas,400.0,800.0
+HFS_US_422,,,active,2018-01-01,,,,SOFC,,,,400.0
+HFS_US_423,,,active,2020-01-01,,,,SOFC,,,,450.0
+HFS_US_424,,,active,2018-01-01,,,,SOFC,,,,2000.0
+HFS_US_425,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_426,,,active,2017-01-01,,,,SOFC,,,,500.0
+HFS_US_427,,,active,2016-01-01,,,,SOFC,,,,250.0
+HFS_US_428,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_429,,,active,2016-01-01,,,,SOFC,,,,300.0
+HFS_US_430,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_431,,,active,2018-01-01,,,,SOFC,,,,400.0
+HFS_US_432,"University of California, San Marcos",unknown,active,2015-01-01,college/university,baseload power,2.0,PAFC,PureCell 400,natural gas,400.0,800.0
+HFS_US_433,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_434,,,active,2011-01-01,,,,SOFC,,,,1000.0
+HFS_US_435,,,active,2017-01-01,,,,SOFC,,,,400.0
+HFS_US_436,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_437,,,active,2016-01-01,,,,SOFC,,,,500.0
+HFS_US_438,,,active,2016-01-01,,,,SOFC,,,,700.0
+HFS_US_439,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_440,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_441,,,active,2012-01-01,,,,SOFC,,,,200.0
+HFS_US_442,,,active,2015-01-01,,,,SOFC,,,,1000.0
+HFS_US_443,,,active,2017-01-01,,,,SOFC,,,,2400.0
+HFS_US_444,,,active,2017-01-01,,,,SOFC,,,,2600.0
+HFS_US_445,,,active,2018-01-01,,,,SOFC,,,,1000.0
+HFS_US_446,,,active,2018-01-01,,,,SOFC,,,,1400.0
+HFS_US_447,,,active,2018-01-01,,,,SOFC,,,,1800.0
+HFS_US_448,,,active,2018-01-01,,,,SOFC,,,,2000.0
+HFS_US_449,,,active,2018-01-01,,,,SOFC,,,,1500.0
+HFS_US_450,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_451,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_452,,,active,2020-01-01,,,,SOFC,,,,900.0
+HFS_US_453,,,active,2021-01-01,,,,SOFC,,,,600.0
+HFS_US_454,,,active,2014-01-01,,,,SOFC,,,,375.0
+HFS_US_455,,,active,2014-01-01,,,,SOFC,,,,400.0
+HFS_US_456,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_457,,,active,2018-01-01,,,,SOFC,,,,1500.0
+HFS_US_458,,,active,2018-01-01,,,,SOFC,,,,1500.0
+HFS_US_459,,,active,2018-01-01,,,,SOFC,,,,1300.0
+HFS_US_460,Sonoma County Government ,Sonoma County’s Comprehensive Energy Project (CEP),active,2011-01-01,office building,"• baseload power
+• CHP",1.0,MCFC,DFC1500,natural gas,1400.0,1400.0
+HFS_US_461,,,active,2018-01-01,,,,SOFC,,,,450.0
+HFS_US_462,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_463,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_464,,,active,2012-01-01,,,,SOFC,,,,300.0
+HFS_US_465,,,active,2018-01-01,,,,SOFC,,,,250.0
+HFS_US_466,,,active,2019-01-01,,,,SOFC,,,,1000.0
+HFS_US_467,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_468,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_469,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_470,,,active,2021-01-01,,,,SOFC,,,,200.0
+HFS_US_471,Sonoma County Airport,"• Climate Protection Action Plan
+• Farms to Fuel
+• Sonoma County's Comprehensive Energy Project",active,2010-01-01,airport,"• baseload power
+• CHP",1.0,MCFC,DFC1500,natural gas,1400.0,1400.0
+HFS_US_472,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_473,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_474,,,active,2016-01-01,,,,SOFC,,,,300.0
+HFS_US_475,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_476,,,active,2016-01-01,,,,SOFC,,,,600.0
+HFS_US_477,,,active,2016-01-01,,,,SOFC,,,,750.0
+HFS_US_478,Adventist Health; St. Helena Hospital,unknown,active,2010-01-01,hospital,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_479,,,active,2011-01-01,,,,SOFC,,,,200.0
+HFS_US_480,,,active,2019-01-01,,,,SOFC,,,,150.0
+HFS_US_481,,,active,2019-01-01,,,,SOFC,,,,150.0
+HFS_US_482,Inland Cold Storage,unknown,active,2009-01-01,cold storage,"• baseload power
+• CHP",2.0,MCFC,DFC300,natural gas,300.0,600.0
+HFS_US_483,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_484,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_485,,,active,2020-01-01,,,,SOFC,,,,600.0
+HFS_US_486,,,active,2020-01-01,,,,SOFC,,,,300.0
+HFS_US_487,CBS Studios,,active,2013-01-01,office building,"• backup power
+• baseload power
+• CHP
+",3.0,PAFC,PureCell 400,natural gas,400.0,1200.0
+HFS_US_488,,,active,2011-01-01,,,,SOFC,,,,650.0
+HFS_US_489,,,active,2012-01-01,,,,SOFC,,,,1000.0
+HFS_US_490,,,active,2014-01-01,,,,SOFC,,,,1000.0
+HFS_US_491,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_492,,,active,2015-01-01,,,,SOFC,,,,250.0
+HFS_US_493,,,active,2015-01-01,,,,SOFC,,,,250.0
+HFS_US_494,,,active,2016-01-01,,,,SOFC,,,,250.0
+HFS_US_495,,,active,2016-01-01,,,,SOFC,,,,500.0
+HFS_US_496,,,active,2017-01-01,,,,SOFC,,,,2000.0
+HFS_US_497,,,active,2017-01-01,,,,SOFC,,,,2800.0
+HFS_US_498,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_499,,,active,2019-01-01,,,,SOFC,,,,600.0
+HFS_US_500,,,active,2019-01-01,,,,SOFC,,,,1500.0
+HFS_US_501,,,active,2019-01-01,,,,SOFC,,,,1100.0
+HFS_US_502,,,active,2021-01-01,,,,SOFC,,,,2000.0
+HFS_US_503,,,active,2017-01-01,,,,SOFC,,,,150.0
+HFS_US_504,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_505,Rancho California Water District,unknown,active,2011-01-01,wastewater treatment plant,baseload power,1.0,MCFC,DFC1500,natural gas,1400.0,1400.0
+HFS_US_506,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_507,,,active,2012-01-01,,,,SOFC,,,,1000.0
+HFS_US_508,,,active,2013-01-01,,,,SOFC,,,,200.0
+HFS_US_509,,,active,2013-01-01,,,,SOFC,,,,1000.0
+HFS_US_510,,,active,2015-01-01,,,,SOFC,,,,250.0
+HFS_US_511,,,active,2015-01-01,,,,SOFC,,,,500.0
+HFS_US_512,,,active,2016-01-01,,,,SOFC,,,,500.0
+HFS_US_513,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_514,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_515,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_516,,,active,2019-01-01,,,,SOFC,,,,2650.0
+HFS_US_517,City of Tulare Wastewater Treatment Plant,State of California Bioenergy Market Adjustment Tariff (BioMAT) program; Power Purchase Agreement (PPA),active,2018-01-01,wastewater treatment plant,"• baseload power
+• CHP",1.0,MCFC,SureSource 3000,natural gas,2800.0,2800.0
+HFS_US_518,City of Tulare Wastewater Treatment Plant,,active,2020-01-01,wastewater treatment plant,"• baseload power
+• CHP",1.0,MCFC,SureSource 3000,biogas,2800.0,2800.0
+HFS_US_519,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_520,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_521,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_522,,,active,2017-01-01,,,,SOFC,,,,300.0
+HFS_US_523,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_524,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_525,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_526,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_527,,,active,2019-01-01,,,,SOFC,,,,2400.0
+HFS_US_528,,,active,2019-01-01,,,,SOFC,,,,1600.0
+HFS_US_529,,,active,2020-01-01,,,,SOFC,,,,200.0
+HFS_US_530,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_531,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_532,,,active,2017-01-01,,,,SOFC,,,,325.0
+HFS_US_533,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_534,,,active,2019-01-01,,,,SOFC,,,,400.0
+HFS_US_535,,,active,2019-01-01,,,,SOFC,,,,800.0
+HFS_US_536,,,active,2017-01-01,,,,SOFC,,,,1000.0
+HFS_US_537,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_538,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_539,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_540,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_541,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_542,J&D Soft Gel Labs ,,active,2012-01-01,manufacturing facility,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_543,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_544,,,active,2017-01-01,,,,SOFC,,,,450.0
+HFS_US_545,,,active,2017-01-01,,,,SOFC,,,,750.0
+HFS_US_546,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_547,,,active,2016-01-01,,,,SOFC,,,,400.0
+HFS_US_548,,,active,2020-01-01,,,,SOFC,,,,350.0
+HFS_US_549,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_550,Verizon,,active,2013-01-01,data center,"• baseload power
+• chiller support",3.0,PAFC,PureCell 400,,400.0,1200.0
+HFS_US_551,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_552,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_553,,,active,2013-01-01,,,,SOFC,,,,300.0
+HFS_US_554,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_555,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_556,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_557,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_558,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_559,,,active,2019-01-01,,,,SOFC,,,,900.0
+HFS_US_560,,,active,2019-01-01,,,,SOFC,,,,300.0
+HFS_US_561,,,active,2020-01-01,,,,SOFC,,,,800.0
+HFS_US_562,,,active,2020-01-01,,,,SOFC,,,,3100.0
+HFS_US_563,,,active,2020-01-01,,,,SOFC,,,,1100.0
+HFS_US_564,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_565,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_566,San Jose/Santa Clara Water Pollution Control Plant,,active,2010-01-01,wastewater treatment plant,"• baseload power
+• CHP",1.0,MCFC,DFC1500,biogas,1400.0,1400.0
+HFS_US_567,Whole Foods Market ,,active,2010-01-01,retail,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_568,,,active,2015-01-01,,,,SOFC,,,,400.0
+HFS_US_569,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_570,,,active,2017-01-01,,,,SOFC,,,,500.0
+HFS_US_571,Pepperidge Farm Bakery,unknown,active,2008-01-01,manufacturing facility,"• baseload power
+• CHP",1.0,MCFC,DFC1500,natural gas,1400.0,1400.0
+HFS_US_572,Pepperidge Farm Bakery,unknown,active,2016-01-01,manufacturing facility,"• baseload power
+• CHP",1.0,MCFC,DFC1500,natural gas,1400.0,1400.0
+HFS_US_573,City of Bridgeport - Seaside Park location,unknown,active,,distribution center,baseload power,2.0,MCFC,,natural gas,1400.0,2800.0
+HFS_US_574,FuelCell Energy,DEEP Microgrid Pilot Program,active,2013-01-01,fuel cell park,"• backup power
+• grid support",5.0,MCFC,DFC3000,natural gas,2800.0,14900.0
+HFS_US_575,,,active,2013-01-01,,,,SOFC,,,,700.0
+HFS_US_576,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_577,University of Bridgeport,12-year agreement,active,,college/university,"baseload power
+micro-grid",1.0,MCFC,sureSource 3000,natural gas,1400.0,1400.0
+HFS_US_578,City of Bristol,,active,2019-01-01,wastewater treatment plant,baseload power,,PAFC,,,,
+HFS_US_579,,,active,2013-01-01,,,,SOFC,,,,600.0
+HFS_US_580,,,active,2013-01-01,,,,SOFC,,,,600.0
+HFS_US_581,,,active,2021-01-01,,,,SOFC,,,,2500.0
+HFS_US_582,,,active,2021-01-01,,,,SOFC,,,,2500.0
+HFS_US_583,,,active,2021-01-01,,,,SOFC,,,,2500.0
+HFS_US_584,,,active,2021-01-01,,,,SOFC,,,,2500.0
+HFS_US_585,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_586,FuelCell Energy,Utility scale power project showcase ,active,2020-01-01,,,1.0,MCFC,SureSource 4000,natural gas,3700.0,3700.0
+HFS_US_587,,,active,2014-01-01,,,,SOFC,,,,750.0
+HFS_US_588,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_589,,,active,2021-01-01,,,,SOFC,,,,350.0
+HFS_US_590,TBD,Shared Clean Energy Facility program,planned,2021-01-01,,,1.0,MCFC,,,2800.0,2800.0
+HFS_US_591,Western Connecticut State University,,active,2013-01-01,college/university,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_592,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_593,TBD,Shared Clean Energy Facility program,planned,2021-01-01,,,1.0,MCFC,,,2800.0,2800.0
+HFS_US_594,Tbd; 200 Roosevelt Drive,DEEP  ,planned,,,,,MCFC,sureSource 4000,,,14800.0
+HFS_US_595,Coca-Cola,,active,2011-01-01,manufacturing facility,"• baseload power
+• CHP",2.0,PAFC,PureCell 400,,400.0,800.0
+HFS_US_596,TBD,Shared Clean Energy Facility program,planned,2021-01-01,,,1.0,MCFC,,,2800.0,2800.0
+HFS_US_597,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_598,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_599,Fairfield Wastewater Treatment,,active,2018-01-01,wastewater treatment plant,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_600,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_601,Whole Foods Market ,unknown,active,2011-01-01,retail,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_602,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_603,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_604,UIL Holdings Corporation (parent of United Illuminating Co.),,active,2015-01-01,natural gas pressure reduction facility,grid support,1.0,MCFC,DFC-ERG,natural gas,2800.0,2800.0
+HFS_US_605,,,active,2015-01-01,,,,SOFC,,,,500.0
+HFS_US_606,Pfizer Inc.,,active,2016-01-01,manufacturing facility,"• baseload power
+• CHP",2.0,MCFC,DFC3000,natural gas,2800.0,5600.0
+HFS_US_607,U.S. Submarine Base,DoD,planned,2020-01-01,military,"• backup power
+• baseload power",2.0,MCFC,SureSource 4000,natural gas,3700.0,7400.0
+HFS_US_608,Hamden High School,,active,2011-01-01,school,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,,400.0,400.0
+HFS_US_609,CT Transit,,active,2015-01-01,bus station,"• backup power
+• baseload power",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_610,777 Main St. Apartments,,active,2015-01-01,apartment complex,baseload power,1.0,PAFC,PureCell 400,,400.0,400.0
+HFS_US_611,CT Transit,FTA Transit Investments for Greenhouse Gas and Energy Reduction (TIGGER) Program,active,2012-01-01,other,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_612,Hartford Hospital,,active,2015-01-01,hospital,"• baseload power
+• CHP",1.0,MCFC,DFC 1500,natural gas,1400.0,1400.0
+HFS_US_613,Hartford Public Safety Complex,,active,2012-01-01,municipal ,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_614,"Mount Sinai Rehabilitation, Saint Francis Hospital and Medical Center",unknown,active,2012-01-01,hospital,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_615,,,active,2016-01-01,,,,SOFC,,,,800.0
+HFS_US_616,Saint Francis Hospital and Medical Center,unknown,active,2012-01-01,hospital,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_617,Tbd,DEEP,planned,,,,,MCFC,SureSource 4000,,,7400.0
+HFS_US_618,Trinity College,,planned,2018-01-01,college/university,"• backup power
+• baseload power",1.0,MCFC,,,1400.0,1400.0
+HFS_US_619,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_620,,,active,2019-01-01,,,,SOFC,,,,300.0
+HFS_US_621,Connecticut Juvenile Training School,unknown,active,2013-01-01,school,"• baseload power
+• CHP",1.0,PAFC,PC25,natural gas,200.0,200.0
+HFS_US_622,Middletown High School and Vocational Agricultural Center,unknown,active,2016-01-01,school,"• backup power
+• baseload power",1.0,PAFC,PureCell 200,natural gas,200.0,200.0
+HFS_US_623,,,active,2018-01-01,,,,SOFC,,,,1000.0
+HFS_US_624,Pratt & Whitney,,active,2010-01-01,manufacturing facility,baseload power,2.0,PAFC,PureCell 400,natural gas,400.0,800.0
+HFS_US_625,Price Chopper,unknown,active,2011-01-01,retail,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_626,,,active,2020-01-01,,,,SOFC,,,,900.0
+HFS_US_627,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_628,Water Pollution Control Authority (WPCA),,active,2020-01-01,wastewater treatment plant,baseload power,,PAFC,PureCell 400,natural gas,,400.0
+HFS_US_629,Wastewater Treatment Facility,,active,2017-01-01,wastewater treatment plant,baseload power,3.0,PAFC,PureCell 400,natural gas,400.0,1200.0
+HFS_US_630,Central Connecticut State University,,active,2011-01-01,college/university,"• baseload power
+• CHP",1.0,MCFC,DFC1500,natural gas,1400.0,1400.0
+HFS_US_631,Energy and Innovation Park (portion of the Stanley Black & Decker site),DEEP,planned,2023-01-01,,grid support,,SOFC,,,,44000.0
+HFS_US_632,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_633,,,active,2020-01-01,,,,SOFC,,,,600.0
+HFS_US_634,New Britain High School,,active,2016-01-01,school,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_635,TBD,Shared Clean Energy Facility program,planned,2021-01-01,,,1.0,MCFC,,,2800.0,2800.0
+HFS_US_636,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_637,Becker & Becker - 360 State Street apartment complex,,active,2010-01-01,apartment complex,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_719,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_638,City of New Haven - port area location,unknown,active,,distribution center,baseload power,2.0,MCFC,,natural gas,2800.0,2800.0
+HFS_US_639,,,active,2014-01-01,,,,SOFC,,,,400.0
+HFS_US_640,,,active,2016-01-01,,,,SOFC,,,,250.0
+HFS_US_641,New Haven City Hall,,active,2012-01-01,office building,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_642,New Haven Schools; Clemente Leadership Academy,,active,2011-01-01,school,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_643,,,active,2019-01-01,,,,SOFC,,,,1200.0
+HFS_US_644,,,active,2019-01-01,,,,SOFC,,,,400.0
+HFS_US_645,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_646,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_647,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_648,,,active,2017-01-01,,,,SOFC,,,,300.0
+HFS_US_649,,,active,2020-01-01,,,,SOFC,,,,2000.0
+HFS_US_650,,,active,2020-01-01,,,,SOFC,,,,2000.0
+HFS_US_651,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_652,,,active,2018-01-01,,,,SOFC,,,,400.0
+HFS_US_653,,,active,2021-01-01,,,,SOFC,,,,550.0
+HFS_US_654,,,active,2019-01-01,,,,SOFC,,,,200.0
+HFS_US_655,,,active,2020-01-01,,,,SOFC,,,,300.0
+HFS_US_656,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_657,Shelton High School,,active,2016-01-01,school,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_658,,,active,2021-01-01,,,,SOFC,,,,500.0
+HFS_US_659,,,active,2021-01-01,,,,SOFC,,,,500.0
+HFS_US_660,Carla's Pasta,,active,2011-01-01,manufacturing facility,"• baseload power
+• CHP",1.0,MCFC,DFC300,natural gas,300.0,300.0
+HFS_US_661,City of South Windsor; sewage treatment,,active,2019-01-01,wastewater treatment plant,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_662,Doosan Fuel Cell America Headquarters,,active,2011-01-01,manufacturing facility,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_663,,,active,2017-01-01,,,,SOFC,,,,250.0
+HFS_US_664,,,active,2014-01-01,,,,SOFC,,,,1000.0
+HFS_US_665,Amgraph Packaging,unknown,active,2015-01-01,manufacturing facility,"• baseload power
+• CHP",2.0,PAFC,PureCell 400,natural gas,400.0,800.0
+HFS_US_666,University of Connecticut Depot Campus,DEEP Microgrid Pilot Program,active,2012-01-01,college/university,"• backup power
+• grid support",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_667,FuelCell Energy Manufacturing Facility,Direct FuelCell (DFC) power plant for industrial applications showcase,active,2015-01-01,manufacturing facility,"• baseload power
+• CHP",1.0,MCFC,DFC300,natural gas,300.0,300.0
+HFS_US_668,,,active,2020-01-01,,,,SOFC,,,,750.0
+HFS_US_669,Stop and Shop on East Main Street,unknown,active,2010-01-01,retail,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_670,,,active,2018-01-01,,,,SOFC,,,,1000.0
+HFS_US_671,,,active,2018-01-01,,,,SOFC,,,,1000.0
+HFS_US_672,,,active,2019-01-01,,,,SOFC,,,,400.0
+HFS_US_673,Water Pollution Control,,active,2018-01-01,wastewater treatment plant,baseload power,3.0,PAFC,PureCell 400,natural gas,400.0,1200.0
+HFS_US_674,Waterbury Hospital,Project 150,active,,hospital,,,MCFC,,,,2400.0
+HFS_US_675,,,active,2014-01-01,,,,SOFC,,,,250.0
+HFS_US_676,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_677,,,active,2016-01-01,,,,SOFC,,,,500.0
+HFS_US_678,Wastewater Treatment Facility,,active,2018-01-01,wastewater treatment plant,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_679,Eastern Connecticut State University,,active,2012-01-01,college/university,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_680,,,active,2021-01-01,,,,SOFC,,,,1150.0
+HFS_US_681,"City of Woodbridge; 
+Amity Regional High School.  Micro grid to also connect: 
+Woodbridge Town hall
+Library
+Fire House
+Police Station
+Public Works Facility
+Senior Center (which also serves as an emergency center)",Department of Energy and Environmental Protection (DEEP) Microgrid Pilot Program,active,2018-01-01,municipal ,"• baseload power
+• CHP",1.0,MCFC,SureSource 3000,natural gas,2200.0,2200.0
+HFS_US_682,,,active,2019-01-01,,,,SOFC,,,,2500.0
+HFS_US_683,,,active,2019-01-01,,,,SOFC,,,,1800.0
+HFS_US_684,,,active,2019-01-01,,,,SOFC,,,,1800.0
+HFS_US_685,,,active,2019-01-01,,,,SOFC,,,,1800.0
+HFS_US_686,,,active,2019-01-01,,,,SOFC,,,,1800.0
+HFS_US_687,,,active,2019-01-01,,,,SOFC,,,,1800.0
+HFS_US_688,,,active,2019-01-01,,,,SOFC,,,,1700.0
+HFS_US_689,,,active,2019-01-01,,,,SOFC,,,,1700.0
+HFS_US_690,,,active,2019-01-01,,,,SOFC,,,,900.0
+HFS_US_691,,,active,2019-01-01,,,,SOFC,,,,1900.0
+HFS_US_692,,,active,2019-01-01,,,,SOFC,,,,1800.0
+HFS_US_693,,,active,2019-01-01,,,,SOFC,,,,1800.0
+HFS_US_694,,,active,2019-01-01,,,,SOFC,,,,1800.0
+HFS_US_695,,,active,2019-01-01,,,,SOFC,,,,1800.0
+HFS_US_696,,,active,2014-01-01,,,,SOFC,,,,500.0
+HFS_US_697,,,active,2014-01-01,,,,SOFC,,,,250.0
+HFS_US_698,,,active,2016-01-01,,,,SOFC,,,,500.0
+HFS_US_699,,,active,2019-01-01,,,,SOFC,,,,1000.0
+HFS_US_700,,,active,2019-01-01,,,,SOFC,,,,1000.0
+HFS_US_701,,,active,2019-01-01,,,,SOFC,,,,600.0
+HFS_US_702,,,active,2019-01-01,,,,SOFC,,,,1300.0
+HFS_US_703,,,active,2020-01-01,,,,SOFC,,,,200.0
+HFS_US_704,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_705,,,active,2021-01-01,,,,SOFC,,,,1900.0
+HFS_US_706,,,active,2019-01-01,,,,SOFC,,,,200.0
+HFS_US_707,,,active,2018-01-01,,,,SOFC,,,,500.0
+HFS_US_708,Whole Foods Market ,,active,2010-01-01,retail,baseload power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_709,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_710,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_711,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_712,,,active,2019-01-01,,,,SOFC,,,,2000.0
+HFS_US_713,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_714,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_715,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_716,,,active,2019-01-01,,,,SOFC,,,,825.0
+HFS_US_717,,,active,2020-01-01,,,,SOFC,,,,200.0
+HFS_US_718,,,active,2020-01-01,,,,SOFC,,,,200.0
+HFS_US_720,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_721,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_722,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_723,,,active,2021-01-01,,,,SOFC,,,,200.0
+HFS_US_724,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_725,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_726,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_727,,,active,2020-01-01,,,,SOFC,,,,900.0
+HFS_US_728,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_729,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_730,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_731,,,active,2020-01-01,,,,SOFC,,,,600.0
+HFS_US_732,,,active,2020-01-01,,,,SOFC,,,,2400.0
+HFS_US_733,,,active,2021-01-01,,,,SOFC,,,,600.0
+HFS_US_734,,,active,2021-01-01,,,,SOFC,,,,600.0
+HFS_US_735,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_736,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_737,,,active,2020-01-01,,,,SOFC,,,,200.0
+HFS_US_738,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_739,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_740,,,active,2021-01-01,,,,SOFC,,,,300.0
+HFS_US_741,,,active,2015-01-01,,,,SOFC,,,,250.0
+HFS_US_742,,,active,2019-01-01,,,,SOFC,,,,50.0
+HFS_US_743,First National Bank of Omaha,unknown,active,2013-01-01,data center,primary power,1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_744,Verizon Operations Center,,active,2013-01-01,telecommunications,"• baseload power
+• CHP",5.0,PAFC,PureCell 400,,400.0,2000.0
+HFS_US_745,,,active,2017-01-01,,,,SOFC,,,,700.0
+HFS_US_746,,,active,2016-01-01,,,,SOFC,,,,750.0
+HFS_US_747,,,active,2015-01-01,,,,SOFC,,,,600.0
+HFS_US_748,,,active,2017-01-01,,,,SOFC,,,,800.0
+HFS_US_749,,,active,2016-01-01,,,,SOFC,,,,750.0
+HFS_US_750,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_751,,,active,2015-01-01,,,,SOFC,,,,1000.0
+HFS_US_752,,,active,2015-01-01,,,,SOFC,,,,600.0
+HFS_US_753,,,active,2015-01-01,,,,SOFC,,,,400.0
+HFS_US_754,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_755,,,active,2021-01-01,,,,SOFC,,,,2000.0
+HFS_US_756,,,active,2015-01-01,,,,SOFC,,,,750.0
+HFS_US_757,,,active,2018-01-01,,,,SOFC,,,,2500.0
+HFS_US_758,,,active,2018-01-01,,,,SOFC,,,,2000.0
+HFS_US_759,,,active,2019-01-01,,,,SOFC,,,,1500.0
+HFS_US_760,,,active,2016-01-01,,,,SOFC,,,,700.0
+HFS_US_761,,,active,2018-01-01,,,,SOFC,,,,1250.0
+HFS_US_762,,,active,2018-01-01,,,,SOFC,,,,1250.0
+HFS_US_763,,,active,2015-01-01,,,,SOFC,,,,250.0
+HFS_US_764,,,active,2016-01-01,,,,SOFC,,,,300.0
+HFS_US_765,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_766,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_767,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_768,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_769,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_770,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_771,,,active,2020-01-01,,,,SOFC,,,,900.0
+HFS_US_772,,,active,2020-01-01,,,,SOFC,,,,900.0
+HFS_US_773,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_774,PSEG Long Island,Fuel Cell Resources Feed-in Tariff (FIT IV),planned,,substation,baseload power,4.0,MCFC,SureSource 4000; 3000,natural gas,3700.0,13900.0
+HFS_US_775,PSEG Long Island ,Fuel Cell Resources Feed-in Tariff (FIT IV),planned,,substation,baseload power,5.0,MCFC,SureSource 4000,natural gas,3700.0,18500.0
+HFS_US_776,PSEG Long Island,Fuel Cell Resources Feed-in Tariff (FIT IV),planned,,substation,baseload power,2.0,MCFC,SureSource 4000,natural gas,3700.0,7400.0
+HFS_US_777,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_778,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_779,,,active,2017-01-01,,,,SOFC,,,,400.0
+HFS_US_780,,,active,2018-01-01,,,,SOFC,,,,1800.0
+HFS_US_781,,,active,2018-01-01,,,,SOFC,,,,600.0
+HFS_US_782,,,active,2018-01-01,,,,SOFC,,,,400.0
+HFS_US_783,,,active,2018-01-01,,,,SOFC,,,,1100.0
+HFS_US_784,,,active,2020-01-01,,,,SOFC,,,,400.0
+HFS_US_785,Verizon; Clinton Central Office,,active,2013-01-01,telecommunications,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,,400.0,400.0
+HFS_US_786,Verizon; Meserole Central Office,,active,2013-01-01,telecommunications,"• baseload power
+• CHP",2.0,PAFC,PureCell 400,,400.0,800.0
+HFS_US_787,Verizon; Rockaway Central Office,,active,2013-01-01,telecommunications,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,,400.0,400.0
+HFS_US_788,,,active,2019-01-01,,,,SOFC,,,,600.0
+HFS_US_789,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_790,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_791,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_792,Price Chopper,unknown,active,2010-01-01,retail,"• backup power
+• baseload power",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_793,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_794,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_795,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_796,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_797,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_798,Coca-Cola,,active,2010-01-01,manufacturing facility,"• backup power
+• baseload power",2.0,PAFC,PureCell 400,,400.0,800.0
+HFS_US_799,,,active,2020-01-01,,,,SOFC,,,,1700.0
+HFS_US_800,Verizon Premium Data Center,,active,2015-01-01,telecommunications,"• backup power
+• baseload power",2.0,PAFC,PureCell 200,,400.0,800.0
+HFS_US_801,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_802,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_803,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_804,"Verizon's Garden City, NY Call Routing Center",Zeckendorf,active,2015-01-01,telecommunications,"• backup power
+• baseload power",2.0,PAFC,PureCell 200,natural gas,400.0,800.0
+HFS_US_805,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_806,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_807,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_808,,,active,2021-01-01,,,,SOFC,,,,2000.0
+HFS_US_809,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_810,,,active,2017-01-01,,,,SOFC,,,,1000.0
+HFS_US_811,,,active,2021-01-01,,,,SOFC,,,,250.0
+HFS_US_812,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_813,PSEG Long Island,Clean Renewable Energy Feed-In Tariff (FIT) II,planned,,substation,baseload power,1.0,MCFC,SureSource 1500,natural gas,1400.0,1400.0
+HFS_US_814,,,active,2020-01-01,,,,SOFC,,,,2000.0
+HFS_US_815,,,active,2020-01-01,,,,SOFC,,,,2000.0
+HFS_US_816,,,active,2020-01-01,,,,SOFC,,,,2000.0
+HFS_US_817,,,active,2020-01-01,,,,SOFC,,,,350.0
+HFS_US_818,,,active,2020-01-01,,,,SOFC,,,,300.0
+HFS_US_819,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_820,,,active,2014-01-01,,,,SOFC,,,,250.0
+HFS_US_821,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_822,4 World Trade Center (Tower 3),unknown,active,2010-01-01,office building,"• baseload power
+• CHP",3.0,PAFC,PureCell 400,,400.0,1200.0
+HFS_US_823,4 World Trade Center (Tower 4),unknown,active,2010-01-01,office building,"• baseload power
+• CHP",3.0,PAFC,PureCell 400,,400.0,1200.0
+HFS_US_824,Beacon Capital Partners (Fox News),,active,2011-01-01,office building,"• backup power
+• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_825,Bentall Kennedy (Octagon Park Apartments),,active,2011-01-01,apartment complex,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_826,,,active,2013-01-01,,,,SOFC,,,,100.0
+HFS_US_827,,,active,2016-01-01,,,,SOFC,,,,750.0
+HFS_US_828,,,active,2018-01-01,,,,SOFC,,,,400.0
+HFS_US_829,,,active,2018-01-01,,,,SOFC,,,,1000.0
+HFS_US_830,,,active,2020-01-01,,,,SOFC,,,,2000.0
+HFS_US_831,,,active,2020-01-01,,,,SOFC,,,,1500.0
+HFS_US_832,,,active,2020-01-01,,,,SOFC,,,,2000.0
+HFS_US_833,,,active,2020-01-01,,,,SOFC,,,,2000.0
+HFS_US_834,,,active,2021-01-01,,,,SOFC,,,,200.0
+HFS_US_835,,,active,2021-01-01,,,,SOFC,,,,200.0
+HFS_US_836,,,active,2020-01-01,,,,SOFC,,,,200.0
+HFS_US_837,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_838,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_839,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_840,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_841,,,active,2014-01-01,,,,SOFC,,,,250.0
+HFS_US_842,,,active,2017-01-01,,,,SOFC,,,,1200.0
+HFS_US_843,Verizon (Jamaica Central Office),,active,2013-01-01,telecommunications,"• baseload power
+• CHP",2.0,PAFC,PureCell 400,,400.0,800.0
+HFS_US_844,,,active,2014-01-01,,,,SOFC,,,,200.0
+HFS_US_845,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_846,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_847,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_848,Rochester Institute of Technology Sustainability Institute,,active,2013-01-01,college/university,,1.0,PAFC,PureCell 400,,400.0,400.0
+HFS_US_849,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_850,,,active,2018-01-01,,,,SOFC,,,,200.0
+HFS_US_851,,,active,2020-01-01,,,,SOFC,,,,250.0
+HFS_US_852,,,active,2017-01-01,,,,SOFC,,,,200.0
+HFS_US_853,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_854,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_855,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_856,Verizon; Staten Island Central Office,,active,2013-01-01,telecommunications,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,,400.0,400.0
+HFS_US_857,,,active,2018-01-01,,,,SOFC,,,,1500.0
+HFS_US_858,,,active,2017-01-01,,,,SOFC,,,,500.0
+HFS_US_859,,,active,2015-01-01,,,,SOFC,,,,200.0
+HFS_US_860,,,active,2012-01-01,,,,SOFC,,,,600.0
+HFS_US_861,,,active,2016-01-01,,,,SOFC,,,,200.0
+HFS_US_862,Energy Center Pittsburgh - Clearway Energy,Prototype test,active,2019-01-01,,grid support,1.0,MCFC,,natural gas,200.0,200.0
+HFS_US_863,,,active,2021-01-01,,,,SOFC,,,,600.0
+HFS_US_864,,,active,2012-01-01,,,,SOFC,,,,200.0
+HFS_US_865,Microsoft ,Trial project,active,2017-01-01,data center,baseload power,1.0,SOFC,,natural gas,,
+HFS_US_866,Sealed Air Diversey Care,unknown,active,2011-01-01,office building,"• baseload power
+• CHP",1.0,PAFC,PureCell 400,natural gas,400.0,400.0
+HFS_US_867,"Microsoft, via Dry Creek Water Reclamation Facility",Data Plant pilot project,active,2014-01-01,data center,primary power,1.0,MCFC,DFC300,biogas,300.0,300.0

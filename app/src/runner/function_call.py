@@ -47,3 +47,22 @@ def get_text_retrieval_function_call():
     ]
     return tools
 
+
+def execute_sql():
+    """
+    The function spec for executing SQL query
+    """
+
+    return {
+                "name": "execute_sql",
+                "description": "Execute SQL query and return the result",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "sql": {
+                            "type":"string",
+                            "description": "The SQL query to execute"
+                        }
+                    }
+                }
+            }

@@ -6,8 +6,8 @@ import json
 import time
 logger_sqlagent = logger.level("SQL_AGENT", no=38, color="<green>", icon="♣")
 
-from .prompt import get_prompt
-from app.src.connect.db import Database
+from ..config.prompt.prompt import get_prompt
+from app.src.database.db import Database
 from app.src.connect.gpt_v2 import get_chat_completion_v2, get_chat_completion_json
 
 
@@ -22,13 +22,13 @@ class SQLAgent:
         self.source_use = ''
 
 
-        with open('app/src/connect/schemas.yaml', 'r') as file:
+        with open('app/src/config/schemas.yaml', 'r') as file:
             # Load the content using yaml.load
             data = yaml.load(file, Loader=yaml.FullLoader)
             self.schema = data['schema']
             self.schema_short = data['schema_short']
 
-        with open('app/src/connect/source.yaml', 'r') as file:
+        with open('app/src/config/datasets.yaml', 'r') as file:
             self.source = yaml.load(file, Loader=yaml.FullLoader)
 
         self.messages_tables = get_prompt('sql_table', self.query, self.schema_short)

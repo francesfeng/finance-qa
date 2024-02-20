@@ -1,0 +1,96 @@
+hydrogen_fueled_vehicles: 
+  url: "https://h2tools.org/hyarc/hydrogen-data/inventory-international-over-road-hydrogen-powered-vehicles"
+  source: HydrogenTools, Endepth Data Insights
+  last_updated: 2022-09-30
+  name: International Hydrogen Vehicles
+  description: "The dataset provides details on various hydrogen vehicles around the world."
+
+us_stationary_fuel_cells:
+  url: "https://afdc.energy.gov/fuels/hydrogen_locations.html#/find/nearest?fuel=HY"
+  source: Alternative Fuels Data Center, Endepth Data Insights
+  last_updated: 2022-09-30
+  name: U.S. Stationary Fuel Cells
+  description: "The dataset provides details on various hydrogen fueling stations in the United States."
+
+
+international_fuelling_stations:
+  url: "https://h2tools.org/hyarc/hydrogen-data/international-hydrogen-fueling-stations"
+  source: HydrogenTools, Endepth Data Insights
+  last_updated: 2022-09-30
+  name: International Hydrogen Fueling Stations
+  description: "The dataset provides details on various hydrogen fueling stations around the world."
+
+
+    
+
+hydrogen_project:
+  url: "https://www.iea.org/data-and-statistics/data-product/hydrogen-projects-database"
+  source: IEA, Endepth Data Insights
+  last_updated: 2022-10-01
+  name: Global Hydrogen Projects
+  description: "The IEA Hydrogen Projects Database is a unique database of hydrogen projects around the world. It contains information on more than 1,000 projects across more than 20 sectors of the hydrogen economy, including production, transport and end-use. The database is updated on a regular basis and is complemented by a series of reports on hydrogen projects and policies."
+  structure: "The dataset provides details on various hydrogen projects. Here's an overview of its structure and the kind of information it includes:
+
+    - **Ref**: Reference code for each project.
+    - **Project Name**: Name of the hydrogen project.
+    - **Date Online**: The date when the project is expected to go online.
+    - **Decomission Date**: The expected decommission date of the project.
+    - **Status**: Current status of the project (e.g., Under construction, Concept).
+    - **Status Commissioned**: Commissioning status of the project.
+    - **Technology**: Technology used in the project.
+    - **Technology Detail**: Detailed description of the technology.
+    - **Feedstock**: Type of feedstock used.
+    - **Hydrogen Color**: The 'color' of hydrogen (e.g., Blue, Green), indicating the production method and its environmental impact.
+    - **Product**: The main product of the project.
+    - **MWel**: Electrical capacity in megawatts.
+    - **Nm3 H2/h**: Production rate of hydrogen in normal cubic meters per hour.
+    - **kt H2/y**: Annual production of hydrogen in kilotons.
+    - **t CO2 captured/y**: Annual amount of CO2 captured, if applicable.
+    - **Total Investment**: Total investment made in the project.
+    - **Total Investment in USD**: Total investment in U.S. dollars.
+
+    For a thorough analysis, what specific aspects or questions do you have in mind regarding this dataset? For example, are you interested in trends over time, comparisons between technologies, investment analysis, or something else?
+      "
+
+carbon_capture_and_storage_project:
+  url: "https://www.iea.org/data-and-statistics/data-product/ccus-projects-database"
+  source: IEA, Endepth Data Insights
+  last_updated: 2022-10-01
+  name: Global Carbon Capture and Storage Projects
+  dscrption: "The IEA Carbon Capture and Storage Projects Database is a unique database of carbon capture and storage (CCS) projects around the world. It contains information on more than 300 projects across more than 30 countries and is the go-to source of information on CCS projects for governments, industry, academia and the wider public. The database is updated on a regular basis and is complemented by a series of reports on CCS projects and policies."
+  
+
+project_location:
+  url: "https://www.iea.org/data-and-statistics/data-product/hydrogen-projects-database"
+  source: IEA, Endepth Data Insights
+  last_updated: 2022-10-01
+  name: Global Hydrogen Project Locations
+  description: "The dataset provides details on various hydrogen project locations around the world."
+
+hydrogen_project_finance_schemes:
+  url: ""
+  source: Endepth Data Insights
+  last_updated: 2023-10-01
+  name: Global Hydrogen Project Finance Schemes
+  description: "The dataset provides details on various hydrogen project finance schemes around the world."
+
+hydrogen_project_enduse:
+  url: "https://www.iea.org/data-and-statistics/data-product/hydrogen-projects-database"
+  source: IEA, Endepth Data Insights
+  last_updated: 2022-10-01
+  name: Global Hydrogen Project Enduse
+  description: "The dataset provides details on various hydrogen project enduses around the world."
+
+hydrogen_policy:
+  url: "https://www.iea.org/policies?q=hydrogen"
+  source: IEA, Endepth Data Insights
+  last_updated: 2022-10-01
+  name: Global Hydrogen Policy
+  description: "The dataset provides details on various hydrogen policies around the world."
+
+project_investor:
+  url: ""
+  source: Endepth Data Insights
+  last_updated: 2023-10-01
+  name: Global Hydrogen Project Investors
+  description: "The dataset provides details on various hydrogen project investors around the world."

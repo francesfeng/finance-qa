@@ -1,0 +1,1565 @@
+id,Ref,Project Name,End Use
+1,H2_9,H2GO - 1st phase,Mobility
+2,H2_10,H2GO - 2nd phase,Mobility
+3,H2_11,"NortH2, phase 1",Grid Injection
+4,H2_11,"NortH2, phase 1",Refining
+5,H2_11,"NortH2, phase 1",Other Industry
+6,H2_12,Norsk e-Fuel Phase 1,Synfuels
+7,H2_13,Norsk e-Fuel Phase 2,Synfuels
+8,H2_14,HYBRIT pilot,Iron&Steel
+9,H2_15,HYBRIT demo,Iron&Steel
+10,H2_16,Fertiberia/Iberdrola - Puertollano I,Ammonia
+11,H2_17,Power to Green H2 Mallorca - Phase 1,Mobility
+12,H2_17,Power to Green H2 Mallorca - Phase 1,Grid Injection
+13,H2_18,Power to Green H2 Mallorca (GREEN HYSLAND) - Phase 2,Grid Injection
+14,H2_18,Power to Green H2 Mallorca (GREEN HYSLAND) - Phase 2,Mobility
+15,H2_19,CRI project in Norway,Methanol
+16,H2_21,Fukushima Hydrogen Energy Research Field,Mobility
+17,H2_21,Fukushima Hydrogen Energy Research Field,Power
+18,H2_22,Hydrospider - St Gallen,Mobility
+19,H2_23,"Apex Energy, Rostock-Laage",Mobility
+20,H2_23,"Apex Energy, Rostock-Laage",Combined Heat & Power (fuel cells or turbines)
+21,H2_24,Leuchtturmprojekt Power-to-Gas Baden-Württemberg,Mobility
+22,H2_25,eFarm (5 production sites in North Frisia),Mobility
+23,H2_26,Hydrogen plant - Orkney Islands - BIG HIT 2n phase,Mobility
+24,H2_26,Hydrogen plant - Orkney Islands - BIG HIT 2n phase,Power
+25,H2_26,Hydrogen plant - Orkney Islands - BIG HIT 2n phase,Grid Injection
+26,H2_27,Wyhlen hydroelectric power plant,Power
+27,H2_28,GrInHy2.0,Iron&Steel
+28,H2_29,Power2Met,Methanol
+29,H2_30,REMOTE - Norway,Power
+30,H2_31,H2One - Toranomon Hills Business Tower,Power
+31,H2_32,H2One - Toyama City Environment Center,Power
+32,H2_33,H2One - Tsuruga City,Mobility
+33,H2_34,H2FUTURE,Iron&Steel
+34,H2_35,Guangdong Synergy Hydrogen Power Technology Co. 1st phase,Mobility
+35,H2_36,"Markham Energy Storage, Ontario",Grid Injection
+36,H2_37,PFI - Pirmasens-Winzeln,Methane Grid Injection
+37,H2_38,HRS CMB,Mobility
+38,H2_39,MEFCO2,Methanol
+39,H2_40,"Windgas Haurup, 2nd phase",Power
+40,H2_41,Parnu refuelling station,Mobility
+41,H2_42,"H2Nodes, Parnu",Mobility
+42,H2_43,"H2Nodes, Riga",Mobility
+43,H2_44,SMT-AG Artois-Gohelle,Mobility
+44,H2_45,HyDeploy,Grid Injection
+45,H2_46,Quebec Great Toronto Area East,Mobility
+46,H2_47,Pau bus station HRS,Mobility
+47,H2_48,"Solothurn, STORE&GO",Methane Grid Injection
+48,H2_49,Sarawak Energy,Mobility
+49,H2_50,Vårgårda Bostäder housing complex,Grid Injection
+50,H2_51,SoCalGas-NREL,Methane Grid Injection
+51,H2_52,Stromlückenfüller 2nd phase,Grid Injection
+52,H2_53,ATCO clean energy innovation hub,Power
+53,H2_53,ATCO clean energy innovation hub,Domestic Heat
+54,H2_54,Tauron CO2-SNG,Methane Grid Injection
+55,H2_56,VTT Bio economy+,Synfuels
+56,H2_57,Kopernikus,Synfuels
+57,H2_58,Rozenburg Power2Gas Phase 2,Grid Injection
+58,H2_59,Balance project,Power
+59,H2_59,Balance project,Synfuels
+60,H2_60,H2One - SP Group,Mobility
+61,H2_61,Falkenhagen STORE&GO,Methane Grid Injection
+62,H2_62,"NEDO kofu city, Yamanashi Prefecture",Combined Heat & Power (fuel cells or turbines)
+63,H2_63,Semakau island microgrid Engie (SPORE),Power
+64,H2_63,Semakau island microgrid Engie (SPORE),Mobility
+65,H2_64,H2PLAZA - Toyota Industries Corporation’s Takahama,Mobility
+66,H2_65,Localhy,Mobility
+67,H2_66,Wind to gas Brunsbüttel,Grid Injection
+68,H2_67,Carbon2Chem,Ammonia
+69,H2_67,Carbon2Chem,Methanol
+70,H2_68,SunLine Transit Agency,Mobility
+71,H2_69,HyBALANCE,Mobility
+72,H2_69,HyBALANCE,Grid Injection
+73,H2_70,Aberdeen Conference Center,Domestic Heat
+74,H2_70,Aberdeen Conference Center,Combined Heat & Power (fuel cells or turbines)
+75,H2_71,Lam Takhong Wind Hydrogen Hybrid Project- EGAT,Power
+76,H2_72,H2ORIZON,Mobility
+77,H2_72,H2ORIZON,Power
+78,H2_72,H2ORIZON,Combined Heat & Power (fuel cells or turbines)
+79,H2_73,ASKO Midt-Norge,Mobility
+80,H2_74,Underground Sun Storage,Methane Grid Injection
+81,H2_75,Hydrogen plant - Orkney Islands - BIG HIT 1st phase,Grid Injection
+82,H2_75,Hydrogen plant - Orkney Islands - BIG HIT 1st phase,Power
+83,H2_75,Hydrogen plant - Orkney Islands - BIG HIT 1st phase,Mobility
+84,H2_76,"Windgas Haurup, 1st phase",Grid Injection
+85,H2_77,"Troia, STORE&GO",Methane Grid Injection
+86,H2_78,GNVert H2,Mobility
+87,H2_79,Tongji solar hybrid hydrogen refueling station,Mobility
+88,H2_80,Methanation at Eichhof,Methane Grid Injection
+89,H2_81,"CoSin: Synthetic Natural Gas from Sewage, Barcelona",Methane Grid Injection
+90,H2_82,REFLEX,Power
+91,H2_83,Sendai City,Power
+92,H2_84,"Rostock, Exytron Demonstrationsanlage",Methane Grid Injection
+93,H2_85,Tokyu Construction Institute of Technology,Power
+94,H2_86,Rakuten Seimei Park Miyagi,Combined Heat & Power (fuel cells or turbines)
+95,H2_87,"MicroPyros, Altenstant",Methane Grid Injection
+96,H2_88,Oxelösund Forklifts,Mobility
+97,H2_89,H21 North of England,Mobility
+98,H2_89,H21 North of England,Refining
+99,H2_89,H21 North of England,Grid Injection
+100,H2_89,H21 North of England,Other Industry
+194,H2_157,H2KT - Hydrogen Energy Storage in Nuuk,Power
+101,H2_90,"Hynet Northwest, phase 1 (Essar Stanlow refinery)",Other Industry
+102,H2_90,"Hynet Northwest, phase 1 (Essar Stanlow refinery)",Power
+103,H2_90,"Hynet Northwest, phase 1 (Essar Stanlow refinery)",Refining
+104,H2_90,"Hynet Northwest, phase 1 (Essar Stanlow refinery)",Grid Injection
+105,H2_90,"Hynet Northwest, phase 1 (Essar Stanlow refinery)",Mobility
+106,H2_92,"Alzey, Exytron Null-E",Combined Heat & Power (fuel cells or turbines)
+107,H2_92,"Alzey, Exytron Null-E",Power
+108,H2_93,Energy observer,Mobility
+109,H2_93,Energy observer,Power
+110,H2_94,Haldor Topsoe - El-Opgraderet Biogas II,Methane Grid Injection
+111,H2_95,Musashi-Mizonokuchi Station,Power
+112,H2_96,"H2One - Hydrogen Application Center, Fuchu Complex",Mobility
+113,H2_97,H2One - Asahi Breweries in Ibaraki,Mobility
+114,H2_98,Costa Rica Transportation Ecosystem Project,Mobility
+115,H2_99,Cerro Pabellón Microgrid 450 kWh Hydrogen ESS,Power
+116,H2_100,"Energy in the Container, Fraunhofer IISB, Erlangen, Leistungszentren Elektroniksysteme (LZE)",Power
+117,H2_101,Hassfurt,Grid Injection
+118,H2_101,Hassfurt,Power
+119,H2_101,Hassfurt,Combined Heat & Power (fuel cells or turbines)
+120,H2_102,GreenHydroChem Central German Chemical Triangle,Power
+121,H2_102,GreenHydroChem Central German Chemical Triangle,Other Industry
+122,H2_102,GreenHydroChem Central German Chemical Triangle,Refining
+123,H2_103,HPEM2GAS (R&D),Grid Injection
+124,H2_104,Hamburg - Schnackenburgallee,Mobility
+125,H2_105,smart grid solar - arzberg,Grid Injection
+126,H2_105,smart grid solar - arzberg,Power
+127,H2_106,"Naval Facilities Engineering Command, Engineering and Expeditionary Warfare Center",Power
+128,H2_107,Laboratory System at IFE Kjeller Pahse 2,Power
+129,H2_108,"H2One - Kyushu Resort Hotel, Huis Ten Bosch",Power
+130,H2_109,H2One - Yokohama Cargo Center,Power
+131,H2_110,WindGas Hamburg-Reitbrook,Mobility
+132,H2_111,"RH2 Grapzow, Mecklenburg Vorpommern",Power
+133,H2_112,P2G-Biocat - Continued,Methane Grid Injection
+134,H2_113,Raglan Nickel mine,Power
+135,H2_114,Don Quichote,Mobility
+136,H2_115,Regio Energie Solothurn/Aarmat hybrid plant,Grid Injection
+137,H2_116,RWE PtG plant Ibbenbüren,Grid Injection
+138,H2_116,RWE PtG plant Ibbenbüren,Power
+139,H2_116,RWE PtG plant Ibbenbüren,Combined Heat & Power (fuel cells or turbines)
+140,H2_117,DemoSNG,Methane Grid Injection
+141,H2_118,Stromlückenfüller 1st phase,Power
+142,H2_119,Higashi-Ogishima-Naga-Park,Domestic Heat
+143,H2_120,Emden II Upscaling,Power
+144,H2_120,Emden II Upscaling,Methane Grid Injection
+145,H2_121,SYNFUEL,Synfuels
+146,H2_122,"Hydrogen Valley South Tyrol - Bolzano, CHIC",Mobility
+147,H2_123,H2BER (Berlin airport),Mobility
+148,H2_124,"Westkuste 100 (Phase 1) - HyScale 100, Heide",Refining
+149,H2_125,"Hanau, Wolfgang Industrial Park",Grid Injection
+150,H2_125,"Hanau, Wolfgang Industrial Park",Power
+151,H2_126,"MicroPyros, Staubing",Methane Grid Injection
+152,H2_127,"ETOGAS, Solar Fuel Beta-plant AUDI, Werlte (Audi e-gas)",Methane Mobility
+153,H2_127,"ETOGAS, Solar Fuel Beta-plant AUDI, Werlte (Audi e-gas)",Methane Grid Injection
+154,H2_128,H2 Logic HRS with onsite electrolysis Aalborg,Mobility
+155,H2_129,Uniper/E-ON WindGas Falkenhagen Hydrogen Pilot Project,Grid Injection
+156,H2_130,P2G plant Erdgas Schwaben,Grid Injection
+157,H2_131,"Oslo, CHIC",Mobility
+158,H2_132,"HySynergy, phase 1",Refining
+159,H2_133,CO2RRECT-Niederaussem,Methane Grid Injection
+160,H2_134,"Sir Samuel building Griffith Center, Brisbane, Australia",Power
+161,H2_135,"MicrobEnergy GmbH, Schwandorf",Methane Grid Injection
+162,H2_136,"H2Move, Fraunhofer ISE",Mobility
+163,H2_138,El Tubo - ACTA EL500,Power
+164,H2_139,Refhyne,Refining
+165,H2_140,H&R Ölwerke Hamburg-Neuhof,Refining
+166,H2_141,H2Herten,Power
+167,H2_141,H2Herten,Mobility
+168,H2_141,H2Herten,Combined Heat & Power (fuel cells or turbines)
+169,H2_142,H2 research center BTU Cottbus,Power
+170,H2_143,Cotbus,Mobility
+171,H2_144,Eucolino Schwandorf,Grid Injection
+172,H2_145,Agios Efstratios,Power
+173,H2_146,Hydrogen mini grid system Yorkshire (Rotherham),Power
+174,H2_146,Hydrogen mini grid system Yorkshire (Rotherham),Grid Injection
+175,H2_146,Hydrogen mini grid system Yorkshire (Rotherham),Mobility
+176,H2_147,"Fronius Energy Cell, self-sufficient house",Domestic Heat
+177,H2_147,"Fronius Energy Cell, self-sufficient house",Power
+178,H2_148,Hitachi Zosen - PTTEP CO2 Conversion to Methane Project R&D),Methane Grid Injection
+179,H2_149,Commercial Plant Svartsengi/George Olah plant,Methanol
+180,H2_150,"Hamburg Hafen City, CEP",Mobility
+181,H2_151,"Hybrid Power Plant Enertrag, Prenzlau",Domestic Heat
+182,H2_151,"Hybrid Power Plant Enertrag, Prenzlau",Power
+183,H2_151,"Hybrid Power Plant Enertrag, Prenzlau",Mobility
+184,H2_151,"Hybrid Power Plant Enertrag, Prenzlau",Grid Injection
+185,H2_152,"EnBW H2 station, Stuttgart",Mobility
+186,H2_153,Ramea Wind-Hydrogen-Diesel Project,Power
+187,H2_154,Hydrogen Island Bozcaada,Power
+188,H2_155,DNV Kema/DNV GL,Grid Injection
+189,H2_155,DNV Kema/DNV GL,Combined Heat & Power (fuel cells or turbines)
+190,H2_156,"HARP System, Bella Coola",Mobility
+191,H2_156,"HARP System, Bella Coola",Power
+192,H2_157,H2KT - Hydrogen Energy Storage in Nuuk,Mobility
+193,H2_157,H2KT - Hydrogen Energy Storage in Nuuk,Grid Injection
+195,H2_158,ITHER,Mobility
+196,H2_159,H2SusBuild,Power
+197,H2_160,"Hybrid energy storage system NFCRC, California",Power
+198,H2_161,Nukissiorfiit Nuuk Hydrogen Plant,Power
+199,H2_162,"Centre of Fuel Cell Technology, Chennai",Power
+200,H2_163,"Hychico, Comodoro Rivadavia",Power
+201,H2_164,Taleghan solar hydrogen energy system,Power
+202,H2_165,Istanbul,Mobility
+203,H2_166,AltHytude,Methane Mobility
+204,H2_167,Regenerativer Energipark Ostfalia/hybrid renewable energy park (HREP),Power
+205,H2_168,DRI CO2 recycling,Other Industry
+206,H2_169,Neo Olvio of Xanthi,Power
+207,H2_170,HYLINK Totara,Power
+208,H2_171,Baglan Energy Park Wales,Power
+209,H2_171,Baglan Energy Park Wales,Mobility
+210,H2_172,"Synthetic Energy, Idaho",Other Industry
+211,H2_173,Hydepark,Mobility
+212,H2_174,"Stand-alone power system, Neo Olvio of Xanthi",Mobility
+213,H2_175,"HYLINK, Totara Valley",Power
+214,H2_175,"HYLINK, Totara Valley",Mobility
+215,H2_176,RES2H2 Gran Canaria,Mobility
+216,H2_177,"H2 from the sun, Brunate",Power
+217,H2_178,CEC Denizli Turkey,Power
+218,H2_179,"CUTE and HyFLEET:CUTE, Barcelona",Mobility
+219,H2_180,Savli wind-hydrogen demo project,Power
+220,H2_181,"Dahej, Reliance, back-up hydrogen supply",Power
+221,H2_182,"HARI project, West Beacon Farm",Combined Heat & Power (fuel cells or turbines)
+222,H2_182,"HARI project, West Beacon Farm",Power
+223,H2_183,"Porto, CUTE",Mobility
+224,H2_184,Energiepark Mainz,Grid Injection
+225,H2_184,Energiepark Mainz,Other Industry
+226,H2_184,Energiepark Mainz,Mobility
+227,H2_185,INGRID,Other Industry
+228,H2_185,INGRID,Power
+229,H2_185,INGRID,Mobility
+230,H2_185,INGRID,Grid Injection
+231,H2_186,Tohoku pilot plant in 2003,Other Industry
+232,H2_187,Gwalpahari Solar-Hydrogen demonstration,Power
+233,H2_187,Gwalpahari Solar-Hydrogen demonstration,Mobility
+234,H2_188,Solar Energy Centre SmartFuel hydrogen station,Mobility
+235,H2_189,FaHyence,Mobility
+236,H2_190,CPI Zaoquan thermal power plant in China's Ningxia region,Power
+237,H2_191,Laboratory Plant HRI Quebec,Mobility
+238,H2_192,Power plant in Lebanon for a Power Plant Cooling application,Power
+239,H2_193,Minatec's semiconductor labs in Grenoble,Other Industry
+240,H2_194,Grimstad Renewable Energy Park,Power
+241,H2_195,Hypos - Sunfire,Other Industry
+242,H2_196,Electrochaea: Biological methanation in Avedøre,Methane Grid Injection
+243,H2_197,REMOTE - Agkistro (Greece,Power
+244,H2_198,"REMOTE - Spain, Canary Island",Power
+245,H2_199,Aman - Green Hydrogen Project,Iron&Steel
+246,H2_199,Aman - Green Hydrogen Project,Ammonia
+247,H2_200,HRS CMB Port of Antwerp,Mobility
+248,H2_201,Haldor Topsoe - El-Opgraderet Biogas I,Methane Grid Injection
+249,H2_202,P2G-Biocat - Decommisioned,Methane Grid Injection
+250,H2_203,H2 Logic HRS with onsite electrolysis in Vejle,Mobility
+251,H2_204,H2 Logic HRS with onsite electrolysis Holstebro,Mobility
+252,H2_205,H2 Logic 3 HRS with onsite electrolysis in Copenhagen,Mobility
+253,H2_206,Fertiberia/Iberdrola - Puertollano II (extension from Ref10),Ammonia
+254,H2_207,"Hyoffwind Zeebrugge, 1st phase",Grid Injection
+255,H2_207,"Hyoffwind Zeebrugge, 1st phase",Mobility
+256,H2_208,"Hyoffwind Zeebrugge, 2nd phase",Mobility
+257,H2_208,"Hyoffwind Zeebrugge, 2nd phase",Grid Injection
+258,H2_209,"Hyoffwind Zeebrugge, 3rd phase",Mobility
+259,H2_209,"Hyoffwind Zeebrugge, 3rd phase",Grid Injection
+260,H2_210,Hyport,Mobility
+261,H2_211,Waste-to-wheels Charleroi,Mobility
+262,H2_212,"Power-to-Methanol, Antwerp, phase 1",Methanol
+263,H2_213,Green Fuels for Denmark - Phase 1,Mobility
+264,H2_214,Hystock (EnergyStock),Mobility
+265,H2_214,Hystock (EnergyStock),Other Industry
+266,H2_215,HAEOLUS,Power
+267,H2_215,HAEOLUS,Mobility
+268,H2_215,HAEOLUS,Other Industry
+269,H2_216,FUTURECEM,Methanol
+270,H2_216,FUTURECEM,Synfuels
+271,H2_216,FUTURECEM,Other Industry
+272,H2_217,Primolyzer (R&D),Power
+273,H2_219,Foulum Demonstration plant,Methane Mobility
+274,H2_219,Foulum Demonstration plant,Methane Grid Injection
+275,H2_220,Green Natural Gas,Methane Grid Injection
+276,H2_221,“Towards the Methane Society”,Methane Mobility
+277,H2_221,“Towards the Methane Society”,Methane Grid Injection
+278,H2_223,MeGa-stoRE,Methane Grid Injection
+279,H2_223,MeGa-stoRE,Methane Mobility
+280,H2_224,MeGa-stoRE Optimising and Upscaling,Methane Mobility
+281,H2_224,MeGa-stoRE Optimising and Upscaling,Methane Grid Injection
+282,H2_225,"Vestenskov/ Nakskov Industrial and Environmental Park, Lolland",Power
+283,H2_225,"Vestenskov/ Nakskov Industrial and Environmental Park, Lolland",Combined Heat & Power (fuel cells or turbines)
+284,H2_226,H2RES - Orsted offshore wind,Mobility
+285,H2_227,Samsø,Mobility
+286,H2_228,Esbjerg green ammonia plant,Ammonia
+287,H2_229,HRS Aalborg,Mobility
+288,H2_230,eSMR Methanol demo plant in Aarhus University,Methanol
+289,H2_233,Glomfjord Hydrogen AS,Mobility
+290,H2_234,"HyNor Lillestrøm, Akershus Energy Park",Power
+291,H2_234,"HyNor Lillestrøm, Akershus Energy Park",Mobility
+292,H2_235,Statkraft-CELSA-Mo green H2 for steel production,Iron&Steel
+293,H2_236,Utsira Island,Power
+294,H2_237,Nordic Blue Crude,Synfuels
+295,H2_238,Acorn Aberdeenshire,Refining
+296,H2_238,Acorn Aberdeenshire,Other Industry
+297,H2_238,Acorn Aberdeenshire,Grid Injection
+298,H2_239,Laboratory System at IFE Kjeller Phase 1,Power
+299,H2_240,HyDEMO,Mobility
+300,H2_240,HyDEMO,Power
+301,H2_241,Aurora (former Pilot-E),Mobility
+302,H2_242,"Green fertilizer project Porsgrunn-Heroya, phase 1",Ammonia
+303,H2_243,4Kvinnherad Power-to-Gas,Power
+304,H2_243,4Kvinnherad Power-to-Gas,Mobility
+305,H2_244,Tjeldbergodden Hydrogen,Methanol
+306,H2_245,"Gigastack-Hornsea 2, phase I",Refining
+307,H2_246,The Hydrogen office,Power
+308,H2_246,The Hydrogen office,Domestic Heat
+309,H2_247,RABH2,Mobility
+310,H2_247,RABH2,Power
+311,H2_248,Air Fuel Synthesis pilot plant,Synfuels
+312,H2_249,"Aberdeen, Hydrogen bus project",Mobility
+313,H2_250,"Fife, Levenmouth Community Energy Project",Power
+314,H2_250,"Fife, Levenmouth Community Energy Project",Mobility
+315,H2_251,"PURE Project, Unst",Mobility
+316,H2_251,"PURE Project, Unst",Power
+317,H2_251,"PURE Project, Unst",Combined Heat & Power (fuel cells or turbines)
+318,H2_252,Tyseley Energy Park refuelling hub,Mobility
+319,H2_253,H2H Saltend,Other Industry
+320,H2_253,H2H Saltend,Grid Injection
+321,H2_253,H2H Saltend,Power
+322,H2_254,Green Fuels for Denmark - Phase 2,Synfuels
+323,H2_254,Green Fuels for Denmark - Phase 2,Mobility
+324,H2_254,Green Fuels for Denmark - Phase 2,Other Industry
+325,H2_255,Green Fuels for Denmark - Phase 3,Other Industry
+326,H2_255,Green Fuels for Denmark - Phase 3,Mobility
+327,H2_255,Green Fuels for Denmark - Phase 3,Synfuels
+328,H2_256,Green Hydrogen for Scotland,Mobility
+329,H2_257,H2morrow,Mobility
+330,H2_257,H2morrow,Iron&Steel
+331,H2_257,H2morrow,Grid Injection
+332,H2_258,CF Industries - Donaldsonville Nitrogen Complex,Ammonia
+333,H2_259,Linde - Ontario (California),Mobility
+334,H2_260,Westkuste 100 (Phase 2),Synfuels
+335,H2_260,Westkuste 100 (Phase 2),Refining
+336,H2_260,Westkuste 100 (Phase 2),Grid Injection
+337,H2_261,"Get H2 Lingen, phase 1",Refining
+338,H2_261,"Get H2 Lingen, phase 1",Power
+339,H2_261,"Get H2 Lingen, phase 1",Iron&Steel
+340,H2_262,HySynGas,Methane Mobility
+341,H2_262,HySynGas,Methane Grid Injection
+342,H2_263,Northern Irish hydrogen project,Mobility
+343,H2_264,"Liquid Wind, FlagshipONE",Methanol
+344,H2_265,H2U - Eyre Peninsula Gateway Hydrogen Project at Port Bonython.,Ammonia
+345,H2_266,"North CCU HUB, phase 1. North-C -Methanol Demo plant",Methanol
+346,H2_267,Centurion,Mobility
+347,H2_267,Centurion,Other Industry
+348,H2_267,Centurion,Grid Injection
+349,H2_269,IPCEI SilverFrog,Other Industry
+350,H2_269,IPCEI SilverFrog,Mobility
+351,H2_269,IPCEI SilverFrog,Grid Injection
+352,H2_271,Murchison,Other Industry
+353,H2_271,Murchison,Mobility
+354,H2_271,Murchison,Power
+355,H2_272,Helios Green Fuels - Neom,Ammonia
+356,H2_272,Helios Green Fuels - Neom,Synfuels
+357,H2_273,IPCEI Blue Danube,Other Industry
+358,H2_273,IPCEI Blue Danube,Mobility
+359,H2_274,Project GERI,Synfuels
+360,H2_274,Project GERI,Ammonia
+361,H2_277,NEL - Nikola Agreement H2 refuelling stations in USA (from 2020),Mobility
+362,H2_279,HyEx - phase 1,Ammonia
+363,H2_279,HyEx - phase 1,Synfuels
+364,H2_280,HyEx - phase 2,Synfuels
+365,H2_280,HyEx - phase 2,Ammonia
+366,H2_98,Costa Rica Transportation Ecosystem Project,Mobility
+367,H2_282,"HyNetherlands, 1st phase",Power
+368,H2_282,"HyNetherlands, 1st phase",Grid Injection
+369,H2_283,HyNetherlands 2nd phase,Grid Injection
+370,H2_283,HyNetherlands 2nd phase,Power
+371,H2_284,Hygreen Provence 1st phase,Power
+372,H2_284,Hygreen Provence 1st phase,Other Industry
+373,H2_284,Hygreen Provence 1st phase,Mobility
+374,H2_284,Hygreen Provence 1st phase,Grid Injection
+375,H2_285,Hygreen Provence 2nd phase,Mobility
+376,H2_285,Hygreen Provence 2nd phase,Power
+377,H2_285,Hygreen Provence 2nd phase,Other Industry
+378,H2_285,Hygreen Provence 2nd phase,Grid Injection
+379,H2_286,Hygreen Provence 3rd phase,Grid Injection
+380,H2_286,Hygreen Provence 3rd phase,Power
+381,H2_286,Hygreen Provence 3rd phase,Other Industry
+382,H2_286,Hygreen Provence 3rd phase,Mobility
+383,H2_287,Sundance Hydrogen,Grid Injection
+384,H2_288,Port of Rotterdam BP refinery - H2.50,Refining
+385,H2_289,"Hysencia, Phase I",Mobility
+386,H2_289,"Hysencia, Phase I",Other Industry
+387,H2_290,"Ningxia Solar Hydrogen Project, Phase 1",Methanol
+388,H2_291,Dyno Nobel Renewable Hydrogen Project,Ammonia
+389,H2_292,Green Crane Pais Vasco Hub,Other Industry
+390,H2_293,"Green Crane - La Robla, Phase 1",Other Industry
+391,H2_293,"Green Crane - La Robla, Phase 1",Mobility
+392,H2_294,"Green Crane, Aragon Hub",Grid Injection
+393,H2_295,Hydrogen Plant for Westereems Wind Farm (RWE Eemshaven),Domestic Heat
+394,H2_296,Queensland Nitrates Renewable Hydrogen and Ammonia,Ammonia
+395,,"Hemweg
+ hub Amsterdam",Grid Injection
+396,,"Hemweg
+ hub Amsterdam",Power
+397,H2_298,Yara Sluiskil (Deltaurus 2) - Haddock,Ammonia
+398,H2_300,"GreenH2UB (10 hubs of 3-10MW, the first one Ref786)",Other Industry
+399,H2_300,"GreenH2UB (10 hubs of 3-10MW, the first one Ref786)",Mobility
+400,H2_300,"GreenH2UB (10 hubs of 3-10MW, the first one Ref786)",Grid Injection
+401,H2_300,"GreenH2UB (10 hubs of 3-10MW, the first one Ref786)",Power
+402,H2_301,vHyGO - 1st Facility for H2 buses in Bouin (H2 Ouest),Mobility
+403,H2_302,vHyGO - 2nd facility in Vannes (EffiH2),Mobility
+404,H2_303,H2SusBuild / RES-H2,Combined Heat & Power (fuel cells or turbines)
+405,H2_303,H2SusBuild / RES-H2,Power
+406,H2_304,"Ferrolterra plant, pahse 1",Mobility
+407,H2_305,ELYGRID (R&D),Power
+408,H2_306,Aviation synfuels,Synfuels
+409,H2_307,Tapada do Outeiro natural gas power plant,Power
+410,H2_308,"Lingen BP Refinery , phase 1",Refining
+411,H2_309,Wunsiedel Energy Park (Phase 1),Mobility
+412,H2_309,Wunsiedel Energy Park (Phase 1),Other Industry
+413,H2_310,Wunsiedel Energy Park (Phase 2),Mobility
+414,H2_310,Wunsiedel Energy Park (Phase 2),Other Industry
+415,H2_311,"Repsol Bilbao port synfuels project, pahse 1",Synfuels
+416,H2_313,Hydrogen Island Aitutaki,Power
+417,H2_313,Hydrogen Island Aitutaki,Mobility
+418,H2_154,Hydrogen Island Bozcaada,Power
+419,H2_154,Hydrogen Island Bozcaada,Mobility
+420,H2_315,E-Thor,Methanol
+421,H2_316,H₂ Air Base Leeuwarden,Grid Injection
+422,H2_316,H₂ Air Base Leeuwarden,Mobility
+423,H2_317,SEE / Storage of electric energy,Methane Grid Injection
+424,H2_318,New zealand Matiu/Somes Island,Combined Heat & Power (fuel cells or turbines)
+425,H2_319,Vendée hydrogène,Mobility
+426,H2_60,H2One - SP Group,Mobility
+427,H2_321,RESelyser (R&D),Power
+428,H2_322,DVGW-EBI KIT - Demo-SNG,Methane Grid Injection
+429,H2_323,Multiphly,Synfuels
+430,H2_323,Multiphly,Refining
+431,H2_63,Semakau island microgrid Engie (SPORE),Power
+432,H2_63,Semakau island microgrid Engie (SPORE),Mobility
+433,H2_325,"PostBus Hydrogen bus, Brugg, aargau CHIC",Mobility
+434,H2_326,Emden I Biogas upgrading,Power
+435,H2_326,Emden I Biogas upgrading,Mobility
+436,H2_326,Emden I Biogas upgrading,Methane Grid Injection
+437,H2_327,PtG Switzerland,Methane Grid Injection
+438,H2_328,MYRTE,Power
+439,H2_329,H2OzBus Project,Mobility
+440,H2_330,Sunfire PtL demo Fuel1,Synfuels
+441,H2_331,Hyport - Toulouse-Blagnac Airport,Mobility
+442,H2_332,DEMETER,Methane Grid Injection
+443,H2_332,DEMETER,Power
+444,H2_335,PtG-Elektrolyse im MW-Maßstab (R&D),Methane Grid Injection
+445,H2_336,"BioPower2Gas, Allendorf, Eder",Methane Grid Injection
+446,H2_337,Rozenburg Power2Gas Phase 1,Methane Grid Injection
+447,H2_338,"Greenhouse heating, solar-H2",Power
+448,H2_339,EE-Methan aus CO2 (R&D),Methane Grid Injection
+449,H2_340,OptFuel (R&D),Methane Grid Injection
+450,H2_341,Thüga PtG plant Frankfurt/Main,Mobility
+451,H2_341,Thüga PtG plant Frankfurt/Main,Power
+452,H2_341,Thüga PtG plant Frankfurt/Main,Grid Injection
+453,H2_342,RENOVAGAS,Methane Grid Injection
+454,H2_343,"HyFLEET:CUTE, Hamburg",Mobility
+455,H2_344,Reduction and Reuse of CO2: Renewable Fuels for Electricity Production- ZHAW,Power
+456,H2_344,Reduction and Reuse of CO2: Renewable Fuels for Electricity Production- ZHAW,Synfuels
+457,H2_344,Reduction and Reuse of CO2: Renewable Fuels for Electricity Production- ZHAW,Methane Grid Injection
+458,H2_345,CHOCHCO,Synfuels
+459,H2_345,CHOCHCO,Methane Grid Injection
+460,H2_346,Hydrogen Wind Farm Sotavento,Power
+461,H2_347,"CUTE, Stockholm",Mobility
+462,H2_348,"HyFLEET:CUTE, Amesterdam",Mobility
+463,H2_349,"Wind2Hydrogen, HyCentA",Mobility
+464,H2_349,"Wind2Hydrogen, HyCentA",Other Industry
+465,H2_349,"Wind2Hydrogen, HyCentA",Grid Injection
+466,H2_350,BOEING (rSOC Demonstrator),Power
+467,H2_351,Pilot & Demo PtM HSR,Methane Mobility
+468,H2_351,Pilot & Demo PtM HSR,Methane Grid Injection
+469,H2_352,Dresden,Power
+470,H2_353,Rapperswil,Methane Mobility
+471,H2_353,Rapperswil,Methane Grid Injection
+472,H2_354,"RegEnKibo, Kirchheimbolanden (R&D)",Methane Grid Injection
+473,H2_355,ECTOS,Mobility
+474,H2_356,"ETOGAS, Solar Fuel Alpha-plant 250 kW, ZSW",Methane Mobility
+475,H2_357,"Shoro Dam in Shiranuka-cho, Shiranuka-gun, Hokkaido",Combined Heat & Power (fuel cells or turbines)
+476,H2_357,"Shoro Dam in Shiranuka-cho, Shiranuka-gun, Hokkaido",Mobility
+477,H2_358,SoCalGas and University of California Irvine 1,Mobility
+478,H2_359,HELMETH (R&D),Methane Grid Injection
+479,H2_359,HELMETH (R&D),Methane Mobility
+480,H2_360,SoCalGas and University of California Irvine 2,Mobility
+481,H2_361,Tomakomai,Mobility
+482,H2_362,GrInHy,Iron&Steel
+483,H2_363,"Tomamae Town, Hokkaido",Combined Heat & Power (fuel cells or turbines)
+484,H2_364,Yokohama City Wind Power Plant (Hama Wing),Mobility
+485,H2_365,GRHYD,Mobility
+486,H2_365,GRHYD,Grid Injection
+487,H2_366,ELY4OFF,Power
+488,H2_367,"Hidrolica, Tahivilla",Power
+489,H2_368,GenHyPEM (R&D),Power
+490,H2_369,Jupiter 1000,Grid Injection
+491,H2_369,Jupiter 1000,Methane Grid Injection
+492,H2_370,Hawaii Hydrogen Power Park (phase 2),Power
+493,H2_370,Hawaii Hydrogen Power Park (phase 2),Mobility
+494,H2_371,PVFCSYS Sophia Antipolis,Power
+495,H2_372,PVFCSYS Agrate,Power
+496,H2_373,"THEUS H2 Energy Storage, Takasago (R&D)",Power
+497,H2_374,Aeropila,Mobility
+498,H2_374,Aeropila,Power
+499,H2_374,Aeropila,Combined Heat & Power (fuel cells or turbines)
+500,H2_375,PosHYdon,Other Industry
+501,H2_376,FIRST - Showcase II,Power
+502,H2_377,IHAVU,Domestic Heat
+503,H2_379,Ameland,Domestic Heat
+504,H2_379,Ameland,Grid Injection
+505,H2_380,Wind-H2 Village Prince Edward Island,Grid Injection
+506,H2_380,Wind-H2 Village Prince Edward Island,Power
+507,H2_381,"DTE Energy Hydrogen Technoly Park, Southfield Michigan",Grid Injection
+508,H2_381,"DTE Energy Hydrogen Technoly Park, Southfield Michigan",Power
+509,H2_382,Wind2H2 Project NREL,Grid Injection
+510,H2_382,Wind2H2 Project NREL,Power
+511,H2_383,Small Scale Renewable Power System DRI (Desert Research Institute),Grid Injection
+512,H2_384,IRENE System,Grid Injection
+513,H2_385,Bio SNG Güssing,Methane Mobility
+514,H2_385,Bio SNG Güssing,Methane Grid Injection
+515,H2_386,Fine Chemical Industry Park of Lanzhou,Methanol
+516,H2_387,GldH2,Domestic Heat
+517,H2_388,P2P IPKW,Power
+518,H2_388,P2P IPKW,Grid Injection
+519,H2_388,P2P IPKW,Domestic Heat
+520,H2_389,"AuxHYGen, phase 1",Mobility
+521,H2_390,MethFuel,Methane Grid Injection
+522,H2_391,Coffeyville fertilizer plant,Ammonia
+523,H2_392,PCS Nitrogen,Ammonia
+524,H2_393,Port Arthur,Refining
+525,H2_395,Port Jerome,Refining
+526,H2_396,Quest,Refining
+527,H2_397,ElectroHgena,Methane Mobility
+528,H2_397,ElectroHgena,Methane Grid Injection
+529,H2_398,Power to flex (several pilot projects),Power
+530,H2_398,Power to flex (several pilot projects),Combined Heat & Power (fuel cells or turbines)
+531,H2_398,Power to flex (several pilot projects),Mobility
+532,H2_399,"Minerve, Nantes",Methane Mobility
+533,H2_399,"Minerve, Nantes",Methane Grid Injection
+534,H2_400,HYPOS (several projects),Mobility
+535,H2_400,HYPOS (several projects),Power
+536,H2_400,HYPOS (several projects),Other Industry
+537,H2_400,HYPOS (several projects),Grid Injection
+538,H2_137,"Hazira, Reliance, back-up hydrogen supply",Power
+539,H2_402,Air Liquide Becancour,Mobility
+540,H2_402,Air Liquide Becancour,Other Industry
+541,H2_403,Hebei Jiantou Guyuan wind project - 2nd phase,Mobility
+542,H2_404,Air Products Net-Zero Hydrogen Energy Complex,Other Industry
+543,H2_404,Air Products Net-Zero Hydrogen Energy Complex,Power
+544,H2_405,Hypor Hydrogen Energy Zhangjiakou Wind Power Hebei - first phase,Mobility
+545,H2_406,Guangdong Synergy Hydrogen Power Technology Co. 2n phase,Mobility
+546,H2_407,"Foshan hydrogen city, Phase 1",Mobility
+547,H2_408,"Foshan hydrogen city, Phase 2",Mobility
+548,H2_409,DEMO4GRID,Other Industry
+549,H2_409,DEMO4GRID,Mobility
+550,H2_410,Anglo-American Mogalakwena mine,Mobility
+551,H2_411,Walmart Quilicura forklifts,Mobility
+552,H2_412,Wuppertal refuelling station,Mobility
+553,H2_413,SALCOS - WindH2,Iron&Steel
+554,H2_414,PtG-Fehndorf,Grid Injection
+555,H2_415,Hebei Jiantou Guyuan wind project - 1st phase,Power
+556,H2_416,"Green hydrogen Project, Mohammad Bin Rashid Solar Park",Mobility
+557,H2_417,Hydrogen Park South Australia - HyPSA,Grid Injection
+558,H2_418,NEL-Champaign-Urbana Mass Transit District,Mobility
+559,H2_420,Jemena Western Sydney - H2GO project,Grid Injection
+560,H2_421,Queensland Government HRS,Mobility
+561,H2_422,GRASSHOPPER,Mobility
+562,H2_423,Seafuel project,Power
+563,H2_424,Obayashi geothermal hydrogen,Combined Heat & Power (fuel cells or turbines)
+564,H2_424,Obayashi geothermal hydrogen,Mobility
+565,H2_425,Hydrogen village Burgenland,Combined Heat & Power (fuel cells or turbines)
+566,H2_425,Hydrogen village Burgenland,Power
+567,H2_425,Hydrogen village Burgenland,Mobility
+568,H2_426,"Unisa, Mawson Lakes campus",Grid Injection
+569,H2_427,North West Sturgeon refinery,Refining
+570,H2_428,Nutrien (former Agrium) fertilizer,Ammonia
+571,H2_429,Kidman Park in Adelaide depot,Grid Injection
+572,H2_430,"SPHYNX, R&D",Mobility
+573,H2_191,Laboratory Plant HRI Quebec,Grid Injection
+574,H2_434,vHyGO -3rd facility in Brest,Mobility
+575,H2_436,Engie - Yara Pilbara test,Ammonia
+576,H2_437,Haiperer Wind Power Hebei - second phase,Mobility
+577,H2_438,"Crystal Brook Energy Park, South Australia",Grid Injection
+578,H2_440,H2-hub Gladstone (Queensland) - phase 1,Ammonia
+579,H2_442,"Demonstration plant Kuala Terengganu, Malaysia",Other Industry
+580,H2_443,Demo Plant Agricultural University Athens,Power
+581,H2_444,The Hydrogen house,Mobility
+582,H2_444,The Hydrogen house,Combined Heat & Power (fuel cells or turbines)
+583,H2_444,The Hydrogen house,Power
+584,H2_445,Fenosa Canberra hydrogen demo project,Methane Grid Injection
+585,H2_446,Alliander Oosterwolde - solar park of GroenLeven,Other Industry
+586,H2_446,Alliander Oosterwolde - solar park of GroenLeven,Mobility
+587,H2_447,Siemens Energy and Beijing Green Hydrogen Technology Development HRS,Mobility
+588,H2_448,RWE-Thyssenkrupp Duisburg steel plant (HydrOxy Hub Walsum),Iron&Steel
+589,H2_449,HyAMMED HD trucksrefuelling station,Mobility
+590,H2_450,Ribatejo natural gas power plant,Power
+591,H2_451,Air Liquide liquid hydrogen production plant,Mobility
+592,H2_452,"Haru Oni, phase 1",Methanol
+593,H2_452,"Haru Oni, phase 1",Synfuels
+594,H2_453,Holland Hydrogen - phase 1,Refining
+595,H2_454,"Sun Metals Zinc Refinery, phase I",Other Industry
+596,H2_454,"Sun Metals Zinc Refinery, phase I",Mobility
+597,H2_455,HRS TMB Barcelona,Mobility
+598,H2_456,HRS Charleroi,Mobility
+599,H2_457,HRS CNH2 Puertollano,Mobility
+600,H2_458,Fertiberia/Iberdrola - Palos de la Frontera I,Ammonia
+601,H2_459,Hyflexpower,Power
+602,H2_461,Solena Group Plasma enhanced gasification,Mobility
+603,H2_462,H2U (former Proyecto Verne),Mobility
+604,H2_464,Olive Creek 2,Ammonia
+605,H2_465,Fertiberia/Iberdrola - Palos de la Frontera II,Ammonia
+606,H2_466,Douglas PUD - industrial area north of East Wenatchee,Grid Injection
+607,H2_467,Chongli wind-solar Hydrogen Project - first phase,Mobility
+608,H2_468,"GreenH2UB (1st hub, Noord Brabant)",Grid Injection
+609,H2_468,"GreenH2UB (1st hub, Noord Brabant)",Mobility
+610,H2_468,"GreenH2UB (1st hub, Noord Brabant)",Other Industry
+611,H2_469,Duwaal,Mobility
+612,H2_470,Chongli wind-solar Hydrogen Project - second phase,Mobility
+613,H2_471,Hysolar Green on Road - Nieuwegein,Mobility
+614,H2_472,Halcyon Power,Mobility
+615,H2_472,Halcyon Power,Power
+616,H2_473,Hydrogenpilot Oosterwolde,Power
+617,H2_474,Kopernikus 2.0,Synfuels
+618,H2_475,E-CO2MET Raffinerie Mitteldeutschland,Methanol
+619,H2_477,H-Vision (phase 1),Grid Injection
+620,H2_477,H-Vision (phase 1),Refining
+621,H2_478,Preem CCS,Refining
+622,H2_479,METHYCENTRE,Mobility
+623,H2_479,METHYCENTRE,Methane Grid Injection
+624,H2_479,METHYCENTRE,Methane Mobility
+625,H2_480,Hydrogen Park Gladstone,Grid Injection
+626,H2_481,"Toyota Hydrogen Centre, Altona, Victoria",Mobility
+627,H2_482,GZI Next,Mobility
+628,H2_482,GZI Next,Other Industry
+629,H2_483,Yanchang Integrated Carbon Capture and Storage Demonstration,Refining
+630,H2_485,ECB Omega Green biofuel project,Biofuels
+631,H2_486,"Element One (Element Eins), phase 1",Grid Injection
+632,H2_486,"Element One (Element Eins), phase 1",Other Industry
+633,H2_487,Air Liquide Normand’Hy,Refining
+634,H2_488,"H2V59, 1st phase",Grid Injection
+635,H2_489,"Arrowsmith Hydrogen Project, phase 1",Mobility
+636,H2_489,"Arrowsmith Hydrogen Project, phase 1",Ammonia
+637,H2_490,Bad Lauchstädt energy park,Combined Heat & Power (fuel cells or turbines)
+638,H2_490,Bad Lauchstädt energy park,Grid Injection
+639,H2_491,"DJEWELS Chemiepark - Delfzijl, Phase 1",Methanol
+640,H2_491,"DJEWELS Chemiepark - Delfzijl, Phase 1",Other Industry
+641,H2_492,UpHy,Mobility
+642,H2_493,Referenzkraftwerk Lausitz,Power
+643,H2_494,Lake Charles Methanol,Methanol
+644,H2_495,PGNiG - INGRID,Grid Injection
+645,H2_496,"DJEWELS Chemiepark - Delfzijl, Phase 2",Synfuels
+646,H2_497,H2ermes,Iron&Steel
+647,H2_498,"H2V59, 2nd phase",Grid Injection
+648,H2_499,Hybridge,Grid Injection
+649,H2_500,H2M,Power
+650,H2_502,"Etzel, Salt caverns",Power
+651,H2_502,"Etzel, Salt caverns",Mobility
+652,H2_502,"Etzel, Salt caverns",Grid Injection
+653,H2_503,"Shell heavy residue gasification CCU - Pernis refinery (in 2024, the CCU project will become CCUS - ref1323 - once Porhtos project is available)",Refining
+654,H2_505,Blue Hydrogen Den Helder,Grid Injection
+655,H2_506,Nemo Hydrogen Project,Other Industry
+656,H2_506,Nemo Hydrogen Project,Iron&Steel
+657,H2_506,Nemo Hydrogen Project,Refining
+658,H2_506,Nemo Hydrogen Project,Ammonia
+659,H2_507,Baicheng City Bus Company - Songyuan City,Mobility
+660,H2_508,Repsol advanced biofuels plant Cartagena,Biofuels
+661,H2_509,H2-based residential area in Van der Veen,Domestic Heat
+662,H2_510,H2Gas,Grid Injection
+663,H2_511,Long Beach Fuel Cell plant,Mobility
+664,H2_512,Producing Hydrogen by Gasification of Biomass in 'het Groene Hart',Other Industry
+665,H2_513,Ramboll study for an e-fuel plant in Greenland,Methanol
+666,H2_514,Saint-Brieuc Armor Agglomeration production plant,Mobility
+667,H2_515,"Giner ELX, H2@Scale (Florida)",Power
+668,H2_516,"Exelon, H2@Scale",Grid Injection
+669,H2_516,"Exelon, H2@Scale",Other Industry
+670,H2_516,"Exelon, H2@Scale",Power
+671,H2_516,"Exelon, H2@Scale",Mobility
+672,H2_517,"Frontier Energy, H2@Scale - electrolysis",Power
+673,H2_517,"Frontier Energy, H2@Scale - electrolysis",Mobility
+674,H2_518,"DJEWELS Chemiepark - Delfzijl, Phase 3",Methanol
+675,H2_519,Curthyl,Other Industry
+676,H2_520,Deltaurus 1,Refining
+677,H2_521,Deltaurus 3,Grid Injection
+678,H2_521,Deltaurus 3,Other Industry
+679,H2_522,"North CCU HUB, phase 3 (Deltaurus 4)",Other Industry
+680,H2_524,"HySynergy, phase 2",Mobility
+681,H2_524,"HySynergy, phase 2",Refining
+682,H2_525,Green lab skive,Methanol
+683,H2_526,"Shell China - Zhangjiakou, phase 1",Mobility
+684,H2_528,"Aberdeen Hydrogen Hub, phase I",Mobility
+685,H2_528,"Aberdeen Hydrogen Hub, phase I",Grid Injection
+686,H2_528,"Aberdeen Hydrogen Hub, phase I",Domestic Heat
+687,H2_529,"Fortescue Metals Group - Bell Bay, Tasmania",Ammonia
+688,H2_530,H2HUB,Mobility
+689,H2_531,"Meirama plant, phase 1",Other Industry
+690,H2_534,Huaneng electrolysis plant in Western Sichuan,Power
+691,H2_535,H-Vision (phase 2),Refining
+692,H2_535,H-Vision (phase 2),Grid Injection
+693,H2_536,HaYrport,Mobility
+694,H2_537,"Power-to-Methanol, Antwerp, phase 2",Methanol
+695,H2_538,"Hyport, phase 2",Mobility
+696,H2_540,White Dragon,Combined Heat & Power (fuel cells or turbines)
+697,H2_540,White Dragon,Domestic Heat
+698,H2_540,White Dragon,Power
+699,H2_541,"North CCU HUB, phase 2. North-C -full scale",Ammonia
+700,H2_542,HRS Halle (Continued as Ref148),Mobility
+701,H2_543,HRS Wilrijk,Mobility
+702,H2_544,Origin Energy Tasmania’s Bell Bay,Ammonia
+703,H2_545,H2One Multistation- Tsuruga City,Mobility
+704,H2_545,H2One Multistation- Tsuruga City,Power
+705,H2_546,"H100 Fife Project, Levenmouth",Domestic Heat
+706,H2_547,Steag-Thyssenkrupp Duisburg steel plant (HydrOxy Hub Walsum),Iron&Steel
+707,H2_548,Gela refinery,Refining
+708,H2_549,Taranto Sustainable Refinery,Refining
+709,H2_550,Plug Power-Brookfield Renewable Susquehanna River (Pen) project,Mobility
+710,H2_551,"BENORTH2 (Amorebieta-Boroa power plant), phase 1",Mobility
+711,H2_551,"BENORTH2 (Amorebieta-Boroa power plant), phase 1",Power
+712,H2_551,"BENORTH2 (Amorebieta-Boroa power plant), phase 1",Grid Injection
+713,H2_552,"BENORTH2 (Amorebieta-Boroa power plant), phase 2",Grid Injection
+714,H2_552,"BENORTH2 (Amorebieta-Boroa power plant), phase 2",Mobility
+715,H2_552,"BENORTH2 (Amorebieta-Boroa power plant), phase 2",Power
+716,H2_553,Camberra HRS,Mobility
+717,H2_554,Recycle Carbone Varennes biofuels plant,Biofuels
+718,H2_556,REDDAP,Ammonia
+719,H2_557,Wallonia e-methane project,Methane Grid Injection
+720,H2_558,"Get H2 Lingen, phase 4",Power
+721,H2_558,"Get H2 Lingen, phase 4",Mobility
+722,H2_558,"Get H2 Lingen, phase 4",Refining
+723,H2_558,"Get H2 Lingen, phase 4",Iron&Steel
+724,H2_559,"NortH2, phase 2",Grid Injection
+725,H2_559,"NortH2, phase 2",Other Industry
+726,H2_559,"NortH2, phase 2",Refining
+727,H2_560,"NortH2, phase 3",Other Industry
+728,H2_560,"NortH2, phase 3",Grid Injection
+729,H2_560,"NortH2, phase 3",Refining
+730,H2_563,H2-hub Gladstone (Queensland) - phases 2-3,Ammonia
+731,H2_564,Brande Hydrogen project,Mobility
+732,H2_565,Hydrogen trial in Dalmine steel mill,Iron&Steel
+733,H2_566,Horizeo project,Other Industry
+734,H2_567,Deep Purple,Mobility
+735,H2_567,Deep Purple,Other Industry
+736,H2_567,Deep Purple,Power
+737,H2_568,Pinto waste water plant,Other Industry
+738,H2_569,Linde Leuna Chemical Complex,Mobility
+739,H2_569,Linde Leuna Chemical Complex,Other Industry
+740,H2_570,"Project Haber, phase 1",Grid Injection
+741,H2_571,Grupa Lotos refinery,Refining
+742,H2_573,H2TAS - phase I,Mobility
+743,H2_574,Sumitomo Queensland,Other Industry
+744,H2_574,Sumitomo Queensland,Mobility
+745,H2_575,Sumitomo Oman,Mobility
+746,H2_577,H24All,Refining
+747,H2_577,H24All,Other Industry
+748,H2_579,Esslingen District,Mobility
+749,H2_579,Esslingen District,Grid Injection
+750,H2_590,"Green Crane, Asturias Hub, Phase I",Other Industry
+751,H2_591,"Green Crane, Asturias Hub, Phase II",Other Industry
+752,H2_592,"Hynet Northwest, phase 2",Power
+753,H2_592,"Hynet Northwest, phase 2",Refining
+754,H2_592,"Hynet Northwest, phase 2",Mobility
+755,H2_592,"Hynet Northwest, phase 2",Other Industry
+756,H2_592,"Hynet Northwest, phase 2",Grid Injection
+757,H2_593,Zero Emission Valley (14 HRS),Mobility
+758,H2_595,Liberty South - Port Anthony,Mobility
+759,H2_596,KOGAN HYDROGEN DEMONSTRATION PROJECT,Mobility
+760,H2_596,KOGAN HYDROGEN DEMONSTRATION PROJECT,Power
+761,H2_597,"Green Falcon, phase I",Synfuels
+762,H2_598,Lysekil refinery (phase 1),Biofuels
+763,H2_603,ORANGE.BAT Castellon,Other Industry
+764,H2_604,Saras Sardinia refinery,Refining
+765,H2_606,SunLine Palms Springs,Mobility
+766,H2_608,H2 Green Steel (H2GS),Iron&Steel
+767,H2_609,"New York Science, Technology and Advanced Manufacturing Park",Mobility
+768,H2_610,Abanto Technology Park,Mobility
+769,H2_611,HyDeal Ambition,Other Industry
+770,H2_611,HyDeal Ambition,Mobility
+771,H2_611,HyDeal Ambition,Grid Injection
+772,H2_613,Cavendish NextGen Hydrogen Hub,Power
+773,H2_614,Refhyne II,Refining
+774,H2_615,H2-Login,Mobility
+775,H2_616,Changwon Industrial complex,Power
+776,H2_617,"Wilhelmshaven , phase 1",Other Industry
+777,H2_618,Sinopec Qilu Petrochemical CCS,Ammonia
+778,H2_619,Karamay Dunhua Oil Technology CCUS EOR Project,Methanol
+779,H2_620,Great Plains Synfuel Plant and Weyburn-Midale,Methane Grid Injection
+780,H2_621,Al Reyadah CCUS,Iron&Steel
+781,H2_622,Leeds Bradford Airport hub,Mobility
+782,H2_623,Northwest Natural Holding synthetic methane plant,Methane Grid Injection
+783,H2_624,Centre Point Energy Minnesota,Grid Injection
+784,H2_625,New Jersey Resources Howell,Grid Injection
+785,H2_626,Vantaa-Wartsila methanation,Methane Grid Injection
+786,H2_627,AES Gener ammonia project,Ammonia
+787,H2_629,CNNC HTGR P2G demo,Iron&Steel
+788,H2_630,CNNC 600MW HTGR P2G for steel,Iron&Steel
+789,H2_633,National grid green H2 storage in New York,Power
+790,H2_633,National grid green H2 storage in New York,Grid Injection
+791,H2_633,National grid green H2 storage in New York,Mobility
+792,H2_635,"Saipem and Alboran Hydrogen (2 plants, Taranto and Cerignola) - 3rd plant, ref 1409",Grid Injection
+793,H2_635,"Saipem and Alboran Hydrogen (2 plants, Taranto and Cerignola) - 3rd plant, ref 1409",Other Industry
+794,H2_638,Optimal-ITM agreement,Power
+795,H2_640,Green Hydrogen for Humberside,Other Industry
+796,H2_641,HRS Gatwick airport,Mobility
+797,H2_643,HRS Swindon,Mobility
+798,H2_644,HRS Beaconsfield,Mobility
+799,H2_645,QEM Julia Creek - Queensland,Refining
+800,H2_646,Rafnes chemical plants,Mobility
+801,H2_647,Synkero synfuels project,Synfuels
+802,H2_648,Zenid Initiative,Synfuels
+803,H2_652,PT Panca Amara Utama ammonia plant in Luwuk,Ammonia
+804,H2_653,OMV Schwechat Refinery,Refining
+805,H2_653,OMV Schwechat Refinery,Biofuels
+806,H2_654,"Barents Blue ammonia plant, phase 1",Ammonia
+807,H2_655,"Hysencia, Phase II",Mobility
+808,H2_655,"Hysencia, Phase II",Other Industry
+809,H2_656,Renewstable,Power
+810,H2_657,Centrale Electrique de l’Ouest Guyanais - CEOG,Power
+811,H2_658,NewGen,Ammonia
+812,H2_659,"Nauticol Blue Methanol facility in Grande Prairie, Alberta",Methanol
+813,H2_660,Evolugen H2 injection project,Grid Injection
+814,H2_663,Aquamarine,Power
+815,H2_664,"Clean Hydrogen Coastline, Ems",Mobility
+816,H2_664,"Clean Hydrogen Coastline, Ems",Other Industry
+817,H2_664,"Clean Hydrogen Coastline, Ems",Iron&Steel
+818,H2_666,HRS Plataforma Logística PLAZA,Mobility
+819,H2_667,HRS Valecnia,Mobility
+820,H2_668,HRS Alicante,Mobility
+821,H2_669,Prince George refinery,Refining
+822,H2_670,Science Parks of Tainan and Hsinchu,Other Industry
+823,H2_671,SeaH2Land,Refining
+824,H2_671,SeaH2Land,Ammonia
+825,H2_671,SeaH2Land,Methanol
+826,H2_671,SeaH2Land,Iron&Steel
+827,H2_671,SeaH2Land,Other Industry
+828,H2_672,HRS Bremervörde - trains,Mobility
+829,H2_673,ArcelorMittal Bremen,Iron&Steel
+830,H2_674,Rossello paper factory,Other Industry
+831,H2_674,Rossello paper factory,Mobility
+832,H2_676,Energía Los Cabos,Power
+833,H2_678,Heritage Gas - Ottawa,Grid Injection
+834,H2_680,RHYME,Methanol
+835,H2_681,Yanqing Hydrogen Energy Industrial Park,Mobility
+836,H2_683,"Wind Power Heating and Hydrogen Production Project in Fengning Manzu Autonomous County, Chengde City",Other Industry
+837,H2_683,"Wind Power Heating and Hydrogen Production Project in Fengning Manzu Autonomous County, Chengde City",Mobility
+838,H2_683,"Wind Power Heating and Hydrogen Production Project in Fengning Manzu Autonomous County, Chengde City",Grid Injection
+839,H2_683,"Wind Power Heating and Hydrogen Production Project in Fengning Manzu Autonomous County, Chengde City",Domestic Heat
+840,H2_684,Hydrogen Energy Equipment Industrial Cluster Project in Handan Economic and Technological Development Zone,Mobility
+841,H2_684,Hydrogen Energy Equipment Industrial Cluster Project in Handan Economic and Technological Development Zone,Domestic Heat
+842,H2_691,H2Pioneer,Other Industry
+843,H2_692,WIVA P&G Hydrogen Region,Power
+844,H2_692,WIVA P&G Hydrogen Region,Mobility
+845,H2_692,WIVA P&G Hydrogen Region,Grid Injection
+846,H2_693,Carbon2ProductAustria - C2PAT,Other Industry
+847,H2_694,P2G4A,Grid Injection
+848,H2_696,"Konin Power Plant, phase 1",Mobility
+849,H2_697,Project AIR (Perstorp - Stenungsund),Ammonia
+850,H2_698,Birsfelden power plant,Mobility
+851,H2_699,Steklarna Hrastnik glass manufactuing plant,Other Industry
+852,H2_703,"Lingen BP Refinery , phase 2",Refining
+853,H2_703,"Lingen BP Refinery , phase 2",Synfuels
+854,H2_704,HyMAT SH,Mobility
+855,H2_705,We-4-PUR,Other Industry
+856,H2_706,H2 in the Ketzin energy transition laborator,Mobility
+857,H2_706,H2 in the Ketzin energy transition laborator,Grid Injection
+858,H2_707,Green Energy Hub Helmstedt,Methanol
+859,H2_708,Speicherstadt Kerpen,Domestic Heat
+860,H2_708,Speicherstadt Kerpen,Power
+861,H2_708,Speicherstadt Kerpen,Mobility
+862,H2_710,SLOP2G Project,Methane Grid Injection
+863,H2_715,"PTG Bilsthorpe, Nottinghamshire",Grid Injection
+864,H2_718,P2G Velke Kapusany,Grid Injection
+865,H2_723,Sun2Hy,Grid Injection
+866,H2_724,HyGéo,Grid Injection
+867,H2_725,Pegasus,Methane Grid Injection
+868,H2_726,Power to gas plant in the south of Italy,Grid Injection
+869,H2_727,Hydrogen injection into the gas network in Lithuania,Grid Injection
+870,H2_729,"G2F - Gas to Future, phase 1",Grid Injection
+871,H2_730,"G2F - Gas to Future, phase 2",Grid Injection
+872,H2_731,Herten HRS,Mobility
+873,H2_732,vHyGO -4th facility in St Nazaire,Mobility
+874,H2_733,vHyGO -5th facility in Dieppe,Mobility
+875,H2_734,NEL-Lhyfe Agreement,Mobility
+876,H2_735,McDermott - CB&I 2nd project,Grid Injection
+877,H2_736,Hy-Fi,Ammonia
+878,H2_737,HYBAYERN,Mobility
+879,H2_738,Hyways for future,Mobility
+880,H2_738,Hyways for future,Iron&Steel
+881,H2_739,Norddeutsches Reallabor - Living Lab Northern Germany,Ammonia
+882,H2_739,Norddeutsches Reallabor - Living Lab Northern Germany,Refining
+883,H2_739,Norddeutsches Reallabor - Living Lab Northern Germany,Other Industry
+884,H2_739,Norddeutsches Reallabor - Living Lab Northern Germany,Mobility
+885,H2_740,"Haru Oni, phase 2",Methanol
+886,H2_740,"Haru Oni, phase 2",Synfuels
+887,H2_741,"Haru Oni, phase 3",Methanol
+888,H2_741,"Haru Oni, phase 3",Synfuels
+889,H2_743,Hydrospider - Eglisau-Glattfelden,Mobility
+890,H2_744,Pertamina Ulubelu gerothermal plant,Biofuels
+891,H2_744,Pertamina Ulubelu gerothermal plant,Refining
+892,H2_745,P2X Harjavalta project,Methane Grid Injection
+893,H2_746,Ercros - Sabinanigo,Other Industry
+894,H2_752,HNH,Ammonia
+895,H2_753,Rostock - RWE,Ammonia
+896,H2_754,CRS4-Italgas Sardinia,Methane Grid Injection
+897,H2_760,"Canary Islands Hub, phase 1",Power
+898,H2_760,"Canary Islands Hub, phase 1",Mobility
+899,H2_760,"Canary Islands Hub, phase 1",Other Industry
+900,H2_761,"Canary Islands Hub, phase 2",Other Industry
+901,H2_761,"Canary Islands Hub, phase 2",Mobility
+902,H2_761,"Canary Islands Hub, phase 2",Power
+903,H2_762,Suncor Edmonton Refinery,Grid Injection
+904,H2_762,Suncor Edmonton Refinery,Power
+905,H2_762,Suncor Edmonton Refinery,Refining
+906,H2_763,Donghae 1 offshore wind plant,Mobility
+907,H2_764,Project Jupiter (Gladstone),Mobility
+908,H2_765,Project Mars (Mackay),Mobility
+909,H2_766,Liberty North (Newcastle),Mobility
+910,H2_768,GREENH2KER,Other Industry
+911,H2_769,ZEHUS,Mobility
+912,H2_770,FUTURA,Mobility
+913,H2_771,Sicilian Sustainable Steel,Iron&Steel
+914,H2_772,Green H2 for Chemical Application - North,Other Industry
+915,H2_773,Green H2 for Chemical Application - South,Other Industry
+916,H2_774,La Spezia Green Hydrogen,Mobility
+917,H2_775,Road Runner,Biofuels
+918,H2_778,Offshore-to-X,Other Industry
+919,H2_781,Energiepark Eemshaven West (phase I),Other Industry
+920,H2_781,Energiepark Eemshaven West (phase I),Mobility
+921,H2_782,Energiepark Eemshaven West (phase II),Mobility
+922,H2_782,Energiepark Eemshaven West (phase II),Other Industry
+923,H2_783,ELYgator,Mobility
+924,H2_783,ELYgator,Other Industry
+925,H2_785,Zeeland Refinery,Refining
+926,H2_790,Sinopec - Ordos,Other Industry
+927,H2_791,Sinopec - Kuqa,Refining
+928,H2_794,EI-H2 - Aghada (phase 1),Mobility
+929,H2_794,EI-H2 - Aghada (phase 1),Other Industry
+930,H2_794,EI-H2 - Aghada (phase 1),Refining
+931,H2_795,Green lab skive (Phase II),Methanol
+932,H2_796,Khalifa Industrial Zone Abu Dhabi (KIZAD) - phase 1,Ammonia
+933,H2_797,"HySynergy, phase 3",Refining
+934,H2_798,Green H2 New Zealand - Taranaki,Mobility
+935,H2_798,Green H2 New Zealand - Taranaki,Ammonia
+936,H2_799,Horizon Oil Sands,Refining
+937,H2_801,Hyundai Oilbank - Blue H2 Ecosystem,Power
+938,H2_802,Forestal del Atlántico,Synfuels
+939,H2_803,SoHyCal,Mobility
+940,H2_804,Bee’ah waste-to-hydrogen,Mobility
+941,H2_805,Industrial Cachimayo,Ammonia
+942,H2_806,Sirea - Castres site,Mobility
+943,H2_808,BASF Ludwigshafen,Other Industry
+944,H2_817,Hydrogen Lab Bremerhaven (phase 1),Synfuels
+945,H2_818,Hydrogen Lab Bremerhaven (phase 2),Synfuels
+946,H2_819,Hydrogen Lab Leuna (phase 1),Methanol
+947,H2_819,Hydrogen Lab Leuna (phase 1),Synfuels
+948,H2_821,Hydrogen Lab Gorlitz,Mobility
+949,H2_822,Hydrogen Eagle (various hubs),Mobility
+950,H2_822,Hydrogen Eagle (various hubs),Mobility
+951,H2_822,Hydrogen Eagle (various hubs),Mobility
+952,H2_825,Hydrogen Eagle (Litvínov),Mobility
+953,H2_826,Hydrogen Eagle (Spolana),Mobility
+954,H2_826,Hydrogen Eagle (Spolana),Mobility
+955,H2_822,Hydrogen Eagle (various hubs),Mobility
+956,H2_829,Sines refinery (phase 1),Refining
+957,H2_831,Porto do Acu Fortescue Ammonia Project,Ammonia
+958,H2_831,Porto do Acu Fortescue Ammonia Project,Iron&Steel
+959,H2_831,Porto do Acu Fortescue Ammonia Project,Synfuels
+960,H2_832,Hoasis (TCP Gecomp),Mobility
+961,H2_832,Hoasis (TCP Gecomp),Ammonia
+962,H2_833,Ecopetrol 50kW electrolyser,Refining
+963,H2_834,H Valle Sur,Mobility
+964,H2_835,METH2 Atacama,Mobility
+965,H2_835,METH2 Atacama,Other Industry
+966,H2_835,METH2 Atacama,Methanol
+967,H2_836,Villa Lisa,Mobility
+968,H2_837,Ciudad del Este,Mobility
+969,H2_838,Encarnacion,Mobility
+970,H2_839,TA’ZIZ blue ammonia,Ammonia
+971,H2_840,Badgingarra Renewable Hydrogen Project,Mobility
+972,H2_840,Badgingarra Renewable Hydrogen Project,Iron&Steel
+973,H2_840,Badgingarra Renewable Hydrogen Project,Power
+974,H2_841,BHP Nickel West Green Hydrogen,Other Industry
+975,H2_842,Dawson Mine,Mobility
+976,H2_843,"Candem County (GA), green power plant",Mobility
+977,H2_847,OCP Group demo project,Ammonia
+978,H2_848,Hofors rolling project,Iron&Steel
+979,H2_850,Manilla Solar & Renewable Energy Storage Project,Power
+980,H2_853,EI-H2 - Aghada (phase 2),Refining
+981,H2_853,EI-H2 - Aghada (phase 2),Other Industry
+982,H2_853,EI-H2 - Aghada (phase 2),Mobility
+983,H2_854,EI-H2 - Aghada (phase 3),Ammonia
+984,H2_855,Keadby Hydrogen,Power
+985,H2_860,Mexican Green Hydrogen Hub,Ammonia
+986,H2_861,Algeciras Bay,Other Industry
+987,H2_861,Algeciras Bay,Mobility
+988,H2_862,Gazifere grid injection,Grid Injection
+989,H2_863,GREEN H2 Langosteira,Mobility
+990,H2_864,Port of Immingham,Mobility
+991,H2_864,Port of Immingham,Other Industry
+992,H2_865,Pouakai - Taranaki - NH3,Ammonia
+993,H2_868,Khalifa Industrial Zone Abu Dhabi (KIZAD) - phase 2,Ammonia
+994,H2_869,Veolia wastewater sludge plant,Mobility
+995,H2_872,BayH2,Refining
+996,H2_873,Enid fertiliser,Ammonia
+997,H2_874,Ervia CCS - Irving refinery,Refining
+998,H2_876,ArcelorMittal and AirLiquide Dunkirk low-carbon steel (phase 1),Iron&Steel
+999,H2_877,CF Fertilisers Ince,Ammonia
+1000,H2_878,Sinopec Zhongyuan Oilfield EOR,Refining
+1001,H2_879,Changqing Oil Field EOR,Methanol
+1002,H2_884,Lysekil refinery (phase 2),Biofuels
+1003,H2_885,KIMA - Aswan electrolyser,Ammonia
+1004,H2_886,Zimbabwe NH3 plant,Ammonia
+1005,H2_887,Polaris CCS - Scotford refinery,Refining
+1006,H2_888,Aukra CCS,Mobility
+1007,H2_888,Aukra CCS,Other Industry
+1008,H2_889,ArcelorMittal DRI Gijon,Iron&Steel
+1009,H2_890,APEX-Plug Power H2 plamt,Mobility
+1010,H2_898,"Frontier Energy, H2@Scale - gasification",Mobility
+1011,H2_898,"Frontier Energy, H2@Scale - gasification",Power
+1012,H2_899,Foresa-Iberdrola Green Methanol (phase 1),Methanol
+1013,H2_900,Foresa-Iberdrola Green Methanol (phase 2),Methanol
+1014,H2_901,Danskammer Energy - Newburgh,Power
+1015,H2_902,Balico - Virginia,Power
+1016,H2_903,"Harrison Power Project in Cadiz, Ohio",Power
+1017,H2_904,Western Green Energy Hub,Ammonia
+1018,H2_905,APA Renewable Methane Demonstration Project,Methane Grid Injection
+1019,H2_906,Bio-Hydrogen Demonstration Plant,Refining
+1020,H2_907,Bundaberg Hydrogen Hub,Mobility
+1021,H2_909,Christmas Creek Renewable Hydrogen Mobility Project,Mobility
+1022,H2_910,ABEL Energy Bell Bay Powerfuels Project,Methanol
+1023,H2_911,Grange Resources Renewable Hydrogen,Other Industry
+1024,H2_912,Melbourne Hydrogen Hub,Mobility
+1025,H2_912,Melbourne Hydrogen Hub,Grid Injection
+1026,H2_914,Swinburne University of Technology Victorian Hydrogen Hub – CSIRO Hydrogen Refuelling Station,Mobility
+1027,H2_916,"Konin Power Plant, phase 2",Mobility
+1028,H2_917,"Konin Power Plant, phase 3",Mobility
+1029,H2_922,"Meirama plant, phase 2",Other Industry
+1030,H2_923,Freienbach plant,Mobility
+1031,H2_924,"Siemens-Air Liquide Oberhausen, Phase 1",Mobility
+1032,H2_924,"Siemens-Air Liquide Oberhausen, Phase 1",Mobility
+1033,H2_926,Trafford Low Carbon Energy Park,Other Industry
+1034,H2_926,Trafford Low Carbon Energy Park,Mobility
+1035,H2_927,Hidrógeno Verde Bahía Quintero,Other Industry
+1036,H2_927,Hidrógeno Verde Bahía Quintero,Mobility
+1037,H2_927,Hidrógeno Verde Bahía Quintero,Grid Injection
+1038,H2_929,"Green fertilizer project Porsgrunn-Heroya, phase 2",Ammonia
+1039,H2_930,"Green fertilizer project Porsgrunn-Heroya, phase 3",Ammonia
+1040,H2_931,Finnmark green NH3,Ammonia
+1041,H2_931,Finnmark green NH3,Mobility
+1042,H2_932,Yarwun alumina refinery,Other Industry
+1043,H2_933,H2V Las Tortolas,Mobility
+1044,H2_934,Sonam Nurboo Memorial Hopsital,Domestic Heat
+1045,H2_934,Sonam Nurboo Memorial Hopsital,Combined Heat & Power (fuel cells or turbines)
+1046,H2_934,Sonam Nurboo Memorial Hopsital,Power
+1047,H2_936,Hokkaido green hydrogen plant,Iron&Steel
+1048,H2_936,Hokkaido green hydrogen plant,Mobility
+1049,H2_936,Hokkaido green hydrogen plant,Other Industry
+1050,H2_936,Hokkaido green hydrogen plant,Power
+1051,H2_937,BP-Shell Trinidad and Tobago green NH3,Ammonia
+1052,H2_941,Imperial Oil renewable diesel,Biofuels
+1053,H2_942,Javelina refinery,Refining
+1054,H2_946,HEVO-Sul,Ammonia
+1055,H2_946,HEVO-Sul,Grid Injection
+1056,H2_946,HEVO-Sul,Other Industry
+1057,H2_947,NEL - Nikola Agreement H2 refuelling stations in USA (1st phase),Mobility
+1058,H2_948,HYVALUE,Other Industry
+1059,H2_948,HYVALUE,Mobility
+1060,H2_950,H2 Valcamonica,Mobility
+1061,H2_950,H2 Valcamonica,Other Industry
+1062,H2_952,H2 Évora - GreenGas II,Grid Injection
+1063,H2_953,PRIO ENERGY,Mobility
+1064,H2_953,PRIO ENERGY,Other Industry
+1065,H2_954,KEME ENERGY,Other Industry
+1066,H2_955,HEVO-Sines,Ammonia
+1067,H2_955,HEVO-Sines,Grid Injection
+1068,H2_956,HEVO-Morocco,Ammonia
+1069,H2_958,TAQA-Emirates Steel Green H2,Iron&Steel
+1070,H2_961,HRS Murcia,Mobility
+1071,H2_962,Tokyo Sewage-to-H2 plant,Mobility
+1072,H2_963,Inner Mongolia green hydrogen,Mobility
+1073,H2_965,H2 Energy Europe Esbjerg green hydrogen,Mobility
+1074,H2_965,H2 Energy Europe Esbjerg green hydrogen,Other Industry
+1075,H2_966,HBIS DRI in Xuanshan,Iron&Steel
+1076,H2_967,Itochu/Petronas ammonia project,Ammonia
+1077,H2_968,Lindsey refinery,Refining
+1078,H2_969,ArcelorMittal Hamburg,Iron&Steel
+1079,H2_970,Power-to-gas Coquimbo,Grid Injection
+1080,H2_971,ENERTRAG-Sunfire (Prenzlau),Mobility
+1081,H2_972,Shell heavy residue gasification CCUS - Pernis refinery,Refining
+1082,H2_973,Repsol - Basque Corridor,Refining
+1083,H2_974,Southland green hydrogen project,Iron&Steel
+1084,H2_974,Southland green hydrogen project,Mobility
+1085,H2_980,Green Wolverine,Ammonia
+1086,H2_981,Atmosfair,Synfuels
+1087,H2_982,PYROCO2,Other Industry
+1088,H2_985,Concrete Chemicals - I,Methanol
+1089,H2_985,Concrete Chemicals - I,Other Industry
+1090,H2_986,Concrete Chemicals - II,Other Industry
+1091,H2_986,Concrete Chemicals - II,Methanol
+1092,H2_987,H2Perth electrolysis - I,Mobility
+1093,H2_987,H2Perth electrolysis - I,Ammonia
+1094,H2_988,H2Perth electrolysis - II,Mobility
+1095,H2_988,H2Perth electrolysis - II,Ammonia
+1096,H2_989,H2Perth NG with CCUS - I,Mobility
+1097,H2_989,H2Perth NG with CCUS - I,Ammonia
+1098,H2_992,Air Products Louisiana Clean Energy Complex,Ammonia
+1099,H2_992,Air Products Louisiana Clean Energy Complex,Iron&Steel
+1100,H2_992,Air Products Louisiana Clean Energy Complex,Refining
+1101,H2_994,Hyphen Hydrogen Energy - phase I,Ammonia
+1102,H2_995,Hyphen Hydrogen Energy - phase II,Ammonia
+1103,H2_997,H2TAS - phase II,Mobility
+1104,H2_998,H2TAS - phase III,Mobility
+1105,H2_999,Vicat Montalieu-Vercieu cement plant,Methanol
+1106,H2_1000,Axpo Brugg,Mobility
+1107,H2_1001,H2 Green - Shoreham port - phase I,Mobility
+1108,H2_1001,H2 Green - Shoreham port - phase I,Ammonia
+1109,H2_1002,H2 Green - Shoreham port - phase II,Mobility
+1110,H2_1002,H2 Green - Shoreham port - phase II,Ammonia
+1111,H2_1003,Port of Gothenburg - Statkraft,Mobility
+1112,H2_1005,SK Ulsan Complex,Refining
+1113,H2_1006,Polaris CCS - Shell-Mitsubishi,Ammonia
+1114,H2_1007,ArcelorMittal and AirLiquide Dunkirk low-carbon steel (phase 2),Iron&Steel
+1115,H2_1010,Atome - Itaipu - phase I,Ammonia
+1116,H2_1011,Atome - Itaipu - phase II,Ammonia
+1117,H2_1014,Kenya Private Sector Alliance - FFI MoU,Ammonia
+1118,H2_1015,EBIC - Ammonia plant,Ammonia
+1119,H2_1017,"Sun Metals Zinc Refinery, phase II",Mobility
+1120,H2_1017,"Sun Metals Zinc Refinery, phase II",Other Industry
+1121,H2_1032,Steinbeis Innovation Center Braunschweig,Mobility
+1122,H2_1033,"Aberdeen Hydrogen Hub, phase II",Mobility
+1123,H2_1033,"Aberdeen Hydrogen Hub, phase II",Domestic Heat
+1124,H2_1033,"Aberdeen Hydrogen Hub, phase II",Grid Injection
+1125,H2_1034,INEOS Köln site,Methanol
+1126,H2_1034,INEOS Köln site,Ammonia
+1127,H2_1035,"Plug Power - Fresno County, California",Mobility
+1128,H2_1036,"Oracle Power - Power China International MoU, Sindh",Other Industry
+1129,H2_1037,Carlentini Energy park (Sicily),Other Industry
+1130,H2_1039,Iberdrola - H2 Green Steel,Iron&Steel
+1131,H2_1040,H2PiyR Pamiers,Mobility
+1132,H2_1041,"Engie - Yara Pilbara test, phase II",Ammonia
+1133,H2_1042,H2 Magallanes,Ammonia
+1134,H2_1043,"Central Queensland Hydrogen CQ-H2, phase 2",Other Industry
+1135,H2_1044,Mathura refinery,Refining
+1136,H2_1045,Panipat refinery,Refining
+1137,H2_1046,"AuxHYGen, phase 2",Mobility
+1138,H2_1047,Port of Auckland HRS,Mobility
+1139,H2_1048,Budweiser - Protium Wales brewery,Other Industry
+1140,H2_1048,Budweiser - Protium Wales brewery,Mobility
+1141,H2_1054,"Snam, Saipem, Alboran Hydrogen - Brindisi plant",Grid Injection
+1142,H2_1054,"Snam, Saipem, Alboran Hydrogen - Brindisi plant",Other Industry
+1143,H2_1056,Doosan Changwon City,Mobility
+1144,H2_1058,"Wilhelmshaven , phase 2",Other Industry
+1145,H2_1058,"Wilhelmshaven , phase 2",Iron&Steel
+1146,H2_1059,HySkies,Synfuels
+1147,H2_1060,SalalaH2,Ammonia
+1148,H2_1062,"NTPC-Technip-L&T MeOH project, Vindhyachal",Methanol
+1149,H2_1063,Mitsubishi Corporation-Denbury MoU,Ammonia
+1150,H2_1065,"BlueScope’s Port Kembla Steelworks, Illawarra",Iron&Steel
+1151,H2_1066,"Project Haber, phase 2",Grid Injection
+1152,H2_1066,"Project Haber, phase 2",Ammonia
+1153,H2_1070,INEOS / Petroineos Grangemouth refinery,Refining
+1154,H2_1071,Air Liquide Botlek Rotterdam refinery (Porthos CCS),Refining
+1155,H2_1072,Air Products Botlek Rotterdam refinery (Porthos CCS),Refining
+1156,H2_1073,Exxobmobil Benelux Botlek Rotterdam refinery (Porthos CCS),Refining
+1157,H2_1077,Fawley refinery,Grid Injection
+1158,H2_1077,Fawley refinery,Refining
+1159,H2_1078,"Nyrstar Port Pirie, phase 1",Other Industry
+1160,H2_1078,"Nyrstar Port Pirie, phase 1",Ammonia
+1161,H2_1079,"Nyrstar Port Pirie, phase 2",Other Industry
+1162,H2_1079,"Nyrstar Port Pirie, phase 2",Ammonia
+1163,H2_1080,"Get H2 Lingen, phase 5",Refining
+1164,H2_1080,"Get H2 Lingen, phase 5",Mobility
+1165,H2_1080,"Get H2 Lingen, phase 5",Power
+1166,H2_1080,"Get H2 Lingen, phase 5",Iron&Steel
+1167,H2_1081,"Get H2 Lingen, phase 6",Refining
+1168,H2_1081,"Get H2 Lingen, phase 6",Mobility
+1169,H2_1081,"Get H2 Lingen, phase 6",Power
+1170,H2_1081,"Get H2 Lingen, phase 6",Iron&Steel
+1171,H2_1082,KeyState Natural Gas Synthesis & CCUS,Ammonia
+1172,H2_1086,Uthmaniyah gas processing EOR project,Ammonia
+1173,H2_1088,Simhadri micro-grid,Power
+1174,H2_1089,"Nelson Mandela Bay green ammonia plant, phase 1",Ammonia
+1175,H2_1092,NTPC green hydrogen mobiity project - Ladakh,Mobility
+1176,H2_1094,"Ningxia Solar Hydrogen Project, Phase 2",Methanol
+1177,H2_1095,"Nelson Mandela Bay green ammonia plant, phase 2",Ammonia
+1178,H2_1098,Eni Waste to H2,Refining
+1179,H2_1100,Project Phoenix,Ammonia
+1180,H2_1101,Sasolburg green hydrogen project,Iron&Steel
+1181,H2_1101,Sasolburg green hydrogen project,Power
+1182,H2_1101,Sasolburg green hydrogen project,Mobility
+1183,H2_1101,Sasolburg green hydrogen project,Methanol
+1184,H2_1103,Secunda SAF Project - Phase I,Synfuels
+1185,H2_1104,Secunda SAF Project - Phase II,Synfuels
+1186,H2_1106,Proyecto Faro del Sur,Synfuels
+1187,H2_1107,HyPro Aconcagua,Refining
+1188,H2_1108,Antofagasta Mining Energy Renewable,Methanol
+1189,H2_1109,Green Steel - H2V CAP,Iron&Steel
+1190,H2_1112,"Shell China - Zhangjiakou, phase 2",Mobility
+1191,H2_1114,"H2biscus, phase 2",Ammonia
+1192,H2_1115,"H2biscus, phase 3",Methanol
+1193,H2_1116,"H2biscus, phase 4",Ammonia
+1194,H2_1117,Engie - Masdar - Fertiglobe Abu Dhabi,Ammonia
+1195,H2_1118,Oskarshamn nuclear plant,Other Industry
+1196,H2_1121,Belfort HRS,Mobility
+1197,H2_1124,Port of Hanstholm - methanol,Methanol
+1198,H2_1125,Lhyfe-Enerparc Luckau project,Other Industry
+1199,H2_1125,Lhyfe-Enerparc Luckau project,Mobility
+1200,H2_1126,Ande - Fortescue Future Industries MoU,Ammonia
+1201,H2_1126,Ande - Fortescue Future Industries MoU,Other Industry
+1202,H2_1127,Ande - Maire Tecnimont - FerSam,Ammonia
+1203,H2_1132,"Catalina Project, Phase 1",Ammonia
+1204,H2_1133,"Catalina Project, Phase 2",Ammonia
+1205,H2_1134,Trzebinia refinery,Refining
+1206,H2_1134,Trzebinia refinery,Mobility
+1207,H2_1136,CNPC China Northwest (Xinjiang) hub refinery hydrogen,Refining
+1208,H2_1137,PETROTEL-LUKOIL refinery,Refining
+1209,H2_1138,Lightsource bp - Dourogás project,Grid Injection
+1210,H2_1140,H2Enable,Ammonia
+1211,H2_1141,Hy2gen Sauda project,Mobility
+1212,H2_1141,Hy2gen Sauda project,Ammonia
+1213,H2_1142,Firlough project,Mobility
+1214,H2_1143,Alcázar de San Juan - pHYnix,Mobility
+1215,H2_1145,Green CCU Hub Aalborg,Methanol
+1216,H2_1146,Blue Seal,Mobility
+1217,H2_1147,Green lab skive (Phase III),Methanol
+1218,H2_1153,Port of Aabenraa Methanol,Methanol
+1219,H2_1154,Vordingborg biofuels,Methanol
+1220,H2_1155,Aalborg MeOH project,Methanol
+1221,H2_1156,CCU biogas (11x36MW),Methane Grid Injection
+1222,H2_1156,CCU biogas (11x36MW),Methane Mobility
+1223,H2_1157,Fortescue Future Industries - Incitec Pivot MoU,Ammonia
+1224,H2_1158,Fortescue Future Industries - Refining NZ MoU,Refining
+1225,H2_1160,"Sun Brilliance West Australia Project, phase 1",Ammonia
+1226,H2_1162,Borealis-Hynamic MoU Green Ammonia,Ammonia
+1227,H2_1163,Montana Renewables,Synfuels
+1228,H2_1164,Appalachian hydrogen hub,Refining
+1229,H2_1164,Appalachian hydrogen hub,Other Industry
+1230,H2_1164,Appalachian hydrogen hub,Iron&Steel
+1231,H2_1165,Green Fuels for Denmark,Other Industry
+1232,H2_1165,Green Fuels for Denmark,Mobility
+1233,H2_1165,Green Fuels for Denmark,Synfuels
+1234,H2_1166,Fortescue Future Industries Gull Island,Ammonia
+1235,H2_1167,Port of South Louisiana,Ammonia
+1236,H2_1168,Hive Energy green ammonia plant,Ammonia
+1237,H2_1171,Reuze,Synfuels
+1238,H2_1173,"Atacama Hydrogen Hub, phase 1",Mobility
+1239,H2_1174,"Atacama Hydrogen Hub, phase 2",Mobility
+1240,H2_1174,"Atacama Hydrogen Hub, phase 2",Ammonia
+1241,H2_1175,ACH-MRP,Ammonia
+1242,H2_1176,H1 Magallanes,Ammonia
+1243,H2_1177,San Pedro de Atacama project,Power
+1244,H2_1177,San Pedro de Atacama project,Synfuels
+1245,H2_1178,Selknam,Ammonia
+1246,H2_1179,Aker - Berlevag,Ammonia
+1247,H2_1182,Heliogen Arizona green NH3,Ammonia
+1248,H2_1183,"BP Castellon refinery, phase 2",Refining
+1249,H2_1184,"Wilhelmshaven , phase 3",Other Industry
+1250,H2_1184,"Wilhelmshaven , phase 3",Iron&Steel
+1251,H2_1185,China Coal Ordos Energy and Chemical,Methanol
+1252,H2_1186,"Nazare Green Hydrogen Valley, phase 1",Other Industry
+1253,H2_1187,"Nazare Green Hydrogen Valley, phase 2",Other Industry
+1254,H2_1189,"Green Crane, Murcia (part of Green Crane Gigafactory)",Mobility
+1255,H2_1189,"Green Crane, Murcia (part of Green Crane Gigafactory)",Other Industry
+1256,H2_1190,Lacq Hydrogen,Grid Injection
+1257,H2_1190,Lacq Hydrogen,Power
+1258,H2_1191,"First HyDeal hub, phase 1",Ammonia
+1259,H2_1191,"First HyDeal hub, phase 1",Iron&Steel
+1260,H2_1191,"First HyDeal hub, phase 1",Other Industry
+1261,H2_1192,"First HyDeal hub, completion",Other Industry
+1262,H2_1192,"First HyDeal hub, completion",Ammonia
+1263,H2_1192,"First HyDeal hub, completion",Iron&Steel
+1264,H2_1193,Origin Hunter Valley hydrogen hub,Mobility
+1265,H2_1193,Origin Hunter Valley hydrogen hub,Ammonia
+1266,H2_1194,O&L group - CMB.TECH hydrogen hub,Mobility
+1267,H2_1195,White Martins - Rio Grande do Su MoU,Ammonia
+1268,H2_1195,White Martins - Rio Grande do Su MoU,Other Industry
+1269,H2_1197,Ballylumford energy storage demo project,Grid Injection
+1270,H2_1198,Freeport East Hydrogen Hub,Other Industry
+1271,H2_1198,Freeport East Hydrogen Hub,Grid Injection
+1272,H2_1198,Freeport East Hydrogen Hub,Mobility
+1273,H2_1199,Bell Bay smelter,Iron&Steel
+1274,H2_1200,Raahe hub,Other Industry
+1275,H2_1201,ExxonMobil Baytown petrochemical site,Other Industry
+1276,H2_1201,ExxonMobil Baytown petrochemical site,Refining
+1277,H2_1204,Norsk e-Fuel Phase 3,Synfuels
+1278,H2_1205,Air Liquide Dunkirk,Iron&Steel
+1279,H2_1206,Renewstable Swakopmund,Power
+1280,H2_1207,Sonangol,Ammonia
+1281,H2_1209,"ACME-Scatec Oman, phase I",Ammonia
+1282,H2_1210,"ACME-Scatec Oman, phase II",Ammonia
+1283,H2_1211,H2ercules,Refining
+1284,H2_1211,H2ercules,Iron&Steel
+1285,H2_1211,H2ercules,Other Industry
+1286,H2_1212,Promigas,Grid Injection
+1287,H2_1213,Ari Products Arizona,Mobility
+1288,H2_1214,"H2UDF, phase I",Mobility
+1289,H2_1214,"H2UDF, phase I",Grid Injection
+1290,H2_1216,"H2UDF, phase II",Grid Injection
+1291,H2_1216,"H2UDF, phase II",Mobility
+1292,H2_1218,Inspira Madrid,Mobility
+1293,H2_1220,"Green Hydrogen Kherson region, phase 1",Ammonia
+1294,H2_1221,"Green Hydrogen Kherson region, phase 2",Ammonia
+1295,H2_1222,"Green Hydrogen Kherson region, phase 3",Ammonia
+1296,,"Ruse project
+ (part of Green Hydrogen @ Blue Danube IPCEI)",Mobility
+1297,H2_1224,"H2V WN Warndt Naborien, phase 1",Mobility
+1298,H2_1224,"H2V WN Warndt Naborien, phase 1",Other Industry
+1299,H2_1225,"H2V WN Warndt Naborien, final phase",Other Industry
+1300,H2_1225,"H2V WN Warndt Naborien, final phase",Mobility
+1301,H2_1226,"H2V IDF, phase 1",Mobility
+1302,H2_1227,"H2V IDF, final phase",Mobility
+1303,H2_1229,Corrhyd'Occ (Occitanie H2 Corridor),Mobility
+1304,H2_1230,Val d'Hygo (Occitanie H2 Corridor),Mobility
+1305,H2_1232,"Get H2 Lingen, phase 2",Refining
+1306,H2_1232,"Get H2 Lingen, phase 2",Iron&Steel
+1307,H2_1232,"Get H2 Lingen, phase 2",Power
+1308,H2_1233,"Get H2 Lingen, phase 3",Power
+1309,H2_1233,"Get H2 Lingen, phase 3",Iron&Steel
+1310,H2_1233,"Get H2 Lingen, phase 3",Refining
+1311,H2_1233,"Get H2 Lingen, phase 3",Mobility
+1312,H2_1234,"Green Hydrogen for the City of Cockburn, phase 1",Mobility
+1313,H2_1235,"Green Hydrogen for the City of Cockburn, phase 2",Mobility
+1314,H2_1236,"Green Hydrogen for the City of Cockburn, phase 3",Combined Heat & Power (fuel cells or turbines)
+1315,H2_1237,Green Shepherd,Mobility
+1316,H2_1238,H2Kwinana,Mobility
+1317,H2_1238,H2Kwinana,Synfuels
+1318,H2_1238,H2Kwinana,Other Industry
+1319,H2_1238,H2Kwinana,Ammonia
+1320,H2_1240,"Edify Green Hydrogen Project, Lansdown Precint",Other Industry
+1321,H2_1246,Haldor Topsoe,Mobility
+1322,H2_1246,Haldor Topsoe,Ammonia
+1323,H2_1247,EnZaH2,Synfuels
+1324,H2_1251,GreenMotionSteel,Mobility
+1325,H2_1251,GreenMotionSteel,Iron&Steel
+1326,H2_1252,CHESS,Other Industry
+1327,H2_1252,CHESS,Grid Injection
+1328,H2_1252,CHESS,Mobility
+1329,H2_1254,HyKero,Synfuels
+1330,H2_1255,H2Agrar,Mobility
+1331,H2_1256,Flughafen Rostock-Laage PtX,Synfuels
+1332,H2_1257,HEAL - Hydrogen-based Energy Systems for Arctic Logistics,Mobility
+1333,H2_1258,Vätgas Ljungby,Mobility
+1334,H2_1260,BotnialänkenH2,Mobility
+1335,H2_1260,BotnialänkenH2,Synfuels
+1336,H2_1260,BotnialänkenH2,Other Industry
+1337,H2_1261,Rabbalshede Krafts,Domestic Heat
+1338,H2_1261,Rabbalshede Krafts,Mobility
+1339,H2_1261,Rabbalshede Krafts,Other Industry
+1340,H2_1262,Power2AX,Mobility
+1341,H2_1262,Power2AX,Power
+1342,H2_1262,Power2AX,Domestic Heat
+1343,H2_1262,Power2AX,Other Industry
+1344,H2_1263,SHARC - Sustainable Hydrogen and Recovery of Carbon (phase 1),Refining
+1345,H2_1264,SHARC - Sustainable Hydrogen and Recovery of Carbon (phase 2),Refining
+1346,H2_1265,SHARC - Sustainable Hydrogen and Recovery of Carbon (phase 3),Refining
+1347,H2_1266,"H2UDF, phase III",Mobility
+1348,H2_1266,"H2UDF, phase III",Grid Injection
+1349,H2_1267,Fronius Solhub,Mobility
+1350,H2_1272,"Port Botany, New South Wales",Iron&Steel
+1351,H2_1277,"Ain Sokhna plant, Suez Canal Economic Zone (SCZone), phase 1",Mobility
+1352,H2_1277,"Ain Sokhna plant, Suez Canal Economic Zone (SCZone), phase 1",Ammonia
+1353,H2_1278,"Ain Sokhna plant, Suez Canal Economic Zone (SCZone), phase 2",Mobility
+1354,H2_1278,"Ain Sokhna plant, Suez Canal Economic Zone (SCZone), phase 2",Ammonia
+1355,H2_1279,VISION 2025,Refining
+1356,H2_1279,VISION 2025,Refining
+1357,H2_1281,BLUE MED,Grid Injection
+1358,H2_1281,BLUE MED,Other Industry
+1359,H2_1281,BLUE MED,Mobility
+1360,H2_1282,Zero Emission Mobility Corridor,Mobility
+1361,H2_1283,EHYTRANSP - TS Laevad & H2,Mobility
+1362,H2_1284,HYEELIWTS - terminal of Muuga,Mobility
+1363,H2_1285,Cyprus Renewstable Tersefanou,Power
+1364,H2_1286,AM Gent H2 consumption Hub,Iron&Steel
+1365,H2_1287,Dimdini H2 ecosystem,Other Industry
+1366,H2_1288,Hyperion H2 Alandroal,Grid Injection
+1367,H2_1288,Hyperion H2 Alandroal,Other Industry
+1368,H2_1289,Hyperion H2 Setúbal,Grid Injection
+1369,H2_1289,Hyperion H2 Setúbal,Other Industry
+1370,H2_1290,Flavian superhybrid,Mobility
+1371,H2_1290,Flavian superhybrid,Power
+1372,H2_1290,Flavian superhybrid,Other Industry
+1373,H2_1291,Advanced Clean Energy Storage (ACES),Power
+1374,H2_1293,Szazhalombatta refinery,Refining
+1375,H2_1294,Ain Sokhna ammonia project,Ammonia
+1376,H2_1295,"Masdar Hassan Allam green hydrogen, phase 1",Methanol
+1377,H2_1295,"Masdar Hassan Allam green hydrogen, phase 1",Mobility
+1378,H2_1296,"Masdar Hassan Allam green hydrogen, phase 2",Ammonia
+1379,H2_1296,"Masdar Hassan Allam green hydrogen, phase 2",Other Industry
+1380,H2_1297,"LSB Industries - Pryor green ammonia project, Phase 1",Ammonia
+1381,H2_1297,"LSB Industries - Pryor green ammonia project, Phase 1",Ammonia
+1382,H2_1299,"Repsol Bilbao port synfuels project, phase 2",Synfuels
+1383,H2_1300,"Total Eren, Enara green ammonia, phase 1",Ammonia
+1384,H2_1301,"Total Eren, Enara green ammonia, phase 2",Ammonia
+1385,H2_1302,Scatec Green Ammonia,Ammonia
+1386,H2_1303,"Ben Tre project, phase 1",Ammonia
+1387,H2_1304,"Ben Tre project, phase 2",Ammonia
+1388,H2_1305,Lapis Energy El Dorado,Ammonia
+1389,H2_1307,Ferrolterra plant,Mobility
+1390,H2_1307,Ferrolterra plant,Mobility
+1391,H2_1309,"Hydrogen Eagle (Spolana), phase 2",Mobility
+1392,H2_1310,"Hyways for future, 1st hub",Mobility
+1393,H2_1312,H2 Emden Electrolyzer,Mobility
+1394,H2_493,Referenzkraftwerk Lausitz,Mobility
+1395,H2_493,Referenzkraftwerk Lausitz,Other Industry
+1396,H2_1314,Wenger Engineering Bremerhaven,Mobility
+1397,H2_1314,Wenger Engineering Bremerhaven,Other Industry
+1398,H2_1315,Lighthouse Project PtG Baden-Wuerttemberg,Mobility
+1399,H2_1315,Lighthouse Project PtG Baden-Wuerttemberg,Grid Injection
+1400,H2_1317,KEME Energy Sines,Mobility
+1401,H2_1317,KEME Energy Sines,Other Industry
+1402,H2_1318,Hyundai Heavy Industries - HHI East Sea - Phase I,Mobility
+1403,H2_1319,Hyundai Heavy Industries - HHI East Sea- Phase II,Mobility
+1404,H2_1320,Gron Fuel Renewable Energy Complex,Synfuels
+1405,H2_1322,Avangrid Connecticut project,Power
+1406,H2_1322,Avangrid Connecticut project,Grid Injection
+1407,H2_1323,Avangrid Oregon project,Combined Heat & Power (fuel cells or turbines)
+1408,H2_1324,Liberty Steel DRI plant,Iron&Steel
+1409,H2_1325,"GH2 Green Hydrogen Project, phase 1",Synfuels
+1410,H2_1325,"GH2 Green Hydrogen Project, phase 1",Mobility
+1411,H2_1326,"GH2 Green Hydrogen Project, phase 2",Synfuels
+1412,H2_1326,"GH2 Green Hydrogen Project, phase 2",Mobility
+1413,H2_1327,Masshylia,Biofuels
+1414,H2_1329,Dijon Métropole Smart EnergHy,Mobility
+1415,H2_1330,H-Awel,Mobility
+1416,H2_1330,H-Awel,Iron&Steel
+1417,H2_1331,Mayflower Hydrogen project,Mobility
+1418,H2_1331,Mayflower Hydrogen project,Synfuels
+1419,H2_1332,Eneus Energy Hammars Hill,Ammonia
+1420,H2_1333,"Tarragona Green Chenical complex, phase 1",Mobility
+1421,H2_1333,"Tarragona Green Chenical complex, phase 1",Other Industry
+1422,H2_1334,"Tarragona Green Chenical complex, phase 2",Mobility
+1423,H2_1334,"Tarragona Green Chenical complex, phase 2",Other Industry
+1424,H2_1335,"Tarragona Green Chenical complex, phase 3",Other Industry
+1425,H2_1335,"Tarragona Green Chenical complex, phase 3",Mobility
+1426,H2_1336,GAIL Vijaipur project,Other Industry
+1427,H2_1339,Anil urea plant,Ammonia
+1428,H2_1340,"HH2E - Met Northeast Germany, phase 1",Mobility
+1429,H2_1340,"HH2E - Met Northeast Germany, phase 1",Other Industry
+1430,H2_1341,"HH2E - Met Northeast Germany, phase 2",Mobility
+1431,H2_1341,"HH2E - Met Northeast Germany, phase 2",Other Industry
+1432,H2_1342,Ferrosilva fossil-free DRI,Iron&Steel
+1433,H2_1343,Hysetco taxi project,Mobility
+1434,H2_1344,"Zhongyuan Oil Field MW-Scale Renewable P2G, phase 1",Refining
+1435,H2_1345,"Zhongyuan Oil Field MW-Scale Renewable P2G, phase 2",Refining
+1436,H2_1346,Hyper Hydrogen Energy Zhangjiakou Wind Power Hebei - second phase,Mobility
+1437,H2_1347,Maire Tecnimont,Ammonia
+1438,H2_1348,"Barents Blue ammonia plant, phase 2",Ammonia
+1439,H2_1349,"Barents Blue ammonia plant, phase 3",Ammonia
+1440,H2_1350,"Liquid Wind, FlagshipTWO",Methanol
+1441,H2_1351,SALCOS - first expansion,Iron&Steel
+1442,H2_1353,Holland Hydrogen - phase 2,Refining
+1443,H2_1355,"Unigel, phase I",Ammonia
+1444,H2_1356,"Unigel, phase II",Ammonia
+1445,H2_1358,"Tees Green Hydrogen, phase 1",Iron&Steel
+1446,H2_1358,"Tees Green Hydrogen, phase 1",Other Industry
+1447,H2_1358,"Tees Green Hydrogen, phase 1",Mobility
+1448,H2_1359,"Tees Green Hydrogen, phase 2",Iron&Steel
+1449,H2_1359,"Tees Green Hydrogen, phase 2",Mobility
+1450,H2_1359,"Tees Green Hydrogen, phase 2",Other Industry
+1451,H2_1360,GravitHy,Iron&Steel
+1452,H2_1361,VoltH2 - Delfzijl,Other Industry
+1453,H2_1363,Navigator - P2X-Europe JV,Synfuels
+1454,H2_1364,SkyFuelH2,Synfuels
+1455,H2_1366,Viva Energy HRS,Mobility
+1456,H2_1369,"ReNew Power - Egypt MoU, Ammonia phase 1",Ammonia
+1457,H2_1370,"ReNew Power - Egypt MoU, Ammonia phase 2",Ammonia
+1458,H2_1371,ScottishPower - Felixtowe Port,Synfuels
+1459,H2_1371,ScottishPower - Felixtowe Port,Ammonia
+1460,H2_1371,ScottishPower - Felixtowe Port,Methanol
+1461,H2_1371,ScottishPower - Felixtowe Port,Mobility
+1462,H2_1371,ScottishPower - Felixtowe Port,Other Industry
+1463,H2_1374,Marubeni methanation project,Methane Grid Injection
+1464,H2_1375,"Saint John, New Brunswick refinery",Refining
+1465,H2_1377,Ineratec PtX plant in Frankfurt,Synfuels
+1466,H2_1378,"Hydrogen City, phase 1",Synfuels
+1467,H2_1378,"Hydrogen City, phase 1",Ammonia
+1468,H2_1378,"Hydrogen City, phase 1",Power
+1469,H2_1378,"Hydrogen City, phase 1",Mobility
+1470,H2_1379,"Hydrogen City, phase 2",Ammonia
+1471,H2_1379,"Hydrogen City, phase 2",Power
+1472,H2_1379,"Hydrogen City, phase 2",Mobility
+1473,H2_1379,"Hydrogen City, phase 2",Synfuels
+1474,H2_1382,Storengy methanation plant in Pau,Methane Grid Injection
+1475,H2_1384,RENEWSTABLE SARDIDROGENO,Power
+1476,H2_1385,CAGOU – New Caledonia,Power
+1477,H2_1386,CYR – Australia - NPA RENEWSATBLE,Power
+1478,H2_1386,CYR – Australia - NPA RENEWSATBLE,Mobility
+1479,H2_1387,CYR – Australia - Torres Strait Renewstable RENEWSATBLE,Power
+1480,H2_1387,CYR – Australia - Torres Strait Renewstable RENEWSATBLE,Mobility
+1481,H2_1388,RENEWSTABLE SUMBA,Power
+1482,H2_1391,WAviatER,Mobility
+1483,H2_1392,"MoU GGGI, Samsung and Hyundai",Ammonia
+1484,H2_1394,MoU Oil & Natural Gas Corporation (ONGC) and Greenko,Ammonia
+1485,H2_1396,MoU RWE-Arcelor Mittal North Sea plant,Iron&Steel
+1486,H2_1397,Tambor Green Hydrogen Hub project,Methanol
+1487,H2_1398,MoU Ieasa and Fraunhofer Institute,Other Industry
+1488,H2_1398,MoU Ieasa and Fraunhofer Institute,Mobility
+1489,H2_1402,Carlton Power hydrogen hub,Mobility
+1490,H2_1402,Carlton Power hydrogen hub,Power
+1491,H2_1403,Sun-to-Liquid,Synfuels
+1492,H2_1404,Synhelion,Synfuels
+1493,H2_1405,MoU TOYO-Pupuk Indonesia Holding Company,Ammonia
+1494,H2_1406,ACME Tamil Nadu plant,Other Industry
+1495,H2_1406,ACME Tamil Nadu plant,Power
+1496,H2_1406,ACME Tamil Nadu plant,Ammonia
+1497,H2_1406,ACME Tamil Nadu plant,Refining
+1498,H2_1406,ACME Tamil Nadu plant,Iron&Steel
+1499,H2_1406,ACME Tamil Nadu plant,Mobility
+1500,H2_1408,First Ammonia plant in Brunsbüttel,Ammonia
+1501,H2_1409,Aeropuerto de Santiago,Mobility
+1502,H2_1410,CenterPoint Minneapolis grren hydrogen,Grid Injection
+1503,H2_1414,HTEC Burnaby plant,Mobility
+1504,H2_1415,Lion Energy HRS,Mobility
+1505,H2_1416,"Norwegian Hydrogen, Hellesylt Hydrogen Hub 1st project",Mobility
+1506,H2_1418,RIC Energy Valladolid,Other Industry
+1507,H2_1418,RIC Energy Valladolid,Grid Injection
+1508,H2_1418,RIC Energy Valladolid,Mobility
+1509,H2_1419,Ansasol - Castilla y León,Mobility
+1510,H2_1420,Cartagena refinery,Grid Injection
+1511,H2_1420,Cartagena refinery,Mobility
+1512,H2_1420,Cartagena refinery,Refining
+1513,H2_1421,Barrancabermeja refinery,Grid Injection
+1514,H2_1421,Barrancabermeja refinery,Mobility
+1515,H2_1421,Barrancabermeja refinery,Refining
+1516,H2_1422,Sines refinery (phase 3),Synfuels
+1517,H2_1422,Sines refinery (phase 3),Refining
+1518,H2_1422,Sines refinery (phase 3),Ammonia
+1519,H2_1426,MadoquaPower2X - Sines,Ammonia
+1520,H2_1427,Gladstone Energy and Ammonia Project,Ammonia
+1521,H2_1431,Jangada,Methanol
+1522,H2_1432,Iverson e-fuels,Ammonia
+1523,H2_1433,Sunrhyse,Grid Injection
+1524,H2_1433,Sunrhyse,Mobility
+1525,H2_1434,HYNOVERA,Synfuels
+1526,H2_1434,HYNOVERA,Methanol
+1527,H2_1435,COURANT,Ammonia
+1528,H2_1437,HIF USA,Synfuels
+1529,H2_1441,Kogas plant in Haengwon,Mobility
+1530,H2_1443,Niagara Hydrogen Centre (NHC),Other Industry
+1531,H2_1443,Niagara Hydrogen Centre (NHC),Mobility
+1532,H2_1443,Niagara Hydrogen Centre (NHC),Power
+1533,H2_1444,E-ethanol plant in Singapore,Mobility
+1534,H2_1445,"Eyre Peninsula Gateway Hydrogen Project, phase 2",Ammonia
+1535,H2_1447,"Hyport@Duqm, phase 2",Ammonia
+1536,H2_1448,"Mitsui - CF Industries, Donaldsonville (retrofit)",Ammonia
+1537,H2_1449,"Nutrien Geismar, LA",Ammonia
+1538,H2_1450,Maersk SCZONE,Mobility
+1539,H2_1451,"P2X Europe - Nordic Electrofuel Porsgrunn project, phase 1",Synfuels
+1540,H2_1451,"P2X Europe - Nordic Electrofuel Porsgrunn project, phase 1",Synfuels
+1541,H2_1455,"MoU Shell - Mitsubishi, phase1",Ammonia
+1542,H2_1456,"MoU Shell - Mitsubishi, phase2",Ammonia
+1543,H2_1457,Liberty Biomass to ammonia (western Australia),Ammonia
+1544,H2_1458,Ammonia project at Waitsia gas field,Ammonia
+1545,H2_1459,Amun,Ammonia
+1546,H2_1460,First Hydrogen - Liverpool,Mobility
+1547,H2_1461,First Hydrogen - Manchester,Mobility
+1548,H2_1462,First Hydrogen - London,Mobility
+1549,H2_1463,First Hydrogen - Thames Estuary,Mobility
+1550,H2_1465,"Hydrogen Energy Metallurgical Chemical Demonstration Zone, 1",Iron&Steel
+1551,H2_1466,"Hydrogen Energy Metallurgical Chemical Demonstration Zone, 2",Ammonia
+1552,H2_1467,"Prieska ammonia project, phase 1",Ammonia
+1553,H2_1469,Ammonia Iowa project,Ammonia
+1554,H2_1470,Inverness hydrogen hub,Mobility
+1555,H2_1471,"Cromarty Hydrogen Project, phase 2",Other Industry
+1556,H2_1472,"Sohar Port, phase 1",Iron&Steel
+1557,H2_1473,"Sohar Port, phase 2",Iron&Steel
+1558,H2_1474,"MoU Acme-Govt of Karnataka, phase 1",Ammonia
+1559,H2_1475,Energy Hub at MIRA Technology Park.,Mobility
+1560,H2_1476,CF Industries - Mitsui Gulf Coast plant,Ammonia
+1561,H2_1477,"MoU Acme-Govt of Karnataka, phase 2",Ammonia

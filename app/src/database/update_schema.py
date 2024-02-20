@@ -1,5 +1,5 @@
 import yaml
-from app.src.connect.db import Database
+from app.src.database.db import Database
 import os
 
 def main():

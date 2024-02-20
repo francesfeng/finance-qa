@@ -7,11 +7,10 @@ class Label(str, Enum):
     text = "text"
     database = "database"
 
-
-# Define the model. TODO: move to seperate models.api file
 class QueryText(BaseModel):
-    query: str
-    data: str = None
+    query: Optional[str] = None
+    data: Optional[str] = None
+
 
 class RelatedTopic(BaseModel):
     query: str
@@ -23,5 +22,24 @@ class Response(BaseModel):
     label: Optional[Label] = None
     query: Optional[str] = None
     title: Optional[str] = None
-    response: Optional[str] = None
     related_topics: Optional[List[Dict[str, str]]] = None
+
+
+class Query(BaseModel):
+    query: str
+   
+
+class QueryThread(BaseModel):
+    assistant_id: str
+    thread_id: str
+    query: str
+
+class MessageResponse(BaseModel):
+    role: str
+    content: str
+
+
+class MessageFileResponse(MessageResponse):
+    image_files: Optional[List[str]] = None
+
+

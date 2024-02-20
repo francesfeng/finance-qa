@@ -3,16 +3,18 @@ import json
 import requests
 from loguru import logger
 import time
+import asyncio
 from datetime import datetime, timedelta
 from typing import List, Optional, Union
 from functools import partial
 from .scraper import extract_text_from_url
 from concurrent.futures.thread import ThreadPoolExecutor
+from ..database.cache_emb import EmbeddingCache
 
 
 from app.src.config.config import Config
 from app.src.context.context import Context
-from app.models.models import DocumentMetadata, DocumentChunk, Source, Type
+from app.models.models import DocumentMetadata, DocumentChunk, Source, Type, DocumentSearch
 
 level_search = logger.level("GOOGLE_SEARCH", no=38, color="<yellow>", icon="♣")
 level_search_parallel = logger.level("GOOGLE_SEARCH_PARALLEL", no=38, color="<yellow>", icon="♣")
@@ -20,7 +22,7 @@ level_search_parallel = logger.level("GOOGLE_SEARCH_PARALLEL", no=38, color="<ye
 class GoogleSearch:
 
     def __init__(self, 
-                 query: List[str], 
+                 queries: List[str], 
                  date_period: Optional[str] = None, 
                  config_path: str=None
                  ):
@@ -29,7 +31,7 @@ class GoogleSearch:
         self.cx_id = os.environ.get('CUSTOM_SEARCH_ENGINE_ID')
 
         # set search parameters
-        self.query = query
+        self.queries = queries
         self.unique_urls = []
 
         if date_period:
@@ -45,68 +47,104 @@ class GoogleSearch:
         config = Config(config_path)
         self.max_search_results_per_query = config.max_search_results_per_query
         self.user_agent = config.user_agent
+        self.model_embed = config.model_embed
+        self.chunking_size = config.chunking_size
 
 
         assert self.api_key is not None
         assert self.cx_id is not None
 
     
-    def run(self):
+    async def run(self):
 
         results = []
         
-        # if query is a string, run a single search; 
-        if len(self.query) == 1:
-            docs = self.run_single_query(self.query[0])
-        
-        # if query is a list, run parallel searches
+        # Search urls based on the query
+        if len(self.queries) == 0:
+            docs = self.search(self.queries)
         else:
             with ThreadPoolExecutor() as executor:
-                docs = executor.map(self.run_single_query, self.query)
+                docs = executor.map(self.search, self.queries)
             docs = [item for doc in docs for item in doc]
 
-        
+        # extract the urls from the search results
+        queries_dict = {doc.id: doc.query for doc in docs}
+        doc_ids = list(queries_dict.keys())
 
-        return docs
+        # Retrieve the embeddings from the database
+        db = EmbeddingCache()
+        await db.create_connection()
+        retrieved_context = await db.retrieve_embeddings(doc_ids)
+        
+        # Add the query to the retrieved context
+        for doc in retrieved_context:
+            doc.query = queries_dict[doc.metadata.document_id]
+
+
+        retrieved_ids = set(doc.metadata.document_id for doc in retrieved_context)
+        # Identify the missing embeddings
+        missing_docs = []
+        for doc in docs:
+            if doc.id not in retrieved_ids:
+                missing_docs.append(doc)
+
+
+        # Find the optimal number of threads, max is the number of queries
+        num_threads = len(self.queries)
+
+        # While the number of docs to process is less than the number of threads, reduce the number of threads
+        while(len(missing_docs)/num_threads < num_threads):
+            num_threads -= 1
+        num_elements = int(len(missing_docs)/num_threads)
+
+        # Split the missing docs into chunks
+        missing_docs_list = [missing_docs[i:i+num_elements] for i in range(0, len(missing_docs), num_elements)]
+
+        #Scrape, chunking and embedding missing result
+        scrapped_context = []
+        if len(missing_docs_list) > 0:
+            with ThreadPoolExecutor() as executor:
+                missing_context = executor.map(self.run_query, missing_docs_list)
+            scrapped_context = [item for doc in missing_context for item in doc]
+            
+
+            # TODO: Insert the embedding to cache
+            await db.insert_embeddings(scrapped_context, self.chunking_size, self.model_embed)
+
+
+        # Combine the retrieved context and missing context
+        context = retrieved_context + scrapped_context
+
+        context_class = Context()
+        similar_context = context_class.semantic_search(context)
+        return similar_context
+
+
+        
     
 
-    def run_single_query(self, query: str):
-
-        docs = self.search(query)
-
-        # extract the urls from the results, only unique urls
-        urls = [doc.id for doc in docs if doc.id not in self.unique_urls]
-        valid_docs = []
+    def run_query(self, docs: List[DocumentSearch]):
 
         # scrape the urls and get the text
+        urls = [doc.metadata.url for doc in docs]
         content = self.scrape_urls(urls)
+
+        # Add retrieved text to the docs
+        valid_docs = []
         for i in range(len(docs)):
             if content[i]['raw_content'] is not None:
                 docs[i].text = content[i]['raw_content']
                 valid_docs.append(docs[i])
 
-        # chunking context, run semantic search
-        context = Context(query, valid_docs)
-        context_results = context.semantic_search()
-
-        return context_results
-
-
-    
-
-    # def search_parallel(self, queries: List[str], max_results: Optional[int] = None):
-    #     """
-    #     Run Google search API in parallel
-    #     """
-    #     time_start = time.time()
-    #     search_partial = partial(self.search, max_results=max_results or self.max_search_results_per_query)
-    #     with ThreadPoolExecutor(max_workers=20) as executor:
-    #         results = executor.map(search_partial, queries)
-    #     results = [r for result in results for r in result]
-    #     time_end = time.time()
-    #     logger.opt(lazy=True).log("GOOGLE_SEARCH_PARALLEL", f"Search: {', '.join(queries)} | Processing time: {time_end - time_start} seconds")
-
-    #     return results
+        #Chunking 
+        if len(valid_docs) > 0:
+            context = Context()
+            chunks = context.get_chunks(valid_docs)
+            return chunks
+        else:
+            return []
+        
+            
 
 
 
@@ -157,6 +195,10 @@ class GoogleSearch:
             if 'youtube.com' in result['link']:
                 continue
             
+            # Skip if the link is already in the unique_urls
+            if result['link'] in self.unique_urls:
+                continue
+
             # Create a DocumentChunk object
 
             metadata = DocumentMetadata(
@@ -168,12 +210,16 @@ class GoogleSearch:
                 created_at=self._extract_date(result['snippet'])
             )
 
-            doc = DocumentChunk(
-                id=metadata.url,
+            doc = DocumentSearch(
+                id=metadata.url.replace("'", ""),  # remove \' in url that used for ID
                 text='',
+                query=query,
                 metadata=metadata
             )
             docs.append(doc)
+
+            # Add the new link to the unique_urls
+            self.unique_urls.append(result['link'])
 
         return docs[:max_results]
     

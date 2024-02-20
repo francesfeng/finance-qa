@@ -10,8 +10,8 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     CLASSIFICATION_RELATED_PROMPT = [
         {"role": "system", "content": "You are a helpful market research analyst. You goal is to: 1. summarise the given question into a short topic. 2. assign a \"Database\" or a \"Text\" label to the question, by judging from the context of the question. 3. Ask 6 additional related questions to the question provided, and summarise each question into a short topic"},
         {"role": "user", "content": "You assign the question \"Database\" label if the question can be answered by executing SQL query against the database, otherwise assign the \"Text\" label. If the user asks questions that can be answered based on the information contained in the following schema, it is a \"Database\" label, otherwise assign the \"Text\" label."},
-        {"role": "user", "content": "From now you will respond with JSON. Provide only 6 related questions. Keep the response in json format: {\“original question\”: the question provided, \“original topic\”: the summary based on the original question, \“original label\”: the \“Database\” or \“Text\” label assigned, \“related questions\”: [{\“question\”: first related question, \“topic\”: the summary based on the first related question}, {\“question\”: the second related question, \“topic\”: the summary based on the second related question}, …}."},    
-        {"role": "user", "content": "You prioritise questions and topics that contains information in the schema provided above. Keep the related questions diverse and relevant."},
+        {"role": "user", "content": "For related questions, you list first 3 questions and topics that can only be answered by text format, followed by 3 questions and topics that can be answered using SQL in the schema provided above. Keep the related questions diverse and relevant."},
+        {"role": "user", "content": "From now you will respond with JSON. Provide only 6 related questions. Keep the response in json format: {\“original question\”: the question provided, \“original topic\”: the summary based on the original question, \“original label\”: the \“Database\” or \“Text\” label assigned, \“related questions\”: [{\“question\”: first related question using natual language, \“topic\”: the summary based on the first related question, \"SQL\": valid SQL if this question can be answered in SQL, otherwise leave blank}, {\“question\”: the second related question, \“topic\”: the summary based on the second related question, \"SQL\": valid SQL if available}, …}."},    
         {"role": "user", "content": "Do not list topics or questions that have appeared in the prompt before."},
         {"role": "user", "content": f"Schema: \"\"\"{context}\"\"\""},
         {"role": "user", "content": f"Original question: {query}"},
@@ -21,7 +21,7 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     CLASSIFICATION_PROMPT = [
         {"role": "system", "content": "You are a helpful market research analyst. You goal is to: 1. summarise the given question into a short topic. 2. assign a \"Database\" or a \"Text\" label to the question, by judging from the context of the question."},
         {"role": "user", "content": "You assign the question \"Database\" label if the question can be answered by executing SQL query against the database, otherwise assign the \"Text\" label. If the user asks questions that can be answered based on the information contained in the following schema, it is a \"Database\" label, otherwise assign the \"Text\" label."},
-        {"role": "user", "content": "From now you will respond with json list. Provide only 6 related questions. Keep the response in json format: {\“question\”: the question provided, \“topic\”: the summary based on the original question, \“label\”: the \“Database\” or \“Text\” label assigned}."},    
+        {"role": "user", "content": "From now you will respond with json. Keep the response in json format: {\“question\”: the question provided, \“topic\”: the summary based on the original question, \“label\”: the \“Database\” or \“Text\” label assigned}."},    
         {"role": "user", "content": f"Schema: \"\"\"{context}\"\"\""},
         {"role": "user", "content": f"Original question: {query}"},
     ]
@@ -64,7 +64,7 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     # ]
 
     TEXT_PROMPT = [
-        {"role": "system", "content": "You are an expert hydrogen market analyst. Your goal is to produce detailed analysis that answers user\'s question strictly based on the context provided below. The analysis should be well structured, informative, in depth and comprehensive, with facts and numbers if available, with minimium 1000 words."},
+        {"role": "system", "content": "You are an expert energy market analyst. Your goal is to produce detailed analysis that answers user\'s question strictly based on the context provided below. The analysis should be well structured, informative, in depth and comprehensive, with facts and numbers if available, with minimium 1000 words."},
         {"role": "user", "content": "You should strive to write the report as long as you can using all relevant and necessary information provided. Use an unbiased and journalistic tone. You MUST determine your own concrete and valid opinion based on the given information. Do NOT deter to general and meaningless conclusions."},
         {"role": "user", "content": "You must write the report with markdown syntax. For any headers, use level 4 headers. Write the analysis in bullet point. Do not mention \"the provided text\" in the response."},
         {"role": "user", "content": "You MUST write all used source urls at the end of the report as references, and make sure to not add duplicated sources, but only one reference for each. Cite search results using inline notations, followed by line breaks. Only cite the most relevant results that answer the query accurately. Place these citations at the end of the sentence or paragraph that reference them."},
@@ -148,6 +148,12 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
         The output should only have the option specification in ECharts in JSON, and do not provide any explanations. Choose the most optimal chart type and use ECharts API.
     """
 
+    DATASET_SUMMARY = [
+     {"role": "system", "content": """Based on the conversation between User and Assistant, please perform following tasks: 1. provide a short name for the dataset user is requesting, like \"Global Hydrogen Projects\". 2. summarise what this dataset is about. 3. Choose tags from the following categories - Hydrogen, Investment, Mobility. If the type of the data falls out of the category provided, name up to 3 new categories if need. 4. List column names of the dataset and the meaning of each column. 5. Produce up to 3 short queries that are used to analyse this dataset. for example, "analyse investors participation", or "evaluate policy impact". Queries are comma separated."""},
+     {"role": "user", "content": "Output in JSON format, with the following format: {\"dataset_name\": the name of the dataset, \"dataset_summary\": the summary of the dataset, \"tags\": [list of tags], \"column_names\": \"column_name1\": \"meaning of the column1\", \"column_name2\": \"meaning of the column2\", ...}, \"queries\": \"query1, query2,...\""},
+     {"role": "user", "content": f"Conversation: \"\"\"{context}\"\"\""},
+    ]
+
 
     DATA_TO_TEXT_PROMPT = [
         {"role": "system", "content": "You are a helpful market analyst, your goal is to answer the question based on the data provided."},
@@ -196,6 +202,9 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     
     elif model == 'text':
         return TEXT_PROMPT
+    
+    elif model == 'dataset_summary':
+        return DATASET_SUMMARY
 
     
     elif model == 'table_to_chart':

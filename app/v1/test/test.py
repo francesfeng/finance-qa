@@ -2,7 +2,6 @@ from fastapi import APIRouter, Body,HTTPException
 from fastapi.responses import StreamingResponse
 
 from app.src.runner.agents import Agent
-from app.src.runner.controller import Controller
 from app.src.connect.datastore import DataStore
 from app.models.api_models import QueryText, Response
 
@@ -120,10 +119,8 @@ async def retrieval(querytext: QueryText = Body(...)):
 
 @router.on_event("startup")
 async def startup():
-    global controller
     global agent
     global datastore
-    controller = Controller()
     agent = Agent()
     datastore = DataStore()
 

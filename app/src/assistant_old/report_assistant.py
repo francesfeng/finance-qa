@@ -1,6 +1,6 @@
 import json
-from app.src.assistants.assistant import Assistant
-from app.src.runner.prompt import get_prompt
+from app.src.assistant_old.assistant import Assistant
+from app.src.config.prompt.prompt import get_prompt
 
 from loguru import logger
 level_assistant = logger.level("REPORT_ASSISTANT", no=15, color="<blue>", icon="♣")

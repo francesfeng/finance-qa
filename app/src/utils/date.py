@@ -21,6 +21,13 @@ def to_unix_timestamp(date_str: str) -> int:
         return int(arrow.now().timestamp())
     
 
+def get_utcnow() -> str:
+    """
+    Get the current UTC time in ISO format.
+    """
+    tsp = datetime.utcnow().timestamp()
+
+    return str(int(tsp))
 
 
 def to_datestr(datenum: str):
@@ -31,3 +38,11 @@ def to_datestr(datenum: str):
     date_str = date_time_obj.strftime('%Y-%m-%d')
     return date_str
 
+
+def to_timestamp(datenum: str) -> int:
+    """
+    Convert a unix timestamp (seconds since epoch) to a datetime string in YYYY-MM-DD HH:MM:SS format.
+    """
+    date_time_obj = datetime.fromtimestamp(float(datenum))
+    datetime_str = date_time_obj.strftime('%Y-%m-%d %H:%M:%S')
+    return datetime_str

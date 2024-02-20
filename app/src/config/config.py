@@ -1,4 +1,5 @@
 import json
+import sys
 from loguru import logger
 
 class Config:
@@ -19,10 +20,17 @@ class Config:
         self.min_chunk_char = 25
         self.similarity_threshold = 0.78
 
+        self.query_similarity_threshold = 0.92 #search query cache based on user's query
+
+        self.model_base = 'gpt-3.5-turbo-1106'
+        self.model_advanced = 'gpt-4-1106-preview'
+        self.model_embed = 'text-embedding-3-small'
+
 
 
         self.load_config()
-        logger.add(self.logging_path, rotation="500 MB")
+        #logger.add(self.logging_path, rotation="500 MB")
+        #logger.add(sys.stderr)
 
 
     def load_config(self):

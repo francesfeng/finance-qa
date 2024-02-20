@@ -31,6 +31,7 @@ class DataStore:
 
         config = Config(config_path)
         self.similarity_threshold = config.similarity_threshold
+        self.model_embed = config.model_embed
 
 
     def query(self, query: Query):
@@ -39,7 +40,7 @@ class DataStore:
         """
 
         # get a list of just the queries from the Query list
-        embeddings = get_embeddings_v2([query.query])
+        embeddings = get_embeddings_v2([query.query], model=self.model_embed)
 
         # Hydrate the query list with the embeddings
         queries_with_embeddings = QueryWithEmbedding(**query.dict(), embedding=embeddings[0])

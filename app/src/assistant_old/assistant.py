@@ -2,7 +2,7 @@ from openai import OpenAI
 import os
 import time
 from loguru import logger
-logger.add("openai.log", rotation="500 MB")  
+
 level_assistant = logger.level("ASSISTANT", no=15, color="<green>", icon="♣")
 
 
@@ -26,6 +26,13 @@ class Assistant:
         self.thread_id = thread.id
         self.assistant_id = assistant.id
         self.messages = []
+
+
+    def create_assistant(self):
+        """
+        Instantiate an assistant, and return assistant_id and thread_id
+        """
+        
 
 
 
@@ -84,6 +91,6 @@ class Assistant:
         thread_messages = client.beta.threads.messages.list(self.thread_id)
         messages = []
         for msg in thread_messages:
-            messages.append({msg.role :msg.content[0].text.value})
+            messages.append({"role": msg.role, "content": msg.content[0].text.value})
         return messages
 
