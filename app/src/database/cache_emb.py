@@ -43,8 +43,6 @@ class EmbeddingCache:
 
         ids_str = '(\'' + '\',\''.join(document_ids) + '\')'
 
-        print(f"ID STR ARE {ids_str}")
-
         query = f"SELECT * FROM embeddings WHERE document_id IN {ids_str}"
         rows = await self.conn.fetch(query)
 

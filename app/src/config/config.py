@@ -22,8 +22,8 @@ class Config:
 
         self.query_similarity_threshold = 0.92 #search query cache based on user's query
 
-        self.model_base = 'gpt-3.5-turbo-1106'
-        self.model_advanced = 'gpt-4-1106-preview'
+        self.model_base = 'gpt-3.5-turbo-0125'
+        self.model_advanced = 'gpt-4-turbo-preview'
         self.model_embed = 'text-embedding-3-small'
 
 

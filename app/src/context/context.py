@@ -112,8 +112,8 @@ class Context:
         logger.opt(lazy=True).log("CONTEXT", f"Semantic Search | Number of Documents: {len(docs)} | Process time: {time_end - time_start} seconds")
 
 
-        sorted_chunk = [chunk for chunk in chunks_all if chunk.score > self.similarity_threshold]
-        return sorted_chunk
+        #sorted_chunk = [chunk for chunk in chunks_all if chunk.score > self.similarity_threshold]
+        return sorted(chunks_all, key=lambda x: x.score, reverse=True)
 
 
 

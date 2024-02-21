@@ -10,11 +10,12 @@ from functools import partial
 from .scraper import extract_text_from_url
 from concurrent.futures.thread import ThreadPoolExecutor
 from ..database.cache_emb import EmbeddingCache
+from ..database.cache_search import SearchCache
 
 
 from app.src.config.config import Config
 from app.src.context.context import Context
-from app.models.models import DocumentMetadata, DocumentChunk, Source, Type, DocumentSearch
+from app.models.models import DocumentMetadata, Source, Type, DocumentSearch
 
 level_search = logger.level("GOOGLE_SEARCH", no=38, color="<yellow>", icon="♣")
 level_search_parallel = logger.level("GOOGLE_SEARCH_PARALLEL", no=38, color="<yellow>", icon="♣")
@@ -60,12 +61,13 @@ class GoogleSearch:
         results = []
         
         # Search urls based on the query
-        if len(self.queries) == 0:
-            docs = self.search(self.queries)
+        if len(self.queries) == 1:
+            docs = self.search(self.queries[0])
         else:
-            with ThreadPoolExecutor() as executor:
-                docs = executor.map(self.search, self.queries)
-            docs = [item for doc in docs for item in doc]
+
+            tasks = [self.search(q) for q in self.queries]
+            docs = await asyncio.gather(*tasks)
+            docs = [item for items in docs for item in items]
 
         # extract the urls from the search results
         queries_dict = {doc.id: doc.query for doc in docs}
@@ -73,7 +75,6 @@ class GoogleSearch:
 
         # Retrieve the embeddings from the database
         db = EmbeddingCache()
-        await db.create_connection()
         retrieved_context = await db.retrieve_embeddings(doc_ids)
         
         # Add the query to the retrieved context
@@ -95,7 +96,9 @@ class GoogleSearch:
         # While the number of docs to process is less than the number of threads, reduce the number of threads
         while(len(missing_docs)/num_threads < num_threads):
             num_threads -= 1
-        num_elements = int(len(missing_docs)/num_threads)
+        # return the ceiling of total number of missing docs / the number of threads
+        num_elements = len(missing_docs)/num_threads
+        num_elements = int(num_elements) if len(missing_docs) % num_threads == 0 else int(num_elements) + 1
 
         # Split the missing docs into chunks
         missing_docs_list = [missing_docs[i:i+num_elements] for i in range(0, len(missing_docs), num_elements)]
@@ -109,7 +112,7 @@ class GoogleSearch:
             
 
             # TODO: Insert the embedding to cache
-            await db.insert_embeddings(scrapped_context, self.chunking_size, self.model_embed)
+            asyncio.create_task(db.insert_embeddings(scrapped_context, self.chunking_size, self.model_embed))
 
 
         # Combine the retrieved context and missing context
@@ -148,7 +151,7 @@ class GoogleSearch:
 
 
 
-    def search(self, query: str, max_results: Optional[int] = None):
+    async def search(self, query: str, max_results: Optional[int] = None):
         """
         Search Google for the query and return the results
         #TODO Transform into functionall, with parameters
@@ -220,6 +223,10 @@ class GoogleSearch:
 
             # Add the new link to the unique_urls
             self.unique_urls.append(result['link'])
+
+        # Upload the search result to search_cache
+        search_cache = SearchCache()
+        asyncio.create_task(search_cache.insert_searches(docs))
 
         return docs[:max_results]
     

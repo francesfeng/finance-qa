@@ -31,6 +31,7 @@ app.add_middleware(
 @app.get("/")
 async def root():
     logger.add(sys.stderr, enqueue=True)
+    logger.add("../logs/file_1.log", rotation="500 MB")    #TODO: not write to log file
     return {"message": "Welcome to Endepth!"}
 
 app.include_router(query.router, prefix="/v1")

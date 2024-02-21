@@ -1,0 +1,110 @@
+Ref,Operator,Manufacturer,Vehicle,Project,Status,Fleet Size,Vehicle Type,Start Date,End Date,Conversion Technology
+FCEV_US_1,Golden Empire Transit (GET),"Ballard Power Systems (fuel cell) 
+New Flyer (bus)",New Flyer ,,Planned,5.0,Bus,,,
+FCEV_US_2,Lake Transit Authority North State Intercity Bus System,,,CalSTA TIRCP grant,Planned,4.0,Bus,,,
+FCEV_US_3,UC Irvine,"Ballard Power Systems (fuel cell) 
+ElDorado National (bus)",El Dorado National,NFCBP: AFCB UC Irvine,Active,1.0,Bus,2015-01-01,,Hybrid
+FCEV_US_4,Port of Los Angeles,Toyota Motor Corporation,Unknown,Project Portal,Active,1.0,Heavy duty truck,2017-01-01,,Fuel cell
+FCEV_US_5,Port of Los Angeles,Toyota Motor Corporation,"UNO UTR 
+(Utility Tractor Rig)",Project Portal 2.0,Active,1.0,Utility Tractor Rig (UTR),2019-01-01,,Fuel cell
+FCEV_US_6,"Port of Los Angeles:  
+Toyota Logistics Services (4), United Parcel Services (3), Total Transportation Services Inc. (2), and Southern Counties Express (1)",Toyota Motor Corporation,Kenworth T680,"Shore to Store
+CARB ZANZEFF (Zero and Near Zero Emissions Freight Facilities) grant program",Active,5.0,Heavy duty truck,2021-01-01,,Fuel cell
+FCEV_US_8,public (nationwide total),Hyundai Kia Automotive Group,Hyundai NEXO,Commercial Production,Active,1119.0,Passenger vehicle,2019-01-01,,Fuel cell
+FCEV_US_9,public (statewide total),Honda,Honda Clarity Fuel Cell (FCV),Commercial Production,Active,2116.0,Passenger vehicle,2016-01-01,,Fuel cell
+FCEV_US_10,public (statewide total),Hyundai Kia Automotive Group,Hyundai ix35 Tucson FCEV,Commercial Production,Active,160.0,Passenger vehicle,2015-01-01,2018-01-01,Fuel cell
+FCEV_US_11,AC Transit,"Ballard Power Systems (fuel cell) 
+New Flyer (bus)",New Flyer 40-foot Xcelsior® XHE40,CARB; FCEBCC,Active,1.0,Bus,2019-01-01,,Hybrid
+FCEV_US_12,AC Transit,"Ballard Power Systems (fuel cell) 
+New Flyer (bus)",New Flyer 40-foot Xcelsior® CHARGE H2,CARB; FCEBCC,Active,10.0,Bus,2021-01-01,,Hybrid
+FCEV_US_13,"AC Transit, ZEBA","UTC Power/U.S. Hybrid (fuel cell)
+Van Hool (bus)",Van Hool A330L,NFCBP: Zero Emission Bay Area Fuel Cell Buses Demo,Active,11.0,Bus,2010-01-01,,Fuel cell
+FCEV_US_14,Orange County Transportation Authority (OCTA),"Ballard Power Systems (fuel cell) 
+New Flyer (bus)",New Flyer New Flyer 40-foot Xcelsior® XHE40,CARB; FCEBCC,Active,10.0,Bus,2020-01-01,,Hybrid
+FCEV_US_15,SunLine Transit Agency,"Ballard Power Systems (fuel cell) 
+ElDorado National (bus)",El Dorado National,NFCBP: AFCB FTA LoNo (2015) Vehicle Deployment Program,Active,5.0,Bus,2017-01-01,,Hybrid
+FCEV_US_16,SunLine Transit Agency,"US Hybrid (fuel cell) 
+El Dorado National (bus)",El Dorado National,NFCBP; CEC,Active,1.0,Bus,2018-01-01,,Hybrid
+FCEV_US_17,SunLine Transit Agency,"Hydrogenics (fuel cell) 
+New Flyer (bus)",New Flyer LF,CARB,Active,5.0,Bus,2018-01-01,,Hybrid
+FCEV_US_18,SunLine Transit Agency,"Ballard Power Systems (fuel cell) 
+ElDorado National (bus)",El Dorado National,NFCBP: AFCB,Active,3.0,Bus,2014-01-01,,Hybrid
+FCEV_US_19,SunLine Transit Agency,"Ballard Power Systems (fuel cell) 
+ElDorado National (bus)",El Dorado National,NFCBP: AFCB prototype,Active,1.0,Bus,2012-01-01,,Hybrid
+FCEV_US_20,SunLine Transit Agency,"Hydrogenics (fuel cell) 
+New Flyer (bus)",New Flyer LF,NFCBP: CEC Alternative & Renewable Fuel and Vehicle Technology Program,Planned,5.0,Bus,,,
+FCEV_US_21,SunLine Transit Agency,"Hydrogenics (fuel cell) 
+New Flyer (bus)",New Flyer LF,NFCBP: CEC Alternative & Renewable Fuel and Vehicle Technology Program,Planned,1.0,Bus,,,Hybrid
+FCEV_US_22,Foothill Transit,,,,Planned,13.0,Bus,,,
+FCEV_US_23,Foothill Transit,,,,Planned,20.0,Bus,,,
+FCEV_US_24,County of Hawaii Mass Transit Agency,US Hybrid ,El Dorado,NFCBP: County of Hawai'i Mass Transit Agency (Hele-On Bus) Big Island FCEB Project; US Hybrid (25-passenger Shuttle Bus) ,Active,3.0,Bus,2015-01-01,,Fuel cell range extender
+FCEV_US_25,SERVCO Hawaii,Toyota Motor Corporation,Toyota Mirai,Commercial Production,Active,,Passenger vehicle,2018-01-01,,Fuel cell
+FCEV_US_26,US Airforce at Joint Base Pearl Harbor Hickam,US Hybrid (fuel cell) BYD (bus),Unknown,USAF,Active,1.0,Bus,,,Fuel cell
+FCEV_US_27,Champaign-Urbana Mass Transit District (MTD) ,Ballard Power Systems (fuel cell) New Flyer (bus),Xcelsior CHARGE H2 60-ft transit bus,FTA Grant,Planned,2.0,Bus,2020-01-01,,Fuel cell
+FCEV_US_28,Regional Transportation Commission (RTC) of Southern Nevada,,,U.S. DOE Low No Emission Grant Program,Planned,2.0,Bus,2022-01-01,,Fuel cell
+FCEV_US_29,FEDEX,Plug Power,Workhorse EGEN zero-emission ,,Active,1.0,Medium duty truck,2018-01-01,,range extender
+FCEV_US_30,Stark Area Regional Transit Authority,"Ballard Power Systems (fuel cell) 
+ElDorado National (bus)",El Dorado National,"NFCBP: AFCB SARTA, LoNo 2015",Active,10.0,Bus,2017-01-01,,Fuel cell
+FCEV_US_31,Stark Area Regional Transit Authority,"Ballard Power Systems (fuel cell) 
+ElDorado National (bus)",El Dorado National,"NFCBP: AFCB SARTA, CALSTART",Active,1.0,Bus,2017-01-01,,Fuel cell
+FCEV_US_32,Stark Area Regional Transit Authority,"Ballard Power Systems (fuel cell) 
+ElDorado National (bus)",El Dorado National,"NFCBP: AFCB SARTA, CALSTART",Active,1.0,Bus,2016-01-01,,Fuel cell
+FCEV_US_33,Douglas County PUD,Toyota Motor Corporation,Toyota Mirai,Renewable Hydrogen Demonstration Project; Demonstration fleet,Planned,10.0,Passenger vehicle,2021-01-01,,Fuel cell
+FCEV_INT_1,,,,Nationwide total,Active,4150.0,Bus,,,
+FCEV_INT_2,,,,Nationwide total,Active,796.0,Heavy duty truck,,,
+FCEV_INT_3,,,,Nationwide total,Active,3525.0,Medium duty truck,,,
+FCEV_INT_4,,,,Nationwide total,Active,816.0,Passenger vehicle,,,
+FCEV_INT_5,,,,Nationwide total,Active,58.0,Bus,,,
+FCEV_INT_6,,,,Nationwide total,Active,120.0,Bus,,,
+FCEV_INT_7,,,,Nationwide total,Active,7418.0,Passenger vehicle,,,
+FCEV_INT_8,,,,Nationwide total,Active,190.0,Bus,,,
+FCEV_INT_9,,,,Nationwide total,Active,5.0,Medium duty truck,,,
+FCEV_INT_10,,,,Nationwide total,Active,25375.0,Passenger vehicle,,,
+FCEV_INT_11,,,,Nationwide total,Active,197.0,Passenger vehicle,,,
+FCEV_INT_12,,,,Nationwide total,Active,1.0,Bus,,,
+FCEV_INT_13,,,,Nationwide total,Active,55.0,Passenger vehicle,,,
+FCEV_INT_14,,,,Nationwide total,Active,4.0,Bus,,,
+FCEV_INT_15,,,,Nationwide total,Active,1.0,Medium duty truck,,,
+FCEV_INT_16,,,,Nationwide total,Active,97.0,Passenger vehicle,,,
+FCEV_INT_17,,,,Nationwide total,Active,9.0,Passenger vehicle,,,
+FCEV_INT_18,,,,Nationwide total,Active,2.0,Medium duty truck,,,
+FCEV_INT_19,,,,Nationwide total,Active,229.0,Passenger vehicle,,,
+FCEV_INT_20,,,,Nationwide total,Active,2.0,Passenger vehicle,,,
+FCEV_INT_21,,,,Nationwide total,Active,27.0,Bus,,,
+FCEV_INT_22,,,,Nationwide total,Active,273.0,Medium duty truck,,,
+FCEV_INT_23,,,,Nationwide total,Active,396.0,Passenger vehicle,,,
+FCEV_INT_24,,,,Nationwide total,Active,92.0,Bus,,,
+FCEV_INT_25,,,,Nationwide total,Active,16.0,Medium duty truck,,,
+FCEV_INT_26,,,,Nationwide total,Active,1240.0,Passenger vehicle,,,
+FCEV_INT_27,,,,Nationwide total,Active,27.0,Passenger vehicle,,,
+FCEV_INT_28,,,,Nationwide total,Active,13.0,Bus,,,
+FCEV_INT_29,,,,Nationwide total,Active,45.0,Passenger vehicle,,,
+FCEV_INT_30,,,,Nationwide total,Active,10.0,Bus,,,
+FCEV_INT_31,,,,Nationwide total,Active,5.0,Bus,,,
+FCEV_INT_32,,,,Nationwide total,Active,3.0,Passenger vehicle,,,
+FCEV_INT_33,,,,Nationwide total,Active,54.0,Bus,,,
+FCEV_INT_34,,,,Nationwide total,Active,15.0,Heavy duty truck,,,
+FCEV_INT_35,,,,Nationwide total,Active,14.0,Medium duty truck,,,
+FCEV_INT_36,,,,Nationwide total,Active,505.0,Passenger vehicle,,,
+FCEV_INT_37,,,,Nationwide total,Active,10.0,Bus,,,
+FCEV_INT_38,,,,Nationwide total,Active,5.0,Heavy duty truck,,,
+FCEV_INT_39,,,,Nationwide total,Active,234.0,Passenger vehicle,,,
+FCEV_INT_40,,,,Nationwide total,Active,111.0,Passenger vehicle,,,
+FCEV_INT_41,,,,Nationwide total,Active,2.0,Heavy duty truck,,,
+FCEV_INT_42,,,,Nationwide total,Active,3.0,Passenger vehicle,,,
+FCEV_INT_43,,,,Nationwide total,Active,3.0,Passenger vehicle,,,
+FCEV_INT_44,,,,Nationwide total,Active,22.0,Passenger vehicle,,,
+FCEV_INT_45,,,,Nationwide total,Active,2.0,Bus,,,
+FCEV_INT_46,,,,Nationwide total,Active,65.0,Passenger vehicle,,,
+FCEV_INT_47,,,,Nationwide total,Active,20.0,Bus,,,
+FCEV_INT_48,,,,Nationwide total,Active,80.0,Heavy duty truck,,,
+FCEV_INT_49,,,,Nationwide total,Active,10.0,Medium duty truck,,,
+FCEV_INT_50,,,,Nationwide total,Active,218.0,Passenger vehicle,,,
+FCEV_INT_51,,,,Nationwide total,Active,33.0,Bus,,,
+FCEV_INT_52,,,,Nationwide total,Active,7.0,Medium duty truck,,,
+FCEV_INT_53,,,,Nationwide total,Active,241.0,Passenger vehicle,,,
+FCEV_INT_54,,,,Nationwide total,Active,1.0,Bus,,,
+FCEV_INT_55,,,,Nationwide total,Active,251.0,Passenger vehicle,,,
+FCEV_INT_56,,,,Nationwide total,Active,1.0,Bus,,,
+FCEV_INT_57,,,,Nationwide total,Active,1.0,Bus,,,
+FCEV_US_7,public (nationwide total),Toyota Motor Corporation,Toyota Mirai,Commercial Production,Active,10704.0,Passenger vehicle,2015-01-01,,Fuel cell

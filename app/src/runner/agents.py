@@ -180,8 +180,8 @@ class Agent:
         # Combine the context from 2 sources
         context = context_datastore + context_search
         
-        # Get list of scores, texts, and sources
-
+        
+        # Remove duplicates docs that have both entries in datastore and google search
         unique_ids = set()
         unique_context = []
         scores = []
@@ -195,7 +195,7 @@ class Agent:
         # Sort the context by score
         sorted_context = sorted(unique_context, key=lambda x: x.score, reverse=True)
 
-        formatted_context = [f"Source: {t.metadata.publisher} \n Content: {t.text}" for t in sorted_context[:15]]
+        formatted_context = [f"Source: {t.metadata.publisher} \n Content: {t.text}" for t in sorted_context] # remove top 15 restrictions
 
         messages = get_prompt('text', query, '\n\n'.join(formatted_context))
 

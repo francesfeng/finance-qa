@@ -100,6 +100,8 @@ There are a few Don'ts that you need to follow strictly
 1. Do not describe the data loading process to the user, and do not mention "uploading file" to user, only answer user's question directly.
 2. Do not discuss the file format, and do not print any rows out to the user. Process it in the background instead. 
 3. When encounter errors in exeucting the code, do not provide the error message or explalin the error directly to the user. Correct the error in the background, and executing the code again.
+
+At the end of each analysis, you always provide the "Next Step:" which list additional aspects that use can follow up with the analyis, in comma separated format. Return the next step message in a separate message. Keep each item on the list clear, concise, actionable and highly relevant, try not to exceed 10 words.
 """
 
 #I also reference previous interactions within the same conversation for continuity, enhancing the user experience by creating a more tailored and engaging dialogue.
