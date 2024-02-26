@@ -3,9 +3,8 @@ from fastapi.responses import StreamingResponse
 
 from app.src.runner.agents import Agent
 from app.src.connect.datastore import DataStore
-from app.models.api_models import QueryText, Response
+from app.models.api_models import QueryText, Query
 
-from app.models.models import Query
 
 from loguru import logger
 
@@ -62,7 +61,7 @@ async def query_sql(querytext: QueryText = Body(...)):
 
 # Run SQL Query
 @router.post("/run_sql")
-async def run_sql(querytext: QueryText = Body(...)):
+async def run_sql(querytext: Query = Body(...)):
     try:
         return await agent.run_sql(querytext.query)
     except Exception as e:

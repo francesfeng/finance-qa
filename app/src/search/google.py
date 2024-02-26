@@ -50,13 +50,14 @@ class GoogleSearch:
         self.user_agent = config.user_agent
         self.model_embed = config.model_embed
         self.chunking_size = config.chunking_size
+        self.embedding_dimension = config.embedding_dimension
 
 
         assert self.api_key is not None
         assert self.cx_id is not None
 
     
-    async def run(self):
+    async def run(self) -> List[DocumentSearch]:
 
         results = []
         
@@ -112,7 +113,7 @@ class GoogleSearch:
             
 
             # TODO: Insert the embedding to cache
-            asyncio.create_task(db.insert_embeddings(scrapped_context, self.chunking_size, self.model_embed))
+            asyncio.create_task(db.insert_embeddings(scrapped_context, self.chunking_size, self.model_embed, self.embedding_dimension))
 
 
         # Combine the retrieved context and missing context

@@ -5,7 +5,7 @@ tokenizer = tiktoken.get_encoding('cl100k_base')
 
 def chunking(text: str, 
              chunk_size: int=350, 
-             max_num_chunks: int=1000,
+             max_num_chunks: int=100,
              min_chunk_char: int = 25
              ) -> List[str]:
 

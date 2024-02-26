@@ -24,6 +24,7 @@ class Context:
         self.min_chunk_char = config.min_chunk_char
         self.similarity_threshold = config.similarity_threshold
         self.model_embed = config.model_embed
+        self.embedding_dimension = config.embedding_dimension
 
 
 
@@ -42,10 +43,11 @@ class Context:
 
         time_end = time.time()
 
-        logger.opt(lazy=True).log("CONTEXT", f"Chunking | Process time: {time_end - time_start} seconds | Number of text: {len(docs)} | Number of chunks: {len(chunks_list)}")
+        logger.opt(lazy=True).log("CONTEXT", f"Chunking | Process time: {time_end - time_start} seconds | Number of documents: {len(docs)} | Number of chunks: {len(chunks_list)}")
 
 
-        return self.create_embedding(chunks_list)
+        chunks_emb = self.create_embedding(chunks_list)
+        return chunks_emb
     
     
 
@@ -80,7 +82,7 @@ class Context:
         chunks = docs.copy()
         text = [chunk.text for chunk in chunks]
 
-        embeddings = get_embeddings_v2(text, self.model_embed)
+        embeddings = get_embeddings_v2(text, self.model_embed, self.embedding_dimension)
 
         # add embedding to the chunk
         for chunk, emb in zip(chunks, embeddings):
@@ -96,7 +98,7 @@ class Context:
         """
         # Get embeddings for queries
         queries = list(set([doc.query for doc in docs]))
-        queries_emb = get_embeddings_v2(queries, self.model_embed)
+        queries_emb = get_embeddings_v2(queries, self.model_embed, self.embedding_dimension)
 
         # Create a dictionary of queries and their embeddings
         queries_emb_dict = {query: emb for query, emb in zip(queries, queries_emb)}
@@ -111,9 +113,9 @@ class Context:
         time_end = time.time()
         logger.opt(lazy=True).log("CONTEXT", f"Semantic Search | Number of Documents: {len(docs)} | Process time: {time_end - time_start} seconds")
 
-
-        #sorted_chunk = [chunk for chunk in chunks_all if chunk.score > self.similarity_threshold]
-        return sorted(chunks_all, key=lambda x: x.score, reverse=True)
+        
+        sorted_chunk = [chunk for chunk in chunks_all if chunk.score > self.similarity_threshold]
+        return sorted(sorted_chunk, key=lambda x: x.score, reverse=True)
 
 
 

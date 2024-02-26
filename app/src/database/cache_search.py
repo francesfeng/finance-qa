@@ -28,39 +28,47 @@ class SearchCache(BackendDB):
             Insert search result to the search cache 
             It allows duplicaations, as highest number of duplication indicates importance
         """
-
-        await self.create_connection()
-        async with self.conn.transaction():
-            for doc in docs:
-                url = doc.metadata.url
-                if url.endswith('.pdf'):
-                    type = 'PDF'
-                elif 'arxiv.org/' in url:
-                    type = 'Academic paper'
-                elif 'youtube.com' in url:
-                    type = 'video'
-                else:
-                    type = 'HTML'
-                
-                sql_query = """
-                    INSERT INTO search_cache (query, url, type, publisher, author, title, created_at, updated_at)
-                    VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
-                    ON CONFLICT (query, url) do nothing
-                    """
-                
-                created_at = datetime.strptime(doc.metadata.created_at, '%Y-%m-%d') if doc.metadata.created_at else None
-                current = datetime.utcnow()
-                await self.conn.execute(sql_query, doc.query, 
-                                    doc.metadata.url, 
-                                    type, 
-                                    doc.metadata.publisher, 
-                                    doc.metadata.author, 
-                                    doc.metadata.title, 
-                                    created_at,
-                                    current,
-                                    )
-            logger.opt(lazy=True).log("CACHE", f"Search Cache Insert | Inserted {len(docs)} searches to the database")
-            return 
+        try:
+            await self.create_connection()
+            async with self.conn.transaction():
+                for doc in docs:
+                    url = doc.metadata.url
+                    if url.endswith('.pdf'):
+                        type = 'PDF'
+                    elif 'arxiv.org/' in url:
+                        type = 'Academic paper'
+                    elif 'youtube.com' in url:
+                        type = 'video'
+                    else:
+                        type = 'HTML'
+                    
+                    sql_query = """
+                        INSERT INTO search_cache (query, url, type, publisher, author, title, created_at, updated_at)
+                        VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+                        ON CONFLICT (query, url) do nothing
+                        """
+                    
+                    created_at = datetime.strptime(doc.metadata.created_at, '%Y-%m-%d') if doc.metadata.created_at else None
+                    current = datetime.utcnow()
+                    await self.conn.execute(sql_query, doc.query, 
+                                        doc.metadata.url, 
+                                        type, 
+                                        doc.metadata.publisher, 
+                                        doc.metadata.author, 
+                                        doc.metadata.title, 
+                                        created_at,
+                                        current,
+                                        )
+                logger.opt(lazy=True).log("CACHE", f"Search Cache Insert | Inserted {len(docs)} searches to the database")
+        except Exception as e:
+            logger.error(f"Insert the search results | Error in inserting search results in search_Cache: {e}")
+        finally:
+            await self.conn.close()
+        return
+    
+    
+    
+     
         
     async def update_scrape_status(self, query: str):
         """
@@ -90,7 +98,7 @@ class SearchCache(BackendDB):
             await self.conn.execute(sql_query)
 
         except Exception as e:
-            logger.opt(lazy=True).error("CACHE", f"Search Cache Update | Error updating search cache: {e}")
+            logger.error(f"Update scrape results | Error updating scrape results in search_Cache: {e}")
         finally:
             await self.conn.close()
 

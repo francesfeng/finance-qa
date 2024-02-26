@@ -1,7 +1,7 @@
 import time
 import asyncio
-from typing import Optional
-from app.models.models import Query, DocumentMetadataFilter 
+from typing import Optional, List
+from app.models.models import Query, DocumentMetadataFilter, DocumentSearch
 from app.src.connect.datastore import DataStore
 from app.src.search.google import GoogleSearch
 
@@ -43,7 +43,7 @@ async def retrieve_context_from_datastore(query: str,
 
 
 
-async def retrieve_context_from_google_search(query: str, date_period: Optional[str]=None):
+async def retrieve_context_from_google_search(query: str, date_period: Optional[str]=None) -> List[DocumentSearch]:
     """
     Generate 3 google search queries, to retrieve context from google search based on the search queries
     """

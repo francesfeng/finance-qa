@@ -5,9 +5,9 @@ import asyncio
 import time
 
 from typing import Optional, List, Dict
+from app.src.config.config import Config
 from app.src.connect.datastore import DataStore
 from app.src.database.db import Database
-#from app.src.database.cache_emb import EmbeddingCache
 from app.src.database.db_datasets import DatasetsDB
 from app.src.database.cache_query import QueryCache
 from app.src.connect.gpt import get_chat_completion_stream, get_chat_completion
@@ -16,7 +16,7 @@ from .function_call import get_text_retrieval_function_call
 from .functions import retrieve_context_from_datastore, retrieve_context_from_google_search
 from .sql import SQLAgent
 
-from app.models.models import Query, Type, Dataset, Related
+from app.models.models import Query, Type, Dataset, Related, DocumentSearch
 from app.src.config.prompt.prompt import get_prompt
 from app.models.models import Response, Label
 from app.models.api_models import MessageResponse
@@ -26,27 +26,19 @@ import timeit
 import yaml
 from loguru import logger
 level_agent = logger.level("AGENT", no=38, color="<yellow>", icon="♣")
-#level_related = logger.level("RELATED", no=38, color="<yellow>", icon="♣")
-#level_datastore = logger.level("RETRIEVAL", no=38, color="<yellow>", icon="♣")
-#level_text = logger.level("TEXT", no=30, color="<green>", icon="♨")
-#level_table= logger.level("TABLE", no=30, color="<magenta>", icon="♨")
-#level_table_chart = logger.level("TABLECHART", no=30, color="<blue>", icon="♨")
-#level_sql = logger.level("SQL", no=30, color="<green>", icon="♨")
-#level_run_sql = logger.level("RUNSQL", no=30, color="<green>", icon="♨")
-#level_sql_chart = logger.level("SQLECHART", no=30, color="<green>", icon="♨")
-#level_data_text = logger.level("DATATEXT", no=30, color="<green>", icon="♨")
-
 
 
 class Agent:
 
-    def __init__(self):
+    def __init__(self, config_path: Optional[str] = None):
         """
         Initialise the agent.
         """
+
+        config = Config(config_path)
         self.datastore = DataStore()
-        self.model_basic = 'gpt-3.5-turbo-1106'
-        self.model_advanced = 'gpt-4-1106-preview'
+        self.model_basic = config.model_base
+        self.model_advanced = config.model_advanced
         self.cache_query = QueryCache()
         self.db_datasets = DatasetsDB()
         
@@ -83,13 +75,12 @@ class Agent:
                 related_topics = related
             )
 
-            print(f"Response is: {response}")
 
-            asyncio.create_task(self.cache_query.insert_query(response))
+            asyncio.create_task(self.cache_query.insert_classification(response, query))
 
             return response
         except Exception as e:
-            print(e)
+            logger.error(e)
             return Response(
                 code = 404
                 )
@@ -118,7 +109,7 @@ class Agent:
         )
 
         # Insert into cache
-        asyncio.create_task(self.cache_query.insert_query(response, query))
+        asyncio.create_task(self.cache_query.insert_classification(response, query))
         return response
     
 
@@ -130,11 +121,13 @@ class Agent:
 
         start = timeit.default_timer()
         res = get_chat_completion_json(messages)
+        related = [Related(query=r["question"], title=r["topic"]) for r in res['related_questions']]
         end = timeit.default_timer()
 
-        #logger.opt(lazy=True).log("CLASSIFICATION", f"Query: {query} | Processing Time: {end - start} | Response: {res}")
+        asyncio.create_task(self.cache_query.insert_related(related, query))
+        logger.opt(lazy=True).log("AGENT", f"CLASSIFICATION | Query: {query} | Processing Time: {end - start} | Response: {res}")
 
-        return res
+        return related
 
 
         
@@ -148,13 +141,82 @@ class Agent:
 
         time_start = time.time()
         # Generate function specification for text retrieval
+        
+        context = await self._retrieve_context(query)
+
+        formatted_context = [f"Source: {t.metadata.publisher} \nTitle: {t.metadata.title} \nContent: {t.text}" for t in context][:80] # Given 128k context window, and 1500 chunking_size
+
+        messages = get_prompt('text', query, '\n\n'.join(formatted_context))
+
+        if is_streaming:
+
+            return get_chat_completion_stream_v2(messages, model=self.model_advanced)
+        
+        else:
+
+    
+            res = get_chat_completion_v2(messages, model=self.model_advanced)
+
+            time_end = time.time()
+            logger.opt(lazy=True).log("AGENT", f"Text | Query: {query} | Processing Time: {time_end - time_start} | Response: {res}")
+            
+            # upload response to cache
+            asyncio.create_task(self.cache_query.insert_text_response(res, query))
+
+            return res
+        
+        
+
+    async def query_text_json(self, query: str) -> Response:
+        """
+            Generate the the title and the text response for user's query
+        """
+        time_start = time.time()
+        # Generate function specification for text retrieval
+        
+        context = await self._retrieve_context(query)
+
+        formatted_context = [f"Source: {t.metadata.publisher} \nTitle: {t.metadata.title} \nContent: {t.text}" for t in context][:80] # Given 128k context window, and 1500 chunking_size
+
+        messages = get_prompt('classification_text', query, '\n\n'.join(formatted_context))
+
+        res = get_chat_completion_json(messages, model=self.model_advanced)
+
+        time_end = time.time()
+        logger.opt(lazy=True).log("AGENT", f"Title and Text | Query: {query} | Processing Time: {time_end - time_start} | Response: {res}")
+    
+        response = Response(
+            code = 200,
+            label = Label.text,
+            query = query,
+            title = res.get('title'),
+            response = {'text': res.get('analysis')}
+        )
+        
+        # upload response to cache
+        asyncio.create_task(self.cache_query.insert_text_response(response, query))
+
+        return response
+
+
+
+        
+
+        
+    async def _retrieve_context(self, query: str) -> List[DocumentSearch]:
+        """
+            Retrieve context from Datastore and Google search based on user's query
+        """
+
+        # get function spec for datastore and google retrieval
         function_call_messages = get_prompt('text_retrieval_function_call', query)
         tools = get_text_retrieval_function_call()
         functions = get_function_call(function_call_messages, tools, model=self.model_advanced)
 
-        # print(f"Function call results: {functions}")
 
         if functions:
+            
+            # TODO: this step can be parallelised
             
             #Retrieve context from datastore
             if 'retrieve_context_from_datastore' in functions.keys():
@@ -194,29 +256,7 @@ class Agent:
 
         # Sort the context by score
         sorted_context = sorted(unique_context, key=lambda x: x.score, reverse=True)
-
-        formatted_context = [f"Source: {t.metadata.publisher} \n Content: {t.text}" for t in sorted_context] # remove top 15 restrictions
-
-        messages = get_prompt('text', query, '\n\n'.join(formatted_context))
-
-        if is_streaming:
-
-            return get_chat_completion_stream_v2(messages, model=self.model_basic)
-        
-        else:
-
-    
-            res = get_chat_completion_v2(messages, model=self.model_basic)
-
-            time_end = time.time()
-            logger.opt(lazy=True).log("AGENT", f"Text | Query: {query} | Processing Time: {time_end - time_start} | Response: {res}")
-            
-            # upload response to cache
-            asyncio.create_task(self.cache_query.insert_text_response(res, query))
-
-            return res
-        
-
+        return sorted_context
 
 
     async def query_data(self, query: str) -> Optional[Dict[str, Dict[str, str]]]:

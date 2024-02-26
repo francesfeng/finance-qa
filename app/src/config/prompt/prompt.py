@@ -11,7 +11,7 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
         {"role": "system", "content": "You are a helpful market research analyst. You goal is to: 1. summarise the given question into a short topic. 2. assign a \"Database\" or a \"Text\" label to the question, by judging from the context of the question. 3. Ask 6 additional related questions to the question provided, and summarise each question into a short topic"},
         {"role": "user", "content": "You assign the question \"Database\" label if the question can be answered by executing SQL query against the database, otherwise assign the \"Text\" label. If the user asks questions that can be answered based on the information contained in the following schema, it is a \"Database\" label, otherwise assign the \"Text\" label."},
         {"role": "user", "content": "For related questions, you list first 3 questions and topics that can only be answered by text format, followed by 3 questions and topics that can be answered using SQL in the schema provided above. Keep the related questions diverse and relevant."},
-        {"role": "user", "content": "From now you will respond with JSON. Provide only 6 related questions. Keep the response in json format: {\“original question\”: the question provided, \“original topic\”: the summary based on the original question, \“original label\”: the \“Database\” or \“Text\” label assigned, \“related questions\”: [{\“question\”: first related question using natual language, \“topic\”: the summary based on the first related question, \"SQL\": valid SQL if this question can be answered in SQL, otherwise leave blank}, {\“question\”: the second related question, \“topic\”: the summary based on the second related question, \"SQL\": valid SQL if available}, …}."},    
+        {"role": "user", "content": "From now you will respond with JSON. Provide only 6 related questions. Keep the response in json format: {\“original question\”: the question provided, \“original topic\”: the summary based on the original question, \“original label\”: the \“Database\” or \“Text\” label assigned, \“related questions\”: [{\“question\”: the related question using natual language, \“topic\”: the summary based on the related question, \"SQL\": valid SQL if this question can be answered in SQL, otherwise leave blank}, …]}."},    
         {"role": "user", "content": "Do not list topics or questions that have appeared in the prompt before."},
         {"role": "user", "content": f"Schema: \"\"\"{context}\"\"\""},
         {"role": "user", "content": f"Original question: {query}"},
@@ -28,8 +28,8 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
 
     RELATED_PROMPT = [
         {"role": "system", "content": "You are a helpful market research analyst. You goal is to ask 6 additional related questions to the question provided, summarise each question into a short topic."},
-        {"role": "user", "content": "From now you will respond with json list. Provide only 6 related questions. Keep the response in json list format: [{\“question\”: first related question, \“topic\”: the summary based on the first related question}, {\“question\”: the second related question, \“topic\”: the summary based on the second related question}, …]."},    
-        {"role": "user", "content": "You prioritise questions and topics that contains information in the schema provided above."},
+        {"role": "user", "content": "For related questions, you list first 3 questions and topics that can only be answered by text format, followed by 3 questions and topics that can be answered using SQL in the schema provided above. Keep the related questions diverse and relevant."},
+        {"role": "user", "content": "From now you will respond with JSON. Keep the response in JSON format: {\"related_questions\": [{\“question\”: first related question, \“topic\”: the summary based on the first related question}, {\“question\”: the second related question, \“topic\”: the summary based on the second related question}, …]}."},    
         {"role": "user", "content": "Do not list topics or questions that have appeared in the prompt before."},
         {"role": "user", "content": f"Schema: \"\"\"{context}\"\"\""},
         {"role": "user", "content": f"Original question: {query}"},
@@ -64,14 +64,24 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     # ]
 
     TEXT_PROMPT = [
-        {"role": "system", "content": "You are an expert energy market analyst. Your goal is to produce detailed analysis that answers user\'s question strictly based on the context provided below. The analysis should be well structured, informative, in depth and comprehensive, with facts and numbers if available, with minimium 1000 words."},
-        {"role": "user", "content": "You should strive to write the report as long as you can using all relevant and necessary information provided. Use an unbiased and journalistic tone. You MUST determine your own concrete and valid opinion based on the given information. Do NOT deter to general and meaningless conclusions."},
-        {"role": "user", "content": "You must write the report with markdown syntax. For any headers, use level 4 headers. Write the analysis in bullet point. Do not mention \"the provided text\" in the response."},
-        {"role": "user", "content": "You MUST write all used source urls at the end of the report as references, and make sure to not add duplicated sources, but only one reference for each. Cite search results using inline notations, followed by line breaks. Only cite the most relevant results that answer the query accurately. Place these citations at the end of the sentence or paragraph that reference them."},
+        {"role": "system", "content": "You are an expert energy market analysts. Your goal is to produce the most insightful and comprehensive analysis that answers the user\'s question. You deep dive the analysis in multiple aspects, and each filled with facts and numbers. You are not shy about deriving your own expert opinions based on the context, but don\'t make any generic or vague statements that might hold truth, but don\'t add any value."},
+        {"role": "user", "content": "You should strive to write the analysis as long as you can using all relevant and necessary information provided. Use an unbiased and journalistic tone."},
+        {"role": "user", "content": "You must write the analysis with markdown syntax. For any headers, use level 4 headers. Write the analysis in bullet point. If the answers are best presented in table format, using markdown tables."},
+        {"role": "user", "content": "You MUST write all used source urls at the end of the report as references, and make sure to not add duplicated sources, but only one reference for each. Cite search results using inline notations, followed by line breaks. Only cite the most relevant results that answer the query accurately. Place these citations at the end of the sentence or paragraph that references them."},
+        {"role": "user", "content": "Let\'s start"},
         {"role": "user", "content": f"Context: {context}"},
         {"role": "user", "content": f"Question: {query}"},
     ]
 
+    CLASSIFICATION_TEXT_PROMPT = [
+        {"role": "system", "content": "You are an expert energy market analysts. Your goals are: 1) write a short title based on user\' question with less than 20 words, and 2) produce the most insightful and comprehensive analysis that answers the user\'s question. You deep dive the analysis in multiple aspects, and each filled with facts and numbers. You are not shy about deriving your own expert opinions based on the context, but don\'t make any generic or vague statements that might hold truth, but don\'t add any value."},
+        {"role": "user", "content": "You should strive to write the analysis as long as you can using all relevant and necessary information provided. Use an unbiased and journalistic tone."},
+        {"role": "user", "content": "You must write the analysis with markdown syntax. For any headers, use level 4 headers. Write the analysis in bullet point. If the answers are best presented in table format, using markdown tables."},
+        {"role": "user", "content": "You MUST write all used source urls at the end of the report as references, and make sure to not add duplicated sources, but only one reference for each. Cite search results using inline notations, followed by line breaks. Only cite the most relevant results that answer the query accurately. Place these citations at the end of the sentence or paragraph that references them."},
+        {"role": "user", "content": "Keep the output in the following JSON format: {\"title\": the short title based on the user\'s question, \"analysis\": the analysis based on the user\'s question}"},
+        {"role": "user", "content": f"Context: {context}"},
+        {"role": "user", "content": f"Question: {query}"},
+    ]
 
 
 
@@ -202,6 +212,9 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     
     elif model == 'text':
         return TEXT_PROMPT
+    
+    elif model == 'classification_text':
+        return CLASSIFICATION_TEXT_PROMPT
     
     elif model == 'dataset_summary':
         return DATASET_SUMMARY

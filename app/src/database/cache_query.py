@@ -25,6 +25,7 @@ class QueryCache:
         config = Config(config_path)
         self.model_embed = config.model_embed
         self.query_similarity_threshold = config.query_similarity_threshold
+        self.embedding_dimension = config.embedding_dimension
 
 
         if query:
@@ -37,7 +38,7 @@ class QueryCache:
         self.conn = await asyncpg.connect(host=host, database=database, user=user, password=password)
      
 
-    async def insert_query(self, response: Response, query: Optional[str] = None):
+    async def insert_classification(self, response: Response, query: Optional[str] = None):
         """
             Insert user query, query title, label, related questions to query cache table
         """
@@ -50,31 +51,64 @@ class QueryCache:
             self.query_emb, self.query_emb_str = self.__create_emb_str(self.query)
 
 
-        await self.create_connection()
+        try:
+            await self.create_connection()
 
-        sql_query = """
-        INSERT INTO queries (query, query_hash, title, label, related, query_embedding, created_at) 
-        VALUES ($1, $2, $3, $4, $5, $6, $7)
-        ON CONFLICT (query_hash) DO
-        UPDATE SET query = EXCLUDED.query, query_hash = EXCLUDED.query_hash, title = EXCLUDED.title, label = EXCLUDED.label, related = EXCLUDED.related, query_embedding = EXCLUDED.query_embedding, created_at = EXCLUDED.created_at;
-        """
-        
-        
-        await self.conn.execute(sql_query, 
-                                self.query, 
-                                self.query_hash, 
-                                response.title, 
-                                response.label, 
-                                json.dumps(response.related_topics) if response.related_topics else None, 
-                                self.query_emb_str,
-                                datetime.utcnow())
-
+            sql_query = """
+            INSERT INTO queries (query, query_hash, title, label, related, query_embedding, created_at) 
+            VALUES ($1, $2, $3, $4, $5, $6, $7)
+            ON CONFLICT (query_hash) DO
+            UPDATE SET query = EXCLUDED.query, query_hash = EXCLUDED.query_hash, title = EXCLUDED.title, label = EXCLUDED.label, related = EXCLUDED.related, query_embedding = EXCLUDED.query_embedding, created_at = EXCLUDED.created_at;
+            """
+            
+            
+            await self.conn.execute(sql_query, 
+                                    self.query, 
+                                    self.query_hash, 
+                                    response.title, 
+                                    response.label, 
+                                    json.dumps([r.__dict__ for r in response.related_topics]) if response.related_topics else None, 
+                                    self.query_emb_str,
+                                    datetime.utcnow())
+        except Exception as e:
+            logger.error(f"Insert the classification results | Error in inserting classification results in query_Cache: {e}")
+        finally:
+            await self.conn.close()
 
         return
     
+
+    async def insert_related(self, related: List[Related], query: Optional[str] = None):
+        if not hasattr(self, 'query') and query:
+            self.query = query.strip()
+            self.query_hash = text_to_hash(self.query)
+            #self.query_emb, self.query_emb_str = self.__create_emb_str(self.query)
+
+        try:
+            await self.create_connection()
+
+            sql_query = """
+            INSERT INTO queries (query, query_hash, related, created_at) 
+            VALUES ($1, $2, $3, $4)
+            ON CONFLICT (query_hash) DO
+            UPDATE SET related = EXCLUDED.related, created_at = EXCLUDED.created_at;
+            """
+
+            await self.conn.execute(sql_query, 
+                                    self.query, 
+                                    self.query_hash,                                   
+                                    json.dumps([r.__dict__ for r in related]), 
+                                    datetime.utcnow())
+        except Exception as e:
+            logger.error(f"Insert the classification results | Error in inserting classification results in query_Cache: {e}")
+        finally:
+            await self.conn.close()
+        return 
+
+
     
 
-    async def insert_text_response(self, response: str, query: Optional[str] = None):
+    async def insert_text_response(self, response: Response, query: Optional[str] = None):
         """
             Insert text response by looking up the query hash value
         """
@@ -82,17 +116,36 @@ class QueryCache:
         if not hasattr(self, 'query') and query:
             self.query = query.strip()
             self.query_hash = text_to_hash(self.query)
+            self.query_emb, self.query_emb_str = self.__create_emb_str(self.query)
 
-        
-        await self.create_connection()
-        sql_query = """
-        INSERT INTO queries (query, query_hash, text_response) 
-        VALUES ($1, $2, $3) 
-        ON CONFLICT (query_hash) DO 
-        UPDATE SET query = EXCLUDED.query, query_hash = EXCLUDED.query_hash ,text_response = EXCLUDED.text_response;
-        
-        """
-        await self.conn.execute(sql_query, self.query, self.query_hash, response)
+        try:
+            await self.create_connection()
+            sql_query = """
+            INSERT INTO queries (query, query_hash, title, label, text_response, query_embedding, created_at) 
+            VALUES ($1, $2, $3, $4, $5, $6, $7) 
+            ON CONFLICT (query_hash) DO 
+            UPDATE SET query = EXCLUDED.query, 
+                query_hash = EXCLUDED.query_hash, 
+                title = EXCLUDED.title, 
+                label = EXCLUDED.label, 
+                text_response = EXCLUDED.text_response, 
+                query_embedding = EXCLUDED.query_embedding, 
+                created_at = EXCLUDED.created_at;
+            
+            """
+            await self.conn.execute(sql_query, 
+                                    self.query, 
+                                    self.query_hash, 
+                                    response.title,
+                                    response.label,
+                                    response.response['text'],
+                                    self.query_emb_str, 
+                                    datetime.utcnow(),
+                                    )
+        except Exception as e:
+            logger.error(f"Insert the text response | Error in inserting text response in query_Cache: {e}")
+        finally:
+            await self.conn.close()
         return 
     
 
@@ -183,9 +236,9 @@ class QueryCache:
 
 
         sql_query = f"""
-            SELECT query, title, label, text_response, data_response, sql, data_source, data_explanation, chart_response, query_embedding ,l2_distance(query_embedding, '{self.query_emb_str}'::VECTOR(1536)) AS similarity
-            FROM queries
-            ORDER BY query_embedding <-> '{self.query_emb_str}'::VECTOR(1536)
+            SELECT query, title, label, text_response, data_response, sql, data_source, data_explanation, chart_response, query_embedding ,l2_distance(query_embedding, '{self.query_emb_str}'::VECTOR(256)) AS similarity
+            FROM queries WHERE query_embedding IS NOT NULL
+            ORDER BY query_embedding <-> '{self.query_emb_str}'::VECTOR(256)
             LIMIT 1
         """
         await self.create_connection()
@@ -199,7 +252,7 @@ class QueryCache:
             # calculate cosline similarity query and top retrieved result 
             cosine_score = cosine_similarity(self.query_emb, emb)
             score = float(1- result[-1])
-            logger.opt(lazy=True).log('CACHE', f"RETRIEVEL_TOP | Query: {self.query} | L2 score: {score} | Cosine score: {cosine_score}")
+            logger.opt(lazy=True).log('QUERYCACHE', f"RETRIEVEL_TOP | Query: {self.query} | L2 score: {score} | Cosine score: {cosine_score}")
 
             # Return result when cosine score above threshold
             if cosine_score > self.query_similarity_threshold:
@@ -213,6 +266,10 @@ class QueryCache:
 
 
     async def retrieve_related(self, query: Optional[str] = None):
+        """
+            Retrieve the top 6 matched quries, excluding the first one
+            The retrieved results didn't go through the similarity threshold
+        """
 
         # Set query hash and query embedding if query is not set in class
         if not hasattr(self, 'query') and query:
@@ -222,22 +279,22 @@ class QueryCache:
 
         # Get top 6 matches excluding the first one
         sql_query = f"""
-            SELECT query, title, label ,l2_distance(query_embedding, '{self.query_emb_str}'::VECTOR(1536)) AS similarity
-            FROM queries
-            ORDER BY query_embedding <-> '{self.query_emb_str}'::VECTOR(1536)
+            SELECT query, title, label ,l2_distance(query_embedding, '{self.query_emb_str}'::VECTOR(256)) AS similarity
+            FROM queries WHERE query_embedding IS NOT NULL
+            ORDER BY query_embedding <-> '{self.query_emb_str}'::VECTOR(256)
             OFFSET 1 LIMIT 6
         """
         await self.create_connection()
         results = await self.conn.fetch(sql_query)
 
+        #TODO: add score filter 
 
         #Reformat to Related class
-        logger.opt(lazy=True).log('CACHE', f"RETRIEVEL_RELATED | Query: {self.query} | Results: {len(results)} | Highest L2 score: {results[0][-1]} | Lowest L2 score: {results[-1][-1]}")
-
         if len(results) > 0:
             related = []
             for r in results:
                 related.append(Related(query = r[0], title = r[1]))
+            logger.opt(lazy=True).log('QUERYCACHE', f"RETRIEVEL_RELATED | Query: {self.query} | Results: {len(results)} | Highest L2 score: {results[0][-1]} | Lowest L2 score: {results[-1][-1]}")
             return related
         
         return
@@ -246,7 +303,7 @@ class QueryCache:
     
 
     def __create_emb_str(self, query: str):
-        query_emb = get_embeddings_v2([query], self.model_embed)[0]
+        query_emb = get_embeddings_v2([query], self.model_embed, dimension=self.embedding_dimension)[0]
         query_emb_str = '[' + ','.join(map(str, query_emb)) + ']'
         return query_emb, query_emb_str
     

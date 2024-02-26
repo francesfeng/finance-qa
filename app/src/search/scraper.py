@@ -8,19 +8,30 @@ level_search = logger.level("SCRAPE", no=38, color="<yellow>", icon="♣")
 
 def extract_text_from_url(url: str, session: requests.Session):
     content = ""
-
+    scrape_type = ''
     try:
-        if url.endswith(".pdf"):
-            content = scrape_pdf(url, session)
+        response = session.get(url, timeout=10)
+
+        if url.endswith(".pdf") or response.headers.get('content-type') == 'application/pdf':
+            content = scrape_pdf(response)
+            scrape_type = 'PDF'
+
         elif "arxiv.org" in url:
             doc_num = url.split("/")[-1]
             content = scrape_arxiv(doc_num)
-        
-        else:
-            content = scrape_html(url, session)
+            scrape_type = 'Arxiv'
 
+        else:
+            content = scrape_html(response)
+            scrape_type = 'HTML'
+
+        logger.opt(lazy=True).log("SCRAPE", f"Type: {scrape_type} | URL: {url}| Content length: {len(content.split())}")
+
+        # set to None if content is too short
         if content is None or len(content) < 100:
             return {'url': url, 'raw_content': None}
+        else:
+            content = content.replace('\n', ' ')
         
         return {'url': url, 'raw_content': content}
     
@@ -30,24 +41,21 @@ def extract_text_from_url(url: str, session: requests.Session):
 
 
 
-def scrape_pdf(url: str, session: requests.Session):
+def scrape_pdf(response):
     """
     Scrape the pdf and return the text
     """
     text = ""
     try:
-        response = session.get(url, timeout=4)
         pdf_stream = response.content
         doc = fitz.open(stream = pdf_stream, filetype='pdf') 
         
         for page in doc:
-            text += page.get_text() + '\n'
+            text += page.get_text() + ' '
 
-        # Store in DB
-        logger.opt(lazy=True).log("SCRAPE", f"Type: PDF | URL: {url} | Content: {len(text.split())}")
         return text
     except Exception as e:
-        logger.error(f"Error in scraping PDF: {e} | URL: {url}")
+        logger.error(f"Error in scraping PDF: {e}")
         return
 
 
@@ -59,13 +67,12 @@ def scrape_arxiv(url: str):
     return
 
 
-def scrape_html(url: str, session: requests.Session):
+def scrape_html(response):
     """
     Scrape the html page and return the text
     """
 
     try:
-        response = session.get(url, timeout=4)
         soup = BeautifulSoup(response.content, 'lxml', from_encoding=response.encoding)
 
         for script_or_style in soup(["script", "style"]):
@@ -75,14 +82,14 @@ def scrape_html(url: str, session: requests.Session):
         raw_content = get_raw_content(soup)
         lines = (line.strip() for line in raw_content.splitlines())
         chunks = (phrase.strip() for line in lines for phrase in line.split("  "))
-        content = "\n".join(chunk for chunk in chunks if chunk)
+        content = " ".join(chunk for chunk in chunks if chunk)
 
         # Store in DB
-        logger.opt(lazy=True).log("SCRAPE", f"Type: HTML | URL: {url} | Content length: {len(content.split())}")
+        
         return content
     
     except Exception as e:
-        logger.error(f"Error in scrapting HTML: {e} | URL: {url}")
+        logger.error(f"Error in scrapting HTML: {e} | URL:")
         return
 
 

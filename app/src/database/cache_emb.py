@@ -62,54 +62,60 @@ class EmbeddingCache:
         return docs
     
 
-    async def insert_embeddings(self, docs: List[DocumentChunk], chunking_size: int, embedding_model: str, is_updating: bool = False):
+    async def insert_embeddings(self, docs: List[DocumentChunk], chunking_size: int, embedding_model: str, embedding_dimension: str,is_updating: bool = False):
         
         """
             Insert embeddings to the database
         """
 
-        await self.create_connection()
-        async with self.conn.transaction():
-
-            #stmt = await self.conn.prepare("INSERT INTO embeddings (id, text, embedding, document_id, source, type, publisher, url, created_at, author, title) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)")
-            for doc in docs:
-                    
-                emb = '[' + ','.join(map(str, doc.embedding)) + ']'
-
-                if not is_updating:
-                    query = """
-                        INSERT INTO embeddings (id, text, embedding, document_id, chunk_seq ,source, type, publisher, url, created_at, author, title, chunk_size, embedding_model) 
-                        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+        if not is_updating:
+            query = """
+                        INSERT INTO embeddings (id, text, embedding, document_id, chunk_seq ,source, type, publisher, url, created_at, author, title, chunk_size, embedding_model, embedding_dimension) 
+                        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)
                         ON CONFLICT (id) DO NOTHING
                         """
-                else:
-                    query = """
-                        INSERT INTO embeddings (id, text, embedding, document_id, chunk_seq ,source, type, publisher, url, created_at, author, title, chunk_size, embedding_model) 
-                        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+        else:
+            query = """
+                        INSERT INTO embeddings (id, text, embedding, document_id, chunk_seq ,source, type, publisher, url, created_at, author, title, chunk_size, embedding_model, embedding_dimension) 
+                        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15)
                         ON CONFLICT (id) DO
                         UPDATE SET id=EXCLUDED.id, text=EXCLUDED.text, embedding=EXCLUDED.embedding, document_id=EXCLUDED.document_id, chunk_seq=EXCLUDED.chunk_seq ,source=EXCLUDED.source, 
                         type=EXCLUDED.type, publisher=EXCLUDED.publisher, url=EXCLUDED.url, created_at=EXCLUDED.created_at, author=EXCLUDED.author, title=EXCLUDED.title, 
-                        chunk_size=EXCLUDED.chunk_size, embedding_model=EXCLUDED.embedding_model
+                        chunk_size=EXCLUDED.chunk_size, embedding_model=EXCLUDED.embedding_model, embedding_dimension=EXCLUDED.embedding_dimension
                         """
+        try:
+            await self.create_connection()
+            async with self.conn.transaction():
 
-                created_at = datetime.strptime(doc.metadata.created_at, '%Y-%m-%d') if doc.metadata.created_at else None
-                await self.conn.execute(query, doc.id, 
-                                    doc.text, 
-                                    emb, 
-                                    doc.metadata.document_id, 
-                                    int(doc.id.split('_')[-1]),
-                                    doc.metadata.source, 
-                                    doc.metadata.type, 
-                                    doc.metadata.publisher, 
-                                    doc.metadata.url, 
-                                    created_at,
-                                    doc.metadata.author, 
-                                    doc.metadata.title,
-                                    chunking_size,
-                                    embedding_model,
-                                    )
-                
-        logger.opt(lazy=True).log("CACHE", f"Embedding Insert | Inserted {len(docs)} embeddings to the database")
+                for doc in docs:
+                        
+                    emb = '[' + ','.join(map(str, doc.embedding)) + ']'
+
+                    
+
+                    created_at = datetime.strptime(doc.metadata.created_at, '%Y-%m-%d') if doc.metadata.created_at else None
+                    await self.conn.execute(query, doc.id, 
+                                        doc.text, 
+                                        emb, 
+                                        doc.metadata.document_id, 
+                                        int(doc.id.split('_')[-1]),
+                                        doc.metadata.source, 
+                                        doc.metadata.type, 
+                                        doc.metadata.publisher, 
+                                        doc.metadata.url, 
+                                        created_at,
+                                        doc.metadata.author, 
+                                        doc.metadata.title,
+                                        chunking_size,
+                                        embedding_model,
+                                        embedding_dimension,
+                                        )
+                    
+            logger.opt(lazy=True).log("CACHE", f"Embedding Insert | Inserted {len(docs)} embeddings to the database")
+        except Exception as e:
+            logger.error(f"Insert embedding cache | Error updating search cache: {e}")
+        finally:
+            await self.conn.close()
 
         return
     

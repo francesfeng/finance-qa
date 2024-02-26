@@ -148,13 +148,15 @@ def get_function_call(messages, tools, model = "gpt-4-1106-preview", temperature
         return
 
 
-def get_embeddings_v2(texts: List[str], model: str = 'text-embedding-3-small') -> List[List[float]]:
+def get_embeddings_v2(texts: List[str], model: str = 'text-embedding-3-small', dimension: int = 1536) -> List[List[float]]:
     """
     Get the embeddings of a list of texts
+    TODO: OpenAI embedding dimension reduce doesn't work
     """
     response = client.embeddings.create(
         input=texts,
-        model=model
+        model=model,
+        dimensions=dimension
     )
 
     data = response.data
@@ -171,3 +173,6 @@ async def get_image(file_id: str):
 
 
 
+
+def output_version():
+    return client._version
