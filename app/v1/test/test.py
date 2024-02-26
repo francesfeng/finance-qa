@@ -18,73 +18,14 @@ router = APIRouter(prefix="/test",
 
 
 
-@router.post("/classify")
-async def query_classify(query: QueryText = Body(...)):
-    try:
-        return await agent.classification_related(query = query.query)
-    except Exception as e:
-        logger.error(e)
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-# Text based on pinecone, streaming
-@router.post("/text")
-async def query_text(querytext: QueryText = Body(...)):
-    try:
-        return StreamingResponse(
-            await agent.query_text(query = querytext.query, is_streaming=True), 
-            media_type="text/event-stream"
-            )
-    except Exception as e:
-        logger.error(e)
-        raise HTTPException(status_code=500, detail=str(e))
-    
-# Pincone Table to Chart
-@router.post("/table_to_chart")
-async def query_table_to_chart(querytext: QueryText = Body(...)):
-    try:
-        return await agent.query_table_to_chart(querytext.query, querytext.data)
-    except Exception as e:
-        logger.error(e)
-        raise HTTPException(status_code=500, detail=str(e))
-    
-
-# Get SQL query
-@router.post("/sql")
-async def query_sql(querytext: QueryText = Body(...)):
-    try:
-        return await agent.query_sql(querytext.query)
-    except Exception as e:
-        logger.error(e)
-        raise HTTPException(status_code=500, detail=str(e))
-    
-
 # Run SQL Query
 @router.post("/run_sql")
 async def run_sql(querytext: Query = Body(...)):
+    """
+    Run SQL Query, output CSV data string format
+    """
     try:
         return await agent.run_sql(querytext.query)
-    except Exception as e:
-        logger.error(e)
-        raise HTTPException(status_code=500, detail=str(e))
-
-
-# Get SQL query, Run SQL Query, and return table
-@router.post("/sql_table")
-async def query_sql_to_table(querytext: QueryText = Body(...)):
-    try:
-        return await agent.query_sql_table(querytext.query)
-    except Exception as e:
-        logger.error(e)
-        raise HTTPException(status_code=500, detail=str(e))
-    
-
-# Retrieve text data from pinecone
-@router.post("/retrieval")
-async def retrieval(querytext: QueryText = Body(...)):
-    query = Query(query = querytext.query, top_k=10)
-    try:
-        return await datastore.query(query)
     except Exception as e:
         logger.error(e)
         raise HTTPException(status_code=500, detail=str(e))
@@ -119,8 +60,6 @@ async def retrieval(querytext: QueryText = Body(...)):
 @router.on_event("startup")
 async def startup():
     global agent
-    global datastore
     agent = Agent()
-    datastore = DataStore()
 
 

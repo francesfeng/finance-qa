@@ -1,7 +1,6 @@
 import asyncio
 import json
 from functools import partial
-import asyncio
 import time
 
 from typing import Optional, List, Dict
@@ -10,11 +9,11 @@ from app.src.connect.datastore import DataStore
 from app.src.database.db import Database
 from app.src.database.db_datasets import DatasetsDB
 from app.src.database.cache_query import QueryCache
-from app.src.connect.gpt import get_chat_completion_stream, get_chat_completion
 from app.src.connect.gpt_v2 import get_chat_completion_v2, get_function_call, get_chat_completion_json, get_chat_completion_stream_v2
 from .function_call import get_text_retrieval_function_call
 from .functions import retrieve_context_from_datastore, retrieve_context_from_google_search
 from .sql import SQLAgent
+from ..config.sample_sql import questions
 
 from app.models.models import Query, Type, Dataset, Related, DocumentSearch
 from app.src.config.prompt.prompt import get_prompt
@@ -131,7 +130,7 @@ class Agent:
 
 
         
-    # updated
+    # updated  - old, doesn't have title
     async def query_text(self, query: str, is_streaming: bool = False):
 
         """
@@ -277,14 +276,55 @@ class Agent:
         sql_agent = SQLAgent(query)
         res = await sql_agent.get_data()
 
+
+        response = Response(
+            code = 200,
+            label = Label.database,
+            query = query,
+            title = res.get('title'),
+            response = {'data': {'sql': res.get('sql'), 'data': res.get('data'), 'explanation': res.get('explanation'), 'source': res.get('source')}}
+        )
+
         # upload response to cache
-        asyncio.create_task(self.cache_query.insert_data_response(res, query))
-        return res
- 
+        asyncio.create_task(self.cache_query.insert_data_response(response, query))
+        
+        return response
+    
+
+
+    async def autogen_sql(self):
+        """
+            Use ChatGPT to automatically generate question, title, SQL, and explanation, upload to database
+        """
+        for q in questions:
+            try:
+                sql = q['SQL']
+                data = await self.run_sql(sql)
+
+                # generate ECharts specification
+                chart = await self.query_data_chart(q['question'], data)
+                res = Response(
+                    code = 200,
+                    label = Label.database,
+                    query = q['question'],
+                    title = q['title'],
+                    response = {"data": {'sql': sql, 'data': data, 'explanation': q['explanation'], 'source': 'Endepth Data Insight'},
+                                "chart": chart}
+                ) 
+
+                asyncio.create_task(self.cache_query.insert_data_response(res, res.query))
+            except Exception as e:
+                print(f"Error in executing sql: {sql} | Error: {e}")
+                pass
+        return
+
+
 
 
     async def query_data_chart(self, query: str, data: str) -> Optional[str]:
-        # From data to generate chart code
+        """
+        From user's natural question and csv data, generate ECharts specification
+        """
         time_start_chart = timeit.default_timer()
         messages = get_prompt('data_to_chart', query, data)
         res = get_chat_completion_json(messages)
@@ -309,6 +349,10 @@ class Agent:
     
 
     async def query_dataset_summary(self, message: Optional[List[Dict[str, str]]]= None, thread_id: Optional[str]=None):
+        """ 
+            Part of data request assistant
+            Given chat messages or thread_id, generate a summary of the dataset request
+        """
         context = ''
         chat_message = []
         if message:
@@ -347,23 +391,7 @@ class Agent:
                        )
 
     
-
-    async def query_sql_table(self, query: str) -> str:
-        sql = await self.query_sql(query)
-        try: 
-            return await self.run_sql(sql)
-        except Exception as e:
-            #logger.error(f"Query: {query} | SQL: {sql} | Error: {e}")
-            return 'Error in SQL query'
         
-    
-    async def query_data_to_text(self, query: str, data: str) -> str:
-        messages = get_prompt('data_to_text', query, data)
-        start = timeit.default_timer()
-        res = get_chat_completion(messages)
-        end = timeit.default_timer()
-        #logger.opt(lazy=True).log("DATATEXT", f"Query: {query} | Processing Time: {end - start} | Response: {res}")
-        return res
     
 
     async def query_subtitle_content(self, query: str, table_of_content: str) -> str:

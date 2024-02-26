@@ -46,29 +46,27 @@ class QueryCache:
 
         # Set query hash and query embedding if query is not set in class
         if not hasattr(self, 'query') and query:
-            self.query = query.strip()
-            self.query_hash = text_to_hash(self.query)
-            self.query_emb, self.query_emb_str = self.__create_emb_str(self.query)
+            query = query.strip()
+            query_hash = text_to_hash(query)
 
 
         try:
             await self.create_connection()
 
             sql_query = """
-            INSERT INTO queries (query, query_hash, title, label, related, query_embedding, created_at) 
-            VALUES ($1, $2, $3, $4, $5, $6, $7)
+            INSERT INTO queries (query, query_hash, title, label, related, created_at) 
+            VALUES ($1, $2, $3, $4, $5, $6)
             ON CONFLICT (query_hash) DO
-            UPDATE SET query = EXCLUDED.query, query_hash = EXCLUDED.query_hash, title = EXCLUDED.title, label = EXCLUDED.label, related = EXCLUDED.related, query_embedding = EXCLUDED.query_embedding, created_at = EXCLUDED.created_at;
+            UPDATE SET title = EXCLUDED.title, label = EXCLUDED.label, related = EXCLUDED.related, created_at = EXCLUDED.created_at;
             """
             
             
             await self.conn.execute(sql_query, 
-                                    self.query, 
-                                    self.query_hash, 
+                                    query, 
+                                    query_hash, 
                                     response.title, 
                                     response.label, 
                                     json.dumps([r.__dict__ for r in response.related_topics]) if response.related_topics else None, 
-                                    self.query_emb_str,
                                     datetime.utcnow())
         except Exception as e:
             logger.error(f"Insert the classification results | Error in inserting classification results in query_Cache: {e}")
@@ -80,8 +78,8 @@ class QueryCache:
 
     async def insert_related(self, related: List[Related], query: Optional[str] = None):
         if not hasattr(self, 'query') and query:
-            self.query = query.strip()
-            self.query_hash = text_to_hash(self.query)
+            query = query.strip()
+            query_hash = text_to_hash(query)
             #self.query_emb, self.query_emb_str = self.__create_emb_str(self.query)
 
         try:
@@ -95,8 +93,8 @@ class QueryCache:
             """
 
             await self.conn.execute(sql_query, 
-                                    self.query, 
-                                    self.query_hash,                                   
+                                    query, 
+                                    query_hash,                                   
                                     json.dumps([r.__dict__ for r in related]), 
                                     datetime.utcnow())
         except Exception as e:
@@ -114,32 +112,27 @@ class QueryCache:
         """
         # Set query hash and query embedding if query is not set in class
         if not hasattr(self, 'query') and query:
-            self.query = query.strip()
-            self.query_hash = text_to_hash(self.query)
-            self.query_emb, self.query_emb_str = self.__create_emb_str(self.query)
+            query = query.strip()
+            query_hash = text_to_hash(query)
 
         try:
             await self.create_connection()
             sql_query = """
-            INSERT INTO queries (query, query_hash, title, label, text_response, query_embedding, created_at) 
-            VALUES ($1, $2, $3, $4, $5, $6, $7) 
+            INSERT INTO queries (query, query_hash, title, label, text_response, created_at) 
+            VALUES ($1, $2, $3, $4, $5, $6) 
             ON CONFLICT (query_hash) DO 
-            UPDATE SET query = EXCLUDED.query, 
-                query_hash = EXCLUDED.query_hash, 
-                title = EXCLUDED.title, 
+            UPDATE SET title = EXCLUDED.title, 
                 label = EXCLUDED.label, 
                 text_response = EXCLUDED.text_response, 
-                query_embedding = EXCLUDED.query_embedding, 
                 created_at = EXCLUDED.created_at;
             
             """
             await self.conn.execute(sql_query, 
-                                    self.query, 
-                                    self.query_hash, 
+                                    query, 
+                                    query_hash, 
                                     response.title,
                                     response.label,
                                     response.response['text'],
-                                    self.query_emb_str, 
                                     datetime.utcnow(),
                                     )
         except Exception as e:
@@ -150,24 +143,40 @@ class QueryCache:
     
 
 
-    async def insert_data_response(self, response: Dict[str, Any], query: Optional[str] = None):
+    async def insert_data_response(self, response: Response, query: Optional[str] = None):
         """
             Insert data response by looking up the query hash value
         """
         # Set query hash and query embedding if query is not set in class
         if not hasattr(self, 'query') and query:
-            self.query = query.strip()
-            self.query_hash = text_to_hash(self.query)
+            query = query.strip()
+            query_hash = text_to_hash(query)
 
         await self.create_connection()
         sql_query = """
-        INSERT INTO queries (query, query_hash, data_response, sql, data_source, data_explanation)
-        VALUES ($1, $2, $3, $4, $5, $6)
+        INSERT INTO queries (query, query_hash, title, label, data_response, sql, data_source, data_explanation, created_at)
+        VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
         ON CONFLICT (query_hash) DO
-        UPDATE SET query = EXCLUDED.query, query_hash = EXCLUDED.query_hash, data_response = EXCLUDED.data_response, sql = EXCLUDED.sql, data_source = EXCLUDED.data_source, data_explanation = EXCLUDED.data_explanation;
+        UPDATE SET title = EXCLUDED.title,
+            label = EXCLUDED.label,
+            data_response = EXCLUDED.data_response, 
+            sql = EXCLUDED.sql, 
+            data_source = EXCLUDED.data_source, 
+            data_explanation = EXCLUDED.data_explanation,
+            created_at = EXCLUDED.created_at;
         
         """
-        await self.conn.execute(sql_query, self.query, self.query_hash, response['data'], response['sql'], response['source'] , json.dumps(response['explanation']))
+        await self.conn.execute(sql_query, 
+                                query, 
+                                query_hash, 
+                                response.title,
+                                response.label,
+                                response.response['data']['data'],
+                                response.response['data']['sql'],
+                                response.response['data']['source'],
+                                json.dumps(response.response['data']['explanation']),
+                                datetime.utcnow(),
+                                )
         return
 
     
@@ -179,8 +188,8 @@ class QueryCache:
         
         # Set query hash and query embedding if query is not set in class
         if not hasattr(self, 'query') and query:
-            self.query = query.strip()
-            self.query_hash = text_to_hash(self.query)
+            query = query.strip()
+            query_hash = text_to_hash(query)
 
 
         await self.create_connection()
@@ -188,9 +197,9 @@ class QueryCache:
         INSERT INTO queries (query, query_hash, chart_response)
         VALUES ($1, $2, $3)
         ON CONFLICT (query_hash) DO
-        UPDATE SET query = EXCLUDED.query, query_hash = EXCLUDED.query_hash, chart_response = EXCLUDED.chart_response;
+        UPDATE SET chart_response = EXCLUDED.chart_response;
         """
-        await self.conn.execute(sql_query, self.query, self.query_hash, json.dumps(response))
+        await self.conn.execute(sql_query, query, query_hash, json.dumps(response))
         return
     
 
@@ -299,6 +308,31 @@ class QueryCache:
         
         return
     
+
+    async def update_embeddings(self):
+        """
+            Update the query embeddings in the query cache where query_embedding is null
+        """
+        
+        # Fetch queries with no embedding
+        sql_get_queries = "SELECT query FROM queries WHERE query_embedding IS NULL"
+        await self.create_connection()
+        queries = await self.conn.fetch(sql_get_queries)
+        queries = [q['query'] for q in queries]
+
+        # Get embeddings
+        embs = get_embeddings_v2(queries, self.model_embed, dimension=self.embedding_dimension)
+
+        # Insert embeddings to DB
+        for q, emb in zip(queries, embs):
+            hash = text_to_hash(q)
+            emb_str = '[' + ','.join(map(str, emb)) + ']'
+            sql_update_query = f"UPDATE queries SET query_embedding = '{emb_str}' WHERE query_hash = '{hash}'"
+            await self.conn.execute(sql_update_query)
+        
+        return
+
+
 
     
 

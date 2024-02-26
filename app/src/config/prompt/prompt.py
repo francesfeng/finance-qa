@@ -36,15 +36,6 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     ]
 
 
-    TABLE_DATASTORE_PROMPT = [
-        {"role": "system", "content": "You are a helpful market analyst. Your goal is to answer the question strictly based on the text provided below. The answer should take into account the time sensitive topics and only provide answers based on the relevant date. However the date doesn\’t need to be part of the answer."},
-        {"role": "user", "content": "The text below provides the date on which the text is based, and the actual body of the context, separated by \“——\“. "},
-        {"role": "user", "content": "Keep the answer in table format."},
-        {"role": "user", "content": "Think carefully, the response should be logical and make sense. You can rewrite the text, and not copy the exact wordings from the text."},
-        #{"role": "user", "content": "When you cannot derive the answer from the text provided, you can respond with one sentence: \"Sorry, seems the question is not relevant. Could you please ask a different question?\"."},
-        {"role": "user", "content": f"Question: {query}"},
-        {"role": "user", "content": f"Text: \"\"\"{context}\"\"\""},
-    ]
 
     today = datetime.today().strftime('%Y-%m-%d')
     TEXT_RETRIEVAL_FUNCTION_CALL_PROMPT = [
@@ -85,24 +76,13 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
 
 
 
-
-    # COMBINED_PROMPT = [
-    #     {"role": "system", "content": "You are a helpful market analyst. Your goal is to answer the question strictly based on the text provided below. The answer should take into account the time sensitive topics and only provide answers based on the relevant date. However the date doesn\’t need to be part of the response."},
-    #     {"role": "user", "content": "The text below provides the date on which the text is based, and the actual body of the context, separated by \“——\“."},
-    #     {"role": "user", "content": "The output consists two parts, 1) tables: if the context provided includes markdown tables. 2) text: to provide more detailed explanations."},
-    #     {"role": "user", "content": "Think carefully, the response should be logical and make sense. You can rewrite the text, and not copy the exact wordings from the text."},
-    #     {"role": "user", "content": f"Question: {query}"},
-    #     {"role": "user", "content": f"Text: \"\"\"{context}\"\"\""},
-
+    # TABLE_TO_CHART_PROMPT = [
+    #     {"role": "system", "content": "You are a helpful data analyst. You have two goals, first is to determine if a chart is the best representation for the data provided.  If the data contains mostly numerical value, chart is a good representation for the data provided. In this case, your second goal is to generate a valid JSON in which each element is an object for ECharts API for displaying the following data."},
+    #     {"role": "user", "content": "The output should only have the option specification in ECharts in JSON, and do not provide any explanations. Choose the most optimal chart type and use ECharts API."},
+    #     {"role": "user", "content": "If the data is largely comprised of text data, a chart is not needed. In this case, just respond “chart is not needed."},
+    #     {"role": "user", "content": f"Data: \"\"\"{context}\"\"\""},
+    #     {"role": "user", "content": "ECharts JSON: option = { "}
     # ]
-
-    TABLE_TO_CHART_PROMPT = [
-        {"role": "system", "content": "You are a helpful data analyst. You have two goals, first is to determine if a chart is the best representation for the data provided.  If the data contains mostly numerical value, chart is a good representation for the data provided. In this case, your second goal is to generate a valid JSON in which each element is an object for ECharts API for displaying the following data."},
-        {"role": "user", "content": "The output should only have the option specification in ECharts in JSON, and do not provide any explanations. Choose the most optimal chart type and use ECharts API."},
-        {"role": "user", "content": "If the data is largely comprised of text data, a chart is not needed. In this case, just respond “chart is not needed."},
-        {"role": "user", "content": f"Data: \"\"\"{context}\"\"\""},
-        {"role": "user", "content": "ECharts JSON: option = { "}
-    ]
 
     SQL_TABLE_PROMPT = [
         {"role": "system", "content": "You are a data engineer, expert in writing SQL code. Based on the schema provided, your goal is determine which tables from the schema to use, in order to answer user\'s questions."},
@@ -130,13 +110,13 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     # ]
 
     SQL_PROMPT = [
-        {"role": "system", "content": "You are a helpful database engineer. Your goal is to: 1. write valid SQL query to answer user\'s questions strictly based on the schema provided; 2. explain the SQL in plain language to user."},
+        {"role": "system", "content": "You are a helpful database engineer. Your goal is to:  1) write a short title based on user\' question with less than 20 words; 2. write valid SQL query to answer user\'s questions strictly based on the schema provided; 3. explain the SQL in plain language to user."},
         {"role": "user", "content": "SQL is strictly based on the schemas provided. Do not make up tables or columns that does not exist in the schemas provided. For any column names in SQL query, use double quotes to wrap the column names. For example, if the table name is \"hydrogen_project\", and the column name is \"Project Name\", the SQL query should be \"SELECT hydrogen_project.\"Project Name\" FROM \"hydrogen_project\"."},
         {"role": "user", "content": "SQL should filter out Null values when comparing or sorting columns that are integer or double precision"},
         {"role": "user", "content": "When user\'s question is vague, don\'t ask user to clarify. Make assumptions, proceed with generating valid SQL, and explain the assumptions to user. For example, if the user asks \"What is the largest hydrogen project in UK?\", you can assume the user is asking about the largest hydrogen project by capacity, and explain the assumption to user."},
         {"role": "user", "content": "When explain the sql query, don\’t directly use or quote any table names, column names or SQL syntax, translate into natural language instead. Use the phrase “data fields” instead of “column names” in the output. Don't refer to \"this SQL query\" or \"this query\" in the explanation, instead, use \"the data\"."},
         {"role": "user", "content": "When explain the query, focus the explanation in the following 3 aspects: 1. Data explanation: don't explain every step in SQL query, only focus on data fields that are highly important to user\’s question, and explain any terminology used in SQL, e.g. MWel. 2) Assumptions: explain to user any filters or columns names are not applied but can be highly relevant to user\'s question. 3) Table data improvement: What other data fields use can add to provide more details to the output."},
-        {"role": "user", "content": "When asked to rewrite the SQL query, don't apologise, just rewrite the SQL query in JSON format {\"status\": \"success\", \"sql\": valid SQL, \"explanation\": {\"data\": explanation of the data fields, \"assumption\": explanation of the possible correction, \"improvement\": explanation to improve data details}}."},
+        {"role": "user", "content": "When asked to rewrite the SQL query, don't apologise, just rewrite the SQL query in JSON format {\"status\": \"success\", \"title\": \"the short title based on the user\'s question\", \"sql\": valid SQL, \"explanation\": {\"data\": explanation of the data fields, \"assumption\": explanation of the possible correction, \"improvement\": explanation to improve data details}}."},
         {"role": "user", "content": "If provided schema does not include a table or data field, respond with JSON format {\"status\": \"pending\", \"message\": \"explain which information is missing from the schema\"}. If fail because of other reasons, respond with JSON format {\"status\": \"fail\", \"message\": \"explain why the SQL query cannot be generated\"}."},
         {"role": "user", "content": f"Schema: \n\"\"\"{context}\"\"\"\n. There is a direct relationship between tables by joining using \'PRIMARY KEY\'."},
         {"role": "user", "content": f"Question: {query}"},
@@ -158,18 +138,14 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
         The output should only have the option specification in ECharts in JSON, and do not provide any explanations. Choose the most optimal chart type and use ECharts API.
     """
 
+
+
     DATASET_SUMMARY = [
      {"role": "system", "content": """Based on the conversation between User and Assistant, please perform following tasks: 1. provide a short name for the dataset user is requesting, like \"Global Hydrogen Projects\". 2. summarise what this dataset is about. 3. Choose tags from the following categories - Hydrogen, Investment, Mobility. If the type of the data falls out of the category provided, name up to 3 new categories if need. 4. List column names of the dataset and the meaning of each column. 5. Produce up to 3 short queries that are used to analyse this dataset. for example, "analyse investors participation", or "evaluate policy impact". Queries are comma separated."""},
      {"role": "user", "content": "Output in JSON format, with the following format: {\"dataset_name\": the name of the dataset, \"dataset_summary\": the summary of the dataset, \"tags\": [list of tags], \"column_names\": \"column_name1\": \"meaning of the column1\", \"column_name2\": \"meaning of the column2\", ...}, \"queries\": \"query1, query2,...\""},
      {"role": "user", "content": f"Conversation: \"\"\"{context}\"\"\""},
     ]
 
-
-    DATA_TO_TEXT_PROMPT = [
-        {"role": "system", "content": "You are a helpful market analyst, your goal is to answer the question based on the data provided."},
-        {"role": "user", "content": f"Question: {query}"},
-        {"role": "user", "content": f"Data: \"\"\"{context}\"\"\""},
-    ]
 
     REPORT_ASSISTANT_PROMPT = """
         You are an expert hydrogen market analyst. Your goal is to write quality research report based on the topics provided. You performs two tasks. 1) Write a table of content based on the topic or report title user provides. 2) Write the analysis for each section based on the table of content generated from task 1. 
@@ -193,19 +169,17 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     ]
 
 
-
+    # TODO: delete?
     if model == 'classification_and_related':
         return CLASSIFICATION_RELATED_PROMPT
     
-    
+    # TODO: delete?
     elif model == 'classification':
         return CLASSIFICATION_PROMPT
     
     elif model == 'related':
         return RELATED_PROMPT
     
-    elif model == 'table_datastore':
-        return TABLE_DATASTORE_PROMPT
     
     elif model == 'text_retrieval_function_call':
         return TEXT_RETRIEVAL_FUNCTION_CALL_PROMPT
@@ -213,15 +187,13 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     elif model == 'text':
         return TEXT_PROMPT
     
-    elif model == 'classification_text':
+    # in use
+    elif model == 'classification_text':  
         return CLASSIFICATION_TEXT_PROMPT
     
     elif model == 'dataset_summary':
         return DATASET_SUMMARY
 
-    
-    elif model == 'table_to_chart':
-        return TABLE_TO_CHART_PROMPT
     
     elif model == 'sql_table':
         return SQL_TABLE_PROMPT
@@ -238,8 +210,6 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     elif model == 'sql_to_chart_assistant':
         return SQL_TO_CHART_ASSISTANT_PROMPT 
     
-    elif model == 'data_to_text':
-        return DATA_TO_TEXT_PROMPT
     
     elif model == 'report_content':
         return REPORT_CONTENT_PROMPT
@@ -256,4 +226,27 @@ def get_prompt(model: str, query: str = None, context: str = None, content_struc
     else:
         raise ValueError(f"Model {model} not recognised")
     
+
+
+def get_prompt_sql_lst(question: str, schema_short: str, schema_long: str) -> List[Dict[str, str]]:
+    """"
+        Prompt to generate a list of question, title and SQL queries based on the schema provided
+        This purpose is to produce a wide range of sample questions that to be scored in query cache
+        This prmopt is used in ChatGPT, not API 
+    """
+    SQL_LIST_PROMPT = [
+        {"role": "system", "content": "You are an expert SQL data engineer, you goals are to: 1.generate a list of questions in natural language, 2. output short titles that summarise questions generated; 3. write SQL queries that can answer each of these question generated, based on the database schema provided; 4. explain the SQL in plain language to user."},
+        {"role": "user", "content": "The dataset is about Hydrogen projects, hydrogen investors, hydrogen policies, hydrogen fuel cell vehicle and hydrogen fuel stations. Tables are related by joining common “Ref” column if available, otherwise the table is independent."},
+        {"role": "user", "content": "The question generated are highly relevant and insightful. Focus on questions that perform statistical analysis or data aggregations based on the schema. Don\’t output tables with only 1 row or 1 column. Make sure eliminate NULL values in all operations."},
+        {"role": "user", "content": "When writing SQL, column name should be inside double quotes."},
+        {"role": "user", "content": "When explain the sql query, don\’t directly use or quote any table names, column names or SQL syntax, translate into natural language instead. Use the phrase \“data fields\” instead of \“column names\” in the output. Don\'t refer to \"this SQL query\" or \"this query\" in the explanation, instead, use \"the data\”."},
+        {"role": "user", "content": "The output format is in JSON list, [{\“question\”: the question in natural language based on the schema, \“title\”: a brief title that summarise user\’s question, \“SQL\”: SQL that can answer the question based on the scheme, \"explanation\": {\"data\": explanation of the data fields, \"assumption\": explanation of the possible correction, \"improvement\": explanation to improve data details}},…]."},
+        {"role": "user", "content": "The below is the schemas in 2 forms, the short form contains table name at the start of each row, followed by the list of column names in the bracket."},
+        {"role": "user", "content": "The long form has more detailed information, and each row is comma separated, containing table name, column name, data type, the boolean value to indicate if it is a primary key, and all possible values in square bracket. Possible values are only listed out when the data type is non-numerical."},
+        {"role": "user", "content": f"Schema short form: \"\"\"{schema_short}\"\"\""},
+        {"role": "user", "content": f"Schema long form: \"\"\"{schema_long}\"\"\""},
+        {"role": "user", "content": f"Question: {question}"},
+    ]    
+
+    return SQL_LIST_PROMPT
 
