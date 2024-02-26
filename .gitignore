@@ -5,6 +5,7 @@ token.json
 __pycache__/
 
 *.log 
+logs/
 SQL/
 data/
 *.sql 
