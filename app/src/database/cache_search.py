@@ -70,7 +70,7 @@ class SearchCache(BackendDB):
     
      
         
-    async def update_scrape_status(self, query: str):
+    async def update_scrape_status(self):
         """
             Check if the url has been succesfully scraped
             If so, update the is_scrapped to True
@@ -95,12 +95,11 @@ class SearchCache(BackendDB):
             """
         
         try:
+            await self.create_connection()
             await self.conn.execute(sql_query)
 
         except Exception as e:
             logger.error(f"Update scrape results | Error updating scrape results in search_Cache: {e}")
-        finally:
-            await self.conn.close()
 
         return 
         

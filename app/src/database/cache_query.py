@@ -34,8 +34,10 @@ class QueryCache:
             self.query_emb, self.query_emb_str = self.__create_emb_str(self.query)
         return
     
+
     async def create_connection(self):
         self.conn = await asyncpg.connect(host=host, database=database, user=user, password=password)
+        return
      
 
     async def insert_classification(self, response: Response, query: Optional[str] = None):
@@ -99,8 +101,6 @@ class QueryCache:
                                     datetime.utcnow())
         except Exception as e:
             logger.error(f"Insert the classification results | Error in inserting classification results in query_Cache: {e}")
-        finally:
-            await self.conn.close()
         return 
 
 
@@ -118,27 +118,26 @@ class QueryCache:
         try:
             await self.create_connection()
             sql_query = """
-            INSERT INTO queries (query, query_hash, title, label, text_response, created_at) 
-            VALUES ($1, $2, $3, $4, $5, $6) 
-            ON CONFLICT (query_hash) DO 
-            UPDATE SET title = EXCLUDED.title, 
-                label = EXCLUDED.label, 
-                text_response = EXCLUDED.text_response, 
-                created_at = EXCLUDED.created_at;
-            
-            """
+                INSERT INTO queries (query, query_hash, title, label, text_response, created_at) 
+                VALUES ($1, $2, $3, $4, $5, $6) 
+                ON CONFLICT (query_hash) DO 
+                UPDATE SET title = EXCLUDED.title, 
+                    label = EXCLUDED.label, 
+                    text_response = EXCLUDED.text_response, 
+                    created_at = EXCLUDED.created_at;
+                
+                """
             await self.conn.execute(sql_query, 
-                                    query, 
-                                    query_hash, 
-                                    response.title,
-                                    response.label,
-                                    response.response['text'],
-                                    datetime.utcnow(),
-                                    )
+                                        query, 
+                                        query_hash, 
+                                        response.title,
+                                        response.label,
+                                        response.response['text'],
+                                        datetime.utcnow(),
+                                        )
         except Exception as e:
             logger.error(f"Insert the text response | Error in inserting text response in query_Cache: {e}")
-        finally:
-            await self.conn.close()
+            pass
         return 
     
 
@@ -209,14 +208,13 @@ class QueryCache:
             Retrieve the query and the response by matching query_hash exactly
             Useful when user clicked the query from the recommended cache
         """
-        if not hasattr(self, 'query') and query:
-            self.query = query.strip()
-            self.query_hash = text_to_hash(self.query)
+        query = query.strip()
+        query_hash = text_to_hash(query)
 
         sql_query = f"""
             SELECT query, title, label, text_response, data_response, sql, data_source, data_explanation, chart_response
             FROM queries
-            where query_hash = '{self.query_hash}'
+            where query_hash = '{query_hash}'
         """
         await self.create_connection()
         results = await self.conn.fetch(sql_query)
@@ -229,6 +227,52 @@ class QueryCache:
             return
 
 
+    async def retrieve_exact_match_response(self, query: str, response_type: str):
+        """
+            Retrieve the query and the response by matching query_hash exactly
+            Useful when user clicked the query from the recommended cache
+        """
+        query = query.strip()
+        query_hash = text_to_hash(query)
+
+        if response_type == 'text':
+            response_fields = "text_response"
+        elif response_type == 'data':
+            response_fields = "data_response, data_source, data_explanation"
+        elif response_type == 'chart':
+            response_fields = "chart_response"
+        else:
+            print("Sorry, response type not found")
+            return
+
+        sql_query = f"""
+            SELECT {response_fields}
+            FROM queries
+            where query_hash = '{query_hash}' LIMIT 1
+        """
+        await self.create_connection()
+        results = await self.conn.fetch(sql_query)
+
+        if len(results) > 0:
+            result = results[0]
+            if response_type == 'text':
+                response = result["text_response"]
+            elif response_type == 'data':
+
+                response = {"data": result.get("data_response", None),
+                            "source": result.get("data_source", None),
+                            "explanation": result["data_explanation"] if result["data_explanation"] else None
+                            }
+            elif response_type == 'chart':
+                response = result["chart_response"] if result["chart_response"] else None
+
+            else:
+                print("Sorry, response type not found")
+                return
+            return response
+        else:
+            return
+        
 
 
 

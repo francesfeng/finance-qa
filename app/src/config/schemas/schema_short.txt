@@ -1,0 +1,19 @@
+hydrogen_fueled_vehicles (Ref, Operator, Manufacturer, Vehicle, Project, Status, Fleet Size, Vehicle Type, Start Date, End Date, Conversion Technology)
+
+us_stationary_fuel_cells (Ref, Host, Project, Status, Start Date, Site Classification, Application, Number of Units, Fuel Cell Type, Model, Fuel, Single Unit Nominal Power Output (kW), Total Nominal Power at Site (kW))
+
+hydrogen_project (Ref, Project Name, Date Online, Decomission Date, Status, Status Commissioned, Technology, Technology Detail, Feedstock, Hydrogen Color, Product, MWel, Nm3 H2/h, kt H2/y, t CO2 captured/y, Total Investment, Total Investment in USD)
+
+carbon_capture_and_storage_project (Ref, Project Name, Project Type, Announcement Date, FID Date, Operation Date, Decommission Date, Project Status, Project Phase, Announced capacity (low) (Mt CO2/yr), Announced capacity (high) (Mt CO2/yr), Sector, Fate of Carbon, Part of CCUS Hub)
+
+international_fuelling_stations (Ref, Title, Project, Status, Beginning Date, Accessible to Public, Refueler Type, H2 Compression Available (Mpa), H2 Production/Delivery Method, On-site H2 Production, Storage Capacity (kg))
+
+project_location (id, Ref, Project Type, Country, Region, State, City/Area, Address/Location)
+
+hydrogen_project_finance_schemes (id, Ref, Project Name, Scheme Name, Funding Amount, Funding Amount in USD)
+
+hydrogen_project_enduse (id, Ref, Project Name, End Use)
+
+hydrogen_policy (id, Policy Name, Country, Year, Status, Jurisdiction, Topics, Policy Types, Sectors, Technologies, Description, Total Budget, Total Budget in USD, Governing Body, Target Project, Target Capacity, Beneficiary, Target Year, Period, Emission Goal)
+
+project_investor (id, Ref, Project Type, Project Name, Investor Name, Parent Investor Name, Investment Amount, Investment Amount in USD, Stake, Share the Pool)'

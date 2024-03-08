@@ -160,7 +160,7 @@ class Agent:
             logger.opt(lazy=True).log("AGENT", f"Text | Query: {query} | Processing Time: {time_end - time_start} | Response: {res}")
             
             # upload response to cache
-            asyncio.create_task(self.cache_query.insert_text_response(res, query))
+            ##asyncio.create_task(self.cache_query.insert_text_response(res, query))
 
             return res
         
@@ -218,14 +218,15 @@ class Agent:
             # TODO: this step can be parallelised
             
             #Retrieve context from datastore
-            if 'retrieve_context_from_datastore' in functions.keys():
-                fn_name = 'retrieve_context_from_datastore'
-                context_datastore = await retrieve_context_from_datastore(functions[fn_name]['query'], 
-                                                                    functions[fn_name].get('start_date'), 
-                                                                    functions[fn_name].get('end_date')
-                                                                    )
-            else:
-                context_datastore = await retrieve_context_from_datastore(query)
+            #TODO: modify datastore
+            # if 'retrieve_context_from_datastore' in functions.keys():
+            #     fn_name = 'retrieve_context_from_datastore'
+            #     context_datastore = await retrieve_context_from_datastore(functions[fn_name]['query'], 
+            #                                                         functions[fn_name].get('start_date'), 
+            #                                                         functions[fn_name].get('end_date')
+            #                                                         )
+            # else:
+            #     context_datastore = await retrieve_context_from_datastore(query)
 
             if 'retrieve_context_from_google_search' in functions.keys():
                 fn_name = 'retrieve_context_from_google_search'
@@ -233,13 +234,14 @@ class Agent:
             else:
                 context_search = await retrieve_context_from_google_search(query)
 
-
+            context =  context_search
         else:
-            context_search = []
-            context_datastore = []
+            # context_search = []
+            # context_datastore = []
+            context = []
 
         # Combine the context from 2 sources
-        context = context_datastore + context_search
+        #context = context_datastore + context_search
         
         
         # Remove duplicates docs that have both entries in datastore and google search

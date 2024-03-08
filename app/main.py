@@ -4,6 +4,7 @@ from app.dependencies import bearer_scheme
 from app.v1.routers import query
 from app.v1.routers import assistant
 from app.v1.test import test
+from app.v1.routers import message
 from mangum import Mangum
 from loguru import logger
 import sys
@@ -36,6 +37,7 @@ async def root():
 
 app.include_router(query.router, prefix="/v1")
 app.include_router(assistant.router, prefix="/v1")
+app.include_router(message.router, prefix="/v1")
 app.include_router(test.router)
 
 handler = Mangum(app=app, lifespan="on")

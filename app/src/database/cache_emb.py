@@ -114,8 +114,6 @@ class EmbeddingCache:
             logger.opt(lazy=True).log("CACHE", f"Embedding Insert | Inserted {len(docs)} embeddings to the database")
         except Exception as e:
             logger.error(f"Insert embedding cache | Error updating search cache: {e}")
-        finally:
-            await self.conn.close()
 
         return
     
