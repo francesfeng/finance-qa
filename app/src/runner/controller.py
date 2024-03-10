@@ -15,7 +15,11 @@ class Controller:
         cache = QueryCache(query)
 
         # retrieve query and retrieve related in parallel
-        result, related = await asyncio.gather(cache.retrieve_semantic_match(), cache.retrieve_related())
+        # use both exact match and semantic match to retrieve the response, in case the embeddings in the semantic match is not available
+        result1, result2, related = await asyncio.gather(cache.retrieve_exact_match(query), cache.retrieve_semantic_match(), cache.retrieve_related())
+        
+        # if exact match is not available, use semantic match
+        result = result1 or result2
         agent = Agent()
 
         is_result = False
