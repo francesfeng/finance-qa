@@ -314,7 +314,7 @@ class QueryCache:
                 
                 return response, cosine_score
         
-        return None
+        return None, None
     
 
 

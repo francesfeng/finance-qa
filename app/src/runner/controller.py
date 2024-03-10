@@ -16,16 +16,18 @@ class Controller:
 
         # retrieve query and retrieve related in parallel
         # use both exact match and semantic match to retrieve the response, in case the embeddings in the semantic match is not available
-        result1, result2, related = await asyncio.gather(cache.retrieve_exact_match(query), cache.retrieve_semantic_match(), cache.retrieve_related())
+        result1, result_comb, related = await asyncio.gather(cache.retrieve_exact_match(query), cache.retrieve_semantic_match(), cache.retrieve_related())
         
         # if exact match is not available, use semantic match
+        result2 = result_comb[0]
+        score = result_comb[1]
         result = result1 or result2
         agent = Agent()
 
         is_result = False
 
         # if result is not None and result[1] > 0.92, return the result
-        if result and float(result[1]) > 0.92:
+        if result1 or (result2 and float(score) > 0.92):
             is_result = True
 
         # If none of the response or related is valid, generate both in parallel
@@ -38,7 +40,7 @@ class Controller:
             if not is_result:
                 res = await agent.query_text_json(query)
             else:
-                res = result[0]
+                res = result
             
             # if related_topics is not valid, regenerate related_topics
             if related:
